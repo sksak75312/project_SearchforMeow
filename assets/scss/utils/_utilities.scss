@@ -643,6 +643,16 @@ $utilities: map-merge(
       )
     )
     // scss-docs-end utils-visibility
+
+    "letter-spacing": (
+      responsive: true,
+      property: letter-spacing,
+      class: letterSpc,
+      values: (
+        0: 0,
+        10: 0.1em
+      )
+    )
   ),
   $utilities
 );
