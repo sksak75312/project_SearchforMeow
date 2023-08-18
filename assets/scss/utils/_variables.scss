@@ -50,20 +50,23 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
 $colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "black":      $black,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+$primary:#F7853A;,
+$secondary:#FFEAB6;,
+$tertiary:#402716;,
+$quaternary:#F5F3C1;,
+$success:$green;,
+$info:$cyan;,
+$warning:$yellow;,
+$danger:$red;,
+$light:$gray-100;,
+$dark:$gray-900;,
+$hover:#FFEBDD;,
+$placeholder:#D1CBC7;,
+$decoLine:#D1CBC7;,
+$text: #624E40;,
+$title:#402716;,
+$inputBdr-light:#C7BAB1;,
+$inputBdr-dark:#351C1C;
 ) !default;
 // scss-docs-end colors-map
 
