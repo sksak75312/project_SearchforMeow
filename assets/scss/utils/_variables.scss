@@ -345,7 +345,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false; //true !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -566,22 +566,26 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+
+$font-size-14:                $font-size-base * 0.875 !default;
+
+$h1-font-size:                $font-size-base * 5 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.5 !default;
+$h4-font-size:                $font-size-base * 2 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base * 1.25 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size, // 80
+  2: $h2-font-size, // 48
+  3: $h3-font-size, // 40
+  4: $h4-font-size, // 32
+  5: $h5-font-size, // 24
+  6: $h6-font-size, // 20
+  7: $font-size-14
 ) !default;
 // scss-docs-end font-sizes
 
