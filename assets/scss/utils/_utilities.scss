@@ -477,6 +477,7 @@ $utilities: map-merge(
         light: $font-weight-light,
         lighter: $font-weight-lighter,
         normal: $font-weight-normal,
+        medium: $font-weight-medium, //customer
         bold: $font-weight-bold,
         semibold: $font-weight-semibold,
         bolder: $font-weight-bolder
@@ -650,7 +651,8 @@ $utilities: map-merge(
       class: letterSpc,
       values: (
         0: 0,
-        10: 0.1em
+        8: 0.08em,
+        10: 0.1em,
       )
     )
   ),
