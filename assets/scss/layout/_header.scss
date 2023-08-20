@@ -1,4 +1,25 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  .bringHome{
+    border-color: $text;
+    border-width: 0 2px 2px 0;
+  }
+  .headerMenu{
+    a{
+      &:hover{
+        color: $hover !important;
+      }
+      &:active{
+        border: 2px solid $title;
+      }
+    }
+  }
 }
+// @include respond-to(lg){
+//   .header{
+//     .headerMenu{
+//       li{
+//         width: 12.564343;
+//       }
+//     }
+//   }
+// }
