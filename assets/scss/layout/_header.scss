@@ -1,25 +1,39 @@
 .header{
-  .bringHome{
-    border-color: $text;
-    border-width: 0 2px 2px 0;
+  .logo-mobile{
+    display: block;
+    width: 65.532764%;
   }
-  .headerMenu{
-    a{
+}
+@include lg{
+  .header{
+    .bringHome{
+      color: #4F4E4A;
+      border-width: 0 2px 2px 0;
       &:hover{
-        color: $hover !important;
+        background: white !important;
+        border-color: $text !important;
+        color: $text;
       }
-      &:active{
-        border: 2px solid $title;
+    }
+    .headerMenu{
+      li{
+        width: 16.853887%;
+      }
+      li:nth-child(6){
+        width: 15.727882%;
+      }
+      a{
+        display: block;
+        padding: 14.5px 0;
+        &:hover{
+          color: $hover !important;
+        }
+        &:active{
+          border: 2px solid $title;
+          color: $title !important;
+          padding: 12.5px 0;
+        }
       }
     }
   }
 }
-// @include respond-to(lg){
-//   .header{
-//     .headerMenu{
-//       li{
-//         width: 12.564343;
-//       }
-//     }
-//   }
-// }
