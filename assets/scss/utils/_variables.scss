@@ -50,23 +50,20 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
 $colors: (
-$primary:#F7853A,
-$secondary:#FFEAB6,
-$tertiary:#402716,
-$quaternary:#F5F3C1,
-$success:$green,
-$info:$cyan,
-$warning:$yellow,
-$danger:$red,
-$light:$gray-100,
-$dark:$gray-900,
-$hover:#FFEBDD,
-$placeholder:#D1CBC7,
-$decoLine:#D1CBC7,
-$text: #624E40,
-$title:#402716,
-$inputBdr-light:#C7BAB1,
-$inputBdr-dark:#351C1C,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
 ) !default;
 // scss-docs-end colors-map
 
@@ -301,26 +298,63 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #F7853A;//$blue !default;
+$secondary:     #FFEAB6;//$gray-600 !default;
+$tertiary:      #402716;
+$quaternary:    #F5F3C1;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$hover:         #FFEBDD;
+$placeholder:   #D1CBC7;
+$decoLine:      #D1CBC7;
+$text:          #624E40;
+$title:         #402716;
+$inputBdr-light:#C7BAB1;
+$inputBdr-dark: #351C1C;
+
+// $primary:#F7853A;
+// $secondary:#FFEAB6;
+// $tertiary:#402716;
+// $quaternary:#F5F3C1;
+// $success:$green;
+// $info:$cyan;
+// $warning:$yellow;
+// $danger:$red;
+// $light:$gray-100;
+// $dark:$gray-900;
+// $hover:#FFEBDD;
+// $placeholder:#D1CBC7;
+// $decoLine:#D1CBC7;
+// $text: #624E40;
+// $title:#402716;
+// $inputBdr-light:#C7BAB1;
+// $inputBdr-dark:#351C1C;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
+  "tertiary":   $tertiary,
+  "quaternary": $quaternary,
+  "success":    $green,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "hover":         #FFEBDD,
+  "placeholder":   #D1CBC7,
+  "decoLine":      #D1CBC7,
+  "text":          #624E40,
+  "title":         #402716,
+  "inputBdr-light":#C7BAB1,
+  "inputBdr-dark": #351C1C
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -410,8 +444,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #FFFDF8; //$white !default;
+$body-color:                #624E40; //$gray-900 !default;
 $body-text-align:           null !default;
 
 // Links
@@ -419,7 +453,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none;//underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
