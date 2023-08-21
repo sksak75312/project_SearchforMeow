@@ -3,12 +3,22 @@
     display: block;
     width: 65.532764%;
   }
+  .bringHome{
+    border-width: 0 2px 2px 0;
+  }
+  .mobile:nth-child(2){
+    width: 86.324786%;
+  }
 }
 @include lg{
   .header{
+    .col-lg-9{
+      ul:nth-child(1){
+        margin-bottom: 18px;
+      }
+    }
     .bringHome{
       color: #4F4E4A;
-      border-width: 0 2px 2px 0;
       &:hover{
         background: white !important;
         border-color: $text !important;
