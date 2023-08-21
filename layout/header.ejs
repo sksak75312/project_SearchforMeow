@@ -1,7 +1,7 @@
-<div class="header py-lg-5">
+<div class="header py-2 py-lg-5">
     <div class="container">
-        <div class="row justify-content-lg-between">
-            <div class="logo col-lg-3">
+        <div class="row justify-content-between">
+            <div class="logo col-lg-3 position-relative">
                 <a href="index.html" title="Search For Meow">
                     <img src="../assets/images/icon/logo_web.svg" alt="logo pic" class="d-none d-lg-block">
                 </a>
@@ -9,24 +9,13 @@
                     <img src="../assets/images/icon/logo_mobile.svg" alt="logo pic" class="me-3 item1">
                     <img src="../assets/images/icon/logo_mobile_name.svg" alt="logo pic" class="item2">
                 </a>
+                <a href="#" type="button" class="mobileBarbtn bg-primary border border-2 border-title d-lg-none position-absolute">
+                    <i class="fa-solid fa-bars d-lg-none fs-6 text-white"></i>
+                </a>
             </div>
-            <div class="col-lg-9 d-flex flex-column-reverse flex-lg-column bg-primary bg-lg-white">
-                <!-- 375px -->
-                <ul class="list-group list-unstyled d-flex align-items-lg-center align-self-lg-end d-lg-none mobile">
-                    <li class="list-group-item">
-                        <a target="_blank" href="https://www.instagram.com/" title="instagram"><img src="../assets/images/icon/ig.png" alt="instagram icon"></a>
-                    </li>
-                    <li class="list-group-item">
-                        <a target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團"><img src="../assets/images/icon/fb.png" alt="facebook icon" class="ms-5"></a>
-                    </li>
-                    <li class="list-group-item ms-auto">
-                        <a href="#" class="bringHome btn px-6 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white" title="Take me home">帶他回家
-                            <img src="../assets/images/icon/arrow_sm.png" alt="arrow icon" class="ms-6">
-                        </a>
-                    </li>
-                </ul>
-                <!-- lg -->
-                <ul class="list-group list-unstyled d-flex align-items-lg-center align-self-lg-end d-none d-lg-block">
+            <!-- lg -->
+            <div class="col-lg-7 d-none d-lg-block d-lg-flex flex-lg-column bg-primary bg-lg-white mb-lg-0">
+                <ul class="list-group list-unstyled d-flex align-items-lg-center align-self-lg-end mb-lg-4">
                     <li class="list-group-item">
                         <a target="_blank" href="https://www.instagram.com/" title="instagram"><img src="../assets/images/icon/icon_instagrma.svg" alt="instagram icon"></a>
                     </li>
@@ -34,46 +23,12 @@
                         <a target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團"><img src="../assets/images/icon/icon_facebook.svg" alt="facebook icon" class="mx-4"></a>
                     </li>
                     <li class="list-group-item ms-auto">
-                        <a href="#" class="bringHome btn px-6 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white" title="Take me home">帶他回家
+                        <a href="#" class="bringHome btn px-6 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white dropdownBtn" title="Take me home">帶他回家
                             <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="ms-10">
                         </a>
                     </li>
                 </ul>
-                <!-- 375px -->
-                <ul class="list-group list-unstyled headerMenu d-flex flex-column flex-lg-row mb-lg-0 mobile">
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            搜趣找貓
-                        </a>
-                    </li>
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            帶我回家
-                        </a>
-                    </li>
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            收容所列表   
-                        </a>
-                    </li>
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            響應捐款   
-                        </a>
-                    </li>
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            幸福守則
-                        </a>
-                    </li>
-                    <li class="list-group-item px-4">
-                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
-                            FAQ    
-                        </a>
-                    </li>
-                </ul>
-                <!-- lg -->
-                <ul class="list-group list-unstyled headerMenu d-none d-lg-block d-flex flex-column flex-lg-row mb-lg-0">
+                <ul class="list-group list-unstyled headerMenu d-flex flex-lg-row mb-lg-0">
                     <li class="list-group-item px-4">
                         <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
                             搜趣找貓
@@ -106,6 +61,59 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <!-- 375px -->
+    <div class="dropMenu d-none bg-primary py-6 position-absolute w-100 top-0">
+        <div class="container d-flex flex-column-reverse">
+            <ul class="list-group list-unstyled d-flex mobile mb-0 justify-content-start">
+                <li class="list-group-item">
+                    <a class="d-block" target="_blank" href="https://www.instagram.com/" title="instagram"><img src="../assets/images/icon/ig.png" alt="instagram icon"></a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-block" target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團"><img src="../assets/images/icon/fb.png" alt="facebook icon" class="ms-5"></a>
+                </li>
+                <li class="list-group-item ms-auto">
+                    <a href="#" class="bringHome btn px-4 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white" title="Take me home">帶他回家
+                        <img src="../assets/images/icon/arrow_sm.png" alt="arrow icon" class="ms-6">
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-group list-unstyled headerMenu d-flex flex-column flex-lg-row mb-0 mobile align-items-center px-6">
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        搜趣找貓
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        帶我回家
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        收容所列表   
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        響應捐款   
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        幸福守則
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        FAQ    
+                    </a>
+                </li>
+            </ul>
+            <a href="#" type="button" class="header-btn-close align-self-end mb-6">
+                <img src="../assets/images/icon/header_btn_close.png" alt="">
+            </a>
         </div>
     </div>
 </div>
