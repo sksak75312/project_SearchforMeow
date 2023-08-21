@@ -50,20 +50,23 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
 $colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "black":      $black,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+$primary:#F7853A,
+$secondary:#FFEAB6,
+$tertiary:#402716,
+$quaternary:#F5F3C1,
+$success:$green,
+$info:$cyan,
+$warning:$yellow,
+$danger:$red,
+$light:$gray-100,
+$dark:$gray-900,
+$hover:#FFEBDD,
+$placeholder:#D1CBC7,
+$decoLine:#D1CBC7,
+$text: #624E40,
+$title:#402716,
+$inputBdr-light:#C7BAB1,
+$inputBdr-dark:#351C1C
 ) !default;
 // scss-docs-end colors-map
 
@@ -298,63 +301,26 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       #F7853A;//$blue !default;
-$secondary:     #FFEAB6;//$gray-600 !default;
-$tertiary:      #402716;
-$quaternary:    #F5F3C1;
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
-$hover:         #FFEBDD;
-$placeholder:   #D1CBC7;
-$decoLine:      #D1CBC7;
-$text:          #624E40;
-$title:         #402716;
-$inputBdr-light:#C7BAB1;
-$inputBdr-dark: #351C1C;
-
-// $primary:#F7853A;
-// $secondary:#FFEAB6;
-// $tertiary:#402716;
-// $quaternary:#F5F3C1;
-// $success:$green;
-// $info:$cyan;
-// $warning:$yellow;
-// $danger:$red;
-// $light:$gray-100;
-// $dark:$gray-900;
-// $hover:#FFEBDD;
-// $placeholder:#D1CBC7;
-// $decoLine:#D1CBC7;
-// $text: #624E40;
-// $title:#402716;
-// $inputBdr-light:#C7BAB1;
-// $inputBdr-dark:#351C1C;
-
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "tertiary":   $tertiary,
-  "quaternary": $quaternary,
-  "success":    $green,
+  "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark,
-  "hover":         #FFEBDD,
-  "placeholder":   #D1CBC7,
-  "decoLine":      #D1CBC7,
-  "text":          #624E40,
-  "title":         #402716,
-  "inputBdr-light":#C7BAB1,
-  "inputBdr-dark": #351C1C
+  "dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -410,21 +376,30 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
-  0: 0,
-  1: $spacer * .25, //4px
-  2: $spacer * .5, //8px
-  3: $spacer * .75, //12px
-  4: $spacer * .875, //14px
-  5: $spacer , //16px
-  6: $spacer * 1.25, //20px
-  7: $spacer * 1.5, //24px
-  8: $spacer * 2, //32px
-  9: $spacer * 2.5, //40px
-  10: $spacer * 3, //48px
-  11: $spacer * 3.75, //60px
-  12: $spacer * 4, //64px
-  13: $spacer * 5, //80px
-  14: $spacer * 6.25, //100px
+     0: 0,
+     1: $spacer * .25,//4px
+     2: $spacer * .5,//8px
+     3: $spacer * .75,//12px
+     4: $spacer,
+     5: $spacer * 1.125,//18px
+     6: $spacer * 1.25,//20px
+     7: $spacer * 1.5,//24px
+     8: $spacer * 1.75,//28px
+     9: $spacer * 2,//32px
+     10: $spacer * 2.25,//36px
+     11: $spacer * 2.5,//40px
+     12: $spacer * 2.75,//44px
+     13: $spacer * 3,//48px
+     14: $spacer * 3.25,//52px
+     15: $spacer * 3.5,//56px
+     16: $spacer * 3.75,//60px
+     17: $spacer * 4,//64px
+     18: $spacer * 4.5,//72px
+     19:$spacer * 5,//80px
+     20: $spacer * 6,//96px
+     21: $spacer * 6.25,//100px
+     22: $spacer * 7.5,//120px
+     23: $spacer * 10,//160px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -603,7 +578,6 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-medium:          500 !default; //customer
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
