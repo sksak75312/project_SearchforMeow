@@ -50,24 +50,20 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
 $colors: (
-$primary:#F7853A,
-$secondary:#FFEAB6,
-$tertiary:#402716,
-$quaternary:#F5F3C1,
-$success:$green,
-$info:$cyan,
-$warning:$yellow,
-$danger:$red,
-$light:$gray-100,
-$dark:$gray-900,
-$hover:#FFEBDD,
-$placeholder:#D1CBC7,
-$decoLine:#D1CBC7,
-$text: #624E40,
-$title:#402716,
-$inputBdr-light:#C7BAB1,
-$inputBdr-dark:#351C1C
-) !default;
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "black": $black,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800) !default;
 // scss-docs-end colors-map
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -301,14 +297,23 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary: #F7853A,
+$secondary: #FFEAB6,
+$tertiary: #402716,
+$quaternary: #F5F3C1,
+$success: $green,
+$info: $cyan,
+$warning: $yellow,
+$danger: $red,
+$light: $gray-100,
+$dark: $gray-900,
+$hover: #FFEBDD,
+$placeholder: #D1CBC7,
+$decoLine: #D1CBC7,
+$text: #624E40,
+$title: #402716,
+$inputBdr-light: #C7BAB1,
+$inputBdr-dark: #351C1C
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
