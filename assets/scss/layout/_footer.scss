@@ -1,4 +1,23 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  .bringHome{
+    border-width: 0 2px 2px 0;
+  }
+}
+@include lg{
+  .footer{
+    a{
+      display: block;
+    }
+    .bringHome{
+      width: 91.836735%;
+      color: #4F4E4A !important;
+      border-color: $text !important;
+      &:hover{
+        background: white !important;
+        border-color: $text !important;
+        color: $text !important;
+      }
+    }
+  }
+
 }
