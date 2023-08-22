@@ -1,12 +1,15 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-console.log("Hello world!");
+//bootstrap popover
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+//bootstrap tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-//<script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
-
-//header
 $(document).ready(function () {
+    //header
     $('.mobileBarbtn').click(function (e) { 
         e.preventDefault();
         $('.dropMenu').removeClass('d-none');
