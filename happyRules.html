@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>貓咪健康幸福守則</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script type="module" crossorigin src="/project_SearchforMeow/assets/main-d996c96e.js"></script>
+  <link rel="stylesheet" href="/project_SearchforMeow/assets/main-9ae652b7.css">
+</head>
+
+<body>
+    <div class="header py-2 py-lg-4">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="logo col-lg-3 position-relative">
+                <a href="index.html" title="Search For Meow">
+                    <img src="/project_SearchforMeow/assets/logo_web-b8ebb15b.svg" alt="logo pic" class="d-none d-lg-block w-100">
+                </a>
+                <a href="index.html" title="Search For Meow" class="logo-mobile d-lg-none d-flex align-items-center">
+                    <img src="/project_SearchforMeow/assets/logo_mobile-2c5e2d1c.svg" alt="logo pic" class="me-3 item1">
+                    <img src="/project_SearchforMeow/assets/logo_mobile_name-49c74483.svg" alt="logo pic" class="item2">
+                </a>
+                <a href="#" type="button" class="mobileBarbtn bg-primary border border-2 border-title d-lg-none position-absolute">
+                    <i class="fa-solid fa-bars d-lg-none fs-6 text-white"></i>
+                </a>
+            </div>
+            <!-- lg -->
+            <div class="col-lg-9 col-xxl-7 d-none d-lg-block d-lg-flex flex-lg-column mb-lg-0">
+                <ul class="list-group list-unstyled d-flex align-items-lg-center align-self-lg-end mb-lg-4">
+                    <li class="list-group-item">
+                        <a target="_blank" href="https://www.instagram.com/" title="instagram"><img src="/project_SearchforMeow/assets/icon_instagrma-874b8d16.svg" alt="instagram icon"></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團"><img src="/project_SearchforMeow/assets/icon_facebook-0be54e8e.svg" alt="facebook icon" class="mx-4"></a>
+                    </li>
+                    <li class="list-group-item ms-auto">
+                        <a href="#" class="bringHome btn px-6 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white dropdownBtn" title="Take me home">帶他回家
+                            <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="ms-10">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-group list-unstyled headerMenu d-flex flex-lg-row mb-lg-0">
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            搜趣找貓
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            帶我回家
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            收容所列表   
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            響應捐款   
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            幸福守則
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="#" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            FAQ    
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 375px -->
+    <div class="dropMenu d-none bg-primary py-6 position-absolute w-100 top-0">
+        <div class="container d-flex flex-column-reverse">
+            <ul class="list-group list-unstyled d-flex mobile mb-0 justify-content-start">
+                <li class="list-group-item">
+                    <a class="d-block" target="_blank" href="https://www.instagram.com/" title="instagram"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMVSURBVHgB7ZnrcdswDIDhXP7H3YAb1J2g6gRJJ7AzQbuB1QmaTFB1AnsDKRM4mUDKBLUnQMGIPFMULD70aHOn7w4n6kESJEESoABmZmbeNYuQjxFxSZcVyR3JDYkgWSoJ5ahE8kJyIHlaLBYVDI1UnGRL8gfHJydZwVDIwkhKnJ6tj34Lh/IJXXbQNhE59BXJM8kJzqYQgixTm6EWm4xM6h5iIOUF0/O5atTgqPoyZiS+QwxMYQ8wAVibrDnXZFqElKF7w+QXjATWC8TGHFmZ7tV5lCG1ChAwAoyZbo13uTkKEIKVOYeRUD3foOOd4Mq4vlC2uQ6/QJhSgi63qgy9er2SFLSi7B3ZKyNdWO8Skgw8lTDxWgWU3ebYTUmytvLttJnYdcXowU3gW4883zCMAxomoepcMuWWRp6Uq/sa3Jy6XmI98VLmldzk9AZnmpO+zynvJzKr46D+D7ZHIOn4dsP07sOF3twgszE6dMnNcmGEBtgKbTzKPgSUnxvfsXvRFfPMyzVWygrj0Q8yhawrjzKVr9D0nbyctktENwDqpVJTkXKpTybViEfjUcKZnC9XEI8w0gWEkVn3nyGSPg2I3uyYVecDRNKnAf8FfRpQGWkBAWA7ZKwgkj4NeDLS68CJuLbunyESrgGV416TGWmpvK/PJKA+1dBIJy8mJH3DZwQE95AqLaDZuC1ajpqNUj63ysygB30nsR1wZ3LHRMt3RxV1AaM8dcRv8OPk9VWIK6G+T5HnoFwBeeXOk0p0RHo4kDd60/VS7sBYB1K2S9B1OFWQ3I9yCifBAAfNyCPQHdC0gpYAPdh8l0ZArgp6WfQ65lO9+QWbIaVG2u9eTXwvsL1XlOALThTUO3S4s0bA/7wUJzpWceiwM+r3732VeWU1YNJRwHakF36whu0J2SvwCKg3wfayKyAUrFcVu6BS2iaMgKrvJ7ZJu/K5jtffTg+Aj9IKOP9leYVwfI7XH2nlijud1uC/+8GRwlBgPbzpRA3JMeAfRNBPPtWYBOpzyo9wNi0B4RyhaYIyJtj3ca1nZmbeIX8BoKUdn9FrQJYAAAAASUVORK5CYII=" alt="instagram icon"></a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-block" target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE1SURBVHgB7ZjtDYIwEIZfjP91BNzADXQENtANdARWcALdQDaQEdwA2IAN6pHwk4+29rgm3JNcmrQluZfeXT8ARZYEC2GMOVJzIjuQ7frupm/r3tokSb6ICXL8RlYZOyo4sgUT5ExKzZvsCEZYBPTOf8hSMLMBDzkWcJ4F+vuZ8cc5BzhW4IIF4ciBzHJeS1YM9MlBIXC2DJUcMWIZ/08EJHQO7C3mPBAQrjI6RY2ALC6AzjpBE1ViBYKiAqRx3sioDHaVZqza7DD/fTox3IbOkSEHbDcrH+5wJLYQiuIw9w+N4/y4BPjch2MS4HWZj0mAc/h0xCSghgc+F5quTpcjY93+MPcKUY70F5CG6vh1rtAjMHoWkkYFSKMCpFEB0qgAaVSANCpAGhUgzfqeFmeoyV5QVsQPc0dpwWH3utcAAAAASUVORK5CYII=" alt="facebook icon" class="ms-5"></a>
+                </li>
+                <li class="list-group-item ms-auto">
+                    <a href="#" class="bringHome btn px-4 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text text-white border-white" title="Take me home">帶他回家
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVHgB7dFBDYAwDAXQX4IAJCAFlIAEJCABBwRFSEACEkoXsmXA9e9EX9J0h6Vd/gDn/kFVW6s5dJRgg3e9ne8lFbgaqxVs9upOnyaw2dAlW5CiqrMLo7UWHDGqPg3XMgb2J39IPJAjCg4R2eCcwwWhPKI/JDUoUwAAAABJRU5ErkJggg==" alt="arrow icon" class="ms-6">
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-group list-unstyled headerMenu d-flex flex-column flex-row mobile align-items-center px-6">
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        搜趣找貓
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        帶我回家
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        收容所列表   
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        響應捐款   
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        幸福守則
+                    </a>
+                </li>
+                <li class="list-group-item w-100">
+                    <a href="#" class="text-white d-block py-6 ps-10 fs-5 letterSpc-8 fw-medium mx-auto border-bottom">
+                        FAQ    
+                    </a>
+                </li>
+            </ul>
+            <a href="#" type="button" class="header-btn-close align-self-end mb-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHdSURBVHgB7Zk9TgJBFMffYiQUGi2h0RuYcAwTK1stTGy9gZZyA0pNLPQCajyAB7CxtLPwo8NggRAZ9w0hu6sDzpv5TyYk80sIgc2++f/Yj3k7ZCqHFpgaLThJIDZJIDZJIDZJIDZiATX4JNV7oxBwbSkiAR5geHWkX2gJrjc8P6DRTUe0n7XANLx6fyL18QqV0OG5Xl73+/FOJGF/BL76RIN+MShIohx+yvj5ofJ5HtYC2VqL6vvd/L1ZDO4pYQrP9SfjtKxqiK4BpAQiPCO+CyEkUOEZp3nARwIZnnGeyFwk0OEZr5lYIhEiPOPdSthIhAqv66Ae6nXoSw5Z/PIcbnnnmEa3nSDhdS3kqoRJ4s+AwPAMtBs1nU7V7djwDLydnpw2J8Zt/D0yPAMX4AuWz3kT+loAd7FQAdPdprId3MUyMIGZt8o9bAP4G4jAvPt8bbMN72LLeAvYTFIhWvEpXgKSGTaUhLOAS3sQQsJJwKe3QUvIl1UAjRlSQrasAuwqURLWzVyolnhWF1s/vKCssfLv/varEutNqm20S4OA+nnDkVja2rYKr1FChtenatDdVePei0LC9bju6P5MtJ/T84DKF7iyxiqhcakLfaCJQfp/IDZJIDZJIDZJIDY/+f2AJufVveEAAAAASUVORK5CYII=" alt="">
+            </a>
+        </div>
+    </div>
+</div>        <!-- 標題 -->
+        <div class="container mb-md-6 mb-10">
+            <div class="d-flex align-items-center mb-5">
+                <i class="fa-solid fa-heart-pulse fa-bounce" style="color: #f7853a;"></i>
+                <h1 class="index-title text-title fs-3 fs-md-2">貓咪健康幸福守則</h1>
+            </div>
+            <h2 class="text-primary fs-5 fs-md-4 mb-0">Rules for Cat Health and Happiness</h2>
+        </div>
+        <!-- Rule 01 迎接貓咪前準備 -->
+        <div class="container">
+            <div>
+                <!-- 說明文字 -->
+                <div>
+                    <h2 class="text-primary fs-md-5 mb-2">Rule 01</h2>
+                    <h2 class="fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
+                    <p>恭喜您！<br>
+                        即將迎接一隻可愛貓貓成為新的家人！</p>
+                    <p>在牠們可愛的小爪子踏進家門之前，<br>
+                        請先確認自己是否備妥貓咪所需的物品。</p>
+                </div>
+                <!-- 自我檢核區 -->
+                <!-- 第一列 -->
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">舒服的床</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">衛生用品</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">貓砂盆</label>
+                    </div>
+                </div>
+                <!-- 第二列 -->
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox4" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox4">貓咪玩具</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox5" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">進食的碗</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox6" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">清潔用品</label>
+                    </div>
+                </div>
+                <!-- 第三列 -->
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox7" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">衛生用品</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HR_inlineCheckbox8" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">貓抓板和貓抓柱</label>
+                    </div>
+                </div>
+                <img src="/project_SearchforMeow/assets/Page5_foot-2-badc83dc.svg" alt="貓腳印裝飾圖片">
+            </div>
+            <img src="/project_SearchforMeow/assets/Page5_01-1434acdf.svg" alt="">
+        </div>
+        <!-- Rule 02 打造一個安全舒適的家 -->
+        <!-- 說明文字 -->
+        <div class="container mb-md-19">
+            <h2 class="text-primary fs-md-5 mb-2">Rule 02</h2>
+            <h2 class="fs-4 fs-md-5 text-title mb-md-6 mb-3">打造一個安全舒適的家</h2>
+            <p class="mb-6 mb-md-15">您需要準備三個主要的活動區域，每一個活動區域都需要被隔開，最好分別位於不同的房間。</p>
+            <!-- 圖片內容 -->
+            <div class="row">
+                <div class="col col-md-4 mb-8 mb-md-19">
+                    <img class="mb-8 mb-md-9" src="/project_SearchforMeow/assets/Page5_food-8aa209d5.png" alt="貓咪喝水和吃飯的區域">
+                    <h3 class="text-title mb-3 mb-md-2 fs-6">喝水和吃飯的區域</h3>
+                    <p class="mb-0 text-center">貓咪需要一個安靜的環境，好讓牠們在吃飯的時候不會被打擾或受到驚嚇。</p>
+                </div>
+                <div class="col col-md-4 mb-8 mb-md-19">
+                    <img class="mb-8 mb-md-9" src="/project_SearchforMeow/assets/Page5_bed-b7b1face.png" alt="貓咪睡覺和休息的區域">
+                    <h3 class="text-title mb-3 mb-md-2 fs-6">睡覺和休息的區域</h3>
+                    <p class="mb-0 text-center">貓咪需要非常大量的睡眠，請提供一個放鬆、遠離吵雜動線的環境，讓牠們可以放心休息。</p>
+                </div>
+                <div class="col col-md-4 mb-16 mb-md-19">
+                    <img class="mb-8 mb-md-9" src="/project_SearchforMeow/assets/Page5_bathroom-9a021532.png" alt="貓咪上廁所的區域">
+                    <h3 class="text-title mb-3 mb-md-2 fs-6">上廁所的區域</h3>
+                    <p class="mb-0 text-center">上廁所其實是一件會讓牠們感到脆弱的事情。最好將牠們的便盆分開擺放，並具備隱蔽性。</p>
+                </div>
+            </div>
+        </div>
+        <!-- Rule 03 遠離危險的地方 -->
+        <div class="container">
+            <!-- 說明文字 -->
+            <h2 class="text-primary fs-md-5 mb-2">Rule 03</h2>
+            <h2 class="fs-4 fs-md-5 text-title mb-md-6 mb-3">遠離危險的地方</h2>
+            <!-- 圖片內容 -->
+            
+        </div>
+        
+
+        <!-- Rule 04 照顧愛貓的健康 -->
+
+
+        <footer class="footer">我是 footer</footer>            <script src="https://kit.fontawesome.com/1b6cabe66e.js" crossorigin="anonymous"></script>
+            
+            <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
