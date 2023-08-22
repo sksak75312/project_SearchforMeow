@@ -318,14 +318,22 @@ $inputBdr-dark: #351C1C;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary":         $primary,
+  "secondary":       $secondary,
+  "tertiary":        $tertiary,  //customer
+  "quaternary":      $quaternary,  //customer
+  "success":         $success,
+  "info":            $info,
+  "warning":         $warning,
+  "danger":          $danger,
+  "light":           $light,
+  "dark":            $dark,
+  "placeholder":     $placeholder,  //customer
+  "decoLine":        $decoLine,  //customer
+  "text":            $text,  //customer
+  "title":           $title,  //customer
+  "inputBdr-light":  $inputBdr-light,  //customer
+  "inputBdr-dark":   $inputBdr-dark,  //customer
 ) !default;
 // scss-docs-end theme-colors-map
 

@@ -23,5 +23,10 @@ $(document).ready(function () {
             $('.dropMenu').removeClass('dropUp');
         },300);
     });
-    
+    //footer
+    $('.toTop').click(function (e) { 
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0},700);
+        
+    }); 
 });
