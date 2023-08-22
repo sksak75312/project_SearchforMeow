@@ -320,12 +320,21 @@ $inputBdr-dark: #351C1C;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "quaternary": $quaternary, 
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "hover":      $hover,
+  "placeholder":$placeholder,
+  "decoLine":   $decoLine,
+  "text":       $text,
+  "title":      $title,
+  "inputBdr-light": $inputBdr-light,
+  "inputBdr-dark": $inputBdr-dark
 ) !default;
 // scss-docs-end theme-colors-map
 
