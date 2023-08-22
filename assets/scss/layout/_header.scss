@@ -12,16 +12,16 @@
   .bringHome{
     border-width: 0 2px 2px 0;
   }
-  .headerMenu{
-    margin-bottom: 140px !important;
-    a:hover{
-      background-color: #FAAD7B;
-    }
-  }
   .dropMenu{
     transition: ease 1s;
     transform: translateY(-820px);
     opacity: 0;
+    .headerMenu{
+      margin-bottom: 140px;
+      a:hover{
+        background-color: #FAAD7B;
+      }
+    }
   }
   .dropDown{
     opacity: 1;
@@ -35,8 +35,12 @@
 }
 @include lg{
   .header{
+    .col-lg-7{
+      background-color: #FFFDF8;
+    }
     .bringHome{
       color: #4F4E4A !important;
+      border-color: $text !important;
       &:hover{
         background: white !important;
         border-color: $text !important;
@@ -45,7 +49,10 @@
     }
     .headerMenu{
       li{
-        width: 16.853887%;
+        width: 16.553887%;
+      }
+      li:nth-child(3){
+        width: 18.053887%;
       }
       li:nth-child(6){
         width: 15.727882%;
@@ -61,6 +68,18 @@
           color: $title !important;
           padding: 12.5px 0;
         }
+      }
+    }
+  }
+}
+@include xl{
+  .header{
+    .headerMenu{
+      li{
+        width: 16.853887%;
+      }
+      li:nth-child(6){
+        width: 15.727882%;
       }
     }
   }
