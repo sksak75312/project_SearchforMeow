@@ -21,14 +21,17 @@
     position: relative;
 }
 .hr__mouse::before{
-    content: " ";
-        position: absolute;
-        width: 80px;
-        height: 62px;
-        background-image: url("../images/happyRulesImages/Page5_mouse-r.svg");
-        background-repeat: no-repeat;
-        left: 70%;
-        top:-20%;
+    @include md{
+        content: " ";
+            position: absolute;
+            width: 80px;
+            height: 62px;
+            background-image: url("../images/happyRulesImages/Page5_mouse-r.svg");
+            background-repeat: no-repeat;
+            left: 70%;
+            top: -20%;
+    }
+    
 }
 // 第三部分
 .danger-slider {
