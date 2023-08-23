@@ -52,10 +52,27 @@ $(document).ready(function () {
             $('.material-symbols-outlined').removeClass('active');
         }, 20);
     });
-    //
+    //add favorite
     $('.favor').click(function (e) { 
         e.preventDefault();
         $(this).toggleClass('addFavor');
+    });
+    //look pic
+    $('.picItem1').click(function (e) { 
+        e.preventDefault();
+        $('.mainPic').attr("src","../assets/images/shelter/1/_DSC0229.JPG").css("width","100%");
+    });
+    $('.picItem2').click(function (e) { 
+        e.preventDefault();
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/").css("width","100%");
+    });
+    $('.picItem3').click(function (e) { 
+        e.preventDefault();
+        $('.mainPic').attr("src","https://picsum.photos/541/300?random=1").css("width","100%");
+    });
+    $('.picItem4').click(function (e) { 
+        e.preventDefault();
+        $('.mainPic').attr("src","https://picsum.photos/541/300?random=2").css("width","100%");
     });
 });
 
