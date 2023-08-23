@@ -9,75 +9,336 @@
     
     <%- include('./layout/header'); -%>
 
-    <main class="shelter py-lg-11">
+    <main class="shelter pt-lg-11">
         <div class="container">
-            <div class="row">
+            <div class="row flex-column">
                 <div class="col">
-                    <h1 class="text-primary fw-bold mb-lg-9">
+                    <h1 class="text-primary fw-bold mb-7 mb-lg-9 fs-4 fs-md-2 fs-lg-1">
                         <i class="fa-solid fa-house-chimney text-primary"></i>
                         找尋附近的收容所
                     </h1>
                 </div>
-                <form action="" class="row">
-                    <div class="mb-4 col-lg-5 d-flex align-items-lg-center justify-content-between">
-                        <label for="dropdown" class="form-label text-text mb-0 fs-lg-6 me-lg-2">縣市查詢</label>
-                        <div class="dropdown d-flex">
-                            <button class="dropBtn text-text btn btn-primary fs-lg-6 py-1 border border-2 rounded-2 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                全部
-                                <span class="material-symbols-outlined" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    unfold_more
-                                </span>
-                              </button>
-                            <ul class="dropdown-menu w-100 rounded-2" data-bs-keyboard="false" data-bs-backdrop="static" >
-                                <li><a class="dropdown-item fs-lg-6 text-text item0" href="#">全部</a></li>
-                                <li><a class="dropdown-item fs-lg-6 text-text item1" href="#">北部</a></li>
-                                <li><a class="dropdown-item fs-lg-6 text-text item2" href="#">中部</a></li>
-                                <li><a class="dropdown-item fs-lg-6 text-text item3" href="#">南部</a></li>
-                                <li><a class="dropdown-item fs-lg-6 text-text item4" href="#">東部</a></li>
-                                <li><a class="dropdown-item fs-lg-6 text-text item5" href="#">離島</a></li>
-                            </ul>
-                        </div>
+            </div>
+            <form action="" class="row flex-column flex-lg-row">
+                <div class="mb-4 mb-lg-9 col-lg-5 d-flex align-items-center justify-content-between">
+                    <label for="dropdown" class="form-label text-text mb-0 fs-lg-6 me-lg-2">縣市查詢</label>
+                    <div class="dropdown d-flex">
+                        <button class="dropBtn text-text btn btn-primary fs-lg-6 py-1 border border-2 rounded-2 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            全部
+                            <span class="material-symbols-outlined" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                unfold_more
+                            </span>
+                          </button>
+                        <ul class="dropdown-menu w-100 rounded-2">
+                            <li><a class="dropdown-item fs-lg-6 text-text item0" href="#">全部</a></li>
+                            <li><a class="dropdown-item fs-lg-6 text-text item1" href="#">北部</a></li>
+                            <li><a class="dropdown-item fs-lg-6 text-text item2" href="#">中部</a></li>
+                            <li><a class="dropdown-item fs-lg-6 text-text item3" href="#">南部</a></li>
+                            <li><a class="dropdown-item fs-lg-6 text-text item4" href="#">東部</a></li>
+                            <li><a class="dropdown-item fs-lg-6 text-text item5" href="#">離島</a></li>
+                        </ul>
                     </div>
-                    <div class="mb-4 col-lg-5 d-flex align-items-lg-center justify-content-between">
-                        <label for="" class="form-label text-text mb-0 fs-lg-6 me-lg-2">關鍵字查詢</label>
-                        <input type="text" class="keyWord text-placeholder fs-lg-6 rounded-2 py-1 ps-3" placeholder="請輸入關鍵字">
-                    </div>
-                    <div class="mb-4 col-lg-2">
-                        <button type="submit" class="btn btn-primary text-text fs-lg-6 border border-2 w-100 py-lg-1 rounded-2">查詢</button>
-                    </div>
-                </form>
-                <ul class="list-group list-unstyled">
-                    <li class="list-group-item">
-                        <a href="#">
+                </div>
+                <div class="mb-4 mb-lg-9 col-lg-5 d-flex align-items-center justify-content-between">
+                    <label for="" class="form-label text-text mb-0 fs-lg-6 me-lg-2">關鍵字查詢</label>
+                    <input type="text" class="keyWord text-placeholder fs-lg-6 rounded-2 py-1 ps-3" placeholder="請輸入關鍵字">
+                </div>
+                <div class="mb-4 mb-lg-9 col-md-6 col-lg-2 align-self-md-end">
+                    <button type="submit" class="btn btn-primary text-text fs-lg-6 border border-2 w-100 py-lg-1 rounded-2">查詢</button>
+                </div>
+            </form>
+            <div class="row justify-content-center">
+                <ul class="list-group list-unstyled col-lg-6 align-self-lg-center d-flex justify-content-lg-between mb-lg-9">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
                             全部
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
                             北部
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
                             中部
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
                             南部
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
                             東部
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fs-lg-5 w-100 text-center">
                             離島
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined me-1">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item1" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="item1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/1/_DSC0228.JPG" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/1/_DSC0229.JPG" alt="">
+                                            <img class="picItem2" src="https://fakeimg.pl/130x100/" alt="">
+                                            <img class="picItem3" src="https://picsum.photos/541/300?random=1" alt="">
+                                            <img class="picItem4" src="https://picsum.photos/541/300?random=2" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fs-lg-6 fs-xl-4 mb-lg-4">台北市立動物之家</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/h68CWYb8zrvDizfu8">114台北市內湖區安美街191號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:0287913254">02-8791-3254</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary rounded-2 p-3 flex-fill me-1">看看其他收容所</button>
+                                        <button class="btn btn-primary rounded-2 p-3 flex-fill ms-1">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115649.27127570663!2d121.44334738906251!3d25.066642598060966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aca17b1bb197%3A0x5bb32ef0b85dc32f!2z5Y-w5YyX5biC5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1692777304812!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary rounded-2" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined me-1">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined me-1">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined me-1">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined me-1">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-7">
+                    <div class="card rounded-2">
+                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
+                            台北市立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1">
+                                    location_on
+                                </span>
+                            114台北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
+                                <span class="material-symbols-outlined">
+                                    phone_in_talk
+                                </span>
+                                02-8791-3254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                                更多資訊
+                                <span class="material-symbols-outlined">
+                                    double_arrow
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1">
+                <div class="col">
+                    <nav aria-label="Page navigation" class="d-flex justify-content-center pt-4">
+                        <ul class="pagination mb-0">
+                          <li class="page-item">
+                            <a class="page-link fs-lg-6 fw-medium" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link fs-lg-6 fw-medium" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
             </div>
         </div>
     </main>
