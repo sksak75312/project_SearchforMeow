@@ -1,0 +1,18 @@
+.shelter{
+    .dropdown,.keyWord{
+        width: 75%;
+    }
+    .material-symbols-outlined{
+        font-size: 26px;
+        transition: all 1s;
+    }
+    .dropdown-menu{
+        transition: all 1s;
+        a:hover{
+            background-color: #FFEBDD;
+        }
+    }
+    .active{
+        transform: rotate(180deg);
+    }
+}
