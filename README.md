@@ -16,7 +16,9 @@
   - Joanne Chen / 設計溝通
 
 ## 圖片素材來源
-- Designed by Freepik ：www.freepik.com
+- Designed by Freepik : www.freepik.com
+- Pixels : https://www.pexels.com/zh-tw/
+- Unsplash : https://unsplash.com/
 
 
 ## 資料夾結構
