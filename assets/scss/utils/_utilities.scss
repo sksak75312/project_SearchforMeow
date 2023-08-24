@@ -166,7 +166,9 @@ $utilities: map-merge(
       class: w,
       values: (
         25: 25%,
+        40: 40%,
         50: 50%,
+        60: 60%,
         75: 75%,
         100: 100%,
         auto: auto
@@ -646,6 +648,7 @@ $utilities: map-merge(
     ),
     // scss-docs-end utils-visibility
 
+    //customer
     "letter-spacing": (
       responsive: true,
       property: letter-spacing,
@@ -655,7 +658,21 @@ $utilities: map-merge(
         8: 0.08em,
         10: 0.1em,
       )
+    ),
+
+    "z-index": (
+      responsive: true,
+      property: z-index,
+      class: z,
+      values: (
+        n1: -1,
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3
+      )
     )
+
   ),
   $utilities
 );

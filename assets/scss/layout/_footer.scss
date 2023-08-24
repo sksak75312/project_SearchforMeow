@@ -14,9 +14,10 @@
     a{
       padding: 14.5px 0;
       &:hover{
-        color: $hover !important;
+        opacity: 50%;
       }
       &:active{
+        opacity: 1;
         border: 2px solid $title;
         color: $title !important;
         padding: 12.5px 0;
@@ -60,7 +61,7 @@
     }
     .bringHome{
       //width: 91.836735%;
-      border-color: $text !important;
+      //border-color: $text !important;
       &:hover{
         background: white !important;
         border-color: $text !important;
@@ -69,19 +70,12 @@
     }
     .list-group-item{
       width: 17.251756%;
-      a{
-        &:hover{
-          color: $hover !important;
-        }
-        &:active{
-          border: 2px solid $title;
-          color: $title !important;
-          padding: 12.5px 0;
-        }
-      }
     }
     .list-group-item:nth-child(6){
       width: 13.738876%;
     }
   }
+}
+@include xl{
+  
 }

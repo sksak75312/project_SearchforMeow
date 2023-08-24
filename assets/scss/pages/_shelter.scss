@@ -1,19 +1,47 @@
 .shelter{
+    .btn-primary:hover{
+        background-color: $primary !important;
+    }
+    .btn-secondary{
+        border-color: #624E40;
+        border-width: 0 2px 2px 0;
+    }
+    h1{
+        font-family: "Noto Serif TC";
+        span{
+            font-family: "Space Mono";
+        }
+    }
     img{
+        display: block !important;
         object-fit: cover;
+        height: 200px;
     }
     a{
         display: block;
     }
-    .dropdown,.keyWord{
-        width: 70%;
+    .test{
+        height: 220px;
+        background: url(../images/shelter/1/1.png) center center no-repeat $primary;
+        background-size: cover;
+        background-blend-mode: darken;
+        transition: ease 0.5s;
+        &:hover{
+            background-color: rgba($color: $primary, $alpha: 0.5);
+        }
+    }
+    .card-img-top{
+        //background-color: #000;
+    }
+    .dropBtn{
+        background-color: #fff;
     }
     .material-symbols-outlined{
         font-size: 26px;
-        transition: all 1s;
+        transition: all 0.5s;
     }
     .dropdown-menu{
-        transition: all 0.5s;
+        transition: all 0.3s;
         a:hover{
             background-color: #FFEBDD;
         }
@@ -21,11 +49,18 @@
     .active{
         transform: rotate(180deg);
     }
+    .card-body{
+        background-color: #FFFAEB;
+    }
+    .arrowBtn{
+        width: 24px;
+        height: 24px;
+    }
     .favor:hover{
         cursor: pointer;
     }
     .addFavor{
-        color: $danger;
+        color: $primary;
         font-variation-settings: 'FILL' 1,;
     }
     .modal-body{
@@ -58,9 +93,15 @@
 }
 @include lg{
     .shelter{
+        .btn-primary:hover{
+            background-color: #F99D61 !important;
+        }
+        .btn-secondary:hover{
+            background-color: #fff;
+        }
         .modal-body{
             img{
-                width: 85px;
+                width: 95px;
                 height: 90px;
             }
             .mainPic{
@@ -71,13 +112,19 @@
 }
 @include xl{
     .shelter{
+        img{
+            height: 220px;
+        }
         .dropdown,.keyWord{
             width: 75%;
+        }
+        .dropdown,.keyWord{
+            width: 70%;
         }
         .modal-body{
             img{
                 width: 130px;
-                height: 100px;
+                height: 110px;
             }
             .mainPic{
                 height: 300px;
