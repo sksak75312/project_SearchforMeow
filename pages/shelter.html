@@ -9,137 +9,136 @@
     
     <%- include('./layout/header'); -%>
 
-    <main class="shelter pt-lg-11">
+    <main class="shelter pt-7 pt-lg-13">
         <div class="container">
             <div class="row flex-column">
                 <div class="col">
-                    <h1 class="text-primary fw-bold mb-7 mb-lg-9 fs-4 fs-md-2 fs-lg-1">
-                        <i class="fa-solid fa-house-chimney text-primary"></i>
-                        找尋附近的收容所
+                    <h1 class="fs-4 text-title fw-bold letterSpc-8 text-center mb-6 mb-lg-11 fs-md-2">
+                        <i class="fa-solid fa-house-chimney text-title"></i>
+                        找尋附近的收容所 <br><span class="fs-5 text-primary letterSpc-8 fw-normal">Search Shelter</span>
                     </h1>
                 </div>
             </div>
-            <form action="" class="row flex-column flex-lg-row">
-                <div class="mb-4 mb-lg-9 col-lg-5 d-flex align-items-center justify-content-between">
-                    <label for="dropdown" class="form-label text-text mb-0 fs-lg-6 me-lg-2">縣市查詢</label>
+            <form action="" class="row flex-column flex-xl-row mb-4">
+                <div class="mb-4 mb-xl-9 col-xl-4 d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
+                    <label for="dropdown" class="form-label text-text fw-medium mb-2 fs-xl-6 me-lg-2">縣市查詢</label>
                     <div class="dropdown d-flex">
-                        <button class="dropBtn text-text btn btn-primary fs-lg-6 py-1 border border-2 rounded-2 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-3 border border-2 border-inputBdr-light d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             全部
-                            <span class="material-symbols-outlined" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                unfold_more
+                            <span class="material-symbols-outlined">
+                                expand_more
                             </span>
                           </button>
-                        <ul class="dropdown-menu w-100 rounded-2">
-                            <li><a class="dropdown-item fs-lg-6 text-text item0" href="#">全部</a></li>
-                            <li><a class="dropdown-item fs-lg-6 text-text item1" href="#">北部</a></li>
-                            <li><a class="dropdown-item fs-lg-6 text-text item2" href="#">中部</a></li>
-                            <li><a class="dropdown-item fs-lg-6 text-text item3" href="#">南部</a></li>
-                            <li><a class="dropdown-item fs-lg-6 text-text item4" href="#">東部</a></li>
-                            <li><a class="dropdown-item fs-lg-6 text-text item5" href="#">離島</a></li>
+                        <ul class="dropdown-menu w-100 border-inputBdr-light">
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item0" href="#">全部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item1" href="#">北部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item2" href="#">中部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item3" href="#">南部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item4" href="#">東部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium item5" href="#">離島</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="mb-4 mb-lg-9 col-lg-5 d-flex align-items-center justify-content-between">
-                    <label for="" class="form-label text-text mb-0 fs-lg-6 me-lg-2">關鍵字查詢</label>
-                    <input type="text" class="keyWord text-placeholder fs-lg-6 rounded-2 py-1 ps-3" placeholder="請輸入關鍵字">
+                <div class="mb-4 mb-xl-9 col-xl-5 d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
+                    <label for="keyWord" class="form-label text-text fw-medium mb-2 fs-xl-6 me-lg-2">關鍵字查詢</label>
+                    <input type="text" class="keyWord text-placeholder fw-medium fs-xl-6 border-inputBdr-light p-4" id="keyWord" placeholder="請輸入關鍵字">
                 </div>
-                <div class="mb-4 mb-lg-9 col-md-6 col-lg-2 align-self-md-end">
-                    <button type="submit" class="btn btn-primary text-text fs-lg-6 border border-2 w-100 py-lg-1 rounded-2">查詢</button>
+                <div class="mb-4 mb-lg-9 col-md-6 col-xl-3 align-self-md-end">
+                    <button type="submit" class="btn btn-primary text-white fs-xl-6 fw-medium border w-100 px-4 py-3 p-lg-4 border-inputBdr-dark border-2 d-flex align-items-center justify-content-between">前往流浪之家 <img src="../assets/images/icon/arrow_sm.png" alt="arrow icon" class="arrowBtn"></button>
                 </div>
             </form>
             <div class="row justify-content-center">
-                <ul class="list-group list-unstyled col-lg-6 align-self-lg-center d-flex justify-content-lg-between mb-lg-9">
+                <ul class="list-group list-unstyled col-lg-6 align-self-lg-center d-flex justify-content-lg-between mb-9">
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 text-center border-end">
                             全部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 text-center border-end">
                             北部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 text-center border-end">
                             中部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 text-center border-end">
                             南部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 text-center border-end">
                             東部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fs-lg-5 w-100 text-center">
+                        <a href="#" class="fw-medium w-100 text-center">
                             離島
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="row row-cols-1 row-cols-lg-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-5 g-xl-10">
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <div class="test"></div>
+                        <!-- <img src="../assets/images/shelter/1/1.png" class="card-img-top" alt="..."> -->
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            臺北市動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8" title="臺北市動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                臺北市內湖區安美街191號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="tel:0287913254" title="tell:02-87913254" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                02-87913254
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item1" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item1" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
                         </div>
                     </div>
-                    <div class="modal fade" id="item1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal fade one" id="item1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                           <div class="modal-content">
                             <div class="modal-body row flex-lg-row">
                                 <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
                                     <div class="pic">
-                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/1/_DSC0228.JPG" alt="">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/1/1.png" alt="">
                                         <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
-                                            <img class="picItem1" src="../assets/images/shelter/1/_DSC0229.JPG" alt="">
-                                            <img class="picItem2" src="https://fakeimg.pl/130x100/" alt="">
-                                            <img class="picItem3" src="https://picsum.photos/541/300?random=1" alt="">
-                                            <img class="picItem4" src="https://picsum.photos/541/300?random=2" alt="">
+                                            <img class="picItem1" src="../assets/images/shelter/1/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/1/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/1/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
                                         </div>
                                     </div>
-                                    <h3 class="text-title fs-5 fs-lg-6 fs-xl-4 mb-lg-4">台北市立動物之家</h3>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺北市動物之家</h3>
                                     <p class="text-text fs-lg-6 mb-lg-7">
                                         希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
                                     </p>
-                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/h68CWYb8zrvDizfu8">114台北市內湖區安美街191號</a></p>
-                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:0287913254">02-8791-3254</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8">臺北市內湖區安美街191號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:02-87913254">02-87913254</a></p>
                                     <p class="text-text fs-lg-6">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
-                                        <button class="btn btn-secondary rounded-2 p-3 flex-fill me-1">看看其他收容所</button>
-                                        <button class="btn btn-primary rounded-2 p-3 flex-fill ms-1">尋找心願貓咪</button>
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
@@ -147,174 +146,354 @@
                                 </div>
                             </div>
                             <div class="modal-footer border-0 mx-auto p-3">
-                              <button type="button" class="btn btn-secondary rounded-2" data-bs-dismiss="modal">上一頁</button>
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
                             </div>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <img src="../assets/images/shelter/2/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            板橋公立動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/7yikxLHfcaLjzf388" title="板橋公立動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                新北市板橋區板城路28-1號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="tel:0287913254" title="tell:02-89662158" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                02-89662158
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item2" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
+                        </div>
+                    </div>
+                    <div class="modal fade two" id="item2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/2/1.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/2/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/2/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/2/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">板橋公立動物之家</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/7yikxLHfcaLjzf388">新北市板橋區板城路28-1號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:02-89662158">02-89662158</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14464.58114828461!2d121.43789934841448!3d24.995178693610164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802b48b6a6141%3A0x6d4b927a2eb17556!2z5p2_5qmL5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1692878506401!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <img src="../assets/images/shelter/3/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            臺中南屯動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7" title="臺中南屯動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                臺中市南屯區中台路601號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="tel:0287913254" title="tell:04-23850976" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                04-23850976
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item3" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
+                        </div>
+                    </div>
+                    <div class="modal fade three" id="item3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/3/1.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/3/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/3/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/3/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺中南屯動物之家</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7">臺中市南屯區中台路601號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:04-23850976">04-23850976</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14562.73549770137!2d120.5649718480078!3d24.14773763454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e54c06897bd%3A0x5a12331be91055df!2z6Ie65Lit5biC5YuV54mp5LmL5a625Y2X5bGv5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1692878689998!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <img src="../assets/images/shelter/4/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            高雄壽山動物園區
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6" title="高雄壽山動物園區" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                高雄市鼓山區萬壽路350號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="tel:0287913254" title="tell:07-5519059" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                07-5519059
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item4" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
+                        </div>
+                    </div>
+                    <div class="modal fade four" id="item4" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/4/1.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/4/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/4/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/4/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">高雄壽山動物園區</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6">高雄市鼓山區萬壽路350號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:07-5519059">07-5519059</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14729.958021026872!2d120.26512374731982!3d22.63553077610727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e046ceed067c9%3A0x40a7e177be37575f!2z6auY6ZuE5biC5aO95bGx5YuV54mp5ZyS!5e0!3m2!1szh-TW!2stw!4v1692878783183!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <img src="../assets/images/shelter/5/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            臺東動物收容中心
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/WYSri1a3moSYiidg7" title="臺東動物收容中心" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                臺東縣臺東市中華路4段999巷600號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="tel:0287913254" title="tell:089-362011" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                089-362011
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item5" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
+                        </div>
+                    </div>
+                    <div class="modal fade five" id="item5" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/5/1.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/5/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/5/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/5/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺東動物收容中心</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/WYSri1a3moSYiidg7">臺東縣臺東市中華路4段999巷600號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:089-362011">089-362011</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720.929026721993!2d121.09066154735682!3d22.719607163012775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb814c871a059%3A0x478be79883a37aac!2z6Ie65p2x57ij5rWB5rWq5YuV54mp5pS25a655Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1692878862588!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-7">
-                    <div class="card rounded-2">
-                        <img src="https://picsum.photos/500/400?random=1" class="card-img-top rounded-top" alt="...">
+                    <div class="card border-inputBdr-dark border-2">
+                        <img src="../assets/images/shelter/6/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-6 fs-xl-4 text-title mb-4 position-relative">
-                            台北市立動物之家
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                            澎湖動物收容中心
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/h68CWYb8zrvDizfu8" title="台北市立動物之家" class="d-flex align-items-center fs-xl-6 mb-4 mb-lg-4">
-                                <span class="material-symbols-outlined me-1">
+                            <a target="_blank" href="https://goo.gl/maps/qUXBdFp2SNfFtUB69" title="澎湖動物收容中心" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
-                            114台北市內湖區安美街191號
+                                澎湖縣馬公市烏崁里260、261號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-8791-3254" class="d-flex align-items-center fs-xl-6">
-                                <span class="material-symbols-outlined">
+                            <a target="_blank" href="tel:0287913254" title="tell:06-9213559" class="d-flex align-items-center text-text">
+                                <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
-                                02-8791-3254
+                                06-9213559
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-primary fs-xl-6 fw-medium w-100 text-title border-0 rounded-bottom py-3 d-flex align-items-center justify-content-center" type="button">
+                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item6" type="button">
                                 更多資訊
-                                <span class="material-symbols-outlined">
-                                    double_arrow
-                                </span>
+                                <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
+                        </div>
+                    </div>
+                    <div class="modal fade six" id="item6" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body row flex-lg-row">
+                                <div class="col-12 col-lg-6 d-flex flex-column mb-7 mb-lg-0">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-4" src="../assets/images/shelter/6/1.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="../assets/images/shelter/6/1.png" alt="">
+                                            <img class="picItem2" src="../assets/images/shelter/6/2.png" alt="">
+                                            <img class="picItem3" src="../assets/images/shelter/6/3.png" alt="">
+                                            <img class="picItem4" src="https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">澎湖動物收容中心</h3>
+                                    <p class="text-text fs-lg-6 mb-lg-7">
+                                        希望能將對牠的愛延續下去，因此創建這個寵物送領養的平台，冀望能藉由這個平台讓更多的浪浪能擁有一個家，讓有意願領養動物的人都可以輕鬆的找到願意接納的寵物。目前我們傾向不收費用盡已所能的運作方向，但為了維持網站運作會放置 Google 廣告，尚請見諒。 另外，也歡迎相關公益團體或法人與我們聯絡提案合作，我們願意盡量支持與配合。
+                                    </p>
+                                    <p class="fs-lg-6 d-flex align-items-center">地址：<a href="https://goo.gl/maps/qUXBdFp2SNfFtUB69">澎湖縣馬公市烏崁里260、261號</a></p>
+                                    <p class="fs-lg-6 d-flex align-items-center">電話：<a href="tel:06-9213559">06-9213559</a></p>
+                                    <p class="text-text fs-lg-6">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium">看看其他收容所</button>
+                                        <button class="btn btn-primary p-3 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark">尋找心願貓咪</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14629.81594613039!2d119.61686124773105!3d23.552133131209274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c454100000001%3A0xc9ee1d79f950d348!2z5r6O5rmW57ij5rWB5rWq5YuV54mp5pS25a655Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1692878931787!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto p-3">
+                              <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal">上一頁</button>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
