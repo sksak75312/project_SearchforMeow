@@ -15,20 +15,15 @@
     img{
         display: block !important;
         object-fit: cover;
-        height: 200px;
+        height: 250px;
     }
     a{
         display: block;
     }
     .test{
-        height: 220px;
+        height: 250px;
         background: url(../images/shelter/1/1.png) center center no-repeat $primary;
         background-size: cover;
-        background-blend-mode: darken;
-        transition: ease 0.5s;
-        &:hover{
-            background-color: rgba($color: $primary, $alpha: 0.5);
-        }
     }
     .card-img-top{
         //background-color: #000;
@@ -83,6 +78,9 @@
 }
 @include sm{
     .shelter{
+        img,.test{
+            height: 345px;
+        }
         .modal-body{
             img{
                 width: 110px;
@@ -91,8 +89,18 @@
         }
     }
 }
+@include md{
+    .shelter{
+        img,.test{
+            height: 296px;
+        }
+    }
+}
 @include lg{
     .shelter{
+        img,.test{
+            height: 308px;
+        }
         .btn-primary:hover{
             background-color: #F99D61 !important;
         }
@@ -113,7 +121,15 @@
 @include xl{
     .shelter{
         img{
-            height: 220px;
+            height: 265px;
+        }
+        .test{
+            height: 265px;
+            background-blend-mode: darken;
+            transition: ease 0.5s;
+            &:hover{
+                background-color: rgba($color: $primary, $alpha: 0.2);
+            }
         }
         .dropdown,.keyWord{
             width: 75%;
@@ -129,6 +145,13 @@
             .mainPic{
                 height: 300px;
             }
+        }
+    }
+}
+@include xxl{
+    .shelter{
+        img,.test{
+            height: 295px;
         }
     }
 }
