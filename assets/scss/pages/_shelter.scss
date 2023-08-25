@@ -9,46 +9,61 @@
         border-color: #624E40;
         border-width: 0 2px 2px 0;
     }
+    .heartIcon{
+        padding-top: 4.8px;
+    }
     h1{
         font-family: "Noto Serif TC";
         span{
             font-family: "Space Mono";
         }
     }
+    form{
+        img{
+            width: 270px;
+            height: 264px;
+            top: -55px;
+            left: 20px;
+        }
+    }
     .indexPic{
         height: 250px;
     }
-    .col:nth-child(1){
+    .sleepCat{
+        width: 358px;
+        height: 310px;
+    }
+    .col-10:nth-child(1){
         .indexPic{
             background: url(../images/shelter/1/1.png) center center no-repeat $title;
             background-size: cover;
         }
     }
-    .col:nth-child(2){
+    .col-10:nth-child(2){
         .indexPic{
             background: url(../images/shelter/2/1.png) center center no-repeat $text;
             background-size: cover;
         }
     }
-    .col:nth-child(3){
+    .col-10:nth-child(3){
         .indexPic{
             background: url(../images/shelter/3/1.png) center center no-repeat $primary;
             background-size: cover;
         }
     }
-    .col:nth-child(4){
+    .col-10:nth-child(4){
         .indexPic{
             background: url(../images/shelter/4/1.png) center center no-repeat $secondary;
             background-size: cover;
         }
     }
-    .col:nth-child(5){
+    .col-10:nth-child(5){
         .indexPic{
             background: url(../images/shelter/5/1.png) center center no-repeat $text;
             background-size: cover;
         }
     }
-    .col:nth-child(6){
+    .col-10:nth-child(6){
         .indexPic{
             background: url(../images/shelter/6/1.png) center center no-repeat $text;
             background-size: cover;
@@ -70,7 +85,7 @@
     .active{
         transform: rotate(180deg);
     }
-    .card{
+    .card,.card-footer{
         background-color: #FFFAEB;
     }
     .arrowBtn{
@@ -105,11 +120,24 @@
             }
         }
     }
+    .pagination{
+        img{
+            top: -100px;
+            left: 100px;
+            transform: rotate(11deg);
+        }
+    }
 }
 @include sm{
     .shelter{
         .indexPic{
             height: 345px;
+        }
+        form{
+            img{
+                top: -55px;
+                left: 20px;
+            }
         }
         .modal-body{
             img{
@@ -117,12 +145,30 @@
                 height: 100px;
             }
         }
+        .pagination{
+            img{
+                top: -230px;
+                left: -180px;
+            }
+        }
     }
 }
 @include md{
     .shelter{
+        form{
+            img{
+                top: -45px;
+                left: 20px;
+            }
+        }
         .indexPic{
             height: 296px;
+        }
+        .pagination{
+            img{
+                top: -200px;
+                left: -320px;
+            }
         }
     }
 }
@@ -139,10 +185,44 @@
         }
         form{
             img{
-                width: 270px;
-                height: 264px;
-                top: -95px;
-                left: -80px;
+                top: -120px;
+                left: -40px;
+            }
+        }
+        .sleepCat{
+            right: -350px;
+            top: 100px;
+        }
+        .col-10{
+            .indexPic{
+                height: 255px;
+                background-blend-mode: darken;
+                transition: ease 0.5s;
+            }
+        }
+        .col-xl-4:hover{
+            .indexPic{
+                background-color: rgba($color: $title, $alpha: 0.2);
+            }
+        }
+        .col-xl-4:nth-child(1):hover{
+            .indexPic{
+                background-color: rgba($color: $text, $alpha: 0.2);
+            }
+        }
+        .col-xl-4:nth-child(2):hover{
+            .indexPic{
+                background-color: rgba($color: $primary, $alpha: 0.2);
+            }
+        }
+        .col-xl-4:nth-child(3):hover{
+            .indexPic{
+                background-color: rgba($color: $secondary, $alpha: 0.2);
+            }
+        }
+        .col-xl-4:nth-child(4):hover{
+            .indexPic{
+                background-color: rgba($color: $text, $alpha: 0.2);
             }
         }
         .modal-body{
@@ -154,40 +234,20 @@
                 height: 300px;
             }
         }
+        .pagination{
+            img{
+                top: -280px;
+                left: -320px;
+            }
+        }
     }
 }
 @include xl{
     .shelter{
-        .col{
-            .indexPic{
-                height: 255px;
-                background-blend-mode: darken;
-                transition: ease 0.5s;
-            }
-        }
-        .col-lg-4:hover{
-            .indexPic{
-                background-color: rgba($color: $title, $alpha: 0.2);
-            }
-        }
-        .col-lg-4:nth-child(1):hover{
-            .indexPic{
-                background-color: rgba($color: $text, $alpha: 0.2);
-            }
-        }
-        .col-lg-4:nth-child(2):hover{
-            .indexPic{
-                background-color: rgba($color: $primary, $alpha: 0.2);
-            }
-        }
-        .col-lg-4:nth-child(3):hover{
-            .indexPic{
-                background-color: rgba($color: $secondary, $alpha: 0.2);
-            }
-        }
-        .col-lg-4:nth-child(4):hover{
-            .indexPic{
-                background-color: rgba($color: $text, $alpha: 0.2);
+        form{
+            img{
+                top: -95px;
+                left: -50px;
             }
         }
         .modal-body{
@@ -197,6 +257,12 @@
             }
             .mainPic{
                 height: 300px;
+            }
+        }
+        .pagination{
+            img{
+                top: -280px;
+                left: -400px;
             }
         }
     }
