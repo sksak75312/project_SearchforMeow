@@ -1,6 +1,9 @@
 .shelter{
-    .btn-primary:hover{
-        background-color: $primary !important;
+    img{
+        object-fit: cover;
+    }
+    a{
+        display: block;
     }
     .btn-secondary{
         border-color: #624E40;
@@ -12,26 +15,49 @@
             font-family: "Space Mono";
         }
     }
-    img{
-        display: block !important;
-        object-fit: cover;
+    .indexPic{
         height: 250px;
     }
-    a{
-        display: block;
+    .col:nth-child(1){
+        .indexPic{
+            background: url(../images/shelter/1/1.png) center center no-repeat $title;
+            background-size: cover;
+        }
     }
-    .test{
-        height: 250px;
-        background: url(../images/shelter/1/1.png) center center no-repeat $primary;
-        background-size: cover;
+    .col:nth-child(2){
+        .indexPic{
+            background: url(../images/shelter/2/1.png) center center no-repeat $text;
+            background-size: cover;
+        }
     }
-    .card-img-top{
-        //background-color: #000;
+    .col:nth-child(3){
+        .indexPic{
+            background: url(../images/shelter/3/1.png) center center no-repeat $primary;
+            background-size: cover;
+        }
+    }
+    .col:nth-child(4){
+        .indexPic{
+            background: url(../images/shelter/4/1.png) center center no-repeat $secondary;
+            background-size: cover;
+        }
+    }
+    .col:nth-child(5){
+        .indexPic{
+            background: url(../images/shelter/5/1.png) center center no-repeat $text;
+            background-size: cover;
+        }
+    }
+    .col:nth-child(6){
+        .indexPic{
+            background: url(../images/shelter/6/1.png) center center no-repeat $text;
+            background-size: cover;
+        }
     }
     .dropBtn{
         background-color: #fff;
     }
-    .material-symbols-outlined{
+    .expand_more{
         font-size: 26px;
         transition: all 0.5s;
     }
@@ -44,19 +70,26 @@
     .active{
         transform: rotate(180deg);
     }
-    .card-body{
+    .card{
         background-color: #FFFAEB;
     }
     .arrowBtn{
         width: 24px;
         height: 24px;
     }
-    .favor:hover{
-        cursor: pointer;
+    .favor{
+        transition: ease 0.2s;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
     .addFavor{
         color: $primary;
         font-variation-settings: 'FILL' 1,;
+    }
+    .zoom{
+        font-size: 32px;
     }
     .modal-body{
         img{
@@ -72,13 +105,10 @@
             }
         }
     }
-    .page-link:hover{
-        background-color: $secondary;
-    }
 }
 @include sm{
     .shelter{
-        img,.test{
+        .indexPic{
             height: 345px;
         }
         .modal-body{
@@ -91,21 +121,29 @@
 }
 @include md{
     .shelter{
-        img,.test{
+        .indexPic{
             height: 296px;
         }
     }
 }
 @include lg{
     .shelter{
-        img,.test{
+        .indexPic{
             height: 308px;
         }
         .btn-primary:hover{
             background-color: #F99D61 !important;
         }
         .btn-secondary:hover{
-            background-color: #fff;
+            background-color: #fff !important;
+        }
+        form{
+            img{
+                width: 270px;
+                height: 264px;
+                top: -95px;
+                left: -80px;
+            }
         }
         .modal-body{
             img{
@@ -120,22 +158,37 @@
 }
 @include xl{
     .shelter{
-        img{
-            height: 265px;
+        .col{
+            .indexPic{
+                height: 255px;
+                background-blend-mode: darken;
+                transition: ease 0.5s;
+            }
         }
-        .test{
-            height: 265px;
-            background-blend-mode: darken;
-            transition: ease 0.5s;
-            &:hover{
+        .col-lg-4:hover{
+            .indexPic{
+                background-color: rgba($color: $title, $alpha: 0.2);
+            }
+        }
+        .col-lg-4:nth-child(1):hover{
+            .indexPic{
+                background-color: rgba($color: $text, $alpha: 0.2);
+            }
+        }
+        .col-lg-4:nth-child(2):hover{
+            .indexPic{
                 background-color: rgba($color: $primary, $alpha: 0.2);
             }
         }
-        .dropdown,.keyWord{
-            width: 75%;
+        .col-lg-4:nth-child(3):hover{
+            .indexPic{
+                background-color: rgba($color: $secondary, $alpha: 0.2);
+            }
         }
-        .dropdown,.keyWord{
-            width: 70%;
+        .col-lg-4:nth-child(4):hover{
+            .indexPic{
+                background-color: rgba($color: $text, $alpha: 0.2);
+            }
         }
         .modal-body{
             img{
@@ -145,13 +198,6 @@
             .mainPic{
                 height: 300px;
             }
-        }
-    }
-}
-@include xxl{
-    .shelter{
-        img,.test{
-            height: 295px;
         }
     }
 }
