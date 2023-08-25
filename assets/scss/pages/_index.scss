@@ -1,3 +1,193 @@
-.index-title {
-  font-size: 100px;
+.home {
+
+  // about 區塊
+  .about__bg {
+    top: 100%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 252px;
+  }
+
+  .btn__hover:hover {
+    background: $form-bg-color;
+  }
+
+  // search 區塊
+  .search {
+    &__heart {
+      top: 16px;
+      right: 16px;
+    }
+
+    &__bg__top {
+      top: -50%;
+      right: 0;
+      transform: translateY(50%);
+      z-index: -1;
+      width: 339px;
+    }
+
+    &__bg__center {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50);
+      z-index: -1;
+    }
+
+    &__bg__bottom {
+      top: 100%;
+      right: 0;
+    } 
+  }
+
+  // shelter 區塊
+  .hmShelter {
+    background: url("../assets/images/shelter_bg_mobile.png") no-repeat center/cover;
+  }
+
+  // rule 區塊
+  .rule__img {
+    background:#FFFDF8;
+  }
+
+  // faq 區塊
+  .faq {
+    background: url("../assets/images/faq_bg_mobile.png") no-repeat center/cover;
+
+    &__button.accordion-button:not(.collapsed) {
+      background: $hover;
+    }
+
+    &__button:focus {
+      box-shadow: none !important;
+    }
+
+    &__button::after {
+      display: none;
+    }
+
+    &__bg__left {
+      left: 0;
+      z-index: -1;
+    }
+
+    &__bg__right {
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@include md {
+  .home {
+    .banner__text {
+      position: relative;
+
+      &:first-of-type::after, &:last-of-type::after {
+        position: absolute;
+        top: 50%;
+        content: "";
+        height: 1px;
+        background: $tertiary;
+      }
+
+      &:first-of-type::after { 
+        right: 0;
+        width: 59%;
+      }
+
+      &:last-of-type::after {
+        left: 0;
+        width: 27%;
+      }
+    }
+
+    .hmShelter {
+      background-image: url("../assets/images/shelter_bg_web.png");
+    }
+
+    .faq {
+      background-image: url("../assets/images/faq_bg_web.png")
+    }
+
+    .faq {
+      &__bg__left {
+        width: 198px;
+      }
+
+      &__bg__right {
+        width: 199px;
+      }
+    }
+  }
+}
+
+@include lg {
+  .home {
+    .banner__text {
+      &:first-of-type::after { 
+        width: 50%;
+      }
+
+      &:last-of-type::after {
+        width: 12%;
+      }
+    }
+
+    .search {
+
+      &__bg__top {
+        top: -35%;
+      }
+    }
+  }
+}
+
+@include xl {
+  .home {
+    .banner__text {
+      &:first-of-type::after { 
+        width: 59%;
+      }
+
+      &:last-of-type::after {
+        width: 27%;
+      }
+    }
+
+    .about__bg {
+      width: 378px;
+    }
+    
+    .search {
+
+      &__bg__top {
+        top: -50%;
+        width: 508px;
+      }
+
+      &__bg__center {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50);
+        z-index: -1;
+      }
+
+      &__bg__bottom {
+        top: 100%;
+        right: 0;
+      } 
+    }
+
+    .faq {
+      &__bg__left {
+        width: 396px;
+      }
+
+      &__bg__right {
+        width: 398px;
+      }
+    }
+  }
 }
