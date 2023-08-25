@@ -12,6 +12,8 @@
 
     <!-- 首頁內容 -->
     <main class="home">
+
+      <!-- banner 區塊 -->
       <section class="banner container mb-19 mb-lg-21">
         <img src="../assets/images/banner_mobile.png" class="img-fluid d-md-none mb-3" alt="">
         <img src="../assets/images/banner_web.png" class="img-fluid d-none d-md-block mb-7" alt="">
@@ -47,17 +49,18 @@
               </div>
             </div>
             <div class="col-lg-4 col-xl-3">
-              <button type="button" class="btn btn-primary d-flex justify-content-between align-items-center py-3 px-4 w-100 h-100 border border-2 border-inputBdr-dark text-white">
+              <a href="#" class="btn btn-primary d-flex justify-content-between align-items-center py-3 px-4 h-100 border border-2 border-inputBdr-dark text-white">
                 <span class="fs-7 fs-lg-9 lh-sm fw-medium letterSpc-8">前往浪貓之家</span>
                 <img src="../assets/images/icon/arrow_sm.png" class="img-fluid" alt="">
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- about 區塊 -->
       <section class="about position-relative mb-19 mb-lg-21">
-        <img src="../assets/images/bg1.png" class="about__bg position-absolute d-none d-lg-block img-fluid" alt="">
+        <img src="../assets/images/bg1.png" class="about__bg position-absolute img-fluid d-none d-md-block" alt="">
         <div class="container">
           <div class="col-md-10 mx-auto">
             <div class="row text-center text-md-start">
@@ -75,9 +78,11 @@
         </div>
       </section>
 
+      <!-- search 區塊 -->
       <section class="position-relative mb-19 mb-lg-21">
-        <img src="../assets/images/bg2.png" class="search__bg__top position-absolute" alt="">
-        <img src="../assets/images/bg3.png" class="search__bg__center position-absolute" alt="">
+        <img src="../assets/images/bg2.png" class="search__bg__top position-absolute d-none d-md-block" alt="">
+        <img src="../assets/images/bg3.png" class="search__bg__center position-absolute d-none d-md-block" alt="">
+        <img src="../assets/images/bg_shelter_mobile.png" class="search__bg__bottom position-absolute" alt="">
         <div class="container">
           <div class="text-center">
             <h3 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">心願貓咪尋覓所</h3>
@@ -265,11 +270,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="mt-auto">
-                  <button type="button" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 ms-auto py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
+                <div class="ms-auto mt-auto">
+                  <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 ms-auto py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
                     <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">立即創造快樂</span>
                     <img src="../assets/images/icon/icon_arrow.svg" class="img-fluid" alt="">
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -277,17 +282,231 @@
         </div>
       </section>
 
-      <section class="shelter">
+      <!-- shelter 區塊 -->
+      <section class="shelter py-9 py-md-17 mb-19 mb-lg-21">
         <div class="container">
-
+          <div class="col-xl-10 ms-auto">
+            <div class="p-7 p-lg-13 border border-2 border-inputBdr-dark bg-form-bg-color">
+              <div class="d-md-flex justify-content-between align-items-center text-center mb-md-11">
+                <div class="d-flex justify-content-center justify-content-md-start align-items-center flex-wrap gap-3 gap-lg-7 ">
+                  <h3 class="mb-0 fs-4 fs-md-2 fw-bold lh-sm letterSpc-8 text-title font-SerifTC">找尋附近的收容所</h3>
+                  <p class="flex-grow-1 mb-6 mb-md-0 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary text-md-start">Search Shelter</p>
+                </div>
+                <ul class="mb-6 mb-md-0 d-flex justify-content-center gap-4 list-unstyled">
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/icon/btn_previous_small.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/icon/btn_forward_small.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-lg-flex gap-7">
+                <ul class="order-2 d-md-flex gap-3 gap-lg-7 mb-7 mb-lg-0 list-unstyled">
+                  <li>
+                    <img src="../assets/images/img_search_1.png" class="img-fluid w-100 h-100 object-fit-cover" alt="">
+                  </li>
+                  <li class="d-none d-md-block">
+                    <img src="../assets/images/img_search_2.png" class="img-fluid w-100 h-100 object-fit-cover" alt="">
+                  </li>
+                </ul>
+                <div class="order-1 flex-grow-1 d-flex flex-column">
+                  <div class="mb-4">
+                    <h4 class="mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">縣市查詢</h4>
+                    <div class="dropdown">
+                      <button type="button" class=" btn-outline-inputBdr-light d-flex justify-content-between align-items-center py-3 px-2 w-100 bg-white text-text border border-inputBdr-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
+                          <span>全部</span>
+                        </div>
+                        <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
+                      </button>
+                      <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mb-9">
+                    <label for="shelterSearch" class="form-label mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">關鍵字查詢</label>
+                    <input type="text" class="form-control py-3 px-2 w-100 bg-white text-text border border-inputBdr-light" id="shelterSearch" placeholder="請輸入關鍵字">
+                  </div>
+                  <div class="mt-auto">
+                    <a href="#" class="btn btn-primary d-flex justify-content-between align-items-center py-3 px-4 border border-2 border-inputBdr-dark text-white">
+                      <span class="fs-7 fs-lg-9 lh-sm fw-medium letterSpc-8">前往浪貓之家</span>
+                      <img src="../assets/images/icon/arrow_sm.png" class="img-fluid" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- rule 區塊 -->
+      <section class="container mb-19 mb-lg-21">
+        <div class="mb-6 mb-md-11 text-center">
+          <h2 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">貓咪幸福守則</h2>
+          <p class="mb-3 mb-md-7 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">Happiness Rule</p>
+          <p class="mb-2 mb-md-4 fs-7 fs-md-9 lh-sm letterSpc-8">讓我們一起與貓咪共譜幸福篇章!</p>
+          <p class="mb-0 fs-7 fs-md-9 lh-sm letterSpc-8">給予每一個愛的時刻，陪伴他們一起快樂生活</p>
+        </div>
+        <ul class="row gy-6 gy-md-11 justify-content-center list-unstyled">
+          <li class="col-lg-10">
+            <div class="row flex-column-reverse flex-md-row g-0 border border-1 border-inputBdr-dark">
+              <div class="col-md-6 border border-1 border-inputBdr-dark">
+                <div class="d-flex flex-column p-7 p-md-13 h-100 bg-form-bg-color">
+                  <div>
+                    <h4 class="mb-1 mb-md-2 fs-6 fs-md-5 lh-sm letterSpc-8 text-primary">Rule 01</h4>
+                    <h3 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">迎接貓咪前準備</h3>
+                    <p class="mb-4 mb-md-9 fs-7 fs-md-9 letterSpc-8">呼嚕嚕，小貓咪即將到來<br> 我們該開始為他建立一個溫馨的小天地，<br> 讓貓咪在這裡快樂地打滾吧！立即創造快樂!</p>
+                  </div>
+                  <div class="mt-auto">
+                    <button type="button" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 ms-auto py-3 px-4 px-xl-7 border border-2 border-start-0 border-top-0 border-text">
+                      <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">立即創造快樂</span>
+                      <img src="../assets/images/icon/icon_arrow.svg" class="img-fluid" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="rule__img col-md-6 border border-1 border-inputBdr-dark">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <img src="../assets/images/img_1_web.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-10">
+            <div class="row flex-column-reverse flex-md-row-reverse g-0 border border-1 border-inputBdr-dark">
+              <div class="col-md-6 border border-1 border-inputBdr-dark">
+                <div class="d-flex flex-column p-7 p-md-13 h-100 bg-form-bg-color">
+                  <div>
+                    <h4 class="mb-1 mb-md-2 fs-6 fs-md-5 lh-sm letterSpc-8 text-primary">Rule 02</h4>
+                    <h3 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">照顧愛貓的健康</h3>
+                    <p class="mb-4 mb-md-9 fs-7 fs-md-9 letterSpc-8">照顧貓咪的健康不只是一種責任，更是一種愛的表現，<br> 看著他們活力四溢，尾巴高高揚起，是每天幸福的泉源，<br> 一起探索健康的祕密！</p>
+                  </div>
+                  <div class="ms-auto mt-auto">
+                    <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 py-3 px-4 px-xl-7 border border-2 border-start-0 border-top-0 border-text">
+                      <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">一起探索健康的秘密</span>
+                      <img src="../assets/images/icon/icon_arrow.svg" class="img-fluid" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="rule__img col-md-6 border border-1 border-inputBdr-dark">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <img src="../assets/images/img_2_web.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- faq 區塊 -->
+      <section class="faq py-9 py-md-17 position-relative">
+        <img src="../assets/images/bg_rule_1_web.png" class="faq__bg__left position-absolute bottom-100 d-none d-md-block object-fit-cover img-fluid" alt="">
+        <img src="../assets/images/bg_rule_2_web.png" class="faq__bg__right position-absolute bottom-100 d-none d-md-block object-fit-cover img-fluid" alt="">
+        <img src="../assets/images/bg_faq_mobile.png" class="faq__bg__right position-absolute bottom-100 d-md-none object-fit-cover img-fluid" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="p-7 p-xl-13 bg-form-bg-color border border-2 border-inputBdr-dark">
+                <div class="d-flex flex-column flex-md-row align-items-md-center flex-wrap gap-1 gap-xl-7 mb-6 mb-md-8 mb-xl-11">
+                  <h2 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 text-title font-SerifTC">領養常見問題</h2>
+                  <p class="mb-0 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">FAQ About Adoption</p>
+                </div>
+                <ul class="accordion accordion-flush border border-2 border-inputBdr-dark list-unstyled" id="accordionFlushExample">
+                  <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one">
+                        <span class="fw-medium lh-sm letterSpc-8">我可以先看看貓咪再決定是否認養嗎？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-one" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                  <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two">
+                        <span class="fw-medium lh-sm letterSpc-8">我住在公寓裡，可以認養貓咪嗎？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-two" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                  <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three">
+                        <span class="fw-medium lh-sm letterSpc-8">認養貓咪需要支付費用嗎？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-three" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                  <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-four">
+                        <span class="fw-medium lh-sm letterSpc-8">收容所的貓咪都有做健康檢查嗎？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-four" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                  <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-five">
+                        <span class="fw-medium lh-sm letterSpc-8">如果認養後我不能再照顧貓咪怎麼辦？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-five" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <h3 class="accordion-header" id="flush-headingOne">
+                      <button class="faq__button accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faq-six">
+                        <span class="fw-medium lh-sm letterSpc-8">貓咪需要定期去看獸醫嗎？</span>
+                        <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                      </button>
+                    </h3>
+                    <div id="faq-six" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
 
 
-    <!-- <%- include('./layout/footer'); -%> -->
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
