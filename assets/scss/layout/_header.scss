@@ -1,7 +1,15 @@
 .header{
+  a{
+    display: block;
+  }
   .logo-mobile{
     display: block;
     width: 65.532764%;
+  }
+  .fb,.ig{
+    &:hover{
+      box-shadow: 0 0 5px 3px $title;
+    }
   }
   .mobileBarbtn{
     transition: ease 1s;

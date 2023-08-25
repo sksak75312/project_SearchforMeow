@@ -163,5 +163,19 @@ $(document).ready(function () {
         e.preventDefault();
         $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
     });
+    //pagination
+    $('.pageMark').click(function (e) { 
+        e.preventDefault();
+        $(this).toggleClass('paginationActive');
+        $(this).parent().siblings().find('a').removeClass('paginationActive');
+    });
+    $('.backPage').click(function (e) { 
+        e.preventDefault();
+        
+    });
+    $('.nextPage').click(function (e) { 
+        e.preventDefault();
+        
+    });
 });
 
