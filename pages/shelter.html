@@ -10,22 +10,25 @@
     <%- include('./layout/header'); -%>
 
     <main class="shelter pt-7 pt-lg-13">
-        <div class="container">
+        <div class="container overflow-hidden">
             <div class="row flex-column">
-                <div class="col">
-                    <h1 class="fs-4 text-title fw-bold letterSpc-8 text-center mb-6 mb-lg-11 fs-md-2">
-                        <i class="fa-solid fa-house-chimney text-title"></i>
+                <div class="col d-flex justify-content-center mb-6 mb-lg-13">
+                    <span class="material-symbols-outlined heartIcon fs-2 text-primary fw-medium me-1 me-lg-2">
+                        ecg_heart
+                    </span>
+                    <h1 class="fs-4 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-0">
                         找尋附近的收容所 <br><span class="fs-5 text-primary letterSpc-8 fw-normal">Search Shelter</span>
                     </h1>
                 </div>
             </div>
-            <form action="" class="row flex-column flex-xl-row mb-4">
-                <div class="mb-4 mb-xl-9 col-xl-4 d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
-                    <label for="dropdown" class="form-label text-text fw-medium mb-2 fs-xl-6 me-lg-2">縣市查詢</label>
-                    <div class="dropdown d-flex">
-                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-3 border border-2 border-inputBdr-light d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-center mb-4 position-relative">
+                <img src="../assets/images/shelter/bg.png" alt="" class="position-absolute p-0 z-n1 d-none d-sm-block">
+                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
+                    <label for="dropdown" class="form-label text-text fw-medium fs-xl-6 mb-0 me-3">縣市<br>查詢</label>
+                    <div class="dropdown d-flex flex-fill">
+                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-2 border border-2 border-inputBdr-light d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             全部
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined expand_more">
                                 expand_more
                             </span>
                           </button>
@@ -39,12 +42,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mb-4 mb-xl-9 col-xl-5 d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
-                    <label for="keyWord" class="form-label text-text fw-medium mb-2 fs-xl-6 me-lg-2">關鍵字查詢</label>
-                    <input type="text" class="keyWord text-placeholder fw-medium fs-xl-6 border-inputBdr-light p-4" id="keyWord" placeholder="請輸入關鍵字">
+                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
+                    <label for="keyWord" class="form-label text-text fw-medium text-center fs-xl-6 mb-0 me-3">關鍵字<br>查詢</label>
+                    <input type="text" class="keyWord text-placeholder fw-medium fs-xl-6 border-inputBdr-light px-4 py-2 flex-fill" id="keyWord" placeholder="請輸入關鍵字">
                 </div>
-                <div class="mb-4 mb-lg-9 col-md-6 col-xl-3 align-self-md-end">
-                    <button type="submit" class="btn btn-primary text-white fs-xl-6 fw-medium border w-100 px-4 py-3 p-lg-4 border-inputBdr-dark border-2 d-flex align-items-center justify-content-between">前往流浪之家 <img src="../assets/images/icon/arrow_sm.png" alt="arrow icon" class="arrowBtn"></button>
+                <div class="mb-4 mb-md-9 col-md-4 col-lg-2 align-self-md-center">
+                    <button type="submit" class="btn btn-primary text-white fs-xl-6 fw-medium border w-100 px-4 py-2 border-inputBdr-dark border-2 d-flex align-items-center justify-content-center">查詢 <img src="../assets/images/icon/arrow_sm.png" alt="arrow icon" class="arrowBtn ms-9"></button>
                 </div>
             </form>
             <div class="row justify-content-center">
@@ -81,25 +84,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-5 g-xl-10">
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <div class="test"></div>
-                        <!-- <img src="../assets/images/shelter/1/1.png" class="card-img-top" alt="..."> -->
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             臺北市動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8" title="臺北市動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8" title="臺北市動物之家" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 臺北市內湖區安美街191號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-87913254" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:02-87913254" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -107,7 +109,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item1" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item1" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -152,23 +154,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <img src="../assets/images/shelter/2/1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             板橋公立動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/7yikxLHfcaLjzf388" title="板橋公立動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/7yikxLHfcaLjzf388" title="板橋公立動物之家" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 新北市板橋區板城路28-1號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:02-89662158" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:02-89662158" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -176,7 +178,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item2" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item2" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -221,23 +223,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <img src="../assets/images/shelter/3/1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             臺中南屯動物之家
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7" title="臺中南屯動物之家" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7" title="臺中南屯動物之家" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 臺中市南屯區中台路601號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:04-23850976" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:04-23850976" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -245,7 +247,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item3" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item3" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -290,23 +292,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <img src="../assets/images/shelter/4/1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             高雄壽山動物園區
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6" title="高雄壽山動物園區" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6" title="高雄壽山動物園區" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 高雄市鼓山區萬壽路350號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:07-5519059" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:07-5519059" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -314,7 +316,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item4" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item4" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -359,23 +361,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <img src="../assets/images/shelter/5/1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             臺東動物收容中心
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/WYSri1a3moSYiidg7" title="臺東動物收容中心" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/WYSri1a3moSYiidg7" title="臺東動物收容中心" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 臺東縣臺東市中華路4段999巷600號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:089-362011" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:089-362011" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -383,7 +385,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item5" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item5" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -428,23 +430,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-7">
-                    <div class="card border-inputBdr-dark border-2">
-                        <img src="../assets/images/shelter/6/1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 position-relative">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
                             澎湖動物收容中心
                             <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
                                 favorite
                             </span>
                         </h2>
-                            <a target="_blank" href="https://goo.gl/maps/qUXBdFp2SNfFtUB69" title="澎湖動物收容中心" class="d-flex align-items-center text-text mb-4 mb-lg-4">
+                            <a target="_blank" href="https://goo.gl/maps/qUXBdFp2SNfFtUB69" title="澎湖動物收容中心" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     location_on
                                 </span>
                                 澎湖縣馬公市烏崁里260、261號
                             </a>
-                            <a target="_blank" href="tel:0287913254" title="tell:06-9213559" class="d-flex align-items-center text-text">
+                            <a target="_blank" href="tel:0287913254" title="tell:06-9213559" class="d-flex align-items-center text-text mb-4">
                                 <span class="material-symbols-outlined me-1 text-primary">
                                     phone_in_talk
                                 </span>
@@ -452,7 +454,7 @@
                             </a>
                         </div>
                         <div class="card-footer p-0 border-0">
-                            <button class="btn btn-secondary fw-medium w-100 text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item6" type="button">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#item6" type="button">
                                 更多資訊
                                 <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="arrowBtn ms-11">
                             </button>
@@ -498,21 +500,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1">
-                <div class="col">
-                    <nav aria-label="Page navigation" class="d-flex justify-content-center pt-4">
-                        <ul class="pagination mb-0">
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-md-5 col-xl-3">
+                    <nav aria-label="Page navigation" class="pagination d-flex justify-content-center pt-16 position-relative">
+                        <img src="../assets/images/shelter/bg1.png" alt="cat pic" class="position-absolute z-n1 d-none d-lg-block">
+                        <ul class="pagination mb-0 w-100 d-flex justify-content-around">
                           <li class="page-item">
-                            <a class="page-link fs-lg-6 fw-medium" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
+                            <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0" href="#" aria-label="Previous">
+                                <i class="fa-solid fa-arrow-left"></i>
                             </a>
                           </li>
-                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link fs-lg-6 fw-medium" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0" href="#">3</a></li>
                           <li class="page-item">
-                            <a class="page-link fs-lg-6 fw-medium" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
+                            <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0" href="#" aria-label="Next">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </a>
                           </li>
                         </ul>
