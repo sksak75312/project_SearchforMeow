@@ -9,8 +9,11 @@
     
     <%- include('./layout/header'); -%>
 
-    <main class="shelter pt-7 pt-lg-13">
-        <div class="container">
+    <main class="shelter pt-7 pt-lg-13 overflow-hidden">
+        <div class="container position-relative">
+            <img src="../assets/images/shelter/cat_top.svg" alt="cat pic" class="catTop position-absolute p-0 z-n1 overflow-hidden d-none d-md-block">
+            <img src="../assets/images/shelter/cat_middle.svg" alt="cat pic" class="catMiddle position-absolute p-0 z-n1 overflow-hidden d-none d-md-block">
+            <img src="../assets/images/shelter/cat_bottom.svg" alt="cat pic" class="catBottom position-absolute z-n1 overflow-hidden d-none d-md-block">
             <div class="row flex-column">
                 <div class="col d-flex justify-content-center mb-6 mb-lg-13">
                     <span class="material-symbols-outlined shelterIcon fs-2 text-primary fw-medium me-1 me-lg-2">
@@ -21,8 +24,7 @@
                     </h1>
                 </div>
             </div>
-            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-center mb-4 position-relative">
-                <img src="../assets/images/shelter/cat_top.svg" alt="" class="position-absolute p-0 z-n1 d-none d-sm-block overflow-hidden">
+            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-center mb-4">
                 <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
                     <label for="dropdown" class="form-label text-text fw-medium fs-xl-6 mb-0 me-3">縣市<br>查詢</label>
                     <div class="dropdown d-flex flex-fill">
@@ -53,32 +55,32 @@
             <div class="row justify-content-center">
                 <ul class="list-group list-unstyled col-lg-6 align-self-lg-center d-flex justify-content-lg-between mb-9">
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end">
                             全部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end">
                             北部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end">
                             中部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end">
                             南部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center border-end">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end">
                             東部
                         </a>
                     </li>
                     <li class="list-group-item flex-fill">
-                        <a href="#" class="fw-medium w-100 text-center">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center">
                             離島
                         </a>
                     </li>
@@ -503,8 +505,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-8 col-sm-6 col-md-5 col-xl-3">
-                    <nav aria-label="Page navigation" class="pagination d-flex justify-content-center pt-16 position-relative">
-                        <img src="../assets/images/shelter/cat_bottom.svg" alt="cat pic" class="position-absolute z-n1 d-none d-lg-block">
+                    <nav aria-label="Page navigation" class="pagination d-flex justify-content-center pt-16">
                         <ul class="pagination mb-0 w-100 d-flex justify-content-around">
                           <li class="page-item">
                             <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0 backPage" href="#" aria-label="Previous">

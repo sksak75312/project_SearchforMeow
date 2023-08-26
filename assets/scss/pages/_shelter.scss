@@ -170,6 +170,19 @@
 }
 @include md{
     .shelter{
+        padding-bottom: 100px;
+        .catTop{
+            top: 90px;
+            left: 0px;
+        }
+        .catMiddle{
+            top: 650px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1920px;
+            left: -100px;
+        }
         form{
             img{
                 top: -45px;
@@ -189,6 +202,19 @@
 }
 @include lg{
     .shelter{
+        padding-bottom: 130px;
+        .catTop{
+            top: 55px;
+            left: -80px;
+        }
+        .catMiddle{
+            top: 480px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1795px;
+            left: -20px;
+        }
         .indexPic{
             height: 308px;
         }
@@ -197,16 +223,6 @@
         }
         .btn-secondary:hover{
             background-color: #fff !important;
-        }
-        form{
-            img{
-                top: -120px;
-                left: -40px;
-            }
-        }
-        .sleepCat{
-            right: -350px;
-            top: 100px;
         }
         .col-10{
             .indexPic{
@@ -255,21 +271,22 @@
                 width: 56.282723% !important;
             }
         }
-        .pagination{
-            img{
-                top: -210px;
-                left: -400px;
-            }
-        }
     }
 }
 @include xl{
     .shelter{
-        form{
-            img{
-                top: -95px;
-                left: -50px;
-            }
+        padding-bottom: 150px;
+        .catTop{
+            top: 75px;
+            left: -80px;
+        }
+        .catMiddle{
+            top: 540px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1300px;
+            left: 50px;
         }
         .modal-body{
             img{
