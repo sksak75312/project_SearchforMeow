@@ -89,7 +89,7 @@ $(document).ready(function () {
     });
     $('.two .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/2/3.png").css("width","100%");
+        $('.mainPic').attr("src","https://www.pet.gov.tw/Upload/pic/S1675848916403.png").css("width","100%");
     });
     $('.two .picItem4').click(function (e) { 
         e.preventDefault();

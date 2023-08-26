@@ -9,7 +9,7 @@
         border-color: #624E40;
         border-width: 0 2px 2px 0;
     }
-    .heartIcon{
+    .shelterIcon{
         padding-top: 4.8px;
     }
     h1{
@@ -124,7 +124,7 @@
         img{
             top: -100px;
             left: 100px;
-            transform: rotate(11deg);
+            //transform: rotate(11deg);
         }
     }
     .paginationActive{
@@ -238,10 +238,15 @@
                 height: 300px;
             }
         }
+        .card-footer{
+            .btn-secondary{
+                width: 56.282723% !important;
+            }
+        }
         .pagination{
             img{
-                top: -280px;
-                left: -320px;
+                top: -210px;
+                left: -400px;
             }
         }
     }
@@ -261,12 +266,6 @@
             }
             .mainPic{
                 height: 300px;
-            }
-        }
-        .pagination{
-            img{
-                top: -280px;
-                left: -400px;
             }
         }
     }
