@@ -28,3 +28,10 @@
 
   - layout # ejs 模板放置處
   - pages # 頁面放置處
+
+
+
+### WEI donate頁面需要注意事項
+-all.scss需要將bootstrap的carousel打開
+-all.scss要打開listgroup
+
