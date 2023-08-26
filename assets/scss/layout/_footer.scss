@@ -34,7 +34,7 @@
     }
   }
   .bottomBannerWeb{
-    background: url(../assets/images/bg_bottom_mobile.png) center center no-repeat;
+    //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
     background-size: cover;
     height: 192px;
   }
@@ -51,7 +51,7 @@
 @include md{
   .footer{
     .bottomBannerWeb{
-      background: url(../images/bg_bottom_web.png) center center no-repeat;
+      //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
       background-size: cover;
       height: 216px;
     }

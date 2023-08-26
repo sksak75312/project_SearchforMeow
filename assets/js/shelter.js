@@ -166,16 +166,18 @@ $(document).ready(function () {
     //pagination
     $('.pageMark').click(function (e) { 
         e.preventDefault();
-        $(this).toggleClass('paginationActive');
+        $(this).addClass('paginationActive');
         $(this).parent().siblings().find('a').removeClass('paginationActive');
     });
     $('.backPage').click(function (e) { 
         e.preventDefault();
-        
+        $(this).parent().siblings().find('.paginationActive').parent().prev().find('.pageMark').addClass('paginationActive');
+        $(this).parent().siblings().find('.paginationActive').parent().next().find('.pageMark').removeClass('paginationActive');
     });
     $('.nextPage').click(function (e) { 
         e.preventDefault();
-        
+        $(this).parent().siblings().find('.paginationActive').parent().next().find('.pageMark').addClass('paginationActive');
+        $(this).parent().siblings().find('.paginationActive').parent().prev().find('.pageMark').removeClass('paginationActive');
     });
 });
 
