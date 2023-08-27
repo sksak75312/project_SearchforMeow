@@ -29,9 +29,12 @@
       width: 40px;
       height: 40px;
     }
+    a:hover{
+      box-shadow: 0 0 5px 3px $title;
+    }
   }
   .bottomBannerWeb{
-    background: url(../assets/images/bg_bottom_mobile.png) center center no-repeat;
+    //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
     background-size: cover;
     height: 192px;
   }
@@ -48,7 +51,7 @@
 @include md{
   .footer{
     .bottomBannerWeb{
-      background: url(../images/bg_bottom_web.png) center center no-repeat;
+      //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
       background-size: cover;
       height: 216px;
     }

@@ -9,9 +9,6 @@
         border-color: #624E40;
         border-width: 0 2px 2px 0;
     }
-    .heartIcon{
-        padding-top: 4.8px;
-    }
     h1{
         font-family: "Noto Serif TC";
         span{
@@ -25,6 +22,18 @@
             top: -55px;
             left: 20px;
         }
+        input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $placeholder;
+            opacity: 1; /* Firefox */
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $placeholder;
+        }
+
+        .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: $placeholder;
+        }
     }
     .indexPic{
         height: 250px;
@@ -35,37 +44,37 @@
     }
     .col-10:nth-child(1){
         .indexPic{
-            background: url(../images/shelter/1/1.png) center center no-repeat $title;
+            background: url(../images/shelter/1/1.png) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(2){
         .indexPic{
-            background: url(../images/shelter/2/1.png) center center no-repeat $text;
+            background: url(../images/shelter/2/1.png) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(3){
         .indexPic{
-            background: url(../images/shelter/3/1.png) center center no-repeat $primary;
+            background: url(../images/shelter/3/1.png) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(4){
         .indexPic{
-            background: url(../images/shelter/4/1.png) center center no-repeat $secondary;
+            background: url(../images/shelter/4/1.png) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(5){
         .indexPic{
-            background: url(../images/shelter/5/1.png) center center no-repeat $text;
+            background: url(../images/shelter/5/1.png) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(6){
         .indexPic{
-            background: url(../images/shelter/6/1.png) center center no-repeat $text;
+            background: url(../images/shelter/6/1.png) center center no-repeat;
             background-size: cover;
         }
     }
@@ -124,8 +133,11 @@
         img{
             top: -100px;
             left: 100px;
-            transform: rotate(11deg);
+            //transform: rotate(11deg);
         }
+    }
+    .paginationActive{
+        background-color: #fff !important;
     }
 }
 @include sm{
@@ -155,6 +167,22 @@
 }
 @include md{
     .shelter{
+        padding-bottom: 100px;
+        .catTop{
+            top: 90px;
+            left: 0px;
+        }
+        .catMiddle{
+            top: 650px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1920px;
+            left: -100px;
+        }
+        .shelterIcon{
+            padding-top: 4.8px;
+        }
         form{
             img{
                 top: -45px;
@@ -174,6 +202,19 @@
 }
 @include lg{
     .shelter{
+        padding-bottom: 130px;
+        .catTop{
+            top: 55px;
+            left: -80px;
+        }
+        .catMiddle{
+            top: 480px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1795px;
+            left: -20px;
+        }
         .indexPic{
             height: 308px;
         }
@@ -183,46 +224,37 @@
         .btn-secondary:hover{
             background-color: #fff !important;
         }
-        form{
-            img{
-                top: -120px;
-                left: -40px;
-            }
-        }
-        .sleepCat{
-            right: -350px;
-            top: 100px;
-        }
         .col-10{
             .indexPic{
                 height: 255px;
-                background-blend-mode: darken;
                 transition: ease 0.5s;
             }
         }
         .col-xl-4:hover{
             .indexPic{
-                background-color: rgba($color: $title, $alpha: 0.2);
+                background-blend-mode: darken;
+                background-color: rgba($color: $title, $alpha: 0.7);
             }
         }
         .col-xl-4:nth-child(1):hover{
             .indexPic{
-                background-color: rgba($color: $text, $alpha: 0.2);
+                background-blend-mode: darken;
+                background-color: rgba($color: $text, $alpha: 0.7);
             }
         }
         .col-xl-4:nth-child(2):hover{
             .indexPic{
-                background-color: rgba($color: $primary, $alpha: 0.2);
+                background-color: rgba($color: $primary, $alpha: 0.7);
             }
         }
         .col-xl-4:nth-child(3):hover{
             .indexPic{
-                background-color: rgba($color: $secondary, $alpha: 0.2);
+                background-color: rgba($color: $secondary, $alpha: 0.7);
             }
         }
         .col-xl-4:nth-child(4):hover{
             .indexPic{
-                background-color: rgba($color: $text, $alpha: 0.2);
+                background-color: rgba($color: $text, $alpha: 0.7);
             }
         }
         .modal-body{
@@ -234,21 +266,27 @@
                 height: 300px;
             }
         }
-        .pagination{
-            img{
-                top: -280px;
-                left: -320px;
+        .card-footer{
+            .btn-secondary{
+                width: 56.282723% !important;
             }
         }
     }
 }
 @include xl{
     .shelter{
-        form{
-            img{
-                top: -95px;
-                left: -50px;
-            }
+        padding-bottom: 150px;
+        .catTop{
+            top: 75px;
+            left: -80px;
+        }
+        .catMiddle{
+            top: 540px;
+            right: -280px;  
+        }
+        .catBottom{
+            top: 1300px;
+            left: 50px;
         }
         .modal-body{
             img{
@@ -257,12 +295,6 @@
             }
             .mainPic{
                 height: 300px;
-            }
-        }
-        .pagination{
-            img{
-                top: -280px;
-                left: -400px;
             }
         }
     }

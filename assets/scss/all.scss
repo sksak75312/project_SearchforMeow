@@ -70,7 +70,9 @@
 // Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
-//shelter
-@import "./pages/shelter";
 //animate
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+//aos
+@import url('https://unpkg.com/aos@next/dist/aos.css');
+//shelter
+@import "./pages/shelter";
