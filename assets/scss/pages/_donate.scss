@@ -1,0 +1,324 @@
+/* TOC
+* CONTENTS............You're reading it!
+* BASE................donate頁面內的TAG基礎樣式
+* LAYOUT..............共通性樣式
+* MAIN................其餘各區塊樣式
+*/
+/*------------------------------------*\
+    $CONTENTS
+    參考https://github.com/doggy8088/CSS-Guidelines 的CSS撰寫風格
+    LAYOUT前面會有前綴l-*
+    為了不影響其他頁面，會包在最外層的.donate中
+\*------------------------------------*/
+
+.donate,
+.donate__plan {
+
+  // 最後要移除
+  // background-color: wheat;
+  * {
+    // outline: 1px solid red;
+  }
+
+  /*------------------------------------*\
+      $BASE
+  \*------------------------------------*/
+  .font-SpaceMono {
+    font-family: Space Mono;
+  }
+
+  .font-SerifTC {
+    font-family: Noto Serif TC;
+  }
+
+  // hover用變數
+  $primary-200: #F99D61;
+  $background-yellow: #FFFAEB;
+
+  .l-bg-background-yellow {
+    background-color: $background-yellow;
+  }
+
+  .l-letterSpc-16 {
+    letter-spacing: 0.16em;
+  }
+
+  .l-letterSpc-lg-24 {
+    @include lg {
+      letter-spacing: 0.24em;
+    }
+  }
+
+  .l-letterSpc-12 {
+    letter-spacing: 0.12em;
+  }
+
+  .l-letterSpc-lg-16 {
+    @include lg {
+      letter-spacing: 0.16em;
+    }
+  }
+
+  .l-fs-16 {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+  /*------------------------------------*\
+      $LAYOUT
+  \*------------------------------------*/
+  .l-pic-fixed-ratio {
+    position: relative;
+  }
+
+  .l-pic-fixed-ratio--hoverScale {
+    overflow: hidden;
+
+    img {
+      transition: transform .3s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .l-pic-fixed-ratio::before {
+    content: "";
+    display: block;
+  }
+
+  .l-pic-fixed-ratio--1to1::before {
+    padding-top: 100%;
+  }
+
+  .l-pic-fixed-ratio--3to4 {
+    padding-top: percentage(3/4);
+  }
+
+  .l-pic-fixed-ratio--9to16 {
+    padding-top: percentage(9/16);
+  }
+
+  .l-pic-fixed-ratio__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+    >img {
+      max-width: unset;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  img.l-object-fit-center-25 {
+    object-position: center 25%;
+  }
+
+
+  .l-modifier {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: inline-block;
+      z-index: 1;
+    }
+  }
+
+  .l-modifier-1 {
+    &::before {
+      content: url(../images/donate/modifier1.png);
+    }
+  }
+
+  .l-modifier-2 {
+    &::before {
+      content: url(../images/donate/modifier2.png);
+    }
+  }
+
+  .l-modifier-3 {
+    &::before {
+      content: url(../images/donate/modifier3.png);
+    }
+  }
+
+  .l-modifier-4 {
+    &::before {
+      content: url(../images/donate/modifier4.png);
+    }
+  }
+
+  .l-modifier-5 {
+    &::before {
+      content: url(../images/donate/modifier5.png);
+    }
+  }
+
+  .l-modifier-6 {
+    &::before {
+      content: url(../images/donate/modifier6.png);
+    }
+  }
+
+
+
+
+
+
+  /*------------------------------------*\
+      $MAIN
+  \*------------------------------------*/
+  .btn-primary {
+    border: 2px solid $inputBdr-dark;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: $primary-200;
+      border: 2px solid $inputBdr-dark;
+    }
+  }
+
+  .btn-secondary {
+    color: #4f4E4A;
+    font-weight: 500;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: $text;
+
+    &:hover {
+      color: $text;
+      background-color: transparent;
+      border-width: 0px 2px 2px 0px;
+      border-style: solid;
+      border-color: $text;
+    }
+  }
+
+
+
+
+  .faq {
+    background: url("../images/donate/faq_bg.jpg") no-repeat center/cover;
+
+    [aria-expanded="true"] {
+      background-color: $hover;
+    }
+
+    [data-bs-toggle="collapse"] {
+      h3 {
+        color: $primary;
+      }
+
+      .l-icon-expandmore {
+        display: none;
+      }
+
+      .l-icon-expandless {
+        display: block;
+      }
+
+      // 有collapsed代表收合狀態
+      &.collapsed {
+        h3 {
+          color: #000;
+        }
+
+        .l-icon-expandmore {
+          display: block;
+
+          &::before,
+          &::after {
+            background-color: #000;
+          }
+        }
+
+        .l-icon-expandless {
+          display: none;
+        }
+      }
+    }
+
+    .faq-list-item {
+      cursor: pointer;
+    }
+  }
+
+  .l-icon-expandless {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 2px;
+      width: 20px;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      background-color: $primary;
+    }
+  }
+
+  .l-icon-expandmore {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 2px;
+      width: 20px;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      background-color: $primary;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 2px;
+      width: 20px;
+      transform: translate(-50%, -50%) rotate(90deg);
+      border-radius: 10px;
+      background-color: $primary;
+    }
+  }
+
+
+
+  // donate__plan頁面
+  .donate__plan__selectPlan {
+    // BS5提供的list-group JS切換功能
+    a.list-group-item.active{
+      background-color: $primary;
+      color:white;
+    }
+  }
+
+}
