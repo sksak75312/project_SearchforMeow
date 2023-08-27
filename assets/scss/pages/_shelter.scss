@@ -128,12 +128,27 @@
                 cursor: pointer;
             }
         }
+        .btn-secondary{
+            border-width: 1px ;
+        }
     }
     .pagination{
-        img{
-            top: -100px;
-            left: 100px;
-            //transform: rotate(11deg);
+        .page-link{
+            border: 2px solid $text;
+            &:hover{
+                background-color: $hover !important;
+            }
+        }
+        .pageMark{
+            padding: 6px 15.045px;
+        }
+        .backPage{
+            border-width: 0 0 2px 2px;
+            padding: 8px 14px 6px 12px;
+        }
+        .nextPage{
+            border-width: 0 2px 2px 0;
+            padding: 8px 12px 6px 14px;
         }
     }
     .paginationActive{

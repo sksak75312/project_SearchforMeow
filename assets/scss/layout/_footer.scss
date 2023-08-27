@@ -25,12 +25,11 @@
     }
   }
   .media{
-    img{
-      width: 40px;
-      height: 40px;
+    .fb{
+      padding: 0 7.5px;
     }
     a:hover{
-      box-shadow: 0 0 5px 3px $title;
+      opacity: 50%;
     }
   }
   .bottomBannerWeb{

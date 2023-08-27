@@ -8,7 +8,10 @@
   }
   .fb,.ig{
     &:hover{
-      box-shadow: 0 0 5px 3px $title;
+      opacity: 50%;
+    }
+    &active{
+      opacity: 50%;
     }
   }
   .mobileBarbtn{
@@ -18,7 +21,7 @@
     top: 24px;
   }
   .bringHome{
-    border-width: 0 2px 2px 0;
+    border-width: 0 2px 2px 0 ;
   }
 }
 body{
@@ -26,6 +29,9 @@ body{
     transition: ease 0.5s;
     transform: translateY(-820px);
     opacity: 0;
+    .bringHome{
+      border-width: 0 2px 2px 0 ;
+    }
     .headerMenu{
       margin-bottom: 140px;
       a:hover{
