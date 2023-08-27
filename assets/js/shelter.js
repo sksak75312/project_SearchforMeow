@@ -31,6 +31,11 @@ $(document).ready(function () {
       
       });
     //dropdown
+    $('.shelter:not(.dropBtn)').on('click',function (e) { 
+        e.preventDefault();
+        $('.expand_more').toggleClass('active');
+    });
+    
     $('.dropBtn').click(function (e) { 
         e.preventDefault();
         $('.expand_more').toggleClass('active');
@@ -83,6 +88,16 @@ $(document).ready(function () {
             $('.material-symbols-outlined').removeClass('active');
         }, 20);
     });
+    
+
+    // $(document).on('click',':not(#dropdown)',function(){
+    //     $('.expand_more').parent().find('.active').removeClass('active');
+    // });
+    // $(".dropBtn").click(function(){
+    //     e.preventDefault();
+    //     stopPropagation();
+    // });
+
     //add favorite
     $('.favor').click(function (e) { 
         e.preventDefault();
