@@ -348,11 +348,22 @@
     content: "";
     height: 1px;
     width: 2px;
-    height: 225px;
+    height: 210px;
     background-color:$text;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 93%;
     left: 50%;
     z-index: 1;
+}
+
+
+//  按鈕
+.hr__linkbtn{
+    color: white;
+    background-color: $primary;
+    &:hover{
+        background: #F99D61;
+        color: white;
+    }
 }
