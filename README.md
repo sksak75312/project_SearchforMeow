@@ -33,5 +33,7 @@
 
 ### WEI donate頁面需要注意事項
 -all.scss需要將bootstrap的carousel打開
--all.scss要打開listgroup
+<!-- -all.scss要打開listgroup -->
+
+
 

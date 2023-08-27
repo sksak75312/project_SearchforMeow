@@ -11,7 +11,8 @@
     為了不影響其他頁面，會包在最外層的.donate中
 \*------------------------------------*/
 
-.donate {
+.donate,
+.donate__plan {
 
   // 最後要移除
   // background-color: wheat;
@@ -128,6 +129,52 @@
   }
 
 
+  .l-modifier {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: inline-block;
+      z-index: 1;
+    }
+  }
+
+  .l-modifier-1 {
+    &::before {
+      content: url(../images/donate/modifier1.png);
+    }
+  }
+
+  .l-modifier-2 {
+    &::before {
+      content: url(../images/donate/modifier2.png);
+    }
+  }
+
+  .l-modifier-3 {
+    &::before {
+      content: url(../images/donate/modifier3.png);
+    }
+  }
+
+  .l-modifier-4 {
+    &::before {
+      content: url(../images/donate/modifier4.png);
+    }
+  }
+
+  .l-modifier-5 {
+    &::before {
+      content: url(../images/donate/modifier5.png);
+    }
+  }
+
+  .l-modifier-6 {
+    &::before {
+      content: url(../images/donate/modifier6.png);
+    }
+  }
+
 
 
 
@@ -174,9 +221,10 @@
     }
 
     [data-bs-toggle="collapse"] {
-      h3{
-        color:$primary;
+      h3 {
+        color: $primary;
       }
+
       .l-icon-expandmore {
         display: none;
       }
@@ -190,6 +238,7 @@
         h3 {
           color: #000;
         }
+
         .l-icon-expandmore {
           display: block;
 
@@ -263,56 +312,13 @@
 
 
 
-
-
-
-
-
-  .l-modifier {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      display: inline-block;
-      z-index: 1;
+  // donate__plan頁面
+  .donate__plan__selectPlan {
+    // BS5提供的list-group JS切換功能
+    a.list-group-item.active{
+      background-color: $primary;
+      color:white;
     }
   }
-
-  .l-modifier-1 {
-    &::before {
-      content: url(../images/donate/modifier1.png);
-    }
-  }
-
-  .l-modifier-2 {
-    &::before {
-      content: url(../images/donate/modifier2.png);
-    }
-  }
-
-  .l-modifier-3 {
-    &::before {
-      content: url(../images/donate/modifier3.png);
-    }
-  }
-
-  .l-modifier-4 {
-    &::before {
-      content: url(../images/donate/modifier4.png);
-    }
-  }
-
-  .l-modifier-5 {
-    &::before {
-      content: url(../images/donate/modifier5.png);
-    }
-  }
-
-  .l-modifier-6 {
-    &::before {
-      content: url(../images/donate/modifier6.png);
-    }
-  }
-
 
 }
