@@ -38,9 +38,10 @@
     width: 95%;
     position: relative;
     max-width: 900px;
-    box-shadow: 0px 10px 20px rgba(64, 57, 45, 0.2);
+    box-shadow: 0px 14px 80px rgba(64, 57, 45, 0.2);
     height: 400px;
     transition: all .3s;
+
 
     @media screen and (max-width: 992px) {
         max-width: 680px;
@@ -61,7 +62,7 @@
     &__item {
 
         &.swiper-slide-active {
-            .danger-slider__img {
+            .dnager-slider__img {
                 img {
                     opacity: 1;
                     transition-delay: .3s;
@@ -78,6 +79,7 @@
                             transition-delay: $i * 0.1 + 0.3s;
                         }
                     }
+
                 }
             }
         }
@@ -110,6 +112,7 @@
             opacity: 0;
             transition: all .3s;
         }
+
 
         @media screen and (max-width: 992px) {
             width: 45%;
@@ -177,7 +180,6 @@
             width: 100%;
         }
 
-     }
     }
 
     .swiper-container-horizontal>.swiper-pagination-bullets,
@@ -240,6 +242,8 @@
         }
 
     }
+
+}
 
 
 
