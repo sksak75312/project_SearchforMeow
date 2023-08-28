@@ -1,7 +1,11 @@
 // 第一部分
 .hr__01mainimg{
-    width: 800px;
-    height: 800px;
+    width: 332px;
+    height: 338px;
+    @include md{
+        width: 800px;
+        height: 800px;
+    }
 }
 .hr__02footimg{
     position: relative;
