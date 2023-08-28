@@ -62,10 +62,8 @@
       font-size: 16px !important;
     }
     .bringHome{
-      //width: 91.836735%;
-      //border-color: $text !important;
       &:hover{
-        background: white !important;
+        background: transparent !important;
         border-color: $text !important;
         color: $text !important;
       }

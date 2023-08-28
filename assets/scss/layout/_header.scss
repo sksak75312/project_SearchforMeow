@@ -50,11 +50,14 @@ body{
     .col-lg-7{
       background-color: #FFFDF8;
     }
+    .fb>i,.ig>i{
+      font-size: 40px !important;
+    }
     .bringHome{
       color: #4F4E4A !important;
       border-color: $text !important;
       &:hover{
-        background: white !important;
+        background: transparent !important;
         border-color: $text !important;
         color: $text !important;
       }
