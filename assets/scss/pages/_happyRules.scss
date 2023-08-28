@@ -44,7 +44,7 @@
 
     @media screen and (max-width: 992px) {
         max-width: 680px;
-        height: 420px;
+        height: 400px;
     }
 
     @media screen and (max-width: 768px) {
@@ -59,7 +59,7 @@
     }
 
     &__item {
-        max-width:900px;
+
         &.swiper-slide-active {
             .danger-slider__img {
                 img {
