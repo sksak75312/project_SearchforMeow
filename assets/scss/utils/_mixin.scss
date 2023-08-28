@@ -1,3 +1,9 @@
+@mixin xxl {
+    @media(min-width:map-get($grid-breakpoints, xxl)) {
+        @content;
+    }
+}
+
 @mixin xl {
     @media(min-width:map-get($grid-breakpoints, xl)) {
         @content;

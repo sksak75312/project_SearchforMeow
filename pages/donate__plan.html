@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="donate__plan mt-7 mt-lg-13">
+      <div class="container">
+        <div class="donate__plan__selectPlan">
+          <div class="row">
+            <div class="col-12 col-md-8 col-xl-6">
+              <div class="p-4 border border-2 border-inputBdr-dark">
+                <div class="list-group d-flex" role="tablist">
+                  <a class="list-group-item list-group-item-action active w-50 text-center  py-1 py-md-2"
+                    id="list-home-list" data-bs-toggle="list" href="#selectPlan_once" role="tab"
+                    aria-controls="list-home">單次捐款</a>
+                  <a class="list-group-item list-group-item-action w-50 text-center py-1 py-md-2" id="list-profile-list"
+                    data-bs-toggle="list" href="#selectPlan_regular" role="tab" aria-controls="list-profile">每月定期捐款</a>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="selectPlan_once" role="tabpanel">
+                    <h3 class="mb-0 fs-6 fs-lg-4">點選金額或自訂金額</h3>
+                    <table class="table table-hover mb-0">
+                      <tbody>
+                        <tr class="border-top border-2 border-inputBdr-dark ">
+                          <th scope="row" class="ps-0" data-dollars="300">NTD300</th>
+                          <td class="pe-0 text-end">幫助貓貓</td>
+                        </tr>
+                        <tr class="border-top border-bottom border-1 border-inputBdr-dark">
+                          <th scope="row" class="ps-0" data-dollars="600">NTD600</th>
+                          <td class="pe-0 text-end">幫助兩倍的貓貓</td>
+                        </tr>
+                        <tr class="border-bottom border-1 border-inputBdr-dark">
+                          <th scope="row" class="ps-0" data-dollars="1500">NTD1500</th>
+                          <td class="pe-0 text-end">幫助很多貓貓</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
+                      <label for="once_count" class="me-2 flex-shrink-0">自訂金額</label>
+                      <input type="tel" name="counts" id="once_count" placeholder="請輸入" class="">
+                    </div>
+                    <div class="mt-2 mt-lg-4">
+                      <p>選擇付款方式</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="once_creditCard" id="once_creditCard">
+                        <label class="form-check-label" for="once_creditCard">信用卡</label>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-primary" type="submit">下一步</button>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="selectPlan_regular" role="tabpanel">
+                    <h3 class="mb-0 fs-6 fs-lg-4">點選金額或自訂金額</h3>
+                    <table class="table table-hover mb-0">
+                      <tbody>
+                        <tr class="border-top border-2 border-inputBdr-dark ">
+                          <th scope="row" class="ps-0" data-dollars="300">NTD300</th>
+                          <td class="pe-0 text-end">每天只要10元</td>
+                        </tr>
+                        <tr class="border-top border-bottom border-1 border-inputBdr-dark">
+                          <th scope="row" class="ps-0" data-dollars="600">NTD600</th>
+                          <td class="pe-0 text-end">每天不到20元</td>
+                        </tr>
+                        <tr class="border-bottom border-1 border-inputBdr-dark">
+                          <th scope="row" class="ps-0" data-dollars="1500">NTD1500</th>
+                          <td class="pe-0 text-end">每天只要一杯咖啡的錢</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
+                      <label for="regular_count" class="me-2">自訂金額</label>
+                      <input type="tel" name="counts" id="regular_count" placeholder="請輸入" value="">
+                    </div>
+                    <div class="mt-2 mt-lg-4">
+                      <p>選擇付款方式</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="regular_creditCard" id="regular_creditCard">
+                        <label class="form-check-label" for="regular_creditCard">信用卡</label>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-primary" type="submit">下一步</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+      <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+      <!-- jQuery  -->
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- AOS-init -->
+      <script>
+        AOS.init();
+      </script>
+      <!-- personal -->
+      <script>
+        document.querySelectorAll('#selectPlan_regular table tr').forEach(item => {
+          item.addEventListener('click',function(){
+            // console.log(this.querySelector('th').dataset.dollars);
+            const target=document.querySelector('#regular_count');
+            target.setAttribute('value',this.querySelector('th').dataset.dollars);
+          })
+        });
+        document.querySelectorAll('#selectPlan_once table tr').forEach(item => {
+          item.addEventListener('click',function(){
+            // console.log(this.querySelector('th').dataset.dollars);
+            const target=document.querySelector('#once_count');
+            target.setAttribute('value',this.querySelector('th').dataset.dollars);
+          })
+        });
+
+        
+
+      </script>
+</body>
+
+</html>

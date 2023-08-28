@@ -3,7 +3,7 @@
     width: 332px;
     height: 338px;
     @include md{
-        width: 800px;
+        width: 700px;
         height: 800px;
     }
 }
@@ -11,14 +11,16 @@
     position: relative;
 }
 .hr__02footimg::before{
-    content: " ";
-        position: absolute;
-        width: 646px;
-        height: 152px;
-        background-image: url("../images/happyRulesImages/Page5_foot-2.svg");
-        background-repeat: no-repeat;
-        left: 60%;
-        top: 550%;
+    @include md {
+        content: " ";
+            position: absolute;
+            width: 646px;
+            height: 152px;
+            background-image: url("../images/happyRulesImages/Page5_foot-2.svg");
+            background-repeat: no-repeat;
+            left: 60%;
+            top: 550%;
+    }
 }
 // 第二部分
 .hr__mouse{
@@ -399,3 +401,4 @@
         color: white;
     }
 }
+

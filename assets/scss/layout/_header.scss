@@ -1,7 +1,15 @@
 .header{
+  a{
+    display: block;
+  }
   .logo-mobile{
     display: block;
     width: 65.532764%;
+  }
+  .fb,.ig{
+    &:hover{
+      box-shadow: 0 0 5px 3px $title;
+    }
   }
   .mobileBarbtn{
     transition: ease 1s;
@@ -12,8 +20,10 @@
   .bringHome{
     border-width: 0 2px 2px 0;
   }
-  .dropMenu{
-    transition: ease 1s;
+}
+body{
+  .headerDropMenu{
+    transition: ease 0.5s;
     transform: translateY(-820px);
     opacity: 0;
     .headerMenu{
@@ -23,14 +33,10 @@
       }
     }
   }
-  .dropDown{
+  .h-dropDown{
     opacity: 1;
-    transform: translateY(0px);
-    transition: ease 1s;
-  }
-  .dropUp{
-    transform: translateY(-820px);
-    opacity: 0;
+    transform: translateY(-96px);
+    transition: ease 0.5s;
   }
 }
 @include lg{
@@ -61,9 +67,10 @@
         display: block;
         padding: 14.5px 0;
         &:hover{
-          color: $hover !important;
+          opacity: 50%;
         }
         &:active{
+          opacity: 1;
           border: 2px solid $title;
           color: $title !important;
           padding: 12.5px 0;

@@ -1,4 +1,84 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  a{
+    display: block;
+  }
+  col:nth-child(1){
+    width: 55.840456%;
+  }
+  .bringHome{
+    border-width: 0 2px 2px 0;
+    color: #4F4E4A;
+  }
+  .list-group-item{
+    width: 27.350427%;
+    a{
+      padding: 14.5px 0;
+      &:hover{
+        opacity: 50%;
+      }
+      &:active{
+        opacity: 1;
+        border: 2px solid $title;
+        color: $title !important;
+        padding: 12.5px 0;
+      }
+    }
+  }
+  .media{
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    a:hover{
+      box-shadow: 0 0 5px 3px $title;
+    }
+  }
+  .bottomBannerWeb{
+    //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
+    background-size: cover;
+    height: 192px;
+  }
+  .toTop{
+    width: 48px;
+    height: 48px;
+    right: 32px;
+    bottom: 0;
+    i{
+      font-size: 16px;
+    }
+  }
+}
+@include md{
+  .footer{
+    .bottomBannerWeb{
+      //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
+      background-size: cover;
+      height: 216px;
+    }
+  }
+}
+@include lg{
+  .footer{
+    a{
+      font-size: 16px !important;
+    }
+    .bringHome{
+      //width: 91.836735%;
+      //border-color: $text !important;
+      &:hover{
+        background: white !important;
+        border-color: $text !important;
+        color: $text !important;
+      }
+    }
+    .list-group-item{
+      width: 17.251756%;
+    }
+    .list-group-item:nth-child(6){
+      width: 13.738876%;
+    }
+  }
+}
+@include xl{
+  
 }

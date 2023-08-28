@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.97 33.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f0cb9c;
+        stroke-dasharray: 0 6;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m0,31.47s14.3-1.06,21.81-15.19C29.31,2.15,12.71.48,10.01,5.81c-2.7,5.33-2.08,17.77,14.74,16.83,16.82-.95,24.23-25.29,24.23-25.29"/>
+</svg>

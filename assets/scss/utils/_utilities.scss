@@ -119,6 +119,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true,
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -162,11 +163,14 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
         25: 25%,
+        40: 40%,
         50: 50%,
+        60: 60%,
         75: 75%,
         100: 100%,
         auto: auto
@@ -471,6 +475,7 @@ $utilities: map-merge(
       values: italic normal
     ),
     "font-weight": (
+      responsive: true,
       property: font-weight,
       class: fw,
       values: (
@@ -484,6 +489,7 @@ $utilities: map-merge(
       )
     ),
     "line-height": (
+      responsive: true,
       property: line-height,
       class: lh,
       values: (
@@ -646,6 +652,7 @@ $utilities: map-merge(
     ),
     // scss-docs-end utils-visibility
 
+    //customer
     "letter-spacing": (
       responsive: true,
       property: letter-spacing,
@@ -655,7 +662,32 @@ $utilities: map-merge(
         8: 0.08em,
         10: 0.1em,
       )
-    )
+    ),
+
+    "z-index": (
+      responsive: true,
+      property: z-index,
+      class: z,
+      values: (
+        n1: -1,
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3
+      )
+    ),
+
+    "object-fit": (
+      responsive: true,
+      property: object-fit,
+      values: (
+        contain: contain,
+        cover: cover,
+        fill: fill,
+        scale: scale-down,
+        none: none,
+      )
+    ),
   ),
   $utilities
 );
