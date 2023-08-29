@@ -83,6 +83,21 @@ $(document).ready(function () {
             $('.material-symbols-outlined').removeClass('active');
         }, 20);
     });
+    
+    $(':not(.dropBtn)').on('click',function (e) { 
+        //e.preventDefault();
+        $('.expand_more').removeClass('active');
+    });
+    
+
+    // $(document).on('click',':not(#dropdown)',function(){
+    //     $('.expand_more').parent().find('.active').removeClass('active');
+    // });
+    // $(".dropBtn").click(function(){
+    //     e.preventDefault();
+    //     stopPropagation();
+    // });
+
     //add favorite
     $('.favor').click(function (e) { 
         e.preventDefault();
@@ -107,7 +122,7 @@ $(document).ready(function () {
     });
     $('.one .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //two
     $('.two .picItem1').click(function (e) { 
@@ -124,7 +139,7 @@ $(document).ready(function () {
     });
     $('.two .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //three
     $('.three .picItem1').click(function (e) { 
@@ -141,7 +156,7 @@ $(document).ready(function () {
     });
     $('.three .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //four
     $('.four .picItem1').click(function (e) { 
@@ -158,7 +173,7 @@ $(document).ready(function () {
     });
     $('.four .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //five
     $('.five .picItem1').click(function (e) { 
@@ -175,7 +190,7 @@ $(document).ready(function () {
     });
     $('.five .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //six
     $('.six .picItem1').click(function (e) { 
@@ -192,7 +207,7 @@ $(document).ready(function () {
     });
     $('.six .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text=準備中&font=noto").css("width","100%");
+        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
     });
     //pagination
     $('.pageMark').click(function (e) { 
