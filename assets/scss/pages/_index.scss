@@ -13,9 +13,37 @@
     background: $form-bg-color;
   }
 
+  .cutover__effect {
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
   // search 區塊
   .search {
-    &__heart {
+
+    &__img {
+      height: 305px;
+
+      &__link:hover {
+        .search__heart {
+          display: block !important;
+          color: $red;
+          animation: heartScale 1s infinite;
+        }
+
+        .search__heartBorder {
+          display: none;
+        }
+      } 
+    }
+
+    &__heartBorder, &__heart {
       top: 16px;
       right: 16px;
     }
@@ -44,6 +72,10 @@
   // shelter 區塊
   .hmShelter {
     background: url("../assets/images/shelter_bg_mobile.png") no-repeat center/cover;
+
+    &__img {
+      height: 265px;
+    }
   }
 
   // rule 區塊
@@ -57,6 +89,7 @@
 
     &__button.accordion-button:not(.collapsed) {
       background: $hover;
+      box-shadow: none;
     }
 
     &__button:focus {
@@ -77,6 +110,10 @@
       z-index: -1;
     }
   }
+  
+  .searchBar__placeholder::placeholder {
+    color: $placeholder;
+  }
 }
 
 @include md {
@@ -89,7 +126,8 @@
         top: 50%;
         content: "";
         height: 1px;
-        background: $tertiary;
+        background: $text;
+        border-radius: 10px;
       }
 
       &:first-of-type::after { 
@@ -189,5 +227,25 @@
         width: 398px;
       }
     }
+  }
+}
+
+.rotate__up {
+  transition: transform .3s linear;
+  transform: rotate(180deg);
+}
+
+.rotate__down {
+  transition: transform .3s linear;
+  transform: rotate(0);
+}
+
+@keyframes heartScale {
+  50% {
+    transform: scale(1.20);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
