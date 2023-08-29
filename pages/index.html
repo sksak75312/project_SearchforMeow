@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>搜趣找貓</title>
-    <link rel="shortcut icon" href="../assets/images/happyRulesImages/Page5_01.svg" type="image/x-icon">
+    <title>搜趣找貓-提供各地收容所、貓咪資料以及認養服務的貓咪專屬平台</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"/>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -15,43 +16,51 @@
 
       <!-- banner 區塊 -->
       <section class="banner container mb-19 mb-lg-21">
-        <img src="../assets/images/banner_mobile.png" class="img-fluid d-md-none mb-3" alt="">
-        <img src="../assets/images/banner_web.png" class="img-fluid d-none d-md-block mb-7" alt="">
+        <img src="../assets/images/banner_mobile.png" class="img-fluid d-md-none mb-3" data-aos="zoom-in-up" data-aos-duration="1200" alt="">
+        <img src="../assets/images/banner_web.png" class="img-fluid d-none d-md-block mb-7" data-aos="zoom-in-up" data-aos-duration="1200" alt="">
         <div class="col-10 col-sm-12 mb-6 mb-md-11 mx-auto text-center">
-          <h1 class="mb-1 fs-3 fs-md-2 fs-lg-8 fs-xl-1 fw-bold fw-md-semibold lh-sm letterSpc-8 font-SerifTC  text-tertiary"><span class="text-primary">流浪</span>的結束，是<span class="text-primary">愛</span>的開始</h1>       
-          <p class="banner__text col-12 col-md-9 col-xxl-8 mx-auto mb-1 fs-6 fs-lg-4 lh-sm letterSpc-8 text-md-start text-capitalize text-tertiary">search for meow</p>
-          <p class="banner__text col-8 col-sm-12 col-md-9 col-xxl-8 mx-auto mb-1 fs-5 fs-lg-3 fw-bold lh-sm letterSpc-8 text-md-end font-SerifTC text-tertiary">從流浪到幸福，與貓咪共創美好</p>
+          <h1 class="mb-1 fs-3 fs-md-2 fs-lg-8 fs-xl-1 fw-bold fw-md-semibold lh-sm letterSpc-8 font-SerifTC text-tertiary"  data-aos="zoom-in-down" data-aos-duration="1500"><span class="text-primary">流浪</span>的結束，是<span class="text-primary">愛</span>的開始</h1>       
+          <p class="banner__text col-12 col-md-9 col-xxl-8 mx-auto mb-1 fs-6 fs-lg-4 lh-sm letterSpc-8 text-md-start text-capitalize" data-aos="fade-left" data-aos-duration="1500">search for meow</p>
+          <p class="banner__text col-8 col-sm-12 col-md-9 col-xxl-8 mx-auto mb-1 fs-5 fs-lg-3 fw-bold lh-sm letterSpc-8 text-md-end font-SerifTC" data-aos="fade-right" data-aos-duration="1500">從流浪到幸福，與貓咪共創美好</p>
         </div>
-        <div class="col-md-9 col-xxl-8 mx-auto p-4 border border-inputBdr-dark bg-form-bg-color">
-          <div class="row g-xl-7">
-            <div class="col-md-6 col-lg-4 pe-md-0">
-              <div class="dropdown">
-                <button class="btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center gap-2 py-3 py-lg-4 px-2 w-100 bg-white text-text border border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
-                  <span class="flex-grow-1 fs-7 fs-lg-9 fw-medium lh-sm text-start letterSpc-8">選擇地區</span>
-                  <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li><a class="dropdown-item" href="#">待新增內容</a></li>
-                </ul>
+        <div class="col-md-9 col-xxl-8 mx-auto p-4 border border-2 border-inputBdr-dark bg-form-bg-color" data-aos="zoom-out-up" data-aos-duration="800">
+          <div class="row g-7">
+            <div class="col-lg-8">
+              <div class="row g-0 border border-1 border-inputBdr-light">
+                <div class="col-md-6">
+                  <div class="dropdown">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 py-lg-4 px-2 bg-white w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
+                        <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇地區</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                      <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="dropdown">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 py-lg-4 px-2 bg-white w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/images/icon/icon_house.svg" class="img-fluid" alt="">
+                        <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇收容所</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                      <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-5 mb-7 mb-lg-0 ps-md-0">
-              <div class="dropdown">
-                <button class="btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center gap-2 py-3 py-lg-4 px-2 w-100 bg-white text-text border border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="../assets/images/icon/icon_house.svg" class="img-fluid" alt="">
-                  <span class="flex-grow-1 fs-7 fs-lg-9 fw-medium lh-sm text-start letterSpc-8">選擇收容所</span>
-                  <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li><a class="dropdown-item" href="#">待新增內容</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-xl-3">
+            <div class="col-lg-4">
               <a href="#" class="btn btn-primary d-flex justify-content-between align-items-center py-3 px-4 h-100 border border-2 border-inputBdr-dark text-white">
                 <span class="fs-7 fs-lg-9 lh-sm fw-medium letterSpc-8">前往浪貓之家</span>
-                <img src="../assets/images/icon/arrow_sm.png" class="img-fluid" alt="">
+                <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
               </a>
             </div>
           </div>
@@ -65,8 +74,8 @@
           <div class="col-md-10 mx-auto">
             <div class="row text-center text-md-start">
               <div class="col-lg-6 d-flex flex-column justify-content-end">
-                <h2 class="mb-0 fs-4 fs-xl-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">我們將貓咪流浪的結束視為愛的開始</h2>
-                <p class="mb-6 mb-lg-11 fs-5 fs-xl-4 lh-sm letterSpc-8 text-primary">Our Purpose</p>
+                <h2 class="fs-4 fs-xl-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">我們將貓咪流浪的結束視為愛的開始</h2>
+                <h3 class="mb-6 mb-lg-11 fs-5 fs-xl-4 lh-sm letterSpc-8 text-primary">Our Purpose</h3>
                 <p class="mb-4 fs-7 fs-xl-9 letterSpc-8">不僅僅是一個檢索網站，更承載我們對流浪貓咪的關心和熱愛。期待著和您一起，凝聚愛的力量，為每一隻流浪貓咪帶來幸福的結局。</p>
                 <p class="mb-0 fs-7 fs-xl-9 letterSpc-8">無論是提供信息、支持領養或是分享您的故事，您的參與都將為這個世界上的每一個小生命帶來無盡的希望和愛。</p>
               </div>
@@ -85,200 +94,305 @@
         <img src="../assets/images/bg_shelter_mobile.png" class="search__bg__bottom position-absolute" alt="">
         <div class="container">
           <div class="text-center">
-            <h3 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">心願貓咪尋覓所</h3>
-            <p class="mb-6 mb-md-11 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">Search For Cat Shelter</p>
+            <h3 class="fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">心願貓咪尋覓所</h3>
+            <h4 class="mb-6 mb-md-11 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">Search For Cat Shelter</h4>
           </div>
-          <form class="row gy-7 gx-3 gx-lg-7">
-            <div class="col-md-7">
-              <div class="d-flex flex-column p-7 p-lg-13 border border-2 border-inputBdr-dark bg-form-bg-color h-100">
-                <div class="d-xl-flex flex-wrap gap-lg-7 gap-xl-16 pb-6 mb-6 border-bottom border-1">
-                  <h4 class="mb-4 mb-xl-0 fs-6 fs-lg-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">哪裡找貓咪</h4>
-                  <div class="flex-grow-1 row g-3 g-xl-7">
-                    <div class="col-md-6 col-xl-5">
-                      <div class="dropdown">
-                        <h5 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">收容所縣市</h5>
-                        <button class="btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center gap-2 py-3 py-lg-4 px-2 w-100 bg-white text-text border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
-                          <span class="flex-grow-1 flex-shrink-0 fs-7 fs-lg-9 fw-medium lh-sm text-start letterSpc-8">所在地區</span>
-                          <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
-                        </button>
-                        <ul class="dropdown-menu w-100">
-                          <li><a class="dropdown-item" href="#">待新增內容</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-xl-7">
-                      <div class="dropdown">
-                        <h5 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">收容所</h5>
-                        <button class="btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center gap-2 py-3 py-lg-4 px-2 w-100 bg-white text-text border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="../assets/images/icon/icon_house.svg" class="img-fluid" alt="">
-                          <span class="flex-grow-1 fs-7 fs-lg-9 fw-medium lh-sm text-start letterSpc-8">選擇收容所</span>
-                          <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
-                        </button>
-                        <ul class="dropdown-menu w-100">
-                          <li><a class="dropdown-item" href="#">待新增內容</a></li>
-                        </ul>
+          <div class="row gy-7">
+            <div class="col-lg-7">
+              <form class="p-7 p-xxl-13 d-flex flex-column border border-2 border-inputBdr-dark bg-form-bg-color h-100">
+                <div class="mb-6 mb-lg-7 pb-6 pb-lg-7 border-bottom border-1">
+                  <div class="row">
+                    <h5 class="col-lg-5 col-xl-4 mb-4 fs-6 fs-lg-5  fw-bold lh-sm letterSpc-8 font-SerifTC text-title">哪裡找貓咪</h5>
+                    <div class="col-lg-7 col-xl-8">
+                      <div class="row gy-3 gx-7">
+                        <div class="col-xl-5">
+                          <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">收容所縣市</h6>
+                          <div class="dropdown">
+                            <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 py-lg-4 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
+                                <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">所在地區</span>
+                              </div>
+                              <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                              <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-xl-7">
+                          <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">收容所</h6>
+                          <div class="dropdown">
+                            <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 py-lg-4 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_house.svg" class="img-fluid" alt="">
+                                <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇收容所</span>
+                              </div>
+                              <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                              <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="d-xl-flex gap-9 mb-4 pb-4 border-bottom border-1">
-                  <h4 class="mb-4 fs-6 fs-lg-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">喜歡哪種貓貓</h4>
-                  <div class="flex-grow-1">
-                    <div class="dropdown mb-3">
-                      <h5 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">偏好的貓咪花色</h5>
-                      <button class="btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center gap-2 py-3 py-lg-4 px-2 w-100 bg-white text-text border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/images/icon/icon_meow.svg" class="img-fluid" alt="">
-                        <span class="flex-grow-1 fs-7 fs-lg-9 fw-medium lh-sm text-start letterSpc-8">選擇花色</span>
-                        <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
-                      </button>
-                      <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item" href="#">待新增內容</a></li>
-                      </ul>
-                    </div>
-                    <div class="mb-3">
-                      <h5 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">選擇性別</h5>
-                      <div class="d-flex gap-7">
-                        <div class="form-check">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="male">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="male">
-                            男孩
-                          </label>
+                <div class="mb-6 mb-lg-7 pb-6 pb-lg-7 border-bottom border-1">
+                  <div class="row">
+                    <h5 class="col-lg-5 col-xl-4 mb-4 fs-6 fs-lg-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-title">喜歡哪種貓貓</h5>
+                    <div class="col-lg-7 col-xl-8">
+                      <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">偏好的貓咪花色</h6>
+                      <div class="dropdown">
+                        <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between mb-3 py-3 py-lg-4 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="d-flex align-items-center gap-2">
+                            <img src="../assets/images/icon/icon_meow.svg" class="img-fluid" alt="">
+                            <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇花色</span>
+                          </div>
+                          <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                          <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                        </ul>
+                      </div>
+                      <div class="mb-3 mb-lg-7">
+                        <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">選擇性別</h6>
+                        <div class="row">
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light m-0" type="checkbox" value="" id="male" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="male">
+                              男孩
+                            </label>
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="female" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="female">
+                              女孩
+                            </label>
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="all" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="all">
+                              都好
+                            </label>
+                          </div>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="female">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="female">
-                            女孩
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="all">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="all">
-                            都好
-                          </label>
+                      </div>
+                      <div>
+                        <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">選擇年齡</h6>
+                        <div class="row gy-3">
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="kitten" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="kitten">
+                              幼貓
+                            </label>
+                          </div>
+                          <div class="col-8 col-md-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="adolescentCat" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="adolescentCat">
+                              青少年貓
+                            </label>
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="adultCat" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="adultCat">
+                              成貓
+                            </label>
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2">
+                            <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="matureCat" style="width: 24px; height: 24px; border-width: 2px;">
+                            <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="matureCat">
+                              熟齡貓
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="row mb-11">
+                  <h5 class="col-lg-5 col-xl-4 mb-4 fs-6 fs-lg-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-title">其他</h5>
+                  <div class="col-lg-7 col-xl-8">
                     <div>
-                      <h5 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8">選擇年齡</h5>
-                      <div class="d-flex flex-wrap">
-                        <div class="form-check me-7">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="small">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="small">
-                            幼貓
+                      <h6 class="fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8 text-title font-SansTC">Good with</h6>
+                      <div class="row gy-3">
+                        <div class="col-auto d-flex align-items-center gap-2">
+                          <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="kid" style="width: 24px; height: 24px; border-width: 2px;">
+                          <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="kid">
+                            小孩
                           </label>
                         </div>
-                        <div class="form-check me-7">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="middle">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="middle">
-                            青少年貓
+                        <div class="col-8 col-md-auto d-flex align-items-center gap-2">
+                          <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="dog" style="width: 24px; height: 24px; border-width: 2px;">
+                          <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="dog">
+                            狗狗
                           </label>
                         </div>
-                        <div class="form-check me-7">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="big">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="big">
-                            成貓
+                        <div class="col-auto d-flex align-items-center gap-2">
+                          <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="cat" style="width: 24px; height: 24px; border-width: 2px;">
+                          <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="cat">
+                            貓貓
                           </label>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="mature">
-                          <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="mature">
-                            熟齡貓
+                        <div class="col-auto d-flex align-items-center gap-2">
+                          <input class="form-check-input border-inputBdr-light mt-0" type="checkbox" value="" id="aboveAreAll" style="width: 24px; height: 24px; border-width: 2px;">
+                          <label class="form-check-label fs-7 fs-lg-9 fw-medium letterSpc-8" for="aboveAreAll">
+                            以上皆是
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="d-xl-flex justify-content-between gap-22 mb-11">
-                  <h4 class="mb-4 fs-6 fs-lg-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">其他</h4>
-                  <div class="flex-grow-1 d-flex flex-column ">
-                    <h5 class="mb-2 fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8 font-SerifTC">Good with</h5>
-                    <div class="d-flex flex-wrap">
-                      <div class="form-check me-7">
-                        <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="kid">
-                        <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="kid">
-                          小孩
-                        </label>
-                      </div>
-                      <div class="form-check me-7">
-                        <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="dog">
-                        <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="dog">
-                          狗狗
-                        </label>
-                      </div>
-                      <div class="form-check me-7">
-                        <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="cat">
-                        <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="cat">
-                          貓貓
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input border border-2 border-inputBdr-light" type="checkbox" value="" id="above">
-                        <label class="form-check-label fs-7 fs-lg-9 fw-medium lh-sm letterSpc-8" for="above">
-                          以上皆是
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-auto">
-                  <button type="button" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 ms-auto py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
+                <div class="mt-auto ms-auto">
+                  <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
                     <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">尋找心願貓咪</span>
                     <img src="../assets/images/icon/icon_arrow.svg" class="img-fluid" alt="">
-                  </button>
+                  </a>
                 </div>
-              </div>
+              </form>
             </div>
-            <div class="col-md-5">
-              <div class="d-flex flex-column p-7 p-lg-13 border border-2 border-inputBdr-dark bg-form-bg-color h-100">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                  <h5 class="align-self-start mb-0 fs-5 fw-bold lh-sm letterSpc-8 text-tertiary font-SerifTC">遇見貓咪</h5>
-                  <div>
-                    <img src="../assets/images/icon/btn_previous_large.svg" class="img-fluid" alt="">
-                    <img src="../assets/images/icon/btn_forward_large.svg" class="img-fluid" alt="">
-                  </div>
+            <div class="col-lg-5">
+              <div class="d-flex flex-column p-7 p-xxl-13 border border-2 border-inputBdr-dark bg-form-bg-color h-100">
+                <div class="d-flex justify-content-between">
+                  <h5 class="fs-5 fw-bold lh-sm letterSpc-8 font-SerifTC text-title">遇見貓咪</h5>
+                  <ul class="d-flex gap-4 list-unstyled">
+                    <li>
+                      <button type="button" class="cutover__effect js-search-prev p-0 border-0 bg-transparent">
+                        <img src="../assets/images/icon/btn_previous_small.svg" class="img-fluid" alt="">
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="cutover__effect js-search-next p-0 border-0 bg-transparent">
+                        <img src="../assets/images/icon/btn_forward_small.svg" class="img-fluid" alt="">
+                      </button>
+                    </li>
+                  </ul>
                 </div>
-                <div class="position-relative mb-4">
-                  <img src="../assets/images/img_search.png" class="img-fluid w-100 object-fit-cover" alt="">
-                  <img src="../assets/images/icon/icon__heart.png" class="search__heart img-fluid position-absolute" alt="">
-                </div>
-                <div class="mb-11">
-                  <div class="d-flex align-items-center gap-2 mb-4">
-                    <h6 class="mb-0 fs-6 fw-medium lh-sm letterSpc-8 text-title">小虎斑</h6>
-                    <span class="badge py-2 px-4 fs-7 lh-sm letterSpc-8 border border-1 border-tertiary text-tertiary rounded-pill">冬天小棉襖</span>
-                  </div>
-                  <p class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">新北市新店區公立動物之家</p>
-                  <div class="d-flex flex-wrap justify-content-between align-items-center gap-7">
-                    <button type="button" class="btn d-flex align-items-center gap-1 p-0">
-                      <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
-                      <span class="fw-medium lg-sm letterSpc-8 font-SansTC">20</span>
-                    </button>
-                    <div class="d-flex gap-2">
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
-                        <p class="mb-0 fs-7 fw-medium lh-sm letterSpc-8">女孩</p>
+                <div>
+                  <div class="swiper searchSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div>
+                          <div class="position-relative mb-4">
+                            <a href="#" class="search__img__link">
+                              <img src="../assets/images/replace_1.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                              <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
+                              <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
+                            </a>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 mb-4">
+                            <h6 class="mb-0 fs-6 fs-md-5 fw-medium lh-sm letterSpc-8 text-title">喵喵</h6>
+                            <span class="badge py-2 px-4 rounded-pill border border-1 border-text fs-7 fs-md-9 fw-medium lh-sm letterSpc-8 text-text">冬天小棉襖</span>
+                          </div>
+                          <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">新北市新店區公立動物之家</p>
+                          <div class="d-md-flex justify-content-between align-items-center flex-wrap mb-11">
+                            <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
+                              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
+                              <span class="fw-medium lg-sm letterSpc-8 font-SansTC">20</span>
+                            </a>
+                            <ul class="d-flex gap-2 mb-0 list-unstyled">
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">男孩</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">幼貓</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">橘貓</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
-                        <p class="mb-0 fs-7 fw-medium lh-sm letterSpc-8">幼貓</p>
+                      <div class="swiper-slide">
+                        <div>
+                          <div class="position-relative mb-4">
+                            <a href="#" class="search__img__link">
+                              <img src="../assets/images/replace_2.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                              <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
+                              <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
+                            </a>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 mb-4">
+                            <h6 class="mb-0 fs-6 fs-md-5 fw-medium lh-sm letterSpc-8 text-title">咪咪</h6>
+                            <span class="badge py-2 px-4 rounded-pill border border-1 border-text fs-7 fs-md-9 fw-medium lh-sm letterSpc-8 text-text">冬天小棉襖</span>
+                          </div>
+                          <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">苗栗縣生態保育教育中心(動物收容所)</p>
+                          <div class="d-md-flex justify-content-between align-items-center mb-11">
+                            <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
+                              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
+                              <span class="fw-medium lg-sm letterSpc-8 font-SansTC">43</span>
+                            </a>
+                            <ul class="d-flex gap-2 mb-0 list-unstyled">
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">女孩</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">青少年貓</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">橘貓</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
-                        <p class="mb-0 fs-7 fw-medium lh-sm letterSpc-8">橘貓</p>
+                      <div class="swiper-slide">
+                        <div>
+                          <div class="position-relative mb-4">
+                            <a href="#" class="search__img__link">
+                              <img src="../assets/images/replace_3.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                              <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
+                              <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
+                            </a>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 mb-4">
+                            <h6 class="mb-0 fs-6 fs-md-5 fw-medium lh-sm letterSpc-8 text-title">花花</h6>
+                            <span class="badge py-2 px-4 rounded-pill border border-1 border-text fs-7 fs-md-9 fw-medium lh-sm letterSpc-8 text-text">冬天小棉襖</span>
+                          </div>
+                          <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">彰化縣動物防疫所</p>
+                          <div class="d-md-flex justify-content-between align-items-center mb-11">
+                            <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
+                              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
+                              <span class="fw-medium lg-sm letterSpc-8 font-SansTC">62</span>
+                            </a>
+                            <ul class="d-flex gap-2 mb-0 list-unstyled">
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">女孩</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">熟齡貓</p>
+                              </li>
+                              <li class="d-flex align-items-center gap-2">
+                                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">黑貓</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="ms-auto mt-auto">
-                  <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 ms-auto py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
+                <div class="mt-auto ms-auto">
+                  <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
                     <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">立即創造快樂</span>
                     <img src="../assets/images/icon/icon_arrow.svg" class="img-fluid" alt="">
                   </a>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </section>
 
@@ -289,41 +403,59 @@
             <div class="p-7 p-lg-13 border border-2 border-inputBdr-dark bg-form-bg-color">
               <div class="d-md-flex justify-content-between align-items-center text-center mb-md-11">
                 <div class="d-flex justify-content-center justify-content-md-start align-items-center flex-wrap gap-3 gap-lg-7 ">
-                  <h3 class="mb-0 fs-4 fs-md-2 fw-bold lh-sm letterSpc-8 text-title font-SerifTC">找尋附近的收容所</h3>
-                  <p class="flex-grow-1 mb-6 mb-md-0 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary text-md-start">Search Shelter</p>
+                  <h4 class="mb-0 fs-4 fs-md-2 fw-bold lh-sm letterSpc-8 text-title font-SerifTC">找尋附近的收容所</h4>
+                  <h5 class="flex-grow-1 mb-6 mb-md-0 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary text-md-start">Search Shelter</h5>
                 </div>
                 <ul class="mb-6 mb-md-0 d-flex justify-content-center gap-4 list-unstyled">
                   <li>
-                    <a href="#">
-                      <img src="../assets/images/icon/btn_previous_small.svg" class="img-fluid" alt="">
-                    </a>
+                    <button type="button" class="cutover__effect js-shelter-prev p-0 border-0 bg-transparent">
+                        <img src="../assets/images/icon/btn_previous_small.svg" class="img-fluid" alt="">
+                    </button>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="../assets/images/icon/btn_forward_small.svg" class="img-fluid" alt="">
-                    </a>
+                    <button type="button" class="cutover__effect js-shelter-next p-0 border-0 bg-transparent">
+                        <img src="../assets/images/icon/btn_forward_small.svg" class="img-fluid" alt="">
+                    </button>
                   </li>
                 </ul>
               </div>
-              <div class="d-lg-flex gap-7">
-                <ul class="order-2 d-md-flex gap-3 gap-lg-7 mb-7 mb-lg-0 list-unstyled">
-                  <li>
-                    <img src="../assets/images/img_search_1.png" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  </li>
-                  <li class="d-none d-md-block">
-                    <img src="../assets/images/img_search_2.png" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  </li>
-                </ul>
-                <div class="order-1 flex-grow-1 d-flex flex-column">
+              <div class="d-flex flex-column flex-lg-row-reverse gap-7">
+                <div class="col-12 col-lg-8">
+                  <div class="swiper shelterSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <img src="../assets/images/home/shelter_3.jpg" class="hmShelter__img w-100 object-fit-cover" alt="">  
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <img src="../assets/images/home/shelter_1.jpeg" class="hmShelter__img w-100 object-fit-cover" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <img src="../assets/images/home/shelter_2.jpeg" class="hmShelter__img w-100 object-fit-cover" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <img src="../assets/images/home/shelter_4.jpeg" class="hmShelter__img w-100 object-fit-cover" alt="">  
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-grow-1 d-flex flex-column">
                   <div class="mb-4">
-                    <h4 class="mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">縣市查詢</h4>
+                    <h6 class="mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">縣市查詢</h6>
                     <div class="dropdown">
-                      <button type="button" class=" btn-outline-inputBdr-light d-flex justify-content-between align-items-center py-3 px-2 w-100 bg-white text-text border border-inputBdr-light" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between align-items-center py-3 px-2 w-100 bg-white text-text border border-inputBdr-light" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="d-flex align-items-center gap-2">
                           <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
                           <span>全部</span>
                         </div>
-                        <img src="../assets/images/icon/icon_down.svg" class="img-fluid" alt="">
+                        <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
                       </button>
                       <ul class="dropdown-menu w-100">
                         <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -332,12 +464,12 @@
                   </div>
                   <div class="mb-9">
                     <label for="shelterSearch" class="form-label mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">關鍵字查詢</label>
-                    <input type="text" class="form-control py-3 px-2 w-100 bg-white text-text border border-inputBdr-light" id="shelterSearch" placeholder="請輸入關鍵字">
+                    <input type="text" class="searchBar__placeholder form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-inputBdr-light" id="shelterSearch" placeholder="請輸入關鍵字">
                   </div>
                   <div class="mt-auto">
                     <a href="#" class="btn btn-primary d-flex justify-content-between align-items-center py-3 px-4 border border-2 border-inputBdr-dark text-white">
                       <span class="fs-7 fs-lg-9 lh-sm fw-medium letterSpc-8">前往浪貓之家</span>
-                      <img src="../assets/images/icon/arrow_sm.png" class="img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
                     </a>
                   </div>
                 </div>
@@ -350,19 +482,19 @@
       <!-- rule 區塊 -->
       <section class="container mb-19 mb-lg-21">
         <div class="mb-6 mb-md-11 text-center">
-          <h2 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">貓咪幸福守則</h2>
-          <p class="mb-3 mb-md-7 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">Happiness Rule</p>
-          <p class="mb-2 mb-md-4 fs-7 fs-md-9 lh-sm letterSpc-8">讓我們一起與貓咪共譜幸福篇章!</p>
-          <p class="mb-0 fs-7 fs-md-9 lh-sm letterSpc-8">給予每一個愛的時刻，陪伴他們一起快樂生活</p>
+          <h2 class="fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">貓咪幸福守則</h2>
+          <h3 class="mb-3 mb-md-7 fs-5 fs-lg-4 lh-sm letterSpc-8 text-primary">Happiness Rule</h3>
+          <p class="mb-2 mb-md-4 fs-7 fs-md-9 letterSpc-8">讓我們一起與貓咪共譜幸福篇章!</p>
+          <p class="mb-0 fs-7 fs-md-9 letterSpc-8">給予每一個愛的時刻，陪伴他們一起快樂生活</p>
         </div>
-        <ul class="row gy-6 gy-md-11 justify-content-center list-unstyled">
+        <ol class="row gy-6 gy-md-11 justify-content-center list-unstyled">
           <li class="col-lg-10">
             <div class="row flex-column-reverse flex-md-row g-0 border border-1 border-inputBdr-dark">
               <div class="col-md-6 border border-1 border-inputBdr-dark">
                 <div class="d-flex flex-column p-7 p-md-13 h-100 bg-form-bg-color">
                   <div>
                     <h4 class="mb-1 mb-md-2 fs-6 fs-md-5 lh-sm letterSpc-8 text-primary">Rule 01</h4>
-                    <h3 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">迎接貓咪前準備</h3>
+                    <h5 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">迎接貓咪前準備</h5>
                     <p class="mb-4 mb-md-9 fs-7 fs-md-9 letterSpc-8">呼嚕嚕，小貓咪即將到來<br> 我們該開始為他建立一個溫馨的小天地，<br> 讓貓咪在這裡快樂地打滾吧！立即創造快樂!</p>
                   </div>
                   <div class="mt-auto">
@@ -386,7 +518,7 @@
                 <div class="d-flex flex-column p-7 p-md-13 h-100 bg-form-bg-color">
                   <div>
                     <h4 class="mb-1 mb-md-2 fs-6 fs-md-5 lh-sm letterSpc-8 text-primary">Rule 02</h4>
-                    <h3 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">照顧愛貓的健康</h3>
+                    <h5 class="mb-4 mb-md-9 fs-6 fs-md-5 fw-bold lh-sm letterSpc-8 text-primary font-SerifTC">照顧愛貓的健康</h5>
                     <p class="mb-4 mb-md-9 fs-7 fs-md-9 letterSpc-8">照顧貓咪的健康不只是一種責任，更是一種愛的表現，<br> 看著他們活力四溢，尾巴高高揚起，是每天幸福的泉源，<br> 一起探索健康的祕密！</p>
                   </div>
                   <div class="ms-auto mt-auto">
@@ -404,7 +536,7 @@
               </div>
             </div>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <!-- faq 區塊 -->
@@ -442,7 +574,7 @@
                       </button>
                     </h3>
                     <div id="faq-two" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">請先確認您的公寓規定是否允許飼養貓咪並且於對外窗戶裝設防護網措施。大部分的貓咪都能適應公寓生活。</div>
                     </div>
                   </li>
                   <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
@@ -454,7 +586,7 @@
                       </button>
                     </h3>
                     <div id="faq-three" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">依據所在收容所規定需要支付基本醫療費用，來為浪貓作結紮、打疫苗費用。</div>
                     </div>
                   </li>
                   <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
@@ -466,7 +598,7 @@
                       </button>
                     </h3>
                     <div id="faq-four" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">有的，皆已接受過結紮以及施打過疫苗，詳情請再詢問收容所負責人員。</div>
                     </div>
                   </li>
                   <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
@@ -478,7 +610,7 @@
                       </button>
                     </h3>
                     <div id="faq-five" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">我們希望所有的貓咪都能找到永遠的家。但若有不可抗拒的因素以致無法照顧貓咪，請聯繫我們。</div>
                     </div>
                   </li>
                   <li class="accordion-item">
@@ -490,7 +622,7 @@
                       </button>
                     </h3>
                     <div id="faq-six" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
+                      <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">是的，貓咪需要定期接受獸醫檢查，以確保健康並接種必要的疫苗。</div>
                     </div>
                   </li>
                 </ul>
@@ -505,9 +637,11 @@
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-    <script type="module" src="../assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/index.js"></script>
+    <script type="module" src="../main.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </body>

@@ -119,7 +119,6 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
-      responsive: true,
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
