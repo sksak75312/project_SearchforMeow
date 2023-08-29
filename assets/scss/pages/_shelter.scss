@@ -50,33 +50,38 @@
     }
     .col-10:nth-child(2){
         .indexPic{
-            background: url(../images/shelter/2/1.png) center center no-repeat;
+            background: url(../images/shelter/2/1.jpg) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(3){
         .indexPic{
-            background: url(../images/shelter/3/1.png) center center no-repeat;
+            background: url(../images/shelter/3/1.jpg) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(4){
         .indexPic{
-            background: url(../images/shelter/4/1.png) center center no-repeat;
+            background: url(../images/shelter/4/1.jpg) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(5){
         .indexPic{
-            background: url(../images/shelter/5/1.png) center center no-repeat;
+            background: url(../images/shelter/5/1.jpg) center center no-repeat;
             background-size: cover;
         }
     }
     .col-10:nth-child(6){
         .indexPic{
-            background: url(../images/shelter/6/1.png) center center no-repeat;
+            background: url(../images/shelter/6/1.jpg) center center no-repeat;
             background-size: cover;
         }
+    }
+    .textoverflow-ellipsis{
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .dropBtn{
         background-color: #fff;
@@ -122,6 +127,7 @@
         }
         .mainPic{
             height: 150px;
+            object-fit: cover;
         }
         .d-flex{
             img:hover{
@@ -235,27 +241,6 @@
         .col-xl-4:hover{
             .indexPic{
                 background-blend-mode: darken;
-                background-color: rgba($color: $title, $alpha: 0.7);
-            }
-        }
-        .col-xl-4:nth-child(1):hover{
-            .indexPic{
-                background-blend-mode: darken;
-                background-color: rgba($color: $text, $alpha: 0.7);
-            }
-        }
-        .col-xl-4:nth-child(2):hover{
-            .indexPic{
-                background-color: rgba($color: $primary, $alpha: 0.7);
-            }
-        }
-        .col-xl-4:nth-child(3):hover{
-            .indexPic{
-                background-color: rgba($color: $secondary, $alpha: 0.7);
-            }
-        }
-        .col-xl-4:nth-child(4):hover{
-            .indexPic{
                 background-color: rgba($color: $text, $alpha: 0.7);
             }
         }
