@@ -1,10 +1,9 @@
 // 第一部分
 .hr__01mainimg{
     width: 332px;
-    height: 338px;
+    height: auto;
     @include md{
         width: 700px;
-        height: 800px;
     }
 }
 .hr__02footimg{

@@ -14,162 +14,75 @@
 <body>
     <%- include('./layout/header'); -%>
     <main class="happyRules">
-        <div class="d-none d-md-block">
-            <div class="container mt-9 mt-md-13 mb-md-6 mb-10 d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex align-items-center justify-content-center mb-5">
-                    <i class="fa-solid fa-heart-pulse fa-bounce fs-3 fs-md-2 me-3" style="color: #f7853a;"></i>
-                    <h1 class=" index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10">貓咪健康幸福守則</h1>
-                </div>
-                <h2 class="text-primary fs-5 fs-md-4 mb-0 text-center">Rules for Cat Health and Happiness</h2>
+        <!-- 頁面標題 -->
+        <div class="container mt-9 mt-md-13 mb-md-6 mb-10 d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5">
+                <h2 class=" index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10 m-0">
+                    <i class="fa-solid fa-heart-pulse fa-bounce fs-3 fs-md-2" style="color: #f7853a;"></i>
+                    貓咪
+                </h2>
+                <h1 class=" index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10">健康幸福守則</h1>
             </div>
-            <!-- Rule 01 迎接貓咪前準備 WEB -->
-            <div class="container d-flex align-items-center justify-content-center mb-md-23 mb-18">
-                <div class="ms-md-22 mb-md-22">
-                    <!-- 說明文字 -->
-                    <div class="mb-13">
-                        <h2 class="text-primary fs-md-5 mb-2">Rule 01</h2>
-                        <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
-                        <p>恭喜您！<br>
-                            即將迎接一隻可愛貓貓成為新的家人！</p>
-                        <p>在牠們可愛的小爪子踏進家門之前，<br>
-                            請先確認自己是否備妥貓咪所需的物品。</p>
-                    </div>
-                    <!-- 自我檢核區 -->
-                    <!-- 第一列 -->
-                    <div class="mb-8">
-                        <div class="form-check form-check-inline align-items-center">
-                            <input class="form-check-input border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">舒服的床</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">衛生用品</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox3" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">貓砂盆</label>
-                        </div>
-                    </div>
-                    <!-- 第二列 -->
-                    <div class="mb-8 hr__02footimg">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox4" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox4">貓咪玩具</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox5" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">進食的碗</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox6" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">清潔用品</label>
-                        </div>
-                    </div>
-                    <!-- 第三列 -->
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox7" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">衛生用品</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox8" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">貓抓板和貓抓柱</label>
-                        </div>
-                    </div>
-                    
-                </div>
-                <img class="hr__01mainimg img-fluid position-relative" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
-            </div>
+            <h2 class="text-primary fs-5 fs-md-4 mb-0 text-center">Rules for Cat Health and Happiness</h2>
         </div>
-        <!-- 標題 -->
-        
-        <!-- Rule 01 迎接貓咪前準備 MOB -->
-        <div class="d-md-none">
-            <!-- 標題 -->
-            <div class="container mt-9 mb-10 d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex align-items-center mb-5">
-                    <h2 class="text-center index-title text-title font-SerifTC fw-bold fs-3 letterSpc-10">
-                        <i class="fa-solid fa-heart-pulse fa-bounce fs-3" style="color: #f7853a;"></i>
-                        貓咪<br>健康幸福守則
-                    </h2>
-                </div>
-                <h2 class="text-primary fs-5 text-center mb-0">Rules for Cat <br> Health and Happiness</h2>
-            </div>
-            <div class="d-md-none container d-flex align-items-center justify-content-center mb-md-23 mb-18">
+        <!-- Rule 01 迎接貓咪前準備 -->
+        <div class="container mb-lg-23 mb-18">
+            <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
+                <img class="img-fluid hr__01mainimg mb-0 mb-lg-8" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
                 <div>
-                    <!-- 說明文字 -->
-                    <div class="mb-13 text-center">
+                    <div class="mb-10 text-center text-lg-start">
                         <h2 class="text-primary fs-5 mb-2">Rule 01</h2>
                         <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
-                    </div>
-                    <!-- 圖片 -->
-                    <img class="hr__01mainimg img-fluid mb-3" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
-                    <p class="text-center">恭喜您！<br>
+                        <p>恭喜您！<br>
                         即將迎接一隻可愛貓貓成為新的家人！</p>
-                    <p class="text-center mb-9">在牠們可愛的小爪子踏進家門之前，<br>
-                        請先確認自己是否備妥貓咪所需的物品。</p>
-                    <!-- 自我檢核區 -->
+                        <p class="mb-0">在牠們可愛的小爪子踏進家門之前，<br>
+                            請先確認自己是否備妥貓咪所需的物品。</p>
+                    </div>
                     <!-- 第一列 -->
-                    <div class="mb-8">
-                        <div class="form-check form-check-inline align-items-center">
-                            <input class="form-check-input border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">舒服的床</label>
+                    <div class="row mb-6 justify-content-center justify-content-lg-start">
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">舒服的床</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">衛生用品</label>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">衛生用品</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox3" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">貓砂盆</label>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="litter-box" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="litter-box">貓砂盆</label>
                         </div>
-                    </div>
-                    <!-- 第二列 -->
-                    <div class="mb-8">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox4" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox4">貓咪玩具</label>
+
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">貓咪玩具</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox5" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">進食的碗</label>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products"
+                                type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">進食的碗</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox6" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">清潔用品</label>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="litter-box" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="litter-box">外出籠</label>
                         </div>
-                    </div>
-                    <!-- 第三列 -->
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox7" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">衛生用品</label>
+
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">清潔用品</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox"
-                                id="HR_inlineCheckbox8" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">貓抓板和貓抓柱</label>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products"
+                                type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">貓抓板和貓抓柱</label>
                         </div>
                     </div>
+
                 </div>
-            
             </div>
+            
         </div>
+           
         
         <!-- Rule 02 打造一個安全舒適的家 -->
         <!-- 說明文字 -->
