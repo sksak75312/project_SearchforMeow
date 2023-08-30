@@ -8,7 +8,7 @@
     <title>貓咪健康幸福守則</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <div class="container mb-lg-23 mb-18">
             <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
                 <img class="img-fluid hr__01mainimg mb-0 mb-lg-8" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
-                <div>
+                <div class="position-relative">
                     <div class="mb-10 text-center text-lg-start">
                         <h2 class="text-primary fs-5 mb-2">Rule 01</h2>
                         <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
@@ -38,7 +38,7 @@
                         <p class="mb-0">在牠們可愛的小爪子踏進家門之前，<br>
                             請先確認自己是否備妥貓咪所需的物品。</p>
                     </div>
-                    <!-- 第一列 -->
+                    <!-- checkbox -->
                     <div class="row mb-6 justify-content-center justify-content-lg-start">
                         <div class="col-auto d-flex align-items-center gap-2 mb-5">
                             <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
@@ -77,12 +77,11 @@
                             <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">貓抓板和貓抓柱</label>
                         </div>
                     </div>
-
+                    <img class="hr__02footimg d-none d-xl-block img-fluid" src="../assets/images/happyRulesImages/Page5_foot-2.svg" alt="cat-foot">
                 </div>
             </div>
             
         </div>
-           
         
         <!-- Rule 02 打造一個安全舒適的家 -->
         <!-- 說明文字 -->
@@ -91,23 +90,73 @@
             <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3 text-center">打造一個安全舒適的家</h2>
             <p class="mb-6 mb-md-15 text-center">您需要準備三個主要的活動區域，每一個活動區域都需要被隔開，最好分別位於不同的房間。</p>
             <!-- 圖片內容 -->
-            <div class="row row-cols-1 row-cols-md-3 align-items-center justify-content-center flex-column flex-md-row">
-                <div class="col mb-8 mb-md-19">
-                    <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_food.png" alt="貓咪喝水和吃飯的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">喝水和吃飯的區域</h3>
-                    <p class="mb-0 text-center">貓咪需要一個安靜的環境，好讓牠們在吃飯的<br>時候不會被打擾或受到驚嚇。</p>
+            <div class="row row-cols-1 row-cols-md-3 align-items-center justify-content-center flex-column flex-md-row mb-18">
+                <div class="col">
+                    <div class="mb-8 mb-md-19 d-flex flex-column justify-content-center">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_food.png" alt="貓咪喝水和吃飯的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">喝水和吃飯的區域</h3>
+                        <p class="mb-0 mx-7 text-center">貓咪需要一個安靜的環境，好讓牠們在吃飯的時候不會被打擾或受到驚嚇。</p>
+                    </div>
                 </div>
-                <div class="col mb-8 mb-md-19">
-                    <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bed.png" alt="貓咪睡覺和休息的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">睡覺和休息的區域</h3>
-                    <p class="mb-0 text-center">貓咪需要非常大量的睡眠，請提供一個放鬆、<br>遠離吵雜動線的環境，讓牠們可以放心休息。</p>
+                <div class="col">
+                    <div class=" mb-8 mb-md-19 d-flex flex-column justify-content-center">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bed.png" alt="貓咪睡覺和休息的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">睡覺和休息的區域</h3>
+                        <p class="mb-0 mx-7 text-center">貓咪需要非常大量的睡眠，請提供一個放鬆、遠離吵雜動線的環境，讓牠們可以放心休息。</p>
+                    </div>
                 </div>
-                <div class="col mb-16 mb-md-19 hr__mouse">
-                    <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bathroom.png" alt="貓咪上廁所的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">上廁所的區域</h3>
-                    <p class="mb-0 text-center">上廁所其實是一件會讓牠們感到脆弱的事情。<br>最好將牠們的便盆分開擺放，並具備隱蔽性。</p>
+                <div class="col">
+                    <div class=" mb-8 mb-md-19 d-flex flex-column justify-content-center position-relative">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bathroom.png" alt="貓咪上廁所的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">上廁所的區域</h3>
+                        <p class="mb-0 mx-7 text-center">上廁所其實是一件會讓牠們感到脆弱的事情。最好將牠們的便盆分開擺放，並具備隱蔽性。</p>
+                        <img class="d-none d-lg-block hr__mouse" src="../assets/images/happyRulesImages/Page5_mouse-r.svg" alt="mousetoy">
+                    </div>
                 </div>
             </div>
+        </div>
+        <!-- Rule 03 遠離危險的地方 -->
+        <div class="container">
+            <!-- 說明文字 -->
+            <h2 class="text-primary fs-5 mb-2 text-center">Rule 03</h2>
+            <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-13 mb-4">遠離危險的地方</h2>
+            <!-- Swiper -->
+            <div class="container">
+                <div class="swiper hr__dangerSwiper mx-auto border border-2 border-title mb-md-23">
+                    <div class="swiper-wrapper position-relative">
+                        <div class="swiper-slide hr__dangerSlide d-flex align-items-center position-relative">
+                            <div class="hr__dangerimg">
+                                <img class="hr__dangerimg me-0 me-md-19 shade-sm" src="../assets/images/happyRulesImages/danger/illy.jpg" alt="百合花">
+                            </div>
+                            <div class="text-md-start pe-22">
+                                <p class="fs-5 fs-medium mb-2 text-primary mt-md-16">01</p>
+                                <h3 class="fs-5 fw-medium text-title mb-6">有毒的室內植物</h3>
+                                <p class=" mb-9">有一些室內植物 (如：百合花) 對於貓咪而言是有毒的。請獸醫師提供完整的有毒植物清單，並建議您在將貓咪接回家前搬走這些植物。</p>
+                                <img class="mb-12" src="../assets/images/happyRulesImages/danger/Page5_no-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide hr__dangerSlide d-flex align-items-center position-relative">
+                            <div class="hr__dangerimg">
+                                <img class="hr__dangerimg me-0 me-md-19 shade-sm" src="../assets/images/happyRulesImages/danger/illy.jpg"
+                                    alt="百合花">
+                            </div>
+                            <div class="text-md-start pe-22">
+                                <p class="fs-5 fs-medium mb-2 text-primary mt-md-16">02</p>
+                                <h3 class="fs-5 fw-medium text-title mb-6">馬桶和垃圾桶</h3>
+                                <p class=" mb-9">為了避免貓咪調皮掉進馬桶或垃圾桶裡，記得一定要蓋上蓋子。<br>另外還要把線繩收好，不要讓貓咪玩，以免被纏繞或吞食。</p>
+                                <img class="mb-12" src="../assets/images/happyRulesImages/danger/Page5_no-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                    </div>
+                    <div class="hr__dangerswiper-pagination"></div>
+                </div>
+            </div>
+            
         </div>
         <!-- Rule 03 遠離危險的地方
         <div class="container">
@@ -364,20 +413,39 @@
             <script type="module" src="../main.js"></script>
             <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-            <script>var swiper = new Swiper('.danger-slider', {
-                    spaceBetween: 30,
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <!-- <script>
+                var swiper = new Swiper(".hr__dangerSwiper", {
+                    direction: "vertical",
+                    slidesPerView: 1,
                     effect: 'fade',
                     loop: true,
+                    spaceBetween: 30,
                     mousewheel: {
                         invert: false,
                     },
-                    // autoHeight: true,
                     pagination: {
-                        el: '.danger-slider__pagination',
+                        el: ".swiper-pagination",
                         clickable: true,
-                    }
-                });</script>
+                    },
+                });
+            </script> -->
+            <script>
+                var swiper = new Swiper(".hr__dangerSwiper", {
+                    direction: "vertical",
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    mousewheel: {
+                        invert: false,
+                    },
+                    pagination: {
+                        el: ".hr__dangerswiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
 </body>
 
 </html>
