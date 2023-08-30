@@ -21,7 +21,7 @@ $(document).ready(function () {
         
       
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 100, // offset (in px) from the original trigger point
+        offset: 90, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 400, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
@@ -29,7 +29,7 @@ $(document).ready(function () {
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       
-      });
+    });
     //dropdown
     $('.dropBtn').click(function (e) { 
         e.preventDefault();
@@ -90,13 +90,6 @@ $(document).ready(function () {
     });
     
 
-    // $(document).on('click',':not(#dropdown)',function(){
-    //     $('.expand_more').parent().find('.active').removeClass('active');
-    // });
-    // $(".dropBtn").click(function(){
-    //     e.preventDefault();
-    //     stopPropagation();
-    // });
 
     //add favorite
     $('.favor').click(function (e) { 
@@ -110,104 +103,104 @@ $(document).ready(function () {
     //one
     $('.one .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/1/1.png").css("width","100%");
+        $('.one .mainPic').attr("src","../assets/images/shelter/1/1.png");
     });
     $('.one .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/1/2.png").css("width","100%");
+        $('.one .mainPic').attr("src","../assets/images/shelter/1/2.png");
     });
     $('.one .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/1/3.png").css("width","100%");
+        $('.one .mainPic').attr("src","../assets/images/shelter/1/3.png");
     });
     $('.one .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.one .mainPic').attr("src","../assets/images/shelter/1/4.jpg");
     });
     //two
     $('.two .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/2/1.png").css("width","100%");
+        $('.two .mainPic').attr("src","../assets/images/shelter/2/1.jpg");
     });
     $('.two .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/2/2.png").css("width","100%");
+        $('.two .mainPic').attr("src","../assets/images/shelter/2/2.jpg");
     });
     $('.two .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://www.pet.gov.tw/Upload/pic/S1675848916403.png").css("width","100%");
+        $('.two .mainPic').attr("src","../assets/images/shelter/2/3.jpg");
     });
     $('.two .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.two .mainPic').attr("src","../assets/images/shelter/2/4.jpg");
     });
     //three
     $('.three .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/3/1.png").css("width","100%");
+        $('.three .mainPic').attr("src","../assets/images/shelter/3/1.jpg");
     });
     $('.three .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/3/2.png").css("width","100%");
+        $('.three .mainPic').attr("src","../assets/images/shelter/3/2.png");
     });
     $('.three .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/3/3.png").css("width","100%");
+        $('.three .mainPic').attr("src","../assets/images/shelter/3/3.jpg");
     });
     $('.three .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.three .mainPic').attr("src","../assets/images/shelter/3/4.jpg");
     });
     //four
     $('.four .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/4/1.png").css("width","100%");
+        $('.four .mainPic').attr("src","../assets/images/shelter/4/1.jpg");
     });
     $('.four .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/4/2.png").css("width","100%");
+        $('.four .mainPic').attr("src","../assets/images/shelter/4/2.jpg");
     });
     $('.four .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/4/3.png").css("width","100%");
+        $('.four .mainPic').attr("src","../assets/images/shelter/4/3.jpg");
     });
     $('.four .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.four .mainPic').attr("src","../assets/images/shelter/4/4.jpg");
     });
     //five
     $('.five .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/5/1.png").css("width","100%");
+        $('.five .mainPic').attr("src","../assets/images/shelter/5/1.jpg");
     });
     $('.five .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/5/2.png").css("width","100%");
+        $('.five .mainPic').attr("src","../assets/images/shelter/5/2.jpg");
     });
     $('.five .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/5/3.png").css("width","100%");
+        $('.five .mainPic').attr("src","../assets/images/shelter/5/3.jpg");
     });
     $('.five .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.five .mainPic').attr("src","../assets/images/shelter/5/4.jpg");
     });
     //six
     $('.six .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/6/1.png").css("width","100%");
+        $('.six .mainPic').attr("src","../assets/images/shelter/6/1.jpg");
     });
     $('.six .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/6/2.png").css("width","100%");
+        $('.six .mainPic').attr("src","../assets/images/shelter/6/2.jpg");
     });
     $('.six .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","../assets/images/shelter/6/3.png").css("width","100%");
+        $('.six .mainPic').attr("src","../assets/images/shelter/6/3.jpg");
     });
     $('.six .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.mainPic').attr("src","https://fakeimg.pl/541x300/?retina=1&text= &font=noto").css("width","100%");
+        $('.six .mainPic').attr("src","../assets/images/shelter/6/4.jpg");
     });
     //pagination
     $('.pageMark').click(function (e) { 
