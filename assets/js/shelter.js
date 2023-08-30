@@ -84,10 +84,10 @@ $(document).ready(function () {
         }, 20);
     });
     
-    $(':not(.dropBtn)').on('click',function (e) { 
-        //e.preventDefault();
-        $('.expand_more').removeClass('active');
-    });
+    // $(':not(.dropBtn)').on('click',function (e) { 
+    //     //e.preventDefault();
+    //     $('.expand_more').removeClass('active');
+    // });
     
 
 
