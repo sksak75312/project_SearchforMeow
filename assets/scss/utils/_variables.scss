@@ -608,7 +608,10 @@ $line-height-lg:              2 !default;
 
 $font-size-14:                $font-size-base * 0.875 !default;
 $font-size-16:                $font-size-base !default;
+$font-size-28:                $font-size-base * 1.75 !default;
+$font-size-36:                $font-size-base * 2.25 !default;
 $font-size-64:                $font-size-base * 4 !default;
+$font-size-72:                $font-size-base * 4.5 !default;
 
 $h1-font-size:                $font-size-base * 5 !default;
 $h2-font-size:                $font-size-base * 3 !default;
@@ -628,7 +631,10 @@ $font-sizes: (
   6: $h6-font-size, // 20
   7: $font-size-14, // 14
   8: $font-size-64, //64
-  9: $font-size-16 //16
+  9: $font-size-16, //16
+  10: $font-size-28, //28
+  11: $font-size-36, //36
+  12: $font-size-72 //72
 ) !default;
 // scss-docs-end font-sizes
 

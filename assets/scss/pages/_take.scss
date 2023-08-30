@@ -1,0 +1,111 @@
+.take {
+  .banner {
+    height: 631px;
+    background: url("../assets/images/take/banner-bg-mobile.png") no-repeat center/cover;
+  }
+
+  .search {
+
+    &__img {
+      height: 305px;
+
+      &__link:hover {
+        .search__heart {
+          display: block !important;
+          color: $red;
+          animation: heartScale 1s infinite;
+        }
+
+        .search__heartBorder {
+          display: none;
+        }
+      } 
+    }
+
+    &__heartBorder, &__heart {
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  .show__item{
+    cursor: pointer;
+    background: #402716;
+
+    img {
+      transition: opacity 0.3s ease-in;
+    }
+
+    &:hover img {
+      opacity: 0.5;
+      transition: opacity 0.2s ease-in;
+    }
+    &:hover .show__content {
+      opacity: 1 !important;
+      transition: opacity 0.3s ease-in;
+    }
+  }
+}
+
+@include md {
+  .take {
+    .banner {
+      height: 900px;
+      background-image: url("../assets/images/take/banner-bg-pad.png");
+    }
+    
+    .border-left-none {
+      border-left: 0 !important;
+    }
+
+    .search {
+      &__bg__left {
+        width: 300px;
+        bottom: 96%;
+        left: 0;
+      }
+
+      &__bg__right {
+        width: 200px;
+        bottom: 93%;
+        right: 0;
+      }
+    }
+  }
+}
+
+@include lg {
+  .take {
+    .banner {
+      height: 650px;
+      background-image: url("../assets/images/take/banner-bg-web.png");
+    }
+
+    .search {
+      &__bg__left {
+        width: 572px;
+        bottom: 90%;
+      }
+
+      &__bg__right {
+        width: 277px;
+        bottom: 85%;
+        right: 0;
+      }
+    }
+  }
+}
+
+@include xxl {
+  .take {
+    .search {
+      &__bg__left {
+        left: 130px;
+      }
+
+      &__bg__right {
+        right: 235px;
+      }
+    }
+  }
+}

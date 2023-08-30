@@ -22,6 +22,7 @@
 @import './pages/happyRules.scss';
 @import './pages/donate';
 
+
 //選擇性載入BS5
 // Configuration
 //@import "../node_modules/bootstrap/scss/functions";
@@ -77,3 +78,6 @@
 @import url('https://unpkg.com/aos@next/dist/aos.css');
 //shelter
 @import "./pages/shelter";
+
+// pages
+@import './pages/take';
