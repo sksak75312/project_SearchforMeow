@@ -23,29 +23,75 @@
     top: -20%;
 }
 // Swiper
-.hr__dangerSwiper{
+// .hr__dangerSwiper{
+//     width: 370px;
+//     height: 550px;
+//     @include md {
+//             //768
+//             width: 700px;
+//             height: 380px;
+//         }
+//     @include lg{ //992
+//         width: 900px;
+//         height: 400px;
+//     }
+//     @include xl {
+//         //1200
+//         width: 980px;
+//         height: 420px;
+//     }
+    
+// }
+.hr__dangerSwiper {
     width: 370px;
     height: 550px;
+
     @include md {
-            //768
-            width: 700px;
-            height: 380px;
-        }
-    @include lg{ //992
+        //768
+        width: 700px;
+        height: 380px;
+    }
+
+    @include lg {
+        //992
         width: 900px;
         height: 400px;
     }
+
     @include xl {
         //1200
-        width: 980px;
+        width: 850px;
         height: 420px;
     }
+
+}
+.hr__swiper-slide{
+    width: 370px;
+    height: 550px;
     
-    
+    @include md {
+        //768
+        width: 700px;
+        height: 380px;
+    }
+
+    @include lg {
+        //992
+        width: 900px;
+        height: 400px;
+    }
+
+    @include xl {
+        //1200
+        width: 950px;
+        height: 420px;
+    }
 }
 
 //照片示意圖
 .hr__dangerimg {
+    position: absolute;//add
+    left: -10%;//add
     display: block;
     width: 250px;
     height: 250px;
