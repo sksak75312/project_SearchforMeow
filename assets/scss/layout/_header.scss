@@ -90,6 +90,26 @@ body{
 }
 @include xl{
   .header{
+    .bringHome{
+      width: 180px;
+      .animateArrow{
+        right: 35px;
+        top: 10px;
+      }
+      &:hover{
+        .animateArrow{
+          animation-name: shakeHorizontal;
+          animation-duration: 0.3s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+        }
+      }
+    }
+    @keyframes shakeHorizontal {
+      from{right: 45px;}
+      to{right: 25px;}
+    }
     .headerMenu{
       li{
         width: 16.853887%;
