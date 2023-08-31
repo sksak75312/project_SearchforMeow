@@ -12,7 +12,7 @@
     <%- include('./layout/header'); -%>
 
     <!-- 首頁內容 -->
-    <main class="home">
+    <main class="home" style="overflow-x: hidden;">
 
       <!-- banner 區塊 -->
       <section class="banner container mb-19 mb-lg-21">
@@ -74,13 +74,13 @@
           <div class="col-md-10 mx-auto">
             <div class="row text-center text-md-start">
               <div class="col-lg-6 d-flex flex-column justify-content-end">
-                <h2 class="fs-4 fs-xl-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">我們將貓咪流浪的結束視為愛的開始</h2>
-                <h3 class="mb-6 mb-lg-11 fs-5 fs-xl-4 lh-sm letterSpc-8 text-primary">Our Purpose</h3>
-                <p class="mb-4 fs-7 fs-xl-9 letterSpc-8">不僅僅是一個檢索網站，更承載我們對流浪貓咪的關心和熱愛。期待著和您一起，凝聚愛的力量，為每一隻流浪貓咪帶來幸福的結局。</p>
-                <p class="mb-0 fs-7 fs-xl-9 letterSpc-8">無論是提供信息、支持領養或是分享您的故事，您的參與都將為這個世界上的每一個小生命帶來無盡的希望和愛。</p>
+                <h2 class="fs-4 fs-xl-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary" data-aos="fade-right"  data-aos-duration="1200">我們將貓咪流浪的結束視為愛的開始</h2>
+                <h3 class="mb-6 mb-lg-11 fs-5 fs-xl-4 lh-sm letterSpc-8 text-primary" data-aos="fade-right"  data-aos-duration="1200" data-aos-delay="200" data-aos-offset="50">Our Purpose</h3>
+                <p class="mb-4 fs-7 fs-xl-9 letterSpc-8"  data-aos="fade-up" data-aos-duration="1500">不僅僅是一個檢索網站，更承載我們對流浪貓咪的關心和熱愛。期待著和您一起，凝聚愛的力量，為每一隻流浪貓咪帶來幸福的結局。</p>
+                <p class="mb-0 fs-7 fs-xl-9 letterSpc-8"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">無論是提供信息、支持領養或是分享您的故事，您的參與都將為這個世界上的每一個小生命帶來無盡的希望和愛。</p>
               </div>
               <div class="col-lg-6">
-                <img src="../assets/images/img_ablout_web.png" class="img-fluid" alt="">
+                <img src="../assets/images/img_ablout_web.png" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="200" alt="">
               </div>
             </div>
           </div>
@@ -540,7 +540,7 @@
       </section>
 
       <!-- faq 區塊 -->
-      <section class="faq py-9 py-md-17 position-relative">
+      <section class="faq py-9 py-md-17 position-relative" id="faq">
         <img src="../assets/images/bg_rule_1_web.png" class="faq__bg__left position-absolute bottom-100 d-none d-md-block object-fit-cover img-fluid" alt="">
         <img src="../assets/images/bg_rule_2_web.png" class="faq__bg__right position-absolute bottom-100 d-none d-md-block object-fit-cover img-fluid" alt="">
         <img src="../assets/images/bg_faq_mobile.png" class="faq__bg__right position-absolute bottom-100 d-md-none object-fit-cover img-fluid" alt="">
@@ -631,7 +631,6 @@
           </div>
         </div>
       </section>
-      
     </main>
 
 

@@ -1,4 +1,9 @@
 .take {
+  
+  .btn__hover:hover {
+    background: $form-bg-color;
+  }
+
   .banner {
     height: 631px;
     background: url("../assets/images/take/banner-bg-mobile.png") no-repeat center/cover;
