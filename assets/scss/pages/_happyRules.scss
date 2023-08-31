@@ -17,68 +17,45 @@
 // 第二部分
 .hr__mouse{
     position: absolute;
-        width: 75px;
-        height: auto;
-        left: 75%;
-        top: -20%;
+    width: 75px;
+    height: auto;
+    left: 75%;
+    top: -20%;
 }
 // Swiper
-.hr__dnagerSwiper{
-    width: 909px;
-    height: 100%;
-
-    // &.swiper-slide {
-    //         text-align: center;
-    //         background: #fff;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
+.hr__dangerSwiper{
+    width: 370px;
+    height: 550px;
+    @include md {
+            //768
+            width: 700px;
+            height: 380px;
+        }
+    @include lg{ //992
+        width: 900px;
+        height: 400px;
+    }
+    @include xl {
+        //1200
+        width: 980px;
+        height: 420px;
+    }
+    
     
 }
-.hr__dangerSwiper{
-    background: #fff;
-    min-width: 347px;
-    height: 428px;
-    transition: all .3s;
-    @include md{
-        max-width: 771px;
-        height: 372px;
-    }
-    @include lg {
-        max-width: 900px;
-        height: 400px;
-    }
-}
-.hr__dangerSlide{
-    background: #fff;
-    min-width: 347px;
-    height: 428px;
-    transition: all .3s;
 
-    @include md {
-        max-width: 771px;
-        height: 372px;
-    }
-
-    @include lg {
-        max-width: 900px;
-        height: 400px;
-    }
-}
+//照片示意圖
 .hr__dangerimg {
-    transform: translateX(-70px);
-    overflow: hidden;
-    flex-shrink: 0;
     display: block;
-    width: 264px;
-    height: 264px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     @include md {
             width: 275px;
-            width: 275px;
+            height: 275px;
         }
 }
+//swiper 滾輪樣式更改
 .hr__dangerswiper-pagination{
     position: absolute;
     right: 20px;
@@ -88,6 +65,7 @@
     top: 50%;
     bottom: auto !important;
     transform: translateY(-50%);
+    z-index: 21;
     
 }
 .swiper-pagination-bullet {
@@ -106,18 +84,6 @@
         box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
     }
 }
-
-
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 
 // 第三部分
