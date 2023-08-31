@@ -47,7 +47,7 @@
                     </table>
                     <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
                       <label for="once_count" class="me-2 flex-shrink-0">自訂金額</label>
-                      <input type="tel" name="counts" id="once_count" placeholder="請輸入" class="">
+                      <input type="tel" name="counts" id="once_count" placeholder="請輸入" class="w-100">
                     </div>
                     <div class="mt-2 mt-lg-4">
                       <p>選擇付款方式</p>
@@ -81,8 +81,9 @@
                       </tbody>
                     </table>
                     <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
-                      <label for="regular_count" class="me-2">自訂金額</label>
-                      <input type="tel" name="counts" id="regular_count" placeholder="請輸入" value="">
+                      <label for="regular_count" class="me-2 flex-shrink-0">自訂金額</label>
+                      <input type="tel" name="counts" id="regular_count" placeholder="請輸入" value=""
+                        class="w-100 flex-shrink-1">
                     </div>
                     <div class="mt-2 mt-lg-4">
                       <p>選擇付款方式</p>
@@ -224,6 +225,130 @@
                 </div>
               </div>
             </div> -->
+
+
+
+            <!-- 第3頁 -->
+            <!-- <div class="col-12">
+              <div class="mt-20 p-4 border border-2 border-inputBdr-dark" id="selectPlan_once_step3">
+                <div class="row">
+                  <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">確認捐款資訊</p>
+                  <div class="col-12 col-md-6">
+                    <div class="p-4 l-bg-background-yellow border">
+                      <p>贊助方案</p>
+                      <div class="d-flex align-items-center">
+                        <div class="bg-primary p-2">單次捐款</div>
+                        <span>NTD300</span>
+                      </div>
+                    </div>
+                    <form action="">
+                      <h2>捐款基本資料</h2>
+                      <div class="d-flex align-items-center">
+                        <label for="${donateData.plan}_donor_name"
+                          class="form-label l-requiredIcon flex-shrink-0">姓名</label>
+                        <input type="text" class="form-control" id="${donateData.plan}_donor_name" placeholder="請輸入"
+                          value="我是姓名">
+                      </div>
+                      <div>
+                        <span class="l-requiredIcon">性別</span>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_male"
+                            value="male">
+                          <label class="form-check-label" for="${donateData.plan}_male">男</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_female"
+                            value="female">
+                          <label class="form-check-label" for="${donateData.plan}_female">女</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_others"
+                            value="others" checked>
+                          <label class="form-check-label" for="${donateData.plan}_others">其他</label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <label for="${donateData.plan}_donor_personalID"
+                          class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
+                        <input type="text" class="form-control" id="${donateData.plan}_donor_personalID"
+                          placeholder="第一個字母請大寫">
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <label for="${donateData.plan}_donor_mail"
+                          class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
+                        <input type="email" class="form-control" id="${donateData.plan}_donor_mail" placeholder="請輸入">
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <label for="${donateData.plan}_donor_phone"
+                          class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
+                        <input type="tel" class="form-control" id="${donateData.plan}_donor_phone" placeholder="請輸入">
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <label for="${donateData.plan}_donor_addr" class="form-label flex-shrink-0">通訊地址</label>
+                        <select class="form-select county" aria-label="選擇縣市">
+                          <option selected>縣市</option>
+                          <option value="台北">台北</option>
+                          <option value="台中">台中</option>
+                          <option value="高雄">高雄</option>
+                        </select>
+                        <select class="form-select city" aria-label="選擇鄉鎮區">
+                          <option selected>鄉鎮區</option>
+                          <option value="內湖">內湖</option>
+                          <option value="南港">南港</option>
+                          <option value="木柵">木柵</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" id="${donateData.plan}_donor_addr">
+                      <div id="${donateData.plan}_donor_help" class="form-text">若需要紙本收據請填寫、末填則奇送電子收據，謝謝！</div>
+                    </form>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <form action="" class="h-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <p class="mb-0">是否需要收據</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipe" id="noreceipt">
+                          <label class="form-check-label" for="noreceipt">不需要，無抵稅需求</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipe" id="digital-receipt" checked>
+                          <label class="form-check-label" for="digital-receipt">電子收據（響應環保）</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipe" id="paper-receipt" checked>
+                          <label class="form-check-label" for="paper-receipt">紙本收據，需提供完整地址</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input rounded-pill" type="checkbox" role="switch"
+                            id="once_sameAsDonor">
+                          <label class="form-check-label" for="once_sameAsDonor">同捐款人資料</label>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="once_donor_title" class="form-label l-requiredIcon flex-shrink-0">收據抬頭</label>
+                          <input type="text" class="form-control" id="once_donor_title" placeholder="請輸入姓名">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="once_donor_certification"
+                            class="form-label l-requiredIcon flex-shrink-0">報稅憑證</label>
+                          <input type="text" class="form-control" id="once_donor_certification"
+                            placeholder="身分證字號，第一個字母請大寫">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="once_donor_donationName"
+                            class="form-label l-requiredIcon flex-shrink-0">捐款徵信名稱</label>
+                          <input type="text" class="form-control" id="once_donor_donationName" placeholder="請輸入名稱">
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <a href="" class="btn btn-secondary w-50">上一步</a>
+                        <a href="" class="btn btn-primary w-50">下一步</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -236,7 +361,7 @@
       <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
       <!-- AOS -->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <!-- AOS-init -->
+      <!-- AOS init -->
       <script>
         AOS.init();
       </script>
@@ -359,6 +484,7 @@
             donateData.donorGender = temp;
             donateData.donorAddrCounty = getSelectedOption_county();
             donateData.donorAddrCity = getSelectOption_city();
+            donateData.donorAddr = document.getElementById(`${donateData.plan}_donor_addr`).value;
             // 姓名
             donateData.donorName = document.getElementById(`${donateData.plan}_donor_name`).value;
             // 身分證字號
@@ -440,9 +566,10 @@
                     <input type="text" class="form-control" id="${donateData.plan}_donor_donationName" placeholder="請輸入名稱">
                   </div>
                 </form>
-                <div class="d-flex ">
+                <div class="d-flex">
                   <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
                   <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                </div>
               </div>
             </div>
             `;
@@ -473,19 +600,228 @@
                   }
                 })
               }
+              // 收據抬頭
+              donateData.donorTitle = document.getElementById(`${donateData.plan}_donor_title`).value;
+              // 報稅憑證
+              donateData.donorCertification = document.getElementById(`${donateData.plan}_donor_certification`).value;
+              // 捐款徵信名稱
+              donateData.donorDonationName = document.getElementById(`${donateData.plan}_donor_donationName`).value;
             });
 
 
 
 
 
-          // ^once ^step2>3
-          // 綁定step2 下一步按鈕
-            document.querySelector(`#selectPlan_${donateData.plan}_step2 .next`).addEventListener('click',function(){
-              AJAX.innerHTML=`
+            // ^once ^step2>3
+            // 綁定step2 下一步按鈕
+            document.querySelector(`#selectPlan_${donateData.plan}_step2 .next`).addEventListener('click', function () {
+              AJAX.innerHTML = `
+              <div class="col-12">
+                <div class="mt-20 p-4 border border-2 border-inputBdr-dark" id="selectPlan_${donateData.plan}_step3">
+                  <div class="row">
+                    <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">確認捐款資訊</p>
+                    <div class="col-12 col-md-6">
+                      <div class="p-4 l-bg-background-yellow border">
+                        <p>贊助方案</p>
+                        <div class="d-flex align-items-center">
+                          <div class="bg-primary p-2">單次捐款</div>
+                          <span>NTD${donateData.value}</span>
+                        </div>
+                      </div>
+                      <form action="">
+                        <h2>捐款基本資料</h2>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_name"
+                            class="form-label l-requiredIcon flex-shrink-0">姓名</label>
+                          <input type="text" class="form-control" id="${donateData.plan}_donor_name" placeholder="請輸入"
+                            value="${donateData.donorName}">
+                        </div>
+                        <div>
+                          <span class="l-requiredIcon">性別</span>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_male"
+                              value="male" ${donateData.donorGender === "male" ? "checked='true'" : ""}>
+                            <label class="form-check-label" for="${donateData.plan}_male">男</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_female"
+                              value="female" ${donateData.donorGender === "female" ? "checked='true'" : ""}>
+                            <label class="form-check-label" for="${donateData.plan}_female">女</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_others"
+                              value="others" ${donateData.donorGender === "others" ? "checked='true'" : ""}>
+                            <label class="form-check-label" for="${donateData.plan}_others">其他</label>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_personalID"
+                            class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
+                          <input type="text" class="form-control" id="${donateData.plan}_donor_personalID"
+                            placeholder="第一個字母請大寫" value="${donateData.donorPersonalID}">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_mail"
+                            class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
+                          <input type="email" class="form-control" id="${donateData.plan}_donor_mail" placeholder="請輸入" value="${donateData.mail}">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_phone"
+                            class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
+                          <input type="tel" class="form-control" id="${donateData.plan}_donor_phone" placeholder="請輸入" value="${donateData.phoneNumber}">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_addr" class="form-label flex-shrink-0">通訊地址</label>
+                          <select class="form-select county" aria-label="選擇縣市">
+                            <option>縣市</option>
+                            <option value="台北" ${donateData.donorAddrCity === "台北" ? "selected" : ""}>台北</option>
+                            <option value="台中"${donateData.donorAddrCity === "台中" ? "selected" : ""}>台中</option>
+                            <option value="高雄"${donateData.donorAddrCity === "高雄" ? "selected" : ""}>高雄</option>
+                          </select>
+                          <select class="form-select city" aria-label="選擇鄉鎮區">
+                            <option>鄉鎮區</option>
+                            <option value="內湖" ${donateData.donorAddrCounty === "內湖" ? "selected" : ""}>內湖</option>
+                            <option value="南港"${donateData.donorAddrCounty === "南港" ? "selected" : ""}>南港</option>
+                            <option value="木柵"${donateData.donorAddrCounty === "木柵" ? "selected" : ""}>木柵</option>
+                          </select>
+                        </div>
+                        <input type="text" class="form-control" id="${donateData.plan}_donor_addr" value="${donateData.donorAddr}">
+                        <div id="${donateData.plan}_donor_help" class="form-text">若需要紙本收據請填寫、末填則奇送電子收據，謝謝！</div>
+                      </form>
 
-
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <form action="" class="h-100 d-flex flex-column justify-content-between">
+                        <div>
+                          <p class="mb-0">是否需要收據</p>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="receipe" id="noreceipt" ${donateData.receiptoption === "1" ? "checked" : ""}>
+                            <label class="form-check-label" for="noreceipt">不需要，無抵稅需求</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="receipe" id="digital-receipt" ${donateData.receiptoption === "2" ? "checked" : ""}>
+                            <label class="form-check-label" for="digital-receipt">電子收據（響應環保）</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="receipe" id="paper-receipt" ${donateData.receiptoption === "3" ? "checked" : ""}>
+                            <label class="form-check-label" for="paper-receipt">紙本收據，需提供完整地址</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input rounded-pill" type="checkbox" role="switch"
+                              id="${donateData.plan}_sameAsDonor" ${donateData.donorName === donateData.donorTitle && donateData.donorCertification === donateData.donorPersonalID && donateData.donorDonationName === donateData.donorName ? "checked" : ""}>
+                            <label class="form-check-label" for="${donateData.plan}_sameAsDonor">同捐款人資料</label>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <label for="${donateData.plan}_donor_title" class="form-label l-requiredIcon flex-shrink-0">收據抬頭</label>
+                            <input type="text" class="form-control" id="${donateData.plan}_donor_title" placeholder="請輸入姓名" value="${donateData.donorTitle}"}">
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <label for="${donateData.plan}_donor_certification"
+                              class="form-label l-requiredIcon flex-shrink-0">報稅憑證</label>
+                            <input type="text" class="form-control" id="${donateData.plan}_donor_certification"
+                              placeholder="身分證字號，第一個字母請大寫" value="${donateData.donorCertification}">
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <label for="${donateData.plan}_donor_donationName"
+                              class="form-label l-requiredIcon flex-shrink-0">捐款徵信名稱</label>
+                            <input type="text" class="form-control" id="${donateData.plan}_donor_donationName" placeholder="請輸入名稱" value="${donateData.donorDonationName}">
+                          </div>
+                        </div>
+                        <div class="d-flex ">
+                          <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                          <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
               `
+
+              //綁定事件
+              const switchbtn = document.querySelector(`#${donateData.plan}_sameAsDonor`);
+              // 同捐款人資料
+              switchbtn.addEventListener('change', function () {
+                if (this.checked) {
+                  document.querySelector(`#${donateData.plan}_donor_title`).value = donateData.donorName;
+                  document.querySelector(`#${donateData.plan}_donor_certification`).value = donateData.donorPersonalID;
+                  document.querySelector(`#${donateData.plan}_donor_donationName`).value = donateData.donorName;
+                } else {
+                  document.querySelector(`#${donateData.plan}_donor_title`).value = '';
+                  document.querySelector(`#${donateData.plan}_donor_certification`).value = '';
+                  document.querySelector(`#${donateData.plan}_donor_donationName`).value = '';
+                }
+              })
+              // ^updateData
+              document.querySelector(`#selectPlan_${donateData.plan}_step3 .next`).addEventListener('click', function () {
+                let gendertemp;
+                // 更新取得checkbox資料
+                getRadioBoxChecked();
+                donateData.donorGender = gendertemp;
+                donateData.donorAddrCounty = getSelectedOption_county();
+                donateData.donorAddrCity = getSelectOption_city();
+                donateData.donorAddr = document.getElementById(`${donateData.plan}_donor_addr`).value;
+                // 姓名
+                donateData.donorName = document.getElementById(`${donateData.plan}_donor_name`).value;
+                // 身分證字號
+                donateData.donorPersonalID = document.getElementById(`${donateData.plan}_donor_personalID`).value;
+                // email
+                donateData.mail = document.getElementById(`${donateData.plan}_donor_mail`).value;
+                // 電話號碼
+                donateData.phoneNumber = document.getElementById(`${donateData.plan}_donor_phone`).value;
+
+
+                function getRadioBoxChecked() {
+                  document.getElementsByName('myGender').forEach((item) => {
+                    if (item.checked) {
+                      gendertemp = item.value;
+                    }
+                  })
+                }
+                function getSelectedOption_county() {
+                  const selectElement = document.querySelector(`#selectPlan_${donateData.plan}_step3 .county`);
+                  const selectedOption = selectElement.options[selectElement.selectedIndex];
+                  if (selectedOption) {
+                    return selectedOption.value;
+                  }
+                  return null; // No option selected
+                }
+                function getSelectOption_city() {
+                  const selectElement = document.querySelector(`#selectPlan_${donateData.plan}_step3 .city`);
+                  const selectedOption = selectElement.options[selectElement.selectedIndex];
+                  if (selectedOption) {
+                    return selectedOption.value;
+                  }
+                  return null; // No option selected
+                }
+                let temp;
+                // 姓名
+                getRadioBoxChecked();
+                donateData.receiptoption = temp;
+                function getRadioBoxChecked() {
+                  document.getElementsByName('receipt').forEach((item) => {
+                    if (item.checked) {
+                      temp = item.value;
+                    }
+                  })
+                }
+                // 收據抬頭
+                donateData.donorTitle = document.getElementById(`${donateData.plan}_donor_title`).value;
+                // 報稅憑證
+                donateData.donorCertification = document.getElementById(`${donateData.plan}_donor_certification`).value;
+                // 捐款徵信名稱
+                donateData.donorDonationName = document.getElementById(`${donateData.plan}_donor_donationName`).value;
+              });
+
+
+
+
+              // ^once ^step3>4
+              // 綁定step3 下一步按鈕
+              document.querySelector(`#selectPlan_${donateData.plan}_step3 .next`).addEventListener('click', function () {
+                AJAX.innerHTML = `
+                `
+              });
             })
           })
         })
