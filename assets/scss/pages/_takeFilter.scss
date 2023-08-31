@@ -1,0 +1,33 @@
+.takeFilter {
+  .btn__hover:hover {
+    background: $form-bg-color;
+  }
+
+  .shelter_sm {
+
+    .swiper-slide-thumb-active img {
+      opacity: 1;
+    }
+
+    img {
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .suggest__card {
+
+    .suggest__img {
+      height: 250px;
+      transition: all .3s ease-in;
+    }
+
+    &:hover .suggest__img {
+      transform: scale(1.15);
+    }
+  }
+}
