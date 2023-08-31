@@ -6,7 +6,7 @@ $(document).ready(function () {
         $('.shelter .row').eq(3).find('.col-10').addClass('aos-init').attr("data-aos","fade-up");
     }else{
         $('h1,.shelterIcon').removeClass('animate__animated animate__bounceInDown');
-    }
+    };
     //aos
     AOS.init({
         // Global settings:
@@ -41,7 +41,7 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     $('.item1').click(function (e) { 
         e.preventDefault();
@@ -49,7 +49,7 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     $('.item2').click(function (e) { 
         e.preventDefault();
@@ -57,7 +57,7 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     $('.item3').click(function (e) { 
         e.preventDefault();
@@ -65,7 +65,7 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     $('.item4').click(function (e) { 
         e.preventDefault();
@@ -73,7 +73,7 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     $('.item5').click(function (e) { 
         e.preventDefault();
@@ -81,23 +81,60 @@ $(document).ready(function () {
         $('.dropBtn').append("<span>expand_more</span>").find('span').addClass('material-symbols-outlined expand_more active');
         setTimeout(() => {
             $('.material-symbols-outlined').removeClass('active');
-        }, 20);
+        }, 0.02*1000);
     });
     
-    // $(':not(.dropBtn)').on('click',function (e) { 
-    //     //e.preventDefault();
-    //     $('.expand_more').removeClass('active');
-    // });
-    
-
+    //chose which area's shelter to show
+    $('.AllBtn').click(function (e) { 
+        e.preventDefault();
+        $('.shelterArea .col-10').fadeOut(300);
+        setTimeout(() => {
+            $('.shelterArea .col-10').fadeIn(500);
+        }, 0.3*1000);
+    });
+    $('.NorthernBtn').click(function (e) { 
+        e.preventDefault();
+        $('.northern').siblings(':not(.northern)').fadeOut(300);
+        setTimeout(() => {
+            $('.northern').fadeIn(500);
+        }, 0.3*1000);
+    });
+    $('.CentralBtn').click(function (e) { 
+        e.preventDefault();
+        $('.central').siblings(':not(.central)').fadeOut(300);
+        setTimeout(() => {
+            $('.central').fadeIn(500);
+        }, 0.3*1000);
+    });
+    $('.SouthernBtn').click(function (e) { 
+        e.preventDefault();
+        $('.southern').siblings(':not(.southern)').fadeOut(300);
+        setTimeout(() => {
+            $('.southern').fadeIn(500);
+        }, 0.3*1000);
+    });
+    $('.EasternBtn').click(function (e) { 
+        e.preventDefault();
+        $('.eastern').siblings(':not(.eastern)').fadeOut(300);
+        setTimeout(() => {
+            $('.eastern').fadeIn(500);
+        }, 0.3*1000);
+    });
+    $('.OffshoreIslandBtn').click(function (e) { 
+        e.preventDefault();
+        $('.offshoreIsland').siblings(':not(.offshoreIsland)').fadeOut(300);
+        setTimeout(() => {
+            $('.offshoreIsland').fadeIn(500);
+        }, 0.3*1000);
+    });
 
     //add favorite
     $('.favor').click(function (e) { 
         e.preventDefault();
-        $(this).toggleClass('addFavor zoom');
+        $(this).stop().toggleClass('addFavor zoom');
         setTimeout(() => {
             $(this).removeClass('zoom');
-        }, 20);
+        },0.01*1000);
     });
     //look pic
     //one

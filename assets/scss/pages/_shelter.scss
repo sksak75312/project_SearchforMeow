@@ -113,7 +113,7 @@
         button:hover{
             .arrowBtn{
                 animation-name: shakeHorizontal;
-                animation-duration: 0.3s;
+                animation-duration: 0.8s;
                 animation-fill-mode: both;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;
@@ -125,8 +125,7 @@
         to{right: 10px;}
     }
     .favor{
-        transition: ease 0.2s;
-
+        //transition: ease 0.2s;
         &:hover{
             cursor: pointer;
         }
@@ -218,7 +217,7 @@
             left: -100px;
         }
         .shelterIcon{
-            padding-top: 4.8px;
+            padding-top: 10px;
         }
         form{
             img{
