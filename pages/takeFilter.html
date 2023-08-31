@@ -62,19 +62,19 @@
                 <li>醫療治療</li>
                 <li>社區教育</li>
               </ul>
-              <ul class="flex-grow-1 d-flex flex-column justify-content-end mb-0 list-unstyled">
-                <li>
-                  <i class="fa-solid fa-location-dot" style="width: 16px;"></i>
+              <ul class="flex-grow-1 d-flex flex-column justify-content-end mb-0 list-unstyled font-SansTC">
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot text-primary" style="margin-left: 2px; margin-right:8px; line-height: 24px;"></i>
                   地址:
-                  <a href="https://maps.google.com/?q=臺北市內湖區安美街191號" class="btn btn-outline-text p-0 border-0 font-SansTC">臺北市內湖區安美街191號</a>
+                  <a href="https://maps.google.com/?q=臺北市內湖區安美街191號" target="_blank" class="btn btn-outline-text p-0 border-0 font-SansTC">臺北市內湖區安美街191號</a>
                 </li>
-                <li>
-                  <i class="fa-solid fa-phone" style="width: 16px;"></i>
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-phone text-primary" style="width: 16px; margin-right:6px; line-height: 24px;"></i>
                   電話:
                   <a href="tel:+(02)87913254" class="btn btn-outline-text p-0 border-0 font-SansTC">02-87913254</a>
                 </li>
-                <li>
-                  <i class="fa-regular fa-calendar" style="width: 16px;"></i>
+                <li class="d-flex align-items-center">
+                  <i class="fa-regular fa-calendar align-self-start text-primary" style="width: 16px; margin-right:6px; line-height: 24px; margin-left: 2px;"></i>
                   領養開放時間: 週二至週六 上午10:00~12:00，下午14:00~16:00
                 </li>
               </ul>
@@ -83,7 +83,7 @@
         </div>
       </section>
       
-
+      <!-- 收容所貓咪 -->
       <section class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gy-7">
           <div class="col">
@@ -316,6 +316,28 @@
           </div>
         </div>
       </section>
+
+      <div class="row justify-content-center">
+        <div class="col-8 col-sm-6 col-md-5 col-xl-3">
+          <nav aria-label="Page navigation" class="pagination d-flex justify-content-center pt-16">
+            <ul class="pagination mb-0 w-100 d-flex justify-content-center gap-2">
+              <li class="page-item">
+                <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0 backPage" href="#" aria-label="Previous">
+                    <i class="fa-solid fa-arrow-left text-text"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark paginationActive" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0 nextPage" href="#" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right text-text"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </main>
     
 
