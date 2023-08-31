@@ -99,12 +99,30 @@
     .active{
         transform: rotate(180deg);
     }
-    .card,.card-footer{
-        background-color: #FFFAEB;
-    }
     .arrowBtn{
         width: 24px;
         height: 24px;
+    }
+    .card,.card-footer{
+        background-color: #FFFAEB;
+        .arrowBtn{
+            width: 24px;
+            height: 24px;
+            right: 20px;
+        }
+        button:hover{
+            .arrowBtn{
+                animation-name: shakeHorizontal;
+                animation-duration: 0.3s;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    @keyframes shakeHorizontal {
+        from{right: 30px;}
+        to{right: 10px;}
     }
     .favor{
         transition: ease 0.2s;
