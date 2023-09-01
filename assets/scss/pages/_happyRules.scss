@@ -22,68 +22,69 @@
     left: 75%;
     top: -20%;
 }
-// Swiper
-// .hr__dangerSwiper{
-//     width: 370px;
-//     height: 550px;
-//     @include md {
-//             //768
-//             width: 700px;
-//             height: 380px;
-//         }
-//     @include lg{ //992
-//         width: 900px;
-//         height: 400px;
-//     }
-//     @include xl {
-//         //1200
-//         width: 980px;
-//         height: 420px;
-//     }
-    
-// }
-.hr__dangerSwiper {
-    width: 370px;
-    height: 550px;
+
+.hr__dangerSwiper {//自定義swiper寬度 有線調這個
+    width: 80%;
+    height: 500px;
 
     @include md {
         //768
-        width: 700px;
-        height: 380px;
+        width: 95%;//750px
+        height: 450px;
     }
 
     @include lg {
         //992
-        width: 900px;
+        width: 100%;//900px
         height: 400px;
     }
 
     @include xl {
         //1200
-        width: 850px;
+        width: 87.5%;//1050px
         height: 420px;
     }
 
 }
-.hr__swiper-slide{
-    width: 370px;
+
+.hr__bdrBg{
+    width: 90%;
+    height: 550px;
+    @include md {
+            width: 650px;
+            height: 360px;
+        }
+    @include lg {//992
+            width: 750px;
+            height: 400px;
+    }
+    @include xl{
+        width: 1050px;
+        height: 380px;
+        margin-left: 220px;
+    }
+    
+}
+
+.hr__swiper-slide{//自定義swiper寬度
+    width: 100%;//450px
     height: 550px;
     
     @include md {
         //768
-        width: 700px;
+        width: 100%; //740px
         height: 380px;
     }
 
     @include lg {
         //992
-        width: 900px;
-        height: 400px;
+        width: 100%;//990px
+        height: 380px;
     }
 
     @include xl {
         //1200
-        width: 950px;
+        width: 100%;//990px
         height: 420px;
     }
 }
@@ -91,27 +92,53 @@
 //照片示意圖
 .hr__dangerimg {
     position: absolute;//add
-    left: -10%;//add
+    left: 20%;//add
+    top: -5%;
     display: block;
     width: 250px;
-    height: 250px;
+    height: 290px;
     object-fit: cover;
-    @include md {
-            width: 275px;
-            height: 275px;
+    @include md {//768
+        width: 252px;
+        height: 252px;
+        left: 10%;
+        top: 22%;
         }
+    @include lg {//992
+        width: 270px;
+        height: 270px;
+        top: 17%;
+        left: 3%;
+    }
+    @include xl{
+        width: 275px;
+        height: 275px;
+        left: 13%;
+    }
+    @include xxl {
+        width: 275px;
+        height: 275px;
+        left: 10%;
+    }
 }
 //swiper 滾輪樣式更改
 .hr__dangerswiper-pagination{
     position: absolute;
     right: 20px;
-    width: 30px !important;
+    width: 35px !important;
     text-align: center;
     left: auto !important;
     top: 50%;
     bottom: auto !important;
-    transform: translateY(-50%);
-    z-index: 21;
+    transform: translateY(-40%);
+    z-index: 10;
+    height: 100px;
+    @include lg{
+        width: 55px !important;
+    }
+    @include xl {
+        width: 40px !important;
+    }
     
 }
 .swiper-pagination-bullet {
