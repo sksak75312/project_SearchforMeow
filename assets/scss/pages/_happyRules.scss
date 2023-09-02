@@ -1,249 +1,372 @@
 // 第一部分
 .hr__01mainimg{
-    width: 800px;
-    height: 800px;
+    width: 332px;
+    height: auto;
+    @include md{
+        width: 700px;
+    }
 }
+
 .hr__02footimg{
-    position: relative;
+    position: absolute;
+    width: 152px;
+    height: auto;
+    left: 70%;
 }
-.hr__02footimg::before{
-    content: " ";
-        position: absolute;
-        width: 646px;
-        height: 152px;
-        background-image: url("../images/happyRulesImages/Page5_foot-2.svg");
-        background-repeat: no-repeat;
-        left: 60%;
-        top: 550%;
-}
+
 // 第二部分
 .hr__mouse{
-    position: relative;
-}
-.hr__mouse::before{
-    @include md{
-        content: " ";
-            position: absolute;
-            width: 80px;
-            height: 62px;
-            background-image: url("../images/happyRulesImages/Page5_mouse-r.svg");
-            background-repeat: no-repeat;
-            left: 70%;
-            top: -20%;
-    }
-    
+    position: absolute;
+    width: 75px;
+    height: auto;
+    left: 75%;
+    top: -20%;
 }
 // 第三部分
-.danger-slider {
-    width: 95%;
-    position: relative;
-    max-width: 900px;
-    box-shadow: 0px 14px 80px rgba(64, 57, 45, 0.2);
-    height: 400px;
-    transition: all .3s;
+.hr__dangerSwiper {//自定義swiper寬度 有線調這個
+    width: 80%;
+    height: 500px;
 
+    @include md {
+        //768
+        width: 95%;//750px
+        height: 450px;
+    }
 
-    @media screen and (max-width: 992px) {
-        max-width: 680px;
+    @include lg {
+        //992
+        width: 100%;//900px
         height: 400px;
     }
 
-    @media screen and (max-width: 768px) {
-        min-height: 500px;
-        height: auto;
-        margin: 180px auto;
-    }
-
-
-    @media screen and (max-height: 500px) and (min-width: 992px) {
-        height: 350px;
-    }
-
-    &__item {
-
-        &.swiper-slide-active {
-            .dnager-slider__img {
-                img {
-                    opacity: 1;
-                    transition-delay: .3s;
-                }
-            }
-
-            .danger-slider__content {
-                * {
-                    opacity: 1;
-                    transform: none;
-
-                    @for $i from 0 to 15 {
-                        &:nth-child(#{$i + 1}) {
-                            transition-delay: $i * 0.1 + 0.3s;
-                        }
-                    }
-
-                }
-            }
-        }
-
-    }
-
-    &__img {
-        // width: 40%;
-        width: 320px;
-        flex-shrink: 0;
-        height: 320px;
-        transform: translateX(-80px);
-        overflow: hidden;
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.8;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            opacity: 0;
-            transition: all .3s;
-        }
-
-
-        @media screen and (max-width: 992px) {
-            width: 45%;
-        }
-
-        @media screen and (max-width: 768px) {
-            transform: translateY(-50%);
-            width: 90%;
-        }
-
-        @media screen and (max-width: 576px) {
-            width: 95%;
-        }
-
-        @media screen and (max-height: 500px) and (min-width: 992px) {
-            height: 270px;
-        }
-    }
-
-    &__content {
-        // width: 60%;
-        padding-right: 25px;
-
-        @media screen and (max-width: 992px) {
-            // width: 55%;
-        }
-
-        @media screen and (max-width: 768px) {
-            margin-top: -80px;
-            text-align: center;
-            padding: 0 30px;
-        }
-
-        @media screen and (max-width: 576px) {
-            padding: 0
-        }
-
-        >* {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: all .4s;
-
-
-        }
-
-    }
-
-    &__code {
-        display: block;
-    }
-
-    &__button {
-        display: inline-flex;
-        background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-        padding: 15px 35px;
-        border-radius: 50px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        justify-content: center;
-        text-align: center;
-        letter-spacing: 1px;
-
-        @media screen and (max-width: 576px) {
-            width: 100%;
-        }
-
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-        bottom: 10px;
-        left: 0;
-        width: 100%;
-
-    }
-
-    &__pagination {
-        position: absolute;
-        z-index: 21;
-        right: 20px;
-        width: 8px !important;
-        text-align: center;
-        left: auto !important;
-        top: 50%;
-        bottom: auto !important;
-        transform: translateY(-50%);
-
-        @media screen and (max-width: 768px) {
-            transform: translateX(-50%);
-            left: 50% !important;
-            top: 205px;
-            width: 100% !important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin: 8px 0;
-
-            @media screen and (max-width: 768px) {
-                margin: 0 5px;
-            }
-        }
-
-        .swiper-pagination-bullet {
-            width: 11px;
-            height: 11px;
-            display: block;
-            border-radius: 10px;
-            background: #062744;
-            opacity: 0.2;
-            transition: all .3s;
-
-            &-active {
-                opacity: 1;
-                background: $primary;
-                height: 30px;
-
-                @media screen and (max-width: 768px) {
-                    height: 11px;
-                    width: 30px;
-                }
-            }
-        }
-
+    @include xl {
+        //1200
+        width: 87.5%;//1050px
+        height: 420px;
     }
 
 }
+
+.hr__bdrBg{
+    width: 90%;
+    height: 550px;
+    @include md {
+            width: 650px;
+            height: 360px;
+        }
+    @include lg {//992
+            width: 750px;
+            height: 400px;
+    }
+    @include xl{
+        width: 1050px;
+        height: 380px;
+        margin-left: 220px;
+    }
+    
+}
+
+.hr__swiper-slide{//自定義swiper寬度
+    width: 100%;//450px
+    height: 550px;
+    
+    @include md {
+        //768
+        width: 100%; //740px
+        height: 380px;
+    }
+
+    @include lg {
+        //992
+        width: 100%;//990px
+        height: 380px;
+    }
+
+    @include xl {
+        //1200
+        width: 100%;//990px
+        height: 420px;
+    }
+}
+
+//照片示意圖
+.hr__dangerimg {
+    position: absolute;//add
+    left: 20%;//add
+    top: -5%;
+    display: block;
+    width: 250px;
+    height: 290px;
+    object-fit: cover;
+    @include md {//768
+        width: 252px;
+        height: 252px;
+        left: 10%;
+        top: 22%;
+        }
+    @include lg {//992
+        width: 270px;
+        height: 270px;
+        top: 17%;
+        left: 3%;
+    }
+    @include xl{
+        width: 275px;
+        height: 275px;
+        left: 13%;
+    }
+    @include xxl {
+        width: 275px;
+        height: 275px;
+        left: 10%;
+    }
+}
+//swiper 滾輪樣式更改
+.hr__dangerswiper-pagination{
+    position: absolute;
+    right: 20px;
+    width: 35px !important;
+    text-align: center;
+    left: auto !important;
+    top: 50%;
+    bottom: auto !important;
+    transform: translateY(-40%);
+    z-index: 20;
+    height: 100px;
+    @include lg{
+        width: 55px !important;
+    }
+    @include xl {
+        width: 40px !important;
+    }
+    
+}
+.swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    display: block;
+    border-radius: 10px;
+    background: #062744;
+    opacity: 0.2;
+    transition: all .3s;
+
+    &-active {
+        opacity: 1;
+        background: $primary;
+        height: 30px;
+        box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+    }
+}
+
+
+// 第三部分
+// .danger-slider {
+//     width: 95%;
+//     position: relative;
+//     max-width: 950px;
+//     box-shadow: 0px 10px 20px rgba(64, 57, 45, 0.2);
+//     height: 430px;
+//     transition: all .3s;
+
+//     @media screen and (max-width: 992px) {
+//         max-width: 680px;
+//         height: 400px;
+//     }
+
+//     @media screen and (max-width: 768px) {
+//         min-height: 500px;
+//         height: auto;
+//         margin: 180px auto;
+//     }
+
+
+//     @media screen and (max-height: 500px) and (min-width: 992px) {
+//         height: 350px;
+//     }
+
+//     &__item {
+
+//         &.swiper-slide-active {
+//             .danger-slider__img {
+//                 img {
+//                     opacity: 1;
+//                     transition-delay: .3s;
+//                 }
+//             }
+
+//             .danger-slider__content {
+//                 * {
+//                     opacity: 1;
+//                     transform: none;
+
+//                     @for $i from 0 to 15 {
+//                         &:nth-child(#{$i + 1}) {
+//                             transition-delay: $i * 0.1 + 0.3s;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+
+//     &__img {
+//         // width: 40%;
+//         width: 320px;
+//         flex-shrink: 0;
+//         height: 320px;
+//         transform: translateX(-80px);
+//         overflow: hidden;
+
+//         &:after {
+//             content: '';
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             opacity: 0.8;
+//         }
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             display: block;
+//             opacity: 0;
+//             transition: all .3s;
+//         }
+
+//         @media screen and (max-width: 992px) {
+//             width: 45%;
+//         }
+
+//         @media screen and (max-width: 768px) {
+//             transform: translateY(-50%);
+//             width: 90%;
+//         }
+
+//         @media screen and (max-width: 576px) {
+//             width: 95%;
+//         }
+
+//         @media screen and (max-height: 500px) and (min-width: 992px) {
+//             height: 270px;
+//         }
+//     }
+
+//     &__content {
+//         // width: 60%;
+//         padding-right: 25px;
+
+//         @media screen and (max-width: 992px) {
+//             // width: 55%;
+//         }
+
+//         @media screen and (max-width: 768px) {
+//             margin-top: -80px;
+//             text-align: center;
+//             padding: 0 30px;
+//         }
+
+//         @media screen and (max-width: 576px) {
+//             padding: 0
+//         }
+
+//         >* {
+//             opacity: 0;
+//             transform: translateY(25px);
+//             transition: all .4s;
+
+
+//         }
+
+//     }
+
+//     &__code {
+//         display: block;
+//     }
+
+//     &__button {
+//         display: inline-flex;
+//         background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+//         padding: 15px 35px;
+//         border-radius: 50px;
+//         color: #fff;
+//         text-decoration: none;
+//         font-weight: 500;
+//         justify-content: center;
+//         text-align: center;
+//         letter-spacing: 1px;
+
+//         @media screen and (max-width: 576px) {
+//             width: 100%;
+//         }
+
+//     }
+
+//     .swiper-container-horizontal>.swiper-pagination-bullets,
+//     .swiper-pagination-custom,
+//     .swiper-pagination-fraction {
+//         bottom: 10px;
+//         left: 0;
+//         width: 100%;
+
+//     }
+
+//     &__pagination {
+//         position: absolute;
+//         z-index: 21;
+//         right: 20px;
+//         width: 8px !important;
+//         text-align: center;
+//         left: auto !important;
+//         top: 50%;
+//         bottom: auto !important;
+//         transform: translateY(-50%);
+
+//         @media screen and (max-width: 768px) {
+//             transform: translateX(-50%);
+//             left: 50% !important;
+//             top: 205px;
+//             width: 100% !important;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+
+//         &.swiper-pagination-bullets .swiper-pagination-bullet {
+//             margin: 8px 0;
+
+//             @media screen and (max-width: 768px) {
+//                 margin: 0 5px;
+//             }
+//         }
+
+//         .swiper-pagination-bullet {
+//             width: 11px;
+//             height: 11px;
+//             display: block;
+//             border-radius: 10px;
+//             background: #062744;
+//             opacity: 0.2;
+//             transition: all .3s;
+
+//             &-active {
+//                 opacity: 1;
+//                 background: $primary;
+//                 height: 30px;
+
+//                 @media screen and (max-width: 768px) {
+//                     height: 11px;
+//                     width: 30px;
+//                 }
+//             }
+//         }
+
+//     }
+
+// }
 
 
 
@@ -397,4 +520,55 @@
         background: #F99D61;
         color: white;
     }
+}
+
+// 第四部份手機版裝飾插圖
+.hr__dash01{
+    position: absolute;
+    width: 73px;
+    height: 43px;
+    top: 50%;
+    left: 0%;
+}
+.hr__dash02 {
+    position: absolute;
+    width: 101px;
+    height: 43px;
+    top: -10%;
+    left: 70%;
+}
+.hr__dash03 {
+    position: absolute;
+    width: 101px;
+    height: 43px;
+    top: -10%;
+    left: 70%;
+}
+.hr__dash04 {
+    position: absolute;
+    width: 101px;
+    height: 43px;
+    top: 55%;
+    left: 5%;
+}
+.hr__dash05 {
+    position: absolute;
+    width: 70px;
+    height: 53px;
+    top: 60%;
+    left: 5%;
+}
+.hr__dash07 {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    top: -5%;
+    left: 60%;
+}
+.hr__dash08 {
+    position: absolute;
+    width: 161px;
+    height: 63px;
+    top: 45%;
+    left: 55%;
 }
