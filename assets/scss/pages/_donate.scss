@@ -175,6 +175,13 @@
     }
   }
 
+  .l-requiredIcon::after{
+    display: inline-block;
+    content: "*";
+    color:red;
+    transform: translate(0px ,-20%);
+  }
+
 
 
 
