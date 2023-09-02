@@ -253,13 +253,19 @@
         }
         .indexPic{
             height: 300px;
-            transition: ease 0.5s;
         }
         .col-xl-4:hover{
             .indexPic{
-                background-blend-mode: darken;
-                background-color: rgba($color: $text, $alpha: 0.7);
+                animation-name: zoomindexPic;
+                animation-timing-function: linear;
+                animation-duration: 0.3s;
+                animation-fill-mode: both;
+                animation-iteration-count: 1;
             }
+        }
+        @keyframes zoomindexPic {
+            from{background-size: 100%;}
+            to{background-size: 140%;}
         }
         .modal-body{
             img{
