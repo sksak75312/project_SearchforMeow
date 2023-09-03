@@ -77,5 +77,26 @@
   }
 }
 @include xl{
-  
+  .footer{
+    .bringHome{
+      width: 100%;
+      .animateArrow{
+        right: 10px;
+        top: 10.5px;
+      }
+      &:hover{
+        .animateArrow{
+          animation-name: shakeHorizontal;
+          animation-duration: 0.8s;
+          animation-timing-function: linear;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+    @keyframes shakeHorizontal {
+      from{right: 15px;}
+      to{right: 0px;}
+    }
+  }
 }
