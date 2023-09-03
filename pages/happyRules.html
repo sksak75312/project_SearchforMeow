@@ -8,193 +8,248 @@
     <title>貓咪健康幸福守則</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
     <main class="happyRules">
-        <!-- 標題 -->
+        <!-- 頁面標題 -->
         <div class="container mt-9 mt-md-13 mb-md-6 mb-10 d-flex flex-column justify-content-center align-items-center">
-            <div class="d-flex align-items-center mb-5">
-                <i class="fa-solid fa-heart-pulse fa-bounce fs-3 fs-md-2 me-3" style="color: #f7853a;"></i>
-                <h1 class="index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10">貓咪健康幸福守則</h1>
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5">
+                <h2 class=" index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10 m-0">
+                    <i class="fa-solid fa-heart-pulse fa-bounce fs-3 fs-md-2" style="color: #f7853a;"></i>
+                    貓咪
+                </h2>
+                <h1 class=" index-title text-title font-SerifTC fw-bold fs-3 fs-md-2 letterSpc-10">健康幸福守則</h1>
             </div>
-            <h2 class="text-primary fs-5 fs-md-4 mb-0">Rules for Cat Health and Happiness</h2>
+            <h2 class="text-primary fs-5 fs-md-4 mb-0 text-center">Rules for Cat Health and Happiness</h2>
         </div>
         <!-- Rule 01 迎接貓咪前準備 -->
-        <div class="container d-flex align-items-center justify-content-end mb-md-23 mb-18">
-            <div class="ms-md-22 mb-md-22">
-                <!-- 說明文字 -->
-                <div class="mb-13">
-                    <h2 class="text-primary fs-md-5 mb-2">Rule 01</h2>
-                    <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
-                    <p>恭喜您！<br>
+        <div class="container mb-lg-23 mb-18">
+            <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
+                <img class="img-fluid hr__01mainimg mb-0 mb-lg-8" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
+                <div class="position-relative">
+                    <div class="mb-10 text-center text-lg-start">
+                        <h2 class="text-primary fs-5 mb-2">Rule 01</h2>
+                        <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3">迎接貓咪前準備</h2>
+                        <p>恭喜您！<br>
                         即將迎接一隻可愛貓貓成為新的家人！</p>
-                    <p>在牠們可愛的小爪子踏進家門之前，<br>
-                        請先確認自己是否備妥貓咪所需的物品。</p>
+                        <p class="mb-0">在牠們可愛的小爪子踏進家門之前，<br>
+                            請先確認自己是否備妥貓咪所需的物品。</p>
+                    </div>
+                    <!-- checkbox -->
+                    <div class="row mb-6 justify-content-center justify-content-lg-start">
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">舒服的床</label>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">衛生用品</label>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="litter-box" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="litter-box">貓砂盆</label>
+                        </div>
+
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">貓咪玩具</label>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products"
+                                type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">進食的碗</label>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="litter-box" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="litter-box">外出籠</label>
+                        </div>
+
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="bed" type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="bed">清潔用品</label>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 mb-5">
+                            <input class="form-check-input border border-inputBdr-light border-2 m-0 p-2" value="hygiene-products"
+                                type="checkbox">
+                            <label class="form-check-label fs-9 fw-medium letterSpc-8" for="hygiene-products">貓抓板和貓抓柱</label>
+                        </div>
+                    </div>
+                    <img class="hr__02footimg d-none d-xl-block img-fluid" src="../assets/images/happyRulesImages/Page5_foot-2.svg" alt="cat-foot">
                 </div>
-                <!-- 自我檢核區 -->
-                <!-- 第一列 -->
-                <div class="mb-8">
-                    <div class="form-check form-check-inline align-items-center">
-                        <input class="form-check-input border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">舒服的床</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">衛生用品</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">貓砂盆</label>
-                    </div>
-                </div>
-                <!-- 第二列 -->
-                <div class="mb-8 hr__02footimg">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox4" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox4">貓咪玩具</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox5" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">進食的碗</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox6" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">清潔用品</label>
-                    </div>
-                </div>
-                <!-- 第三列 -->
-                <div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox7" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">衛生用品</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input  border border-2 border-inputBdr-light p-2 my-0 me-2" type="checkbox" id="HR_inlineCheckbox8" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">貓抓板和貓抓柱</label>
-                    </div>
-                </div>
-                <!-- <img class="hr__02footimg mt-md-15" src="../assets/images/happyRulesImages/Page5_foot-2.svg" alt="貓腳印裝飾圖片"> -->
             </div>
-            <img class="hr__01mainimg img-fluid" src="../assets/images/happyRulesImages/Page5_01.svg" alt="迎接貓咪前的準備東西">
+            
         </div>
+        
         <!-- Rule 02 打造一個安全舒適的家 -->
         <!-- 說明文字 -->
-        <div class="container mb-md-19">
-            <h2 class="text-primary fs-md-5 mb-2 text-center">Rule 02</h2>
+        <div class="container mb-md-19 d-flex flex-column justify-content-center">
+            <h2 class="text-primary fs-5 mb-2 text-center">Rule 02</h2>
             <h2 class="font-SerifTC fw-bold letterSpc-8 fs-4 fs-md-5 text-title mb-md-6 mb-3 text-center">打造一個安全舒適的家</h2>
             <p class="mb-6 mb-md-15 text-center">您需要準備三個主要的活動區域，每一個活動區域都需要被隔開，最好分別位於不同的房間。</p>
             <!-- 圖片內容 -->
-            <div class="row align-items-center">
-                <div class="col col-md-4 mb-8 mb-md-19">
-                    <img class="mb-8 mb-md-9" src="../assets/images/happyRulesImages/Page5_food.png" alt="貓咪喝水和吃飯的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">喝水和吃飯的區域</h3>
-                    <p class="mb-0 text-center">貓咪需要一個安靜的環境，好讓牠們在吃飯的<br>時候不會被打擾或受到驚嚇。</p>
+            <div class="row row-cols-1 row-cols-md-3 align-items-center justify-content-center flex-column flex-md-row mb-18">
+                <div class="col">
+                    <div class="mb-8 mb-md-19 d-flex flex-column justify-content-center">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_food.png" alt="貓咪喝水和吃飯的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">喝水和吃飯的區域</h3>
+                        <p class="mb-0 mx-7 text-center">貓咪需要一個安靜的環境，好讓牠們在吃飯的時候不會被打擾或受到驚嚇。</p>
+                    </div>
                 </div>
-                <div class="col col-md-4 mb-8 mb-md-19">
-                    <img class="mb-8 mb-md-9" src="../assets/images/happyRulesImages/Page5_bed.png" alt="貓咪睡覺和休息的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">睡覺和休息的區域</h3>
-                    <p class="mb-0 text-center">貓咪需要非常大量的睡眠，請提供一個放鬆、<br>遠離吵雜動線的環境，讓牠們可以放心休息。</p>
+                <div class="col">
+                    <div class=" mb-8 mb-md-19 d-flex flex-column justify-content-center">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bed.png" alt="貓咪睡覺和休息的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">睡覺和休息的區域</h3>
+                        <p class="mb-0 mx-7 text-center">貓咪需要非常大量的睡眠，請提供一個放鬆、遠離吵雜動線的環境，讓牠們可以放心休息。</p>
+                    </div>
                 </div>
-                <div class="col col-md-4 mb-16 mb-md-19 hr__mouse">
-                    <img class="mb-8 mb-md-9" src="../assets/images/happyRulesImages/Page5_bathroom.png" alt="貓咪上廁所的區域">
-                    <h3 class="text-title text-center mb-3 mb-md-2 fs-6">上廁所的區域</h3>
-                    <p class="mb-0 text-center">上廁所其實是一件會讓牠們感到脆弱的事情。<br>最好將牠們的便盆分開擺放，並具備隱蔽性。</p>
+                <div class="col">
+                    <div class=" mb-8 mb-md-19 d-flex flex-column justify-content-center position-relative">
+                        <img class="mb-8 mb-md-9 img-fluid" src="../assets/images/happyRulesImages/Page5_bathroom.png" alt="貓咪上廁所的區域">
+                        <h3 class="text-title text-center mb-3 mb-md-2 fs-6">上廁所的區域</h3>
+                        <p class="mb-0 mx-7 text-center">上廁所其實是一件會讓牠們感到脆弱的事情。最好將牠們的便盆分開擺放，並具備隱蔽性。</p>
+                        <img class="d-none d-lg-block hr__mouse" src="../assets/images/happyRulesImages/Page5_mouse-r.svg" alt="mousetoy">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Rule 03 遠離危險的地方 -->
         <div class="container">
             <!-- 說明文字 -->
-            <h2 class="text-primary fs-md-5 mb-2 text-center">Rule 03</h2>
+            <h2 class="text-primary fs-5 mb-2 text-center">Rule 03</h2>
             <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-13 mb-4">遠離危險的地方</h2>
-            <!-- 圖片內容 -->
-            <div class="danger-slider mx-auto bg-white mb-18 mb-md-23 p-8">
-                <div class="blog-slider__wrp swiper-wrapper">
+            <!-- Swiper -->
+            <div class="container">
+                <div class="swiper hr__dangerSwiper mx-auto border border-2 border-title mb-md-23">
+                    <div class="swiper-wrapper position-relative">
+                        <div class="swiper-slide hr__dangerSlide d-flex align-items-center position-relative">
+                            <div class="hr__dangerimg">
+                                <img class="hr__dangerimg me-0 me-md-19 shade-sm" src="../assets/images/happyRulesImages/danger/illy.jpg" alt="百合花">
+                            </div>
+                            <div class="text-md-start pe-22">
+                                <p class="fs-5 fs-medium mb-2 text-primary mt-md-16">01</p>
+                                <h3 class="fs-5 fw-medium text-title mb-6">有毒的室內植物</h3>
+                                <p class=" mb-9">有一些室內植物 (如：百合花) 對於貓咪而言是有毒的。請獸醫師提供完整的有毒植物清單，並建議您在將貓咪接回家前搬走這些植物。</p>
+                                <img class="mb-12" src="../assets/images/happyRulesImages/danger/Page5_no-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide hr__dangerSlide d-flex align-items-center position-relative">
+                            <div class="hr__dangerimg">
+                                <img class="hr__dangerimg me-0 me-md-19 shade-sm" src="../assets/images/happyRulesImages/danger/illy.jpg"
+                                    alt="百合花">
+                            </div>
+                            <div class="text-md-start pe-22">
+                                <p class="fs-5 fs-medium mb-2 text-primary mt-md-16">02</p>
+                                <h3 class="fs-5 fw-medium text-title mb-6">馬桶和垃圾桶</h3>
+                                <p class=" mb-9">為了避免貓咪調皮掉進馬桶或垃圾桶裡，記得一定要蓋上蓋子。<br>另外還要把線繩收好，不要讓貓咪玩，以免被纏繞或吞食。</p>
+                                <img class="mb-12" src="../assets/images/happyRulesImages/danger/Page5_no-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                    </div>
+                    <div class="hr__dangerswiper-pagination"></div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Rule 03 遠離危險的地方
+        <div class="container">
+            說明文字
+            <h2 class="text-primary fs-5 mb-2 text-center">Rule 03</h2>
+            <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-13 mb-4">遠離危險的地方</h2>
+            圖片內容
+            <div class="danger-slider mx-auto bg-white mb-18 mb-md-23 p-8 border border-2 border-text">
+                <div class="danger-slider__wrp swiper-wrapper">
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/illy.jpg"
-                                alt="百合花等對貓咪有害的植物">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/illy.jpg" alt="百合花等對貓咪有害的植物">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">01</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">有毒的室內植物</div>
-                            <div class="danger-slider__text mb-9">有一些室內植物 (例如：百合花) 對於貓咪而言是有毒的。<br>請獸醫師提供完整的有毒植物清單，並建議您在將貓咪接回家前搬走這些植物。 </div>
-                            <img src="../assets/images/happyRulesImages/Page5_no.svg" alt="貓咪躺在地上說no">
+                            <div class="danger-slider__text mb-9">有一些室內植物 (例如：百合花)
+                                對於貓咪而言是有毒的。<br>請獸醫師提供完整的有毒植物清單，並建議您在將貓咪接回家前搬走這些植物。 </div>
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-1.svg" alt="貓咪躺在地上說no">
                         </div>
                     </div>
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/bethroom.jpg"
-                                alt="浴室馬桶和垃圾桶的照片">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/bethroom.jpg" alt="浴室馬桶和垃圾桶的照片">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">02</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">馬桶和垃圾桶</div>
                             <div class="danger-slider__text mb-9">為了避免貓咪調皮掉進馬桶或垃圾桶裡，記得一定要蓋上蓋子。<br>另外還要把線繩收好，不要讓貓咪玩，以免被纏繞或吞食。</div>
-                            <img src="../assets/images/happyRulesImages/Page5_no-2.svg" alt="貓咪說i don't like">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-2.svg" alt="貓咪說i don't like">
                         </div>
                     </div>
             
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/medicine.jpg" alt="藥物、噴劑等危險物質">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/medicine.jpg" alt="藥物、噴劑等危險物質">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">03</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">藥物、噴劑等危險物質</div>
                             <div class="danger-slider__text mb-9">務必將藥品、清潔用品及其他有毒物質存放在安全之處。<br>有些犬用跳蚤治劑對貓來說非常危險，尤其是防凍劑特別致命。 </div>
-                            <img src="../assets/images/happyRulesImages/Page5_no.svg" alt="貓咪躺在地上說no">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-3.svg" alt="貓咪躺在地上說no">
                         </div>
                     </div>
-
+            
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/washingmachine.jpg" alt="滾筒洗衣機等藏身地點">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/washingmachine.jpg" alt="滾筒洗衣機等藏身地點">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">04</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">藏身地點</div>
-                            <div class="danger-slider__text mb-9">貓咪喜歡躲在滾筒洗衣機和各式家具下的隱蔽之處。<br>找到他們可能躲藏的地方，然後將這些地方擋起來或是在家裡走動時小心，以確保牠們不會被困住。</div>
-                            <img src="../assets/images/happyRulesImages/Page5_no-2.svg" alt="貓咪說i don't like">
+                            <div class="danger-slider__text mb-9">
+                                貓咪喜歡躲在滾筒洗衣機和各式家具下的隱蔽之處。<br>找到他們可能躲藏的地方並擋起來，多留心以確保牠們不會被困住。</div>
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-4.svg" alt="貓咪說i don't like">
                         </div>
                     </div>
-
+            
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/socket.jpg" alt="電線和插座">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/socket.jpg" alt="電線和插座">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">05</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">電線和插座</div>
-                            <div class="danger-slider__text mb-9">為了不讓貓咪咬電線或被電線纏住，請用保護蓋將電線蓋住，綁好電線。另外也提醒您要用保護蓋蓋住插座以免危險。</div>
-                            <img src="../assets/images/happyRulesImages/Page5_no.svg" alt="貓咪躺在地上說no">
+                            <div class="danger-slider__text mb-9">為了不讓貓咪咬電線或被電線纏住，請用保護蓋將電線蓋住，綁好電線。<br>另外也提醒您要用保護蓋蓋住插座以免危險。</div>
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-5.svg" alt="貓咪躺在地上說no">
                         </div>
                     </div>
-                    
+            
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/choco.jpg" alt="對貓咪有毒的食物:巧克力">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/choco.jpg" alt="對貓咪有毒的食物:巧克力">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">06</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">對貓咪有毒的食物</div>
-                            <div class="danger-slider__text mb-9">有的食物對人類來說無害，但對貓咪來說是毒藥，可能引起消化方面的問題，嚴重則導致死亡。<br>因此請將所有食物放在貓咪碰不到的地方，並讓所有家人都知道。</div>
-                            <img src="../assets/images/happyRulesImages/Page5_no-2.svg" alt="貓咪說i don't like">
+                            <div class="danger-slider__text mb-9">
+                                有的食物對人類來說無害，但對貓咪來說是毒藥。<br>輕則引起消化方面的問題，嚴重則導致死亡。<br>因此請將所有食物放在貓咪碰不到的地方，並讓所有家人都知道。</div>
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-6.svg" alt="貓咪說i don't like">
                         </div>
                     </div>
-
+            
                     <div class="danger-slider__item d-flex flex-md-row flex-column align-items-center swiper-slide">
                         <div class="danger-slider__img">
-                            <img src="../assets/images/happyRulesImages/danger/toy.jpg" alt="小型物品或玩具">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/toy.jpg" alt="小型物品或玩具">
                         </div>
                         <div class="danger-slider__content">
                             <span class="danger-slider__code fs-5 fs-medium mb-2 text-primary">07</span>
                             <div class="danger-slider__title fs-5 fw-medium text-title mb-6">小型物品或玩具</div>
-                            <div class="danger-slider__text mb-9">請收好任何小型物品，例如鈕扣或兒童玩具，否則貓咪可能會不慎誤吞。<br>另外請注意不要將塑膠袋或泡棉物體放在幼貓身邊，否則牠們可能會吞咬導致窒息。</div>
-                            <img src="../assets/images/happyRulesImages/Page5_no.svg" alt="貓咪躺在地上說no">
+                            <div class="danger-slider__text mb-9">
+                                請收好任何小型物品，例如鈕扣或兒童玩具，以防貓咪不慎誤吞。<br>另外請注意不要將塑膠袋或泡棉物體放在幼貓身邊，以防他們吞咬導致窒息。</div>
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/danger/Page5_no-7.svg" alt="貓咪躺在地上說no">
                         </div>
                     </div>
             
@@ -202,74 +257,152 @@
                 <div class="danger-slider__pagination"></div>
             </div>
             
-        </div>
+        </div> -->
+
+        <!-- Rule 03 遠離危險的地方重寫 -->
         
 
-        <!-- Rule 04 照顧愛貓的健康 -->
-        <div class="container mb-19 mb-md-23 d-flex flex-column justify-content-center">
-            <div>
-                <!-- 說明文字 -->
-                <h2 class="text-primary fs-md-5 mb-2 text-center">Rule 04</h2>
-                <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-6 mb-3">照顧愛貓的健康</h2>
-                <!-- 圖片內容 -->
-                <ul class="list-unstyled mx-auto position-relative hr__item01">
-                    <li class="d-flex align-items-center mb-3">
-                        <img class="pe-md-16" src="../assets/images/happyRulesImages/Page5_new_kid.png" alt="幼貓">
-                        <div class="hr__cattext ms-md-16 position-relative">
-                            <h3 class="fs-6 text-title mb-4 mb-md-3 letterSpc-8">幼貓</h3>
-                            <p class="mb-0">
-                                1.適當飲食：提供高品質食物。<br>
-                                2.社交化訓練：培養友善和信任感。<br>
-                                3.定期獸醫檢查：確保健康狀態。
-                            </p>
-                            <img class="hr__cat-teaser" src="../assets/images/happyRulesImages/Page5_cat-teaser.svg" alt="逗貓棒">
-                        </div>
-                    </li>
-                    <li class="d-flex flex-start align-items-center flex-row-reverse mb-4 hr__item02">
-                        <img src="../assets/images/happyRulesImages/Page5_new_young.png" alt="青少年貓">
-                        <div class="hr__cattext me-md-19 position-relative">
-                            <h3 class="fs-6 text-title mb-4 mb-md-3 text-end letterSpc-8">青少年貓</h3>
-                            <p class="mb-0 text-end">
-                                1.適當的飲食：提供青少年貓專用食物。<br>
-                                2.積極的運動和遊戲：促進身體發展和鍛煉。<br>
-                                3.定期獸醫檢查和疫苗接種：預防常見疾病。
-                            </p>
-                            <img class="hr__cat-toy" src="../assets/images/happyRulesImages/Page5_toy-l.svg" alt="cat-toy">
-                        </div>
-                    </li>
-                    <li class="d-flex align-items-center mb-4 hr__item03">
-                        <img class="me-md-16" src="../assets/images/happyRulesImages/Page5_new_mature.png" alt="成貓">
-                        <div class="hr__cattext ms-md-12 position-relative">
-                            <h3 class="fs-6 text-title mb-4 mb-md-3">成貓</h3>
-                            <p class="mb-0">
-                                1.健康飲食：提供平衡的貓糧。<br>
-                                2.定期獸醫檢查：監測健康狀態。<br>
-                                3.適當運動和遊戲：維持體重和心理健康。
-                            </p>
-                            <img class="hr__cat-toyball" src="../assets/images/happyRulesImages/Page5_toy-ball.svg" alt="cat-toyball">
-                        </div>
-                    </li>
-                    <li class="d-flex align-items-center flex-row-reverse mb-3 hr__item04">
-                        <img class="ms-md-16 hr__item04img" src="../assets/images/happyRulesImages/Page5_new_old.png" alt="熟齡貓">
-                        <div class="hr__cattext me-md-14 position-relative">
-                            <h3 class="fs-6 text-title mb-4 mb-md-3 text-end letterSpc-8">熟齡貓</h3>
-                            <p class="mb-0 text-end">
-                                1.適當的飲食：根據年齡和健康調整飲食。<br>
-                                2.定期獸醫檢查和健康監測：關注任何變化。<br>
-                                3.舒適的休息和睡眠環境：提供良好的休息區。
-                            </p>
-                            <img class="hr__sleepycat" src="../assets/images/happyRulesImages/Page5_sleep-cat.svg" alt="sleep-cat">
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <!-- Rule 04 照顧愛貓的健康 WEB -->
+        <div class="d-none d-lg-block">
+            <div class="container mb-19 mb-md-23 d-flex flex-column justify-content-center">
+                <div>
+                    <!-- 說明文字 -->
+                    <h2 class="text-primary fs-5 mb-2 text-center">Rule 04</h2>
+                    <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-6 mb-3">照顧愛貓的健康</h2>
+                    <!-- 圖片內容 -->
+                    <ul class="list-unstyled mx-auto position-relative hr__item01">
+                        <li class="d-flex align-items-center mb-3">
+                            <img class="pe-md-16" src="../assets/images/happyRulesImages/Page5_new_kid.png" alt="幼貓">
+                            <div class="hr__cattext ms-md-16 position-relative">
+                                <h3 class="fs-6 text-title mb-4 mb-md-3 letterSpc-8">幼貓</h3>
+                                <p class="mb-0">
+                                    1.適當飲食：提供高品質食物。<br>
+                                    2.社交化訓練：培養友善和信任感。<br>
+                                    3.定期獸醫檢查：確保健康狀態。
+                                </p>
+                                <img class="hr__cat-teaser img-fluid" src="../assets/images/happyRulesImages/Page5_cat-teaser.svg" alt="逗貓棒">
+                            </div>
+                        </li>
+                        <li class="d-flex flex-start align-items-center flex-row-reverse mb-4 hr__item02">
+                            <img src="../assets/images/happyRulesImages/Page5_new_young.png" alt="青少年貓">
+                            <div class="hr__cattext me-md-19 position-relative">
+                                <h3 class="fs-6 text-title mb-4 mb-md-3 text-end letterSpc-8">青少年貓</h3>
+                                <p class="mb-0 text-end">
+                                    1.適當的飲食：提供青少年貓專用食物。<br>
+                                    2.積極的運動和遊戲：促進身體發展和鍛煉。<br>
+                                    3.定期獸醫檢查和疫苗接種：預防常見疾病。
+                                </p>
+                                <img class="hr__cat-toy img-fluid" src="../assets/images/happyRulesImages/Page5_toy-l.svg" alt="cat-toy">
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4 hr__item03">
+                            <img class="me-md-16" src="../assets/images/happyRulesImages/Page5_new_mature.png" alt="成貓">
+                            <div class="hr__cattext ms-md-12 position-relative">
+                                <h3 class="fs-6 text-title mb-4 mb-md-3">成貓</h3>
+                                <p class="mb-0">
+                                    1.健康飲食：提供平衡的貓糧。<br>
+                                    2.定期獸醫檢查：監測健康狀態。<br>
+                                    3.適當運動和遊戲：維持體重和心理健康。
+                                </p>
+                                <img class="hr__cat-toyball img-fluid" src="../assets/images/happyRulesImages/Page5_toy-ball.svg"
+                                    alt="cat-toyball">
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center flex-row-reverse mb-3 hr__item04">
+                            <img class="ms-md-16 hr__item04img" src="../assets/images/happyRulesImages/Page5_new_old.png" alt="熟齡貓">
+                            <div class="hr__cattext me-md-14 position-relative">
+                                <h3 class="fs-6 text-title mb-4 mb-md-3 text-end letterSpc-8">熟齡貓</h3>
+                                <p class="mb-0 text-end">
+                                    1.適當的飲食：根據年齡和健康調整飲食。<br>
+                                    2.定期獸醫檢查和健康監測：關注任何變化。<br>
+                                    3.舒適的休息和睡眠環境：提供良好的休息區。
+                                </p>
+                                <img class="hr__sleepycat img-fluid" src="../assets/images/happyRulesImages/Page5_sleep-cat.svg"
+                                    alt="sleep-cat">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             
-            <div class="border border-2 border-text d-flex align-items-center align-self-center">
-                <a class="hr__linkbtn px-7 py-3 fw-medium letterSpc-8 mb-0" href="#">尋找心願貓咪
-                    <img class="ps-11 mb-1" src="../assets/images/icon/icon_arrow_white.svg" alt="向右箭頭">
-                </a>
+                <div class="border border-2 border-text d-flex align-items-center align-self-center">
+                    <a class="hr__linkbtn px-7 py-3 fw-medium letterSpc-8 mb-0" href="#">尋找心願貓咪
+                        <img class="ps-11 img-fluid" src="../assets/images/icon/icon_arrow_white.svg" alt="向右箭頭">
+                    </a>
+                </div>
             </div>
         </div>
+        
+        <!-- Rule 04 照顧愛貓的健康 MOB -->
+        <div class="d-lg-none">
+            <div class="container mb-19 mb-md-23 d-flex flex-column justify-content-center">
+                <div>
+                    <!-- 說明文字 -->
+                    <h2 class="text-primary fs-5 mb-2 text-center">Rule 04</h2>
+                    <h2 class="font-SerifTC fw-bold letterSpc-8 text-center fs-4 fs-md-5 text-title mb-md-6 mb-3">照顧愛貓的健康</h2>
+                    <!-- 圖片內容 -->
+                    <ul class="list-unstyled mx-auto">
+                        <li class="d-flex flex-column justify-content-center align-items-center mb-17">
+                            <img class="img-fluid" src="../assets/images/happyRulesImages/Page5_kid-mob.png" alt="幼貓">
+                            <div class="text-center">
+                                <h3 class="fs-6 text-title mb-4 letterSpc-8">幼貓</h3>
+                                <p class="mb-0">
+                                    1.適當飲食：提供高品質食物。<br>
+                                    2.社交化訓練：培養友善和信任感。<br>
+                                    3.定期獸醫檢查：確保健康狀態。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-center align-items-center mb-19 position-relative">
+                            <img class="img-fluid mb-9" src="../assets/images/happyRulesImages/dashed/Page5_young-mob-new-29.png" alt="青少年貓">
+                            <div class="text-center">
+                                <h3 class="fs-6 text-center text-title mb-4 letterSpc-8">青少年貓</h3>
+                                <p class="mb-0 text-center">
+                                    1.適當的飲食：提供青少年貓專用食物。<br>
+                                    2.積極的運動和遊戲：促進身體發展和鍛煉。<br>
+                                    3.定期獸醫檢查和疫苗接種：預防常見疾病。
+                                </p>
+                            </div>
+                            <img class="hr__dash01 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline01.svg" alt="dottedline01">
+                            <img class="hr__dash02 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline02.svg" alt="dottedline02">
+                        </li>
+                        <li class="d-flex flex-column justify-content-center align-items-center mb-18 position-relative">
+                            <img class="mb-9 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_mature-mob-new-30.png" alt="成貓">
+                            <div class="ms-md-12 text-center">
+                                <h3 class="fs-6 text-title mb-4">成貓</h3>
+                                <p class="mb-0">
+                                    1.健康飲食：提供平衡的貓糧。<br>
+                                    2.定期獸醫檢查：監測健康狀態。<br>
+                                    3.適當運動和遊戲：維持體重和心理健康。
+                                </p>
+                            </div>
+                            <img class="hr__dash03 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline03.svg" alt="dottedline03">
+                            <img class="hr__dash04 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline04.svg" alt="dottedline04">
+                        </li>
+                        <li class="d-flex align-items-center justify-content-center flex-column mb-16 position-relative">
+                            <img class="mb-8 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_old-mob-new-31.png" alt="熟齡貓">
+                            <div class="me-md-14 text-center">
+                                <h3 class="fs-6 text-title mb-4 letterSpc-8">熟齡貓</h3>
+                                <p class="mb-0">
+                                    1.適當的飲食：根據年齡和健康調整飲食。<br>
+                                    2.定期獸醫檢查和健康監測：關注任何變化。<br>
+                                    3.舒適的休息和睡眠環境：提供良好的休息區。
+                                </p>
+                            </div>
+                            <img class="hr__dash05 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline05.svg" alt="dottedline05">
+                            <img class="hr__dash07 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline07.svg" alt="dottedline07">
+                            <img class="hr__dash08 img-fluid" src="../assets/images/happyRulesImages/dashed/Page5_dottedline08.svg" alt="dottedline08">
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="border border-2 border-text d-flex align-items-center align-self-center">
+                    <a class="hr__linkbtn px-13 py-4 px-md-7 py-md-3 fw-medium letterSpc-8 mb-0" href="#">尋找心願貓咪
+                        <img class="ps-11 " src="../assets/images/icon/icon_arrow_white.svg" alt="向右箭頭">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
 
 
     </main>
@@ -280,20 +413,39 @@
             <script type="module" src="../main.js"></script>
             <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-            <script>var swiper = new Swiper('.danger-slider', {
-                    spaceBetween: 30,
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <!-- <script>
+                var swiper = new Swiper(".hr__dangerSwiper", {
+                    direction: "vertical",
+                    slidesPerView: 1,
                     effect: 'fade',
                     loop: true,
+                    spaceBetween: 30,
                     mousewheel: {
                         invert: false,
                     },
-                    // autoHeight: true,
                     pagination: {
-                        el: '.danger-slider__pagination',
+                        el: ".swiper-pagination",
                         clickable: true,
-                    }
-                });</script>
+                    },
+                });
+            </script> -->
+            <script>
+                var swiper = new Swiper(".hr__dangerSwiper", {
+                    direction: "vertical",
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    mousewheel: {
+                        invert: false,
+                    },
+                    pagination: {
+                        el: ".hr__dangerswiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
 </body>
 
 </html>
