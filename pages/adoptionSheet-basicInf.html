@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜趣找貓-提供各地收容所、貓咪資料以及認養服務的貓咪專屬平台</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 領養諮詢表內容 -->
+    <main class="adoptionSheet-basicInf mt-7">
+      <!-- banner 區塊 -->
+      <section class="bg-primary mb-19 mb-lg-21">
+        <div class="container">
+          <h1 class="fs-11 fs-md-12 fs-lg-1 fw-bold lh-sm letterSpc-8 font-SerifTC text-form-bg-color text-hover">感謝您有意願給貓咪一個永遠的家</h1>
+        </div>
+      </section>
+
+      <!-- 表單內容 -->
+      <section class="container">
+        <div class="mb-11">
+          <h3 class="d-flex justify-content-center align-items-center gap-4 mb-4 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">
+            <i class="fa-solid fa-pencil text-primary"></i>
+            領養諮詢表
+          </h3>
+          <div class="px-4">
+            <p class="mb-4 mb-md-0 text-center fw-medium letterSpc-8">我們花了很多時間了解帶領養的貓咪們，現在我們也想多認識您一些!</p>
+            <p class="mb-0 text-center fw-medium letterSpc-8">這份申請表是為了讓我們確保貓咪能有無憂的生活。<br class="d-none d-md-block">您大概會需要花10分鐘的時間完成這份表格，也請您在回答問題時能夠盡量給我更多的細節。</p>
+          </div>
+        </div>
+        <div class="form__step col-11 col-md-10 col-lg-5 position-relative d-flex justify-content-between mb-13 mx-auto fs-6 font-SansTC">
+          <span class="active text-white bg-decoLine rounded-circle text-center z-1" style="width: 32px; height: 32px;">1</span>
+          <span class="text-white bg-decoLine rounded-circle text-center z-1" style="width: 32px; height: 32px;">2</span>
+          <span class="text-white bg-decoLine rounded-circle text-center z-1" style="width: 32px; height: 32px;">3</span>
+        </div>
+        <form class="col-8 mx-auto row gx-3 gy-7 align-items-center">
+          <div class="col-md-12 col-lg-4">
+            <label for="name" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              您的姓名
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </label>
+            <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" id="name" placeholder="請填寫真實姓名" required>
+          </div>
+          <div class="col-md-12 col-lg-7 ms-lg-auto">
+            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              稱謂
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </p>  
+            <div class="d-flex flex-wrap flex-md-nowrap align-items-center gap-4">
+              <div class="py-3 flex-shrink-0 d-flex align-items-center gap-1">
+                <input class="form-check-input border border-2 border-inputBdr-light m-0" type="radio" name="title" id="male" required>
+                <label class="form-check-label" for="male" required>
+                  先生
+                </label>
+              </div>
+              <div class="flex-shrink-0 d-flex align-items-center gap-1">
+                <input class="form-check-input border border-2 border-inputBdr-light m-0" type="radio" name="title" id="female">
+                <label class="form-check-label" for="female" required>
+                  女士
+                </label>
+              </div>
+              <div class="flex-shrink-0 d-flex align-items-center gap-1">
+                <input class="form-check-input border border-2 border-inputBdr-light m-0" type="radio" name="title" id="other">
+                <label class="form-check-label" for="other" required>
+                  其它
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              未來您和貓咪居住地址
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="dropdown">
+                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
+                      <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇縣市</span>
+                    </div>
+                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="dropdown">
+                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-map-pin fs-5 text-primary" style="padding-left: 5px; padding-right: 4px;"></i>
+                      <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇區域</span>
+                    </div>
+                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-xl-5">
+                <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light h-100" required>
+              </div>
+            </div>
+          </div>          
+          <div class="col-md-6">
+            <label for="tel" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              聯絡電話
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </label>
+            <input type="tel" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" id="tel" placeholder="請填寫聯絡電話" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              電子郵件
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </label>
+            <input type="email" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" id="email" placeholder="請填寫電子郵件" required>
+          </div>
+          <div class="col-12">
+            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+              出生年月日
+              <span class="position-relative" style="color: red; top: -5px;">*</span>
+            </p>
+            <div class="row g-3">
+              <div class="col-md-12 col-lg-4">
+                <div class="dropdown">
+                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center gap-2">
+                      <!-- <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt=""> -->
+                      <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">西元年月份</span>
+                    </div>
+                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="dropdown">
+                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center gap-2">
+                      <!-- <i class="fa-solid fa-map-pin fs-5 text-primary" style="padding-left: 5px; padding-right: 4px;"></i> -->
+                      <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">月份</span>
+                    </div>
+                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="dropdown">
+                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center gap-2">
+                      <!-- <i class="fa-solid fa-map-pin fs-5 text-primary" style="padding-left: 5px; padding-right: 4px;"></i> -->
+                      <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">日期</span>
+                    </div>
+                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">待新增內容</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-7 text-inputBdr-light font-SansTC">動保法規定，領養者須年滿 20 歲才能領養動物</p>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12">
+            <button class="btn btn-warning" type="button">再考慮一下</button>
+            <button class="btn btn-primary" type="submit">下一頁</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/takeFilter.js"></script>
+    <script type="module" src="../main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  </body>
+</html>
