@@ -1,0 +1,30 @@
+.adoptionSheet-basicInf {
+  .form__step {
+
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 45%;
+      height: 2px;
+      background: $decoLine;
+    }
+    &::before {
+      left: 32px;
+    }
+
+    &::after {
+      right: 32px;
+    }
+
+    .active {
+      background: $primary !important;
+    }
+  }
+
+  .placeholder__color::placeholder {
+    color: $placeholder;
+  }
+
+}
