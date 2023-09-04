@@ -478,22 +478,6 @@
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <!-- Initialize Swiper -->
-      <!-- <script>
-                var swiper = new Swiper(".hr__dangerSwiper", {
-                    direction: "vertical",
-                    slidesPerView: 1,
-                    effect: 'fade',
-                    loop: true,
-                    spaceBetween: 30,
-                    mousewheel: {
-                        invert: false,
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                });
-            </script> -->
       <script>
         var swiper = new Swiper(".hr__dangerSwiper", {
           direction: "vertical",
@@ -515,6 +499,16 @@
             clickable: true,
           },
         });
+      </script>
+      <script>
+        window.addEventListener('load', function () {
+            var hr__item01 = document.querySelector('.hr__item01');
+
+            // 使用setTimeout来延迟一段时间后再将圆显示出来
+            setTimeout(function () {
+              hr__item01.style.opacity = 1; // 将透明度设置为1，使圆可见
+            }, 1000); // 延迟1秒后执行动画
+          });
       </script>
 </body>
 
