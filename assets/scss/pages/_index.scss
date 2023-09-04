@@ -11,7 +11,10 @@
   .btn__hover:hover {
     background: $form-bg-color;
   }
-
+  
+  .searchBar__placeholder::placeholder {
+    color: $placeholder;
+  }
 
   .cutover__effect {
 
@@ -111,9 +114,6 @@
     }
   }
   
-  .searchBar__placeholder::placeholder {
-    color: $placeholder;
-  }
 }
 
 @include md {
