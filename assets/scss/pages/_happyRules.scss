@@ -142,6 +142,69 @@
     }
 }
 
+//第四部分修改
+//背景圖片
+.hr__5-4bg{
+  background-image: url(../images/happyRulesImages/part4/p5-4_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// 箭頭
+.hr__arrow{
+  max-width: 60px;
+  height: auto;
+}
+//title
+.hr_title-1{
+  background-image: url(../images/happyRulesImages/part4/p5-4_young-bg.svg);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: auto;
+}
+.hr_title-2{
+  background-image: url(../images/happyRulesImages/part4/p5-4_junior-bg.svg);
+  background-repeat: no-repeat;
+  width: 160px;
+  height: auto;
+}
+.hr_title-3{
+  background-image: url(../images/happyRulesImages/part4/p5-4_senior-bg.svg);
+  background-repeat: no-repeat;
+  width: 140px;
+  height: auto;
+}
+.hr_title-4{
+  background-image: url(../images/happyRulesImages/part4/p5-4_old-bg.svg);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: auto;
+}
+.hr__titlebg3 {
+  max-width: 139px;
+  height: auto;
+}
+.hr__titlebg4 {
+  max-width: 159px;
+  height: auto;
+}
+// 貓貓照片
+.hr__cat01{
+  max-width: 809px;
+  height: auto;
+}
+.hr__cat02 {
+  max-width: 468px;
+  height: auto;
+}
+.hr__cat03 {
+  max-width: 801px;
+  height: auto;
+  left: 30%;
+}
+.hr__cat04 {
+  max-width: 502px;
+  height: auto;
+}
 
 // 第四部分
 .hr__item01{
@@ -159,8 +222,6 @@
     top: 8.8%;
     left: 50%;
     z-index: 1;
-    opacity: 0;//初始不可見
-    transition: opacity 1s ease-in-out;
 }
 .hr__item01::before{
     content: "";
