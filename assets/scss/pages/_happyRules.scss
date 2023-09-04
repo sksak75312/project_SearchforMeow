@@ -158,8 +158,8 @@
 .hr_title-1{
   background-image: url(../images/happyRulesImages/part4/p5-4_young-bg.svg);
   background-repeat: no-repeat;
-  width: 130px;
   height: auto;
+  width: 130px;
 }
 .hr_title-2{
   background-image: url(../images/happyRulesImages/part4/p5-4_junior-bg.svg);
@@ -196,14 +196,45 @@
   max-width: 468px;
   height: auto;
 }
+.hr__cat02-1 {
+  max-width: 375px;
+}
+.hr__cat03-1{
+  max-width: 375px;
+}
 .hr__cat03 {
-  max-width: 801px;
+  max-width: 550px;
   height: auto;
-  left: 30%;
+  overflow: hidden;
+  top: -10%;
+  @include md {
+    max-width: 600px;
+    top: 0%;
+    left: 16%;
+  }
+  @include lg{
+    max-width: 700px;
+    left: 16%;
+  }
+  @include xl{
+    max-width: 801px;
+    left: 30%;
+  }
 }
 .hr__cat04 {
-  max-width: 502px;
+  max-width: 460px;
   height: auto;
+  @include md {
+      max-width: 460px;
+      left: 16%;
+    }
+  @include lg {
+    max-width: 502px;
+    left: 16%;
+  }
+}
+.hr__cat04-1 {
+  max-width: 375px;
 }
 
 // 第四部分
