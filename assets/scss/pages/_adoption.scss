@@ -1,4 +1,4 @@
-.take {
+.adoption {
   
   .btn__hover:hover {
     background: $form-bg-color;
@@ -6,7 +6,7 @@
 
   .banner {
     height: 631px;
-    background: url("../assets/images/take/banner-bg-mobile.png") no-repeat center/cover;
+    background: url("../assets/images/adoption/banner-bg-mobile.png") no-repeat center/cover;
   }
 
   .search {
@@ -53,10 +53,10 @@
 }
 
 @include md {
-  .take {
+  .adoption {
     .banner {
       height: 900px;
-      background-image: url("../assets/images/take/banner-bg-pad.png");
+      background-image: url("../assets/images/adoption/banner-bg-pad.png");
     }
     
     .border-left-none {
@@ -80,10 +80,10 @@
 }
 
 @include lg {
-  .take {
+  .adoption {
     .banner {
       height: 650px;
-      background-image: url("../assets/images/take/banner-bg-web.png");
+      background-image: url("../assets/images/adoption/banner-bg-web.png");
     }
 
     .search {
@@ -102,7 +102,7 @@
 }
 
 @include xxl {
-  .take {
+  .adoption {
     .search {
       &__bg__left {
         left: 130px;

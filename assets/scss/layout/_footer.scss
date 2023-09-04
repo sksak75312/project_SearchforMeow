@@ -33,18 +33,17 @@
     }
   }
   .bottomBannerWeb{
-    //background: url(../images/shelter/bg-bottom.svg) center center no-repeat;
     background-size: cover;
     height: 192px;
   }
-  .toTop{
-    width: 48px;
-    height: 48px;
-    right: 32px;
-    bottom: 0;
-    i{
-      font-size: 16px;
-    }
+}
+.toTop{
+  right: 32px;
+  bottom: 200px;
+  display: none;
+  position: fixed;
+  i{
+    font-size: 48px;
   }
 }
 @include md{
@@ -62,11 +61,27 @@
       font-size: 16px !important;
     }
     .bringHome{
+      width: 80%;
+      .animateArrow{
+        right: 20px;
+        top: 10.5px;
+      }
       &:hover{
         background: transparent !important;
         border-color: $text !important;
         color: $text !important;
+        .animateArrow{
+          animation-name: shakeHorizontal;
+          animation-duration: 0.8s;
+          animation-timing-function: linear;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+        }
       }
+    }
+    @keyframes shakeHorizontal {
+      from{right: 5px;}
+      to{right: -5px;}
     }
     .list-group-item{
       width: 17.251756%;
@@ -84,19 +99,6 @@
         right: 10px;
         top: 10.5px;
       }
-      &:hover{
-        .animateArrow{
-          animation-name: shakeHorizontal;
-          animation-duration: 0.8s;
-          animation-timing-function: linear;
-          animation-fill-mode: both;
-          animation-iteration-count: infinite;
-        }
-      }
-    }
-    @keyframes shakeHorizontal {
-      from{right: 15px;}
-      to{right: 0px;}
     }
   }
 }

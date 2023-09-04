@@ -1,0 +1,18 @@
+//已加入 all.scss
+//外層 button/a class="positon-lg-relative"；內層 img class="position-lg-absolute arrowBtn"，即可
+
+@include lg{
+    a:hover,button:hover{
+        .arrowBtn{
+            animation-name: shakeHorizontal;
+            animation-duration: 0.8s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
+    @keyframes shakeHorizontal {
+        from{right: 30px;}
+        to{right: 10px;}
+    }
+}
