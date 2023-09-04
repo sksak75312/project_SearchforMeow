@@ -1,4 +1,8 @@
 .adoption-appointedCat {
+  .btn__hover:hover {
+    background: $form-bg-color;
+  }
+  
   .cat__item {
     background: #000;
 
@@ -14,8 +18,7 @@
   .cat__img {
     width: 300px;
     height: 300px;
-    cursor: pointer;
-    
+    cursor: pointer;   
   }
 
   @include md {
@@ -36,6 +39,25 @@
     .deco__img {
       width: 200px;
       height: 217px;
+    }
+
+    .medical__deco__left {
+      top: 60%;
+      right: 75%;
+    }
+
+    .medical__deco__right {
+      right: -20%;
+      bottom: 0;
+      width: 206px;
+      height: 150px;
+    }
+  }
+
+  @include xl {
+    .medical__deco__right {
+      width: 290px;
+      height: 177px;
     }
   }
 
