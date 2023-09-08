@@ -13,11 +13,11 @@
 <body>
   <%- include('./layout/header'); -%>
     <main class="donate__plan mt-7 mt-lg-13">
-      <div class="container">
+      <div class="container" id="app">
         <div class="donate__plan__selectPlan">
           <div class="row" id="AJAX_container">
             <!-- 第0頁 -->
-            <div class="col-12 col-md-8 col-xl-6">
+            <!-- <div class="col-12 col-md-8 col-xl-6">
               <div class="p-4 border border-2 border-inputBdr-dark">
                 <div class="list-group d-flex" role="tablist">
                   <a class="list-group-item list-group-item-action active w-50 text-center  py-1 py-md-2"
@@ -99,7 +99,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
 
 
@@ -349,6 +349,99 @@
                 </div>
               </div>
             </div> -->
+
+            <!-- 第4頁 -->
+            <!-- <div class="col-12">
+              <div class="mt-20 p-4 border border-2 border-inputBdr-dark" id="selectPlan_once_step4">
+                <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">輸入信用卡資料</p>
+                <p class="mb-0 text-primary">捐款金額NT$300元</p>
+                <h2 class="mb-0 fs-base fs-6">信用卡交易資訊</h2>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_number"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">信用卡號</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <input type="tel" class="form-control" id="once_donor_credit_number" placeholder="請輸入">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_duedate_MM"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">有效期限</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                      <input type="tel" class="form-control" id="once_donor_credit_duedate_MM" placeholder="MM"
+                        maxlength="2">
+                      <span class="px-3">-</span>
+                      <input type="tel" class="form-control" id="once_donor_credit_duedate_YY" placeholder="YY"
+                        maxlength="2">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_security"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">安全碼</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <div class="d-flex align-items-center w-100 w-md-25">
+                      <input type="tel" class="form-control me-5" maxlength="3" id="once_donor_credit_security"
+                        placeholder="請輸入">
+                      <i class="fa-regular fa-credit-card text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="mb-0 fs-base fs-6">持卡人資料</h2>
+                <div class="form-check form-switch">
+                  <input class="form-check-input rounded-pill" type="checkbox" role="switch"
+                    id="once_donor_credit_remember">
+                  <label class="form-check-label" for="once_donor_credit_remember">記住本次捐款人資訊</label>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_cardOwnerName"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">持卡人姓名</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <input type="text" class="form-control" id="once_donor_credit_cardOwnerName" placeholder="請輸入">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_cardOwnerPhone"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">手機號碼</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                      <input type="tel" class="form-control" id="once_donor_credit_cardOwnerPhone" placeholder="請輸入09開頭"
+                        maxlength="10">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-2 col-lg-1">
+                    <label for="once_donor_credit_cardOwnerMail"
+                      class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">電子信箱</label>
+                  </div>
+                  <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                      <input type="tel" class="form-control" id="once_donor_credit_cardOwnerMail"
+                        placeholder="如欲接收此筆交易付款通知，請輸入" maxlength="10">
+                    </div>
+                  </div>
+                </div>
+                <p>注意事項：為維護交易安全，本公司己配合國際組織全面採用信用卡30S 2.0交易授權機制，如遇交易失敗，請洽詢發卡銀行或更換銀行卡片後重新交易。</p>
+                <div class="d-flex ">
+                  <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                  <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                </div>
+              </div>
+            </div> -->
+
+
+
           </div>
         </div>
       </div>
@@ -820,6 +913,110 @@
               // 綁定step3 下一步按鈕
               document.querySelector(`#selectPlan_${donateData.plan}_step3 .next`).addEventListener('click', function () {
                 AJAX.innerHTML = `
+                  <div class="col-12">
+                    <div class="mt-20 p-4 border border-2 border-inputBdr-dark" id="selectPlan_${donateData.plan}_step4">
+                      <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">輸入信用卡資料</p>
+                      <p class="mb-0 text-primary">捐款金額NT$300元</p>
+                      <h2 class="mb-0 fs-base fs-6">信用卡交易資訊</h2>
+                      <table class="table align-middle table-borderless">
+                        <thead>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="">
+                              <label for="${donateData.plan}_donor_credit_number"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">信用卡號</label>
+                            </th>
+                            <td colspan="4">
+                              <input type="tel" class="form-control" id="${donateData.plan}_donor_credit_number" placeholder="請輸入">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="">
+                              <label for="${donateData.plan}_donor_credit_duedate_MM"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">有效期限</label>
+                            </th>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <input type="tel" class="form-control" id="${donateData.plan}_donor_credit_duedate_MM" placeholder="MM"
+                                  maxlength="2">
+                                <span class="px-3">-</span>
+                                <input type="tel" class="form-control" id="${donateData.plan}_donor_credit_duedate_YY" placeholder="YY"
+                                  maxlength="2">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="">
+                              <label for="${donateData.plan}_donor_credit_security"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">安全碼</label>
+                              </th>
+                              <td>
+                                <div class="d-flex align-items-center w-100 w-md-25">
+                                  <input type="tel" class="form-control me-5" maxlength="3"
+                                  id="${donateData.plan}_donor_credit_security" placeholder="請輸入">
+                                  <i class="fa-regular fa-credit-card text-primary"></i>
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <h2 class="mb-0 fs-base fs-6">持卡人資料</h2>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input rounded-pill" type="checkbox" role="switch" id="${donateData.plan}_donor_credit_remember">
+                        <label class="form-check-label" for="${donateData.plan}_donor_credit_remember">記住本次捐款人資訊</label>
+                      </div>
+                      
+                      <table class="table align-middle table-borderless">
+                        <thead>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <label for="${donateData.plan}_donor_credit_cardOwnerName"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">持卡人姓名</label>
+                            </th>
+                            <td colspan="4">
+                              <input type="text" class="form-control" id="${donateData.plan}_donor_credit_cardOwnerName" placeholder="請輸入">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <label for="${donateData.plan}_donor_credit_cardOwnerPhone"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">手機號碼</label>
+                            </th>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <input type="tel" class="form-control" id="${donateData.plan}_donor_credit_cardOwnerPhone" placeholder="請輸入09開頭"
+                                  maxlength="10">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <label for="${donateData.plan}_donor_credit_cardOwnerMail"
+                                class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">電子信箱</label>
+                            </th>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <input type="tel" class="form-control" id="${donateData.plan}_donor_credit_cardOwnerMail" placeholder="如欲接收此筆交易付款通知，請輸入"
+                                  maxlength="10">
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>注意事項：為維護交易安全，本公司己配合國際組織全面採用信用卡30S 2.0交易授權機制，如遇交易失敗，請洽詢發卡銀行或更換銀行卡片後重新交易。</p>
+                      <div class="d-flex ">
+                        <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                        <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
                 `
               });
             })
@@ -977,13 +1174,346 @@
             return null; // No option selected
           }
 
-
-
-
-
         })
 
 
+      </script>
+      <script>
+        const app = {
+          data: {
+            // (page:頁數,頁數*    *代表當頁必填)
+            // 捐贈方案 (page:0*)
+            donatePlan: "",
+            // 捐款金額 (page:0*)
+            donateValue: 0,
+            // 捐款者姓名(page:1*,3*)
+            donorName: "",
+            // 捐款者性別(page:1*,3*)
+            donorGender: "",
+            // 捐款者身分證字號(page:1*,3*)
+            donorPersonalID: "",
+            // 捐款者電子郵件 (page:1*,3*)
+            donorMail: "",
+            // 捐款者聯絡電話(page:1*,3*)
+            donorPhone: "",
+            // 捐款者通訊地址-縣市--select/option(page:1)
+            donorAddrCounty: "",
+            // 捐款者通訊地址-鄉鎮區--select/option(page:1)
+            donorAddrCity: "",
+            // 捐款者通訊地址輸入欄位--input:text(page:1)
+            donorAddr: "",
+            // 是否需要收據radio group(page:2*,3*)
+            // value 0:unset(應該不會有，會預設是1) 1:不需要收據 2:電子收據 3:紙本收據
+            // ****** 如果這個選項選擇了1,理論同頁面下方不需要填寫資料了******
+            donorReceiptNeeded: 1,
+            // 收據是否同捐款人資料(page:2,3)
+            booleanSameAsDonorSwitchBtn: false,
+            // 收據抬頭(page:2*,3*)
+            donorTitle: "",
+            // 報稅憑證(page:2*,3*)
+            donorCertification: "",
+            // 捐款徵信名稱(page:2,3)
+            donorDonationName: "",
+            // 現在步驟（讓method在調用表單驗證的資料的時候，可以渲染出正確頁數）
+            nowStep: 0
+          },
+          // 初始頁面（單次、定期捐款選單頁面）
+          render0() {
+            // 目前在第0步驟
+            this.data.nowStep=0
+            const app = document.getElementById('app');
+            // 頁面替換開始
+            app.innerHTML = `
+              <div class="donate__plan__form">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-xl-6">
+                    <div class="p-4 border border-2 border-inputBdr-dark">
+                        <div class="list-group d-flex" role="tablist">
+                          <a class="list-group-item list-group-item-action active w-50 text-center  py-1 py-md-2"
+                            id="list-home-list" data-bs-toggle="list" href="#selectPlan_once" role="tab"
+                            aria-controls="list-home" onclick="app.method.clearCheckValidation();app.method.clearCounts();app.data.donatePlan='once'">單次捐款</a>
+                          <a class="list-group-item list-group-item-action w-50 text-center py-1 py-md-2" id="list-profile-list"
+                            data-bs-toggle="list" href="#selectPlan_regular" role="tab" aria-controls="list-profile" onclick="app.method.clearCheckValidation();app.method.clearCounts();app.data.donatePlan='regular'">每月定期捐款</a>
+                        </div>
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="selectPlan_once" role="tabpanel">
+                            <form class="needs-validation" novalidate>
+                              <h3 class="mb-0 fs-6 fs-lg-4">點選金額或自訂金額</h3>
+                              <table class="table table-hover mb-0">
+                                <tbody>
+                                  <tr class="border-top border-2 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="300">NTD300</th>
+                                    <td class="pe-0 text-end">幫助貓貓</td>
+                                  </tr>
+                                  <tr class="border-top border-bottom border-1 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="600">NTD600</th>
+                                    <td class="pe-0 text-end">幫助兩倍的貓貓</td>
+                                  </tr>
+                                  <tr class="border-bottom border-1 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="1500">NTD1500</th>
+                                    <td class="pe-0 text-end">幫助很多貓貓</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
+                                <label for="once_count" class="me-2 flex-shrink-0">自訂金額</label>
+                                <input type="tel" name="counts" id="once_count" placeholder="請輸入" class="w-25 form-control"  data-dataname="donateValue" required onchange="app.method.bindInputAndData(this)" >
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                              </div>
+                              <div class="mt-2 mt-lg-4">
+                                <p>選擇付款方式</p>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="once_creditCard" id="once_creditCard"
+                                    checked>
+                                  <label class="form-check-label" for="once_creditCard">信用卡</label>
+                                </div>
+                              </div>
+                              <div class="text-center">
+                                <button class="btn btn-primary w-100 w-md-50" type="submit">下一步</button>
+                              </div>
+                            </form>
+                          </div>
+
+                          <div class="tab-pane" id="selectPlan_regular" role="tabpanel">
+                            <form class="needs-validation" novalidate>
+                              <h3 class="mb-0 fs-6 fs-lg-4">點選金額或自訂金額</h3>
+                              <table class="table table-hover mb-0">
+                                <tbody>
+                                  <tr class="border-top border-2 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="300">NTD300</th>
+                                    <td class="pe-0 text-end">每天只要10元</td>
+                                  </tr>
+                                  <tr class="border-top border-bottom border-1 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="600">NTD600</th>
+                                    <td class="pe-0 text-end">每天不到20元</td>
+                                  </tr>
+                                  <tr class="border-bottom border-1 border-inputBdr-dark l-cursor-pointer">
+                                    <th scope="row" class="ps-0" data-dollars="1500">NTD1500</th>
+                                    <td class="pe-0 text-end">每天只要一杯咖啡的錢</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="border-bottom border-1 border-inputBdr-dark d-flex align-items-center">
+                                <label for="regular_count" class="me-2 flex-shrink-0">自訂金額</label>
+                                <input type="tel" name="counts" id="regular_count" placeholder="請輸入" value="" class="w-25 form-control" data-dataname="donateValue" required onchange="app.method.bindInputAndData(this)">
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                              </div>
+                              <div class="mt-2 mt-lg-4">
+                                <p>選擇付款方式</p>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="regular_creditCard" id="regular_creditCard"
+                                    checked>
+                                  <label class="form-check-label" for="regular_creditCard">信用卡</label>
+                                </div>
+                              </div>
+                              <div class="text-center">
+                                <button class="btn btn-primary w-100 w-md-50" type="submit">下一步</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+            // 頁面替換結束
+            // 綁定目標頁面app(即#app)，讓裡面的表格可以與inputbox綁定
+            this.method.bindTableAndInput();
+            // 強制頁面內所有input:tel都只能輸入數字
+            this.method.forceNumberInput();
+            // 觸發BS validation樣式並且防止submit事件觸發,如果表單驗證通過則會渲染下一頁面
+            this.method.checkValidation();
+          },
+          // 填寫捐款基本資料（姓名、性別、身分證字號、電子郵件、聯絡電話、通訊地址）
+          render1() {
+            this.data.nowStep=1;
+            const app = document.getElementById('app');
+            app.innerHTML=`
+              <div class="donate__plan__form">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-xl-6">
+                    <div class="p-4 border border-2 border-inputBdr-dark">
+                      <div class="w-100 border-0 bg-primary text-center fs-4 py-2 ">${donateData.plan === "once" ? '單次捐贈' : '定期捐贈'}</div>
+                      <form action="">
+                        <h2>填寫基本資料</h2>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_name" class="form-label l-requiredIcon flex-shrink-0">姓名</label>
+                          <input type="text" class="form-control" id="${donateData.plan}_donor_name" placeholder="請輸入">
+                        </div>
+                        <div class="">
+                          <span class="l-requiredIcon">性別</span>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_male" value="male">
+                            <label class="form-check-label" for="${donateData.plan}_male">男</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_female" value="female">
+                            <label class="form-check-label" for="${donateData.plan}_female">女</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_others" value="others" checked>
+                            <label class="form-check-label" for="${donateData.plan}_others">其他</label>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_personalID" class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
+                          <input type="text" class="form-control" id="${donateData.plan}_donor_personalID" placeholder="第一個字母請大寫">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_mail" class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
+                          <input type="email" class="form-control" id="${donateData.plan}_donor_mail" placeholder="請輸入">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_phone" class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
+                          <input type="tel" class="form-control" id="${donateData.plan}_donor_phone" placeholder="請輸入">
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="${donateData.plan}_donor_addr" class="form-label flex-shrink-0">通訊地址</label>
+                          <select class="form-select county" aria-label="選擇縣市">
+                            <option selected>縣市</option>
+                            <option value="台北">台北</option>
+                            <option value="台中">台中</option>
+                            <option value="高雄">高雄</option>
+                          </select>
+                          <select class="form-select city" aria-label="選擇鄉鎮區">
+                            <option selected>鄉鎮區</option>
+                            <option value="內湖">內湖</option>
+                            <option value="南港">南港</option>
+                            <option value="木柵">木柵</option>
+                          </select>
+                        </div>
+                        <input type="text" class="form-control" id="${donateData.plan}_donor_addr">
+                        <div id="${donateData.plan}_donor_help" class="form-text">若需要紙本收據請填寫、末填則奇送電子收據，謝謝！</div>
+                      </form>
+                      <div class="d-flex ">
+                        <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                        <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `
+          },
+          // 是某需要收據？ 收據抬頭、報稅憑證、捐款徵信名稱
+          render2() {
+
+          },
+          // 確認捐款資訊，顯示贊助方案及金額、捐款基本資料（帶入render1,render2頁面填寫的內容）
+          render3() {
+
+          },
+          // 輸入信用卡資料 （信用卡卡號、有效期限、安全碼），填寫持卡人資料（持卡人姓名、手機號碼、電子信箱）
+          render4() {
+
+          },
+          // final page ，感謝讚註！！
+          render5() {
+
+          },
+          fn: function () {
+            console.log('test');
+          },
+          method: {
+            // page0使用,讓點選的時候可以更新自訂金額的欄位
+            bindTableAndInput() {
+              const target = document.getElementById('app');
+              target.querySelectorAll('#selectPlan_once table tr').forEach(item => {
+                item.addEventListener('click', function () {
+                  const inputvalue = document.querySelector('#once_count');
+                  inputvalue.value = this.querySelector('th').dataset.dollars;
+                  // 將值存回
+                  app.data.donateValue = inputvalue.value;
+                })
+              });
+              target.querySelectorAll('#selectPlan_regular table tr').forEach(item => {
+                item.addEventListener('click', function () {
+                  const inputvalue = document.querySelector('#regular_count');
+                  inputvalue.value = this.querySelector('th').dataset.dollars;
+                  app.data.donateValue = inputvalue.value;
+                })
+              });
+            },
+            // 強制替換該頁面所有input:tel所輸入的非數字，將非數字替換成空字串''
+            forceNumberInput() {
+              const inputElements = document.querySelectorAll('input[type="tel"]');
+              inputElements.forEach((item) => {
+                item.addEventListener('input', function () {
+                  const inputValue = this.value;
+                  const numericValue = inputValue.replace(/\D/g, '');
+                  if (inputValue !== numericValue) {
+                    this.value = numericValue;
+                    console.log('已經完成替換')
+                  }
+                })
+              })
+            },
+            // 表單要送出前，需要先看看是否有哪些欄位還沒有填寫
+            checkValidation() {
+              // 抓取該頁面所有dom元素包含needs-validation class
+              const form = document.querySelectorAll('.needs-validation');
+              form.forEach((item) => {
+                // 對每個元素綁定submit事件
+                item.addEventListener('submit', (e) => {
+                  // 取消預設提交表單行為
+                  e.preventDefault();
+                  if (item.checkValidity()) {
+                    // 表單驗證通過，根據目前頁面渲染出下一頁
+                    switch (app.data.nowStep) {
+                      case 0:
+                        app.render1();
+                        break;
+                      case 1:
+                        app.render2();
+                        break;
+                      case 2:
+                        app.render3();
+                        break;
+                      case 3:
+                        app.render4();
+                        break;
+                    }
+                  } else {
+                    // 表单验证不通过，显示验证错误
+                    item.classList.add('was-validated');
+                  }
+                });
+              })
+              // document.querySelectorAll('.needs-validation').forEach((item) => {
+              //   item.addEventListener('submit', (e) => {
+              //     e.preventDefault();
+              //     item.classList.add('was-validated');
+              //   })
+              // })
+            },
+            // 清除表單驗證的顯示提示
+            clearCheckValidation() {
+              document.querySelectorAll('.was-validated').forEach((item) => {
+                item.classList.remove('was-validated');
+              })
+            },
+            // page0:清除page0的兩個inputbox,並且將data內的值給清空
+            clearCounts() {
+              document.getElementById('once_count').value = '';
+              document.getElementById('regular_count').value = '';
+              console.log('clear counts');
+              app.data.donateValue = 0;
+            },
+            bindInputAndData(inputbox) {
+              // 不可以使用oninput去綁定，會導致替換掉數字的函數，還來不及將非數字替換成空字串，就將值給存入donateValue中，導致donateValue會有非數字存在。
+              const dataName = inputbox.dataset.dataname;
+              app.data[dataName] = inputbox.value;
+              console.log(`app.data.${dataName}的值是${app.data[dataName]}`);
+            }
+          }
+        }
+        app.render0();
       </script>
 </body>
 

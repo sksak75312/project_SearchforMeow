@@ -65,6 +65,12 @@
 
 
 
+  .l-text-nowrap {
+    white-space: nowrap;
+  }
+  .l-cursor-pointer{
+    cursor: pointer;
+  }
 
 
 
@@ -175,11 +181,11 @@
     }
   }
 
-  .l-requiredIcon::after{
+  .l-requiredIcon::after {
     display: inline-block;
     content: "*";
-    color:red;
-    transform: translate(0px ,-20%);
+    color: red;
+    transform: translate(0px, -20%);
   }
 
 
@@ -318,14 +324,29 @@
   }
 
 
+  // table設定
+  tbody tr {
+    th:first-child{
+    // 第一個th符合
+    padding-left: 0px;
+    }
+    th{
+      width: 110px;
+    }
+  }
 
   // donate__plan頁面
   .donate__plan__selectPlan {
     // BS5提供的list-group JS切換功能
-    a.list-group-item.active{
+    a.list-group-item.active {
       background-color: $primary;
-      color:white;
+      color: white;
     }
   }
-
+  .donate__plan__form{
+    a.list-group-item.active {
+      background-color: $primary;
+      color: white;
+    }
+  }
 }
