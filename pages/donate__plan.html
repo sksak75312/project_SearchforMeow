@@ -1177,6 +1177,31 @@
         })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </script>
       <script>
         const app = {
@@ -1185,7 +1210,7 @@
             // 捐贈方案 (page:0*)
             donatePlan: "",
             // 捐款金額 (page:0*)
-            donateValue: 0,
+            donateValue: "0",
             // 捐款者姓名(page:1*,3*)
             donorName: "",
             // 捐款者性別(page:1*,3*)
@@ -1204,8 +1229,9 @@
             donorAddr: "",
             // 是否需要收據radio group(page:2*,3*)
             // value 0:unset(應該不會有，會預設是1) 1:不需要收據 2:電子收據 3:紙本收據
+            // value: 不需要收據:noReceipt
             // ****** 如果這個選項選擇了1,理論同頁面下方不需要填寫資料了******
-            donorReceiptNeeded: 1,
+            donorReceiptNeeded: "noReceipt",
             // 收據是否同捐款人資料(page:2,3)
             booleanSameAsDonorSwitchBtn: false,
             // 收據抬頭(page:2*,3*)
@@ -1215,12 +1241,20 @@
             // 捐款徵信名稱(page:2,3)
             donorDonationName: "",
             // 現在步驟（讓method在調用表單驗證的資料的時候，可以渲染出正確頁數）
-            nowStep: 0
+            nowStep: 0,
+            // 儲存render用的縣市,不會經由任何function去更動
+            citydata:{
+              台北:["內湖","南港","木柵",],
+              台中:["西屯","北屯","南屯","烏日","太平","東區",],
+              高雄:["鼓山", "三民", "左營",]
+            }
           },
           // 初始頁面（單次、定期捐款選單頁面）
           render0() {
             // 目前在第0步驟
-            this.data.nowStep=0
+            this.data.nowStep=0;
+            // 預設一渲染的時候會是單次捐款
+            this.data.donatePlan='once';
             const app = document.getElementById('app');
             // 頁面替換開始
             app.innerHTML = `
@@ -1331,49 +1365,63 @@
           },
           // 填寫捐款基本資料（姓名、性別、身分證字號、電子郵件、聯絡電話、通訊地址）
           render1() {
+            // 進入這頁的預設值
             this.data.nowStep=1;
+            this.data.donorGender="other"
             const app = document.getElementById('app');
             app.innerHTML=`
               <div class="donate__plan__form">
                 <div class="row">
                   <div class="col-12 col-md-8 col-xl-6">
                     <div class="p-4 border border-2 border-inputBdr-dark">
-                      <div class="w-100 border-0 bg-primary text-center fs-4 py-2 ">${donateData.plan === "once" ? '單次捐贈' : '定期捐贈'}</div>
-                      <form action="">
+                      <div class="w-100 border-0 bg-primary text-center fs-4 py-2 ">${this.data.donatePlan=== "once" ? '單次捐贈' : this.data.donatePlan==="regular"?'定期捐贈':alert('錯誤請重新整理')}</div>
+                      <form action="" class="needs-validation" novalidate>
                         <h2>填寫基本資料</h2>
                         <div class="d-flex align-items-center">
-                          <label for="${donateData.plan}_donor_name" class="form-label l-requiredIcon flex-shrink-0">姓名</label>
-                          <input type="text" class="form-control" id="${donateData.plan}_donor_name" placeholder="請輸入">
+                          <label for="donor_name" class="form-label l-requiredIcon flex-shrink-0">姓名</label>
+                          <input type="text" class="form-control w-50" id="donor_name" placeholder="請輸入" required data-dataname="donorName" onchange="app.method.bindInputAndData(this);">
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
                         </div>
                         <div class="">
                           <span class="l-requiredIcon">性別</span>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_male" value="male">
-                            <label class="form-check-label" for="${donateData.plan}_male">男</label>
+                            <input class="form-check-input" type="radio" name="myGender" id="radio_male" value="male" onclick="app.data.donorGender=this.value">
+                            <label class="form-check-label" for="radio_male">男</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_female" value="female">
-                            <label class="form-check-label" for="${donateData.plan}_female">女</label>
+                            <input class="form-check-input" type="radio" name="myGender" id="radio_female" value="female" onclick="app.data.donorGender=this.value" >
+                            <label class="form-check-label" for="radio_female">女</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="myGender" id="${donateData.plan}_others" value="others" checked>
-                            <label class="form-check-label" for="${donateData.plan}_others">其他</label>
+                            <input class="form-check-input" type="radio" name="myGender" id="radio_others" value="others"onclick="app.data.donorGender=this.value"  checked>
+                            <label class="form-check-label" for="radio_others">其他</label>
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label for="${donateData.plan}_donor_personalID" class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
-                          <input type="text" class="form-control" id="${donateData.plan}_donor_personalID" placeholder="第一個字母請大寫">
+                          <label for="donor_personalID" class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
+                          <input type="text" class="form-control" id="donor_personalID" placeholder="第一個字母請大寫" pattern="[A-Z][12]\\d{8}"required data-dataname="donorPersonalID" onchange="app.method.bindInputAndData(this);">
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label for="${donateData.plan}_donor_mail" class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
-                          <input type="email" class="form-control" id="${donateData.plan}_donor_mail" placeholder="請輸入">
+                          <label for="donor_mail" class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
+                          <input type="email" class="form-control" id="donor_mail" placeholder="請輸入" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" required data-dataname="donorMail" onchange="app.method.bindInputAndData(this);">
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label for="${donateData.plan}_donor_phone" class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
-                          <input type="tel" class="form-control" id="${donateData.plan}_donor_phone" placeholder="請輸入">
+                          <label for="donor_phone" class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
+                          <input type="tel" class="form-control" id="donor_phone" placeholder="09xxxxxxxx" pattern="09\\d{8}" required data-dataname="donorPhone" onchange="app.method.bindInputAndData(this);">
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label for="${donateData.plan}_donor_addr" class="form-label flex-shrink-0">通訊地址</label>
+                          <label for="donor_addr" class="form-label flex-shrink-0">通訊地址</label>
                           <select class="form-select county" aria-label="選擇縣市">
                             <option selected>縣市</option>
                             <option value="台北">台北</option>
@@ -1382,43 +1430,347 @@
                           </select>
                           <select class="form-select city" aria-label="選擇鄉鎮區">
                             <option selected>鄉鎮區</option>
-                            <option value="內湖">內湖</option>
-                            <option value="南港">南港</option>
-                            <option value="木柵">木柵</option>
                           </select>
                         </div>
-                        <input type="text" class="form-control" id="${donateData.plan}_donor_addr">
-                        <div id="${donateData.plan}_donor_help" class="form-text">若需要紙本收據請填寫、末填則奇送電子收據，謝謝！</div>
+                        <input type="text" class="form-control" id="$donor_addr" data-dataname="donorAddr" onchange="app.method.bindInputAndData(this);">
+                        <div id="donor_help" class="form-text">
+                          若需要紙本收據請填寫、末填則奇送電子收據，謝謝！
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                          <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                        </div>
                       </form>
-                      <div class="d-flex ">
-                        <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
-                        <a href="#" class="btn btn-primary w-50 next">下一步</a>
-                      </div>
-
                     </div>
                   </div>
                 </div>
               </div>
             `
+            // 觸發BS validation樣式並且防止submit事件觸發,如果表單驗證通過則會渲染下一頁面
+            // 內涵newxtPageRender函數
+            this.method.nextPageValidation();
+            // 前一頁，因為並不需要驗證資料所以直接執行function即可。，一樣是內涵previousPageRender函數
+            this.method.previousPageWithoutValidation();
+            // 綁定這頁的select,根據選擇的縣市動態改變鄉鎮區的選項
+            this.method.dynamicChangeCity();
+            // 綁定事件，每次select只要有選擇(change),就會寫回data中
+            this.method.writeAddrData();
           },
           // 是某需要收據？ 收據抬頭、報稅憑證、捐款徵信名稱
           render2() {
-
+            this.data.nowStep=2;
+            // 設定進入頁面的時候預設是不需要收據的
+            this.data.donorReceiptNeeded="noReceipt";
+            const app = document.getElementById('app');
+            app.innerHTML=`
+              <div class="donate__plan__form">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-xl-6">
+                    <div class="mt-20 p-4 border border-2 border-inputBdr-dark">
+                      <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2 ">收費資訊與寄送地址</p>
+                      <form action="" class="needs-validation" novalidate>
+                        <p class="mb-0">是否需要收據</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipt" id="noReceipt" value="noReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="noReceipt"?"checked":""}>
+                          <label class="form-check-label" for="noReceipt">不需要，無抵稅需求</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipt" id="digitalReceipt" value="digitalReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="digitalReceipt"?"checked":""}>
+                          <label class="form-check-label" for="digitalReceipt">電子收據（響應環保）</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="receipt" id="paperReceipt" value="paperReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="paperReceipt"?"checked":""} ${this.data.donorAddr===""||this.data.donorAddrCity===""||this.data.donorAddrCounty===""?"disabled":""}>
+                          <label class="form-check-label" for="paperReceipt">紙本收據，需提供完整地址</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input rounded-pill" type="checkbox" role="switch" id="sameAsDonor">
+                          <label class="form-check-label" for="sameAsDonor">同捐款人資料</label>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="donor_title" class="form-label l-requiredIcon flex-shrink-0">收據抬頭</label>
+                          <input type="text" class="form-control" id="donor_title" placeholder="請輸入姓名" data-dataname="donorTitle" onchange="app.method.bindInputAndData(this);" required>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="donor_certification" class="form-label l-requiredIcon flex-shrink-0">報稅憑證</label>
+                          <input type="text" class="form-control" id="donor_certification" placeholder="身分證字號，第一個字母請大寫" data-dataname="donorCertification" onchange="app.method.bindInputAndData(this);" required>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <label for="donor_donationName" class="form-label l-requiredIcon flex-shrink-0">捐款徵信名稱</label>
+                          <input type="text" class="form-control" id="donor_donationName" placeholder="請輸入名稱" data-dataname="donorDonationName" onchange="app.method.bindInputAndData(this);" required>
+                        </div>
+                      </form>
+                      <div class="d-flex">
+                        <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                        <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div>
+            `
+            // 綁定是否可以選擇需要紙本收據radio
+            // this.method.dynamicChangeAddrDisableOrNot();
+            // 綁定同捐款者資料switch
+            this.method.switchSameAsDonorClickEvent();
+            // 下一頁（需要驗證）
+            this.method.previousPageWithoutValidation();
+            // 上一頁（不需要驗證）
+            this.method.nextPageValidation();
           },
           // 確認捐款資訊，顯示贊助方案及金額、捐款基本資料（帶入render1,render2頁面填寫的內容）
           render3() {
+            this.data.nowStep=3;
+            const app = document.getElementById('app');
+            app.innerHTML=`
+              <div class="donate__plan__form">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mt-20 p-4 border border-2 border-inputBdr-dark">
+                      <form>
+                        <div class="row">
+                          <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">確認捐款資訊</p>
+                          <div class="col-12 col-md-6">
+                            <div class="p-6 l-bg-background-yellow">
+                              <p>贊助方案</p>
+                              <div class="d-flex align-items-center">
+                                <span class="p-2 bg-primary">${this.data.donatePlan==="once"?"單次捐款":"定期捐款"}</span>
+                                <span class="">NTD${this.data.donateValue}</span>
+                              </div>
+                            </div>
+                            <h2>填寫基本資料</h2>
+                            <div class="d-flex align-items-center">
+                              <label for="donor_name" class="form-label l-requiredIcon flex-shrink-0">姓名</label>
+                              <input type="text" class="form-control w-50" id="donor_name" value="${this.data.donorName}" placeholder="請輸入" required data-dataname="donorName" onchange="app.method.bindInputAndData(this);">
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                            <div class="">
+                              <span class="l-requiredIcon">性別</span>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="myGender" id="radio_male" value="male" onclick="app.data.donorGender=this.value" ${this.data.donorGender==="male"?"checked":""}>
+                                <label class="form-check-label" for="radio_male">男</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="myGender" id="radio_female" value="female" onclick="app.data.donorGender=this.value" ${this.data.donorGender==="female"?"checked":""}>
+                                <label class="form-check-label" for="radio_female">女</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="myGender" id="radio_others" value="others"onclick="app.data.donorGender=this.value"  ${this.data.donorGender==="others"?"checked":""}>
+                                <label class="form-check-label" for="radio_others">其他</label>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <label for="donor_personalID" class="form-label l-requiredIcon flex-shrink-0">身分證字號</label>
+                              <input type="text" class="form-control" id="donor_personalID" placeholder="第一個字母請大寫" pattern="[A-Z][12]\\d{8}"required data-dataname="donorPersonalID" onchange="app.method.bindInputAndData(this);" value="${this.data.donorPersonalID?this.data.donorPersonalID:""}">
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <label for="donor_mail" class="form-label l-requiredIcon flex-shrink-0">電子郵件</label>
+                              <input type="email" class="form-control" id="donor_mail" placeholder="請輸入" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" required data-dataname="donorMail" onchange="app.method.bindInputAndData(this);" value="${this.data.donorMail?this.data.donorMail:""}">
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <label for="donor_phone" class="form-label l-requiredIcon flex-shrink-0">聯絡電話</label>
+                              <input type="tel" class="form-control" id="donor_phone" placeholder="09xxxxxxxx" pattern="09\\d{8}" required data-dataname="donorPhone" onchange="app.method.bindInputAndData(this);" value="${this.data.donorPhone?this.data.donorPhone:""}">
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <label for="donor_addr" class="form-label flex-shrink-0">通訊地址</label>
+                              <select class="form-select county" aria-label="選擇縣市">
+                                <option selected>縣市</option>
+                                <option value="台北">台北</option>
+                                <option value="台中">台中</option>
+                                <option value="高雄">高雄</option>
+                              </select>
+                              <select class="form-select city" aria-label="選擇鄉鎮區">
+                                <option selected>鄉鎮區</option>
+                              </select>
+                            </div>
+                            <input type="text" class="form-control" id="$donor_addr" data-dataname="donorAddr" onchange="app.method.bindInputAndData(this);">
+                            <div id="donor_help" class="form-text">
+                              若需要紙本收據請填寫、末填則奇送電子收據，謝謝！
+                            </div>
+                          </div>
 
+
+
+                          <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column justify-content-between h-100">
+                              <div>
+                                <p class="mb-0">是否需要收據</p>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="receipt" id="noReceipt" value="noReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="noReceipt"?"checked":""}>
+                                  <label class="form-check-label" for="noReceipt">不需要，無抵稅需求</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="receipt" id="digitalReceipt" value="digitalReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="digitalReceipt"?"checked":""}>
+                                  <label class="form-check-label" for="digitalReceipt">電子收據（響應環保）</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="receipt" id="paperReceipt" value="paperReceipt" onclick="app.data.donorReceiptNeeded=this.value" ${this.data.donorReceiptNeeded==="paperReceipt"?"checked":""} ${this.data.donorAddr===""||this.data.donorAddrCity===""||this.data.donorAddrCounty===""?"disabled":""}>
+                                  <label class="form-check-label" for="paperReceipt">紙本收據，需提供完整地址</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input rounded-pill" type="checkbox" role="switch" id="sameAsDonor">
+                                  <label class="form-check-label" for="sameAsDonor">同捐款人資料</label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <label for="donor_title" class="form-label l-requiredIcon flex-shrink-0">收據抬頭</label>
+                                  <input type="text" class="form-control" id="donor_title" placeholder="請輸入姓名" data-dataname="donorTitle" onchange="app.method.bindInputAndData(this);" required value="${this.data.donorTitle?this.data.donorTitle:""}">
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <label for="donor_certification" class="form-label l-requiredIcon flex-shrink-0">報稅憑證</label>
+                                  <input type="text" class="form-control" id="donor_certification" placeholder="身分證字號，第一個字母請大寫" data-dataname="donorCertification" onchange="app.method.bindInputAndData(this);" required value=${this.data.donorCertification?this.data.donorCertification:""}>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <label for="donor_donationName" class="form-label l-requiredIcon flex-shrink-0">捐款徵信名稱</label>
+                                  <input type="text" class="form-control" id="donor_donationName" placeholder="請輸入名稱" data-dataname="donorDonationName" onchange="app.method.bindInputAndData(this);" required value="${this.data.donorDonationName?this.data.donorDonationName:""}">
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a href="#" class="btn btn-secondary w-50 previous">上一步</a>
+                                <a href="#" class="btn btn-primary w-50 next">下一步</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              `
+              this.method.forceNumberInput();
+              this.method.nextPageValidation();
+              this.method.previousPageWithoutValidation();
+              this.method.writeAddrData();
           },
           // 輸入信用卡資料 （信用卡卡號、有效期限、安全碼），填寫持卡人資料（持卡人姓名、手機號碼、電子信箱）
           render4() {
-
+            this.data.nowStep=4;
+            const app = document.getElementById('app');
+            app.innerHTML=`
+              <div class="donate__plan__form">
+                <div class="row">
+                  <div class="col-12">
+                    <form class="needs-validation" novalidate>
+                      <div class="mt-20 p-4 border border-2 border-inputBdr-dark">
+                        <p class="mb-0 w-100 border-bottom border-3 border-title text-center fs-4 py-2">輸入信用卡資料</p>
+                        <p class="mb-0 text-primary">捐款金額${this.data.donateValue}元</p>
+                        <h2 class="mb-0 fs-base fs-6">信用卡交易資訊</h2>
+                        <table class="table align-middle table-borderless">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row" class="">
+                                <label for="donor_credit_number"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">信用卡號</label>
+                              </th>
+                              <td colspan="4">
+                                <input type="tel" class="form-control" id="donor_credit_number" placeholder="請輸入" required>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="">
+                                <label for="donor_credit_duedate_MM"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">有效期限</label>
+                              </th>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <input type="tel" class="form-control" id="donor_credit_duedate_MM" placeholder="MM"
+                                    maxlength="2" required>
+                                  <span class="px-3">-</span>
+                                  <input type="tel" class="form-control" id="donor_credit_duedate_YY" placeholder="YY"
+                                    maxlength="2" required>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="">
+                                <label for="donor_credit_security"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">安全碼</label>
+                                </th>
+                                <td>
+                                  <div class="d-flex align-items-center w-100 w-md-25">
+                                    <input type="tel" class="form-control me-5" maxlength="3"
+                                    id="donor_credit_security" placeholder="請輸入" required>
+                                    <i class="fa-regular fa-credit-card text-primary"></i>
+                                  </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h2 class="mb-0 fs-base fs-6">持卡人資料</h2>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input rounded-pill l-novalidate" type="checkbox" role="switch" id="donor_credit_remember">
+                          <label class="form-check-label" for="donor_credit_remember">記住本次捐款人資訊</label>
+                        </div>
+                        
+                        <table class="table align-middle table-borderless">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <label for="donor_credit_cardOwnerName"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">持卡人姓名</label>
+                              </th>
+                              <td colspan="4">
+                                <input type="text" class="form-control" id="donor_credit_cardOwnerName" placeholder="請輸入" required>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <label for="donor_credit_cardOwnerPhone"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">手機號碼</label>
+                              </th>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <input type="tel" class="form-control" id="donor_credit_cardOwnerPhone" placeholder="請輸入09開頭"
+                                    maxlength="10" required>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <label for="donor_credit_cardOwnerMail"
+                                  class="form-label l-requiredIcon flex-shrink-0 mb-0 me-2 l-text-nowrap">電子信箱</label>
+                              </th>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <input type="tel" class="form-control" id="donor_credit_cardOwnerMail" placeholder="如欲接收此筆交易付款通知，請輸入"
+                                    maxlength="10" required>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>注意事項：為維護交易安全，本公司己配合國際組織全面採用信用卡30S 2.0交易授權機制，如遇交易失敗，請洽詢發卡銀行或更換銀行卡片後重新交易。</p>
+                        <div class="d-flex ">
+                          <a href="#" class="btn btn-primary w-100 next">下一步</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            `
+            // 這邊要注意順序，替換掉數字要在設定信用卡號以前，否則在信用卡判斷位數上加上"-"符號的時候可能會有問題
+            this.method.forceNumberInput();
+            this.method.setCreditNumberPattern();
+            this.method.nextPageValidation();
           },
           // final page ，感謝讚註！！
           render5() {
-
-          },
-          fn: function () {
-            console.log('test');
+            console.log('我是render5');
           },
           method: {
             // page0使用,讓點選的時候可以更新自訂金額的欄位
@@ -1436,7 +1788,7 @@
                 item.addEventListener('click', function () {
                   const inputvalue = document.querySelector('#regular_count');
                   inputvalue.value = this.querySelector('th').dataset.dollars;
-                  app.data.donateValue = inputvalue.value;
+                  app.data.donateValue =inputvalue.value;
                 })
               });
             },
@@ -1454,6 +1806,7 @@
                 })
               })
             },
+            // page0用而已，因為只有這頁會分成兩個form，需要個別抓取
             // 表單要送出前，需要先看看是否有哪些欄位還沒有填寫
             checkValidation() {
               // 抓取該頁面所有dom元素包含needs-validation class
@@ -1464,21 +1817,7 @@
                   // 取消預設提交表單行為
                   e.preventDefault();
                   if (item.checkValidity()) {
-                    // 表單驗證通過，根據目前頁面渲染出下一頁
-                    switch (app.data.nowStep) {
-                      case 0:
-                        app.render1();
-                        break;
-                      case 1:
-                        app.render2();
-                        break;
-                      case 2:
-                        app.render3();
-                        break;
-                      case 3:
-                        app.render4();
-                        break;
-                    }
+                    app.method.nextPageRender();
                   } else {
                     // 表单验证不通过，显示验证错误
                     item.classList.add('was-validated');
@@ -1492,6 +1831,7 @@
               //   })
               // })
             },
+            // page0使用，當點選不同的plan的時候，要清除驗證提示
             // 清除表單驗證的顯示提示
             clearCheckValidation() {
               document.querySelectorAll('.was-validated').forEach((item) => {
@@ -1505,11 +1845,152 @@
               console.log('clear counts');
               app.data.donateValue = 0;
             },
+            // 不會直接由method呼叫，會由ajax生成的dom元素綁定onchange,去觸發這個函數並且將觸發事件的dom元素帶到inputbox這個變數中
             bindInputAndData(inputbox) {
               // 不可以使用oninput去綁定，會導致替換掉數字的函數，還來不及將非數字替換成空字串，就將值給存入donateValue中，導致donateValue會有非數字存在。
               const dataName = inputbox.dataset.dataname;
               app.data[dataName] = inputbox.value;
               console.log(`app.data.${dataName}的值是${app.data[dataName]}`);
+            },
+            // 不會直接使用，會由其他函數呼叫
+            nextPageRender(){
+              if(app.data.nowStep===5){
+                return;
+              }
+              const page=app.data.nowStep+1;
+              app.method.RenderSelector(page);
+            },
+            // 不會直接使用，會由其他函數呼叫
+            previousPageRender(){
+              if(app.data.nowStep===0){return;}
+              const page=app.data.nowStep-1;
+              app.method.RenderSelector(page);
+            },
+            // 不會直接使用，會由其他函數呼叫
+            RenderSelector(pageNum=0){
+              switch (pageNum){
+                case 0:
+                  app.render0();
+                  break;
+                case 1:
+                  app.render1();
+                  break;
+                case 2:
+                  app.render2();
+                  break;
+                case 3:
+                  app.render3();
+                  break;
+                case 4:
+                  app.render4();
+                  break;
+                case 5:
+                  app.render5();
+                  break;
+                default:
+                  alert('error');
+              }
+            },
+            // 除了page0以外皆可使用
+            nextPageValidation(){
+              btn=document.querySelector('a.btn.next');
+              form=document.querySelector('form');
+              // 按下下一步按鈕之後，綁定表單送出事件的判斷
+              btn.addEventListener('click',(e)=>{
+                e.preventDefault();
+                if(form.checkValidity()){
+                  this.nextPageRender();
+                }else{
+                  form.classList.add('was-validated');
+                }
+              })
+            },
+            // 除了page0以外皆可使用
+            previousPageWithoutValidation(){
+              // 資料的儲存都直接綁定在物件的change或是onclick事件之上
+              // 所以不需要額外處理資料，直接根據目前data內有的數值渲染前一頁即可
+              btn=document.querySelector('a.btn.previous');
+              btn.addEventListener('click',()=>{
+                this.previousPageRender();
+              })
+            },
+            dynamicChangeCity(){
+            const selectCounty=document.querySelector('select.county');
+            const selectCity=document.querySelector('select.city');
+            console.log(selectCounty,selectCity);
+            selectCounty.addEventListener('change',(e)=>{
+              // 先取出目前選擇的縣市value是什麼
+              const selectCityValue=e.target.value;
+              // 清空鄉鎮區
+              selectCity.innerHTML=`
+              <option selected>鄉鎮區</option>
+              `;
+              // **要注意**
+              // 一定要讓county的value match到app.data.citydata的key
+              let optionsHTML = "";
+              optionsHTML=app.data.citydata[selectCityValue].map(item=>`<option value="${item}">${item}</option>`).join('');
+              selectCity.innerHTML+=optionsHTML;
+            });
+            },
+            // 有填寫地址的頁面需要使用，用事件去觸發
+            writeAddrData() {
+              const selectCounty = document.querySelector('select.county');
+              const selectCity = document.querySelector('select.city');
+              selectCounty.addEventListener('change',(e)=>{
+                console.log('county值存入data');
+                app.data.donorAddrCounty=e.target.value;
+              });
+              selectCity.addEventListener('change',(e)=>{
+                console.log('city值存入data');
+                app.data.donorAddrCity=e.target.value;
+              });
+            },
+            switchSameAsDonorClickEvent(){
+              switchBtn=document.getElementById('sameAsDonor');
+              switchBtn.addEventListener('click',()=>{
+                const inputDonorTitle=document.getElementById('donor_title');
+                const inputDonorCertification=document.getElementById('donor_certification');
+                const inputDonorDonationName=document.getElementById('donor_donationName');
+                if(switchBtn.checked){
+                  // 將收據抬頭value修改為資料庫中的捐款者姓名
+                  inputDonorTitle.value=app.data.donorName;
+                  app.data.donorTitle=app.data.donorName;
+                  // 將報稅憑證value修改為資料庫中的捐款者身分證字號
+                  inputDonorCertification.value=app.data.donorPersonalID;
+                  app.data.donorCertification=app.data.donorPersonalID;
+                  // 將捐款徵信名稱value修改為資料庫中的捐款者姓名
+                  inputDonorDonationName.value=app.data.donorName;
+                  app.data.donorDonationName=app.data.donorName;
+                }else{
+                  inputDonorTitle.value="";
+                  app.data.donorTitle="";
+                  inputDonorCertification.value="";
+                  app.data.donorCertification="";
+                  inputDonorDonationName.value=""
+                  app.data.donorDonationName=""
+                }
+              })
+            },
+            setCreditNumberPattern(){
+              const inputBox=document.getElementById('donor_credit_number');
+              inputBox.addEventListener('input',(e)=>{
+                console.log(e.target.value);
+                const digitsOnly=e.target.value.replace(/-/g,'');
+                console.log(`只有數字的部分為:${digitsOnly}`);
+                let formattedValue = '';
+                for (let i = 0; i < digitsOnly.length; i++) {
+                  if (i > 0 && i % 4 === 0) {
+                    formattedValue += '-';
+                  }
+                  formattedValue += digitsOnly[i];
+                }
+                console.log(`新增完-符號後為:${formattedValue}`);
+                // 限制不超過16個數字
+                if (formattedValue.length > 16) {
+                  formattedValue = formattedValue.slice(0, 16);
+                }
+                e.target.value=formattedValue;
+              })
             }
           }
         }
