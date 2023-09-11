@@ -33,8 +33,8 @@ my-react-app/
 ├── .next/  
 ├── node_modules/  
 ├── public/  
-│      ├── logo.png  
-│   ├── signIn.png
+│   ├── logo.png  
+│&nbsp;&nbsp;&nbsp;├── signIn.png
 │   └── signUp.png
 ├── src/
 │   ├── components/
