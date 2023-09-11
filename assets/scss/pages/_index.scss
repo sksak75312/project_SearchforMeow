@@ -74,7 +74,7 @@
 
   // shelter 區塊
   .hmShelter {
-    background: url("../assets/images/shelter_bg_mobile.png") no-repeat center/cover;
+    background: url("../images/shelter_bg_mobile.png") no-repeat center/cover;
 
     &__img {
       height: 265px;
@@ -88,7 +88,7 @@
 
   // faq 區塊
   .faq {
-    background: url("../assets/images/faq_bg_mobile.png") no-repeat center/cover;
+    background: url("../images/faq_bg_mobile.png") no-repeat center/cover;
 
     &__button.accordion-button:not(.collapsed) {
       background: $hover;
@@ -142,11 +142,11 @@
     }
 
     .hmShelter {
-      background-image: url("../assets/images/shelter_bg_web.png");
+      background-image: url("../images/shelter_bg_web.png");
     }
 
     .faq {
-      background-image: url("../assets/images/faq_bg_web.png")
+      background-image: url("../images/faq_bg_web.png")
     }
 
     .faq {
