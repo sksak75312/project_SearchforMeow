@@ -37,7 +37,7 @@ my-react-app/
 │&nbsp;&nbsp;&nbsp;├── signIn.png
 │   └── signUp.png
 ├── src/
-│   ├── components/
+│&emsp;├── components/
 │   │   ├── button
 │   │   └── card
 │   ├── modules/
