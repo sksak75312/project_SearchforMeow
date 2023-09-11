@@ -28,7 +28,65 @@
 
   - layout # ejs 模板放置處
   - pages # 頁面放置處
-
+my-react-app/
+├── .next/
+├── node_modules/
+├── public/
+│   ├── logo.png
+│   ├── signIn.png
+│   └── signUp.png
+├── src/
+│   ├── components/
+│   │   ├── button
+│   │   └── card
+│   ├── modules/
+│   │   ├── AttrPage
+│   │   ├── Banner
+│   │   ├── BlogPage
+│   │   ├── JourneyPage
+│   │   ├── MemberCenterPage
+│   │   ├── RandomTourLayout
+│   │   └── SeeOthers
+│   ├── pages/
+│   │   ├── blog
+│   │   ├── hot-topic
+│   │   ├── member-center
+│   │   ├── planning-tour
+│   │   ├── random-tour
+│   │   ├── social-media
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── index.tsx
+│   │   ├── login.tsx
+│   │   └── reset-password.tsx
+│   ├── redux/
+│   │   ├── counterSlice.ts
+│   │   ├── isQuerySlice.ts
+│   │   ├── randomTourSlice.ts
+│   │   ├── reducers.ts
+│   │   ├── store.ts
+│   │   ├── toursFormSlice.ts
+│   │   └── wrapper.ts
+│   ├── styles/
+│   │   ├── styled
+│   │   ├── calendar.css
+│   │   ├── global.css
+│   │   ├── slick.css
+│   │   └── upload.css
+│   ├── util/
+│   │   ├── attrApi.ts
+│   │   ├── attrData.ts
+│   │   ├── attrType.ts
+│   │   ├── memberTypes.ts
+│   │   ├── roomApi.ts
+│   │   ├── selectData.ts
+│   │   ├── tourApi.ts
+│   │   ├── types.ts
+│   │   └── userApi.ts
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+└── README.md
 
 
 ## 🧑‍💻👩‍💻前端
