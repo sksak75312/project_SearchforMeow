@@ -1,0 +1,54 @@
+.adoptionSheet-basicInf {
+
+  .btn__hover:hover {
+    background: $form-bg-color;
+  }
+
+  .banner {
+    background: url('../assets/images/adoptionSheet/banner_mob.png') no-repeat center / cover;
+    height: 450px;
+  }
+
+  .form__step {
+
+    .timeLine__left, .timeLine__right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 45%;
+      height: 2px;
+      background: $decoLine;
+    }
+    .timeLine__left {
+      left: 32px;
+    }
+
+    .timeLine__right {
+      right: 32px;
+    }
+
+    .active {
+      background: $primary !important;
+    }
+  }
+
+  .placeholder__color::placeholder {
+    color: $placeholder;
+  }
+
+
+  @include md {
+    .banner {
+      background-image: url('../assets/images/adoptionSheet/banner_pad.png');
+      height: 650px;
+    }
+  }
+
+  @include lg {
+    .banner {
+      background-image: url('../assets/images/adoptionSheet/banner_web.png');
+      height: 450px;
+    }
+  }
+}

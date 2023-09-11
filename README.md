@@ -28,6 +28,7 @@
 
   - layout # ejs 模板放置處
   - pages # 頁面放置處
+my-react-app/
 
 ├── assets  
 │&emsp;├── images  
@@ -88,10 +89,6 @@
 ### 六角學院協助架構
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-
-### WEI donate頁面需要注意事項
--all.scss需要將bootstrap的carousel打開
-<!-- -all.scss要打開listgroup -->
 
 
 
