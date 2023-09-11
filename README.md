@@ -38,7 +38,7 @@
 |&emsp;&emsp;&emsp;|-- scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- base  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _fontStyle.scss  
-|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- components 
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- components  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _btnAnimate.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- layout  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _footer.scss  
