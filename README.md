@@ -30,64 +30,48 @@
   - pages # 頁面放置處
 my-react-app/
 
-├── .next/  
-├── node_modules/  
-├── public/  
-│   ├── logo.png  
-│&nbsp;&nbsp;&nbsp;├── signIn.png
-│   └── signUp.png
-├── src/
-│&emsp;├── components/
-│&emsp;│   ├── button
-│   │   └── card
-│   ├── modules/
-│   │   ├── AttrPage
-│   │   ├── Banner
-│   │   ├── BlogPage
-│   │   ├── JourneyPage
-│   │   ├── MemberCenterPage
-│   │   ├── RandomTourLayout
-│   │   └── SeeOthers
-│   ├── pages/
-│   │   ├── blog
-│   │   ├── hot-topic
-│   │   ├── member-center
-│   │   ├── planning-tour
-│   │   ├── random-tour
-│   │   ├── social-media
-│   │   ├── _app.tsx
-│   │   ├── _document.tsx
-│   │   ├── index.tsx
-│   │   ├── login.tsx
-│   │   └── reset-password.tsx
-│   ├── redux/
-│   │   ├── counterSlice.ts
-│   │   ├── isQuerySlice.ts
-│   │   ├── randomTourSlice.ts
-│   │   ├── reducers.ts
-│   │   ├── store.ts
-│   │   ├── toursFormSlice.ts
-│   │   └── wrapper.ts
-│   ├── styles/
-│   │   ├── styled
-│   │   ├── calendar.css
-│   │   ├── global.css
-│   │   ├── slick.css
-│   │   └── upload.css
-│   ├── util/
-│   │   ├── attrApi.ts
-│   │   ├── attrData.ts
-│   │   ├── attrType.ts
-│   │   ├── memberTypes.ts
-│   │   ├── roomApi.ts
-│   │   ├── selectData.ts
-│   │   ├── tourApi.ts
-│   │   ├── types.ts
-│   │   └── userApi.ts
-├── package.json
-├── package-lock.json
-├── tailwind.config.js
-└── README.md
+├── assets  
+│&emsp;├── images  
+|&emsp;├── js  
+|&emsp;|&emsp;├── index.js   
+|&emsp;|&emsp;├── shelter.js   
+|&emsp;|&emsp;└── takeFilter.js    
+│&emsp;└── scss  
+|&emsp;&emsp;├── base  
+|&emsp;&emsp;&emsp;└── _fontStyle.scss  
+|&emsp;&emsp;├── components 
+|&emsp;&emsp;&emsp;└── _btnAnimate.scss  
+|&emsp;&emsp;├── layout  
+|&emsp;&emsp;&emsp;├── _footer.scss  
+|&emsp;&emsp;&emsp;└── _header.scss  
+|&emsp;&emsp;├── pages  
+|&emsp;&emsp;|&emsp;├── _donate.scss  
+|&emsp;&emsp;|&emsp;├── _happyRules.scss  
+|&emsp;&emsp;|&emsp;├── _index.scss  
+|&emsp;&emsp;|&emsp;├── _shelter.scss  
+|&emsp;&emsp;|&emsp;├── _teke.scss  
+|&emsp;&emsp;|&emsp;└── _takeFilter.scss  
+|&emsp;&emsp;├── utils  
+|&emsp;&emsp;|&emsp;├── _mixin.scss  
+|&emsp;&emsp;|&emsp;├── _utilities.scss  
+|&emsp;&emsp;|&emsp;└── _variables.scss  
+│&nbsp;&nbsp;└── all.scss  
+├── layout  
+│&emsp;├── fotter.ejs  
+│&emsp;└── header.ejs  
+├── pages  
+│&emsp;├── donate__plan.html  
+│&emsp;├── donate.html  
+│&emsp;├── happyRules.html  
+│&emsp;├── index.html  
+│&emsp;├── shelter.html  
+│&emsp;├── take.html  
+|&emsp;└──  takeFilter.html  
+├── main.js  
+├── package.json  
+├── package-lock.json  
+├── vite.config.js  
+└── README.md  
 
 
 ## 🧑‍💻👩‍💻前端

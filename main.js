@@ -31,18 +31,22 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop:0},700);
         
     }); 
-    $(window).scroll(function(){
-        var h=$(document.body).height();//網頁文件的高度
-        var c = $(document).scrollTop();//滾動條距離網頁頂部的高度
-        var wh = $(window).height(); //頁面視覺化區域高度
+
+    
+    
+    // $(window).scroll(function(){
+    //     var h=$(document.body).height();//網頁文件的高度
+    //     var c = $(document).scrollTop();//滾動條距離網頁頂部的高度
+    //     var wh = $(window).height(); //頁面視覺化區域高度
        
-        if ((h-(wh+c)<850) && (jQuery(document).width()<992)){
-            $('#toTop').fadeIn(800);
-        }
-        else{
-            $('#toTop').fadeOut(800);
-        };
-    });
+    //     if ((h-(wh+c)<850) && (jQuery(document).width()<992)){
+    //         $('#toTop').fadeIn(800);
+    //     }
+    //     else{
+    //         $('#toTop').fadeOut(800);
+    //     };
+    // });
+
     // function showBtnCondition() {
     //     if ($(this).scrollTop() > 800) {
     //       $('#toTop').fadeIn();
@@ -52,3 +56,17 @@ $(document).ready(function () {
     //      }
     //  $(window).scroll(showBtnCondition);
 });
+function showBtnCondition() {
+    if(($(this).scrollTop()>2000) && (jQuery(document).width()<992)){
+        $('#toTop').fadeIn(800);
+    }
+    else{
+        $('#toTop').fadeOut(800);
+    };
+    // if ($(this).scrollTop() > 800) {
+    //   $('#toTop').fadeIn();
+    //     } else {
+    //      $('#toTop').fadeOut();
+    //    }
+}
+ $(window).scroll(showBtnCondition);
