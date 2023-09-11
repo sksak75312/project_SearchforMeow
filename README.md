@@ -38,7 +38,7 @@ my-react-app/
 │   └── signUp.png
 ├── src/
 │&emsp;├── components/
-│   │   ├── button
+│&emsp;│   ├── button
 │   │   └── card
 │   ├── modules/
 │   │   ├── AttrPage
