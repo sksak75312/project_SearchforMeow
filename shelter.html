@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Shelter</title>
+  <script type="module" crossorigin src="/project_SearchforMeow/assets/shelter-3e50b670.js"></script>
+  <link rel="modulepreload" crossorigin href="/project_SearchforMeow/assets/main-db78f003.js">
+  <link rel="stylesheet" href="/project_SearchforMeow/assets/main-227ea33d.css">
+</head>
+<body>
+
+    <div class="header py-2 py-lg-4">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="logo col-lg-3 position-relative">
+                <a href="index.html" title="Search For Meow">
+                    <img src="/project_SearchforMeow/assets/logo_web-b8ebb15b.svg" alt="logo pic" class="d-none d-lg-block w-100">
+                </a>
+                <a href="../pages/index.html" title="Search For Meow" class="logo-mobile d-lg-none d-flex align-items-center">
+                    <img src="/project_SearchforMeow/assets/logo_mobile-2c5e2d1c.svg" alt="logo pic" class="me-3">
+                    <img src="/project_SearchforMeow/assets/logo_mobile_name-49c74483.svg" alt="logo pic">
+                </a>
+                <a href="#" type="button" class="mobileBarbtn bg-primary border border-2 border-title d-lg-none position-absolute">
+                    <i class="fa-solid fa-bars d-lg-none fs-6 text-white"></i>
+                </a>
+            </div>
+            <!-- lg -->
+            <div class="col-lg-9 col-xxl-7 d-none d-lg-block d-lg-flex flex-lg-column mb-lg-0">
+                <ul class="list-group list-unstyled d-flex align-items-lg-center align-self-lg-end mb-lg-4">
+                    <li class="list-group-item">
+                        <a target="_blank" href="https://www.instagram.com/" title="instagram" class="ig">
+                            <i class="fs-2 text-title fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團" class="fb mx-4">
+                            <i class="fs-2 text-title fa-brands fa-facebook-f mx-4"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item ms-auto">
+                        <a href="take.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text lh-xl-base position-xl-relative start-xl-25" title="Take me home">帶他回家
+                            <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="position-xl-absolute animateArrow">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-group list-unstyled headerMenu d-flex flex-lg-row mb-lg-0">
+                    <li class="list-group-item px-4">
+                        <a href="index.html" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            搜趣找貓
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="adoption.html" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            帶我回家
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="shelter.html" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            收容所列表   
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="donate.html" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            響應捐款   
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="happyRules.html" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto">
+                            幸福守則
+                        </a>
+                    </li>
+                    <li class="list-group-item px-4">
+                        <a href="index.html#faq" class="text-title lh-sm letterSpc-8 fw-medium text-center mx-auto font-SansTC">
+                            FAQ    
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 375px -->
+<div class="headerDropMenu d-lg-none bg-primary py-6 w-100 position-absolute z-3">
+    <div class="container d-flex flex-column-reverse">
+        <ul class="list-group list-unstyled d-flex mobile mb-0 justify-content-start px-6">
+            <li class="list-group-item">
+                <a class="d-block" target="_blank" href="https://www.instagram.com/" title="instagram">
+                    <i class="fs-2 text-white fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="d-block" target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團">
+                    <i class="fs-2 text-white fa-brands fa-facebook-f ms-5"></i>
+                </a>
+            </li>
+            <li class="list-group-item ms-auto">
+                <a href="take.html" type="button" class="bringHome btn px-4 py-3 lh-sm letterSpc-8 d-flex align-items-center fw-medium text-white border-white" title="Take me home">帶他回家
+                    <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="ms-6">
+                </a>
+            </li>
+        </ul>
+        <ul class="list-group list-unstyled headerMenu d-flex flex-column flex-row mobile align-items-center px-6">
+            <li class="list-group-item w-100">
+                <a href="index.html" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom">
+                    搜趣找貓
+                </a>
+            </li>
+            <li class="list-group-item w-100">
+                <a href="adoption.html" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom">
+                    帶我回家
+                </a>
+            </li>
+            <li class="list-group-item w-100">
+                <a href="shelter.html" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom">
+                    收容所列表   
+                </a>
+            </li>
+            <li class="list-group-item w-100">
+                <a href="donate.html" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom">
+                    響應捐款   
+                </a>
+            </li>
+            <li class="list-group-item w-100">
+                <a href="happyRules.html" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom">
+                    幸福守則
+                </a>
+            </li>
+            <li class="list-group-item w-100">
+                <a href="index.html#faq" class="text-white d-block py-6 ps-10 fs-6 letterSpc-8 fw-medium mx-auto border-bottom font-SansTC">
+                    FAQ    
+                </a>
+            </li>
+        </ul>
+        <a href="#" type="button" class="header-btn-close align-self-end mb-6 me-6">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHdSURBVHgB7Zk9TgJBFMffYiQUGi2h0RuYcAwTK1stTGy9gZZyA0pNLPQCajyAB7CxtLPwo8NggRAZ9w0hu6sDzpv5TyYk80sIgc2++f/Yj3k7ZCqHFpgaLThJIDZJIDZJIDZJIDZiATX4JNV7oxBwbSkiAR5geHWkX2gJrjc8P6DRTUe0n7XANLx6fyL18QqV0OG5Xl73+/FOJGF/BL76RIN+MShIohx+yvj5ofJ5HtYC2VqL6vvd/L1ZDO4pYQrP9SfjtKxqiK4BpAQiPCO+CyEkUOEZp3nARwIZnnGeyFwk0OEZr5lYIhEiPOPdSthIhAqv66Ae6nXoSw5Z/PIcbnnnmEa3nSDhdS3kqoRJ4s+AwPAMtBs1nU7V7djwDLydnpw2J8Zt/D0yPAMX4AuWz3kT+loAd7FQAdPdprId3MUyMIGZt8o9bAP4G4jAvPt8bbMN72LLeAvYTFIhWvEpXgKSGTaUhLOAS3sQQsJJwKe3QUvIl1UAjRlSQrasAuwqURLWzVyolnhWF1s/vKCssfLv/varEutNqm20S4OA+nnDkVja2rYKr1FChtenatDdVePei0LC9bju6P5MtJ/T84DKF7iyxiqhcakLfaCJQfp/IDZJIDZJIDZJIDY/+f2AJufVveEAAAAASUVORK5CYII=" alt="header-btn-close">
+        </a>
+    </div>
+</div>
+    <main class="shelter pt-7 pt-lg-13 overflow-hidden">
+        <div class="container position-relative">
+            <img src="/project_SearchforMeow/assets/cat_top-28a61f9f.svg" alt="cat pic" class="catTop position-absolute p-0 z-n1 overflow-hidden d-none d-md-block">
+            <img src="/project_SearchforMeow/assets/cat_middle-ac4d46a4.svg" alt="cat pic" class="catMiddle position-absolute p-0 z-n1 overflow-hidden d-none d-md-block">
+            <img src="/project_SearchforMeow/assets/cat_bottom-ee25b8b1.svg" alt="cat pic" class="catBottom position-absolute z-n1 overflow-hidden d-none d-md-block">
+            <div class="row flex-column">
+                <div class="col d-flex justify-content-center mb-6 mb-lg-13">
+                    <span class="fa-solid fa-house fa-beat-fade shelterIcon fs-3 fs-md-2 text-primary me-2 me-sm-4"></span>
+                    <h1 class="fs-4 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-0 ">
+                        找尋附近的收容所 <br><span class="fs-5 fs-md-4 text-primary letterSpc-8 fw-normal">Search Shelter</span>
+                    </h1>
+                </div>
+            </div>
+            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-center mb-4">
+                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
+                    <label for="dropdown" class="form-label text-text fw-medium fs-xl-6 mb-0 me-3">縣市<br>查詢</label>
+                    <div class="dropdown d-flex flex-fill">
+                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-2 border border-2 border-inputBdr-light letterSpc-8 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            全部
+                            <span class="material-symbols-outlined expand_more">
+                                expand_more
+                            </span>
+                          </button>
+                        <ul class="dropdown-menu w-100 border-inputBdr-light">
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item0" href="#">全部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item1" href="#">北部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item2" href="#">中部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item3" href="#">南部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item4" href="#">東部</a></li>
+                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item5" href="#">離島</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
+                    <label for="keyWord" class="form-label text-text fw-medium text-center fs-xl-6 mb-0 me-3">關鍵字<br>查詢</label>
+                    <input type="text" class="keyWord text-text fw-medium fs-xl-6 border border-2 border-inputBdr-light letterSpc-8 px-4 py-2 flex-fill" id="keyWord" placeholder="請輸入關鍵字">
+                </div>
+                <div class="mb-4 mb-md-9 col-md-4 col-lg-2 align-self-md-center">
+                    <button type="submit" class="btn btn-primary text-white fs-xl-6 fw-medium border w-100 px-4 py-2 border-inputBdr-dark border-2 d-flex align-items-center justify-content-center">查詢 <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="arrowBtn ms-9"></button>
+                </div>
+            </form>
+            <div class="row justify-content-center">
+                <ul class="list-group list-unstyled col-lg-6 align-self-lg-center d-flex justify-content-lg-between mb-9">
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end AllBtn">
+                            全部
+                        </a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end NorthernBtn">
+                            北部
+                        </a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end CentralBtn">
+                            中部
+                        </a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end SouthernBtn">
+                            南部
+                        </a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center border-end EasternBtn">
+                            東部
+                        </a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a href="#" class="fw-medium w-100 fs-xl-6 text-center OffshoreIslandBtn">
+                            離島
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row justify-content-center position-relative shelterArea">
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 northern">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
+                            臺北市動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8" title="臺北市動物之家" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                臺北市內湖區安美街191號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-87913254" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                02-87913254
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item1" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade one" id="item1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-fda95a8f.png" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-fda95a8f.png" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-9183adb3.png" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-d6b41475.png" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-f6efb735.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺北市動物之家</h3>
+                                    <p class="text-text mb-lg-7">
+                                        台北市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8">臺北市內湖區安美街191號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:02-87913254">02-87913254</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115649.27127570663!2d121.44334738906251!3d25.066642598060966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aca17b1bb197%3A0x5bb32ef0b85dc32f!2z5Y-w5YyX5biC5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1692777304812!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 northern">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
+                            板橋公立動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/7yikxLHfcaLjzf388" title="板橋公立動物之家" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                新北市板橋區板城路28-1號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:02-89662158" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                02-89662158
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item2" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade two" id="item2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-3ec7edce.jpg" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-3ec7edce.jpg" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-0f556908.jpg" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-d82ac320.jpg" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-61cda172.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">板橋公立動物之家</h3>
+                                    <p class="text-text mb-lg-7">
+                                        新北市板橋動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/7yikxLHfcaLjzf388">新北市板橋區板城路28-1號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:02-89662158">02-89662158</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14464.58114828461!2d121.43789934841448!3d24.995178693610164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802b48b6a6141%3A0x6d4b927a2eb17556!2z5p2_5qmL5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1692878506401!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 central">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
+                            臺中南屯動物之家
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7" title="臺中南屯動物之家" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                臺中市南屯區中台路601號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:04-23850976" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                04-23850976
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item3" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade three" id="item3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-5758305b.jpg" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-5758305b.jpg" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-e2fd9052.png" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-a896af0b.jpg" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-13af9e5d.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺中南屯動物之家</h3>
+                                    <p class="text-text mb-lg-7">
+                                        臺中市南屯動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7">臺中市南屯區中台路601號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:04-23850976">04-23850976</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14562.73549770137!2d120.5649718480078!3d24.14773763454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e54c06897bd%3A0x5a12331be91055df!2z6Ie65Lit5biC5YuV54mp5LmL5a625Y2X5bGv5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1692878689998!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 southern">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative textoverflow-ellipsis pe-9">
+                            高雄市壽山動物保護教育園區
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6" title="高雄壽山動物園區" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                高雄市鼓山區萬壽路350號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:07-5519059" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                07-5519059
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item4" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade four" id="item4" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-3bd155aa.jpg" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-3bd155aa.jpg" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-61fa8065.jpg" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-3bd50850.jpg" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-45614bb9.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">高雄市壽山動物保護教育園區</h3>
+                                    <p class="text-text mb-lg-7">
+                                        高雄市壽山動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6">高雄市鼓山區萬壽路350號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:07-5519059">07-5519059</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14729.958021026872!2d120.26512374731982!3d22.63553077610727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e046ceed067c9%3A0x40a7e177be37575f!2z6auY6ZuE5biC5aO95bGx5YuV54mp5ZyS!5e0!3m2!1szh-TW!2stw!4v1692878783183!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 eastern">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
+                            臺東動物收容中心
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/WYSri1a3moSYiidg7" title="臺東動物收容中心" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                臺東縣臺東市中華路4段999巷600號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:089-362011" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                089-362011
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item5" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade five" id="item5" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-c5f800fd.jpg" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-c5f800fd.jpg" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-d542bf7e.jpg" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-ffc0a745.jpg" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-bfe54b1b.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">臺東動物收容中心</h3>
+                                    <p class="text-text mb-lg-7">
+                                        臺東市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/WYSri1a3moSYiidg7">臺東縣臺東市中華路4段999巷600號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:089-362011">089-362011</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720.929026721993!2d121.09066154735682!3d22.719607163012775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb814c871a059%3A0x478be79883a37aac!2z6Ie65p2x57ij5rWB5rWq5YuV54mp5pS25a655Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1692878862588!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-xl-4 mb-7 mb-lg-11 offshoreIsland">
+                    <div class="card border-inputBdr-dark border-2 p-4">
+                        <div class="indexPic"></div>
+                        <div class="card-body px-0 px-lg-2 px-xxl-4">
+                          <h2 class="card-title fs-5 fs-lg-5 fw-medium fs-xl-4 text-title mb-4 mb-lg-9 position-relative">
+                            澎湖動物收容中心
+                            <span class="material-symbols-outlined position-absolute end-0 top-50 translate-middle favor">
+                                favorite
+                            </span>
+                        </h2>
+                            <a target="_blank" href="https://goo.gl/maps/qUXBdFp2SNfFtUB69" title="澎湖動物收容中心" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    location_on
+                                </span>
+                                澎湖縣馬公市烏崁里260、261號
+                            </a>
+                            <a target="_blank" href="tel:0287913254" title="tell:06-9213559" class="font-SansTC d-flex align-items-center text-text mb-4">
+                                <span class="material-symbols-outlined me-1 text-primary">
+                                    phone_in_talk
+                                </span>
+                                06-9213559
+                            </a>
+                        </div>
+                        <div class="card-footer p-0 border-0">
+                            <button class="btn btn-secondary fw-medium w-75 mx-auto text-title py-3 d-flex align-items-center justify-content-center position-lg-relative" data-bs-toggle="modal" data-bs-target="#item6" type="button">
+                                更多資訊
+                                <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="arrowBtn ms-10 ms-lg-0 position-lg-absolute">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade six" id="item6" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <a href="#" class="ms-auto" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark fs-3 me-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body row flex-lg-row pb-18 px-xl-0 justify-content-center g-0">
+                                <div class="col-10 col-lg-5 d-flex flex-column mb-7 mb-lg-0 me-lg-4">
+                                    <div class="pic">
+                                        <img class="w-100 mainPic mb-3" src="/project_SearchforMeow/assets/1-bde40e48.jpg" alt="">
+                                        <div class="d-flex justify-content-between mb-7 mb-lg-7 group1">
+                                            <img class="picItem1" src="/project_SearchforMeow/assets/1-bde40e48.jpg" alt="">
+                                            <img class="picItem2" src="/project_SearchforMeow/assets/2-8ad91152.jpg" alt="">
+                                            <img class="picItem3" src="/project_SearchforMeow/assets/3-2868da9e.jpg" alt="">
+                                            <img class="picItem4" src="/project_SearchforMeow/assets/4-cc6b64a5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-title fs-5 fw-medium fs-lg-6 fs-xl-4 mb-lg-4">澎湖動物收容中心</h3>
+                                    <p class="text-text mb-lg-7">
+                                        澎湖縣市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
+                                    </p>
+                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/qUXBdFp2SNfFtUB69">澎湖縣馬公市烏崁里260、261號</a></p>
+                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:06-9213559">06-9213559</a></p>
+                                    <p class="font-SansTC text-text">
+                                        領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
+                                    </p>
+                                    <div class="btn-group mt-auto d-flex">
+                                        <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
+                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 ms-lg-4">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14629.81594613039!2d119.61686124773105!3d23.552133131209274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c454100000001%3A0xc9ee1d79f950d348!2z5r6O5rmW57ij5rWB5rWq5YuV54mp5pS25a655Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1692878931787!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-md-5 col-xl-3">
+                    <nav aria-label="Page navigation" class="pagination d-flex justify-content-center pt-16">
+                        <ul class="pagination mb-0 w-100 d-flex justify-content-around">
+                          <li class="page-item">
+                            <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0 backPage" href="#" aria-label="Previous">
+                                <i class="fa-solid fa-arrow-left text-text"></i>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark paginationActive" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link text-text bg-secondary btn-secondary fs-lg-6 fw-medium m-0 pageMark" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link bg-secondary btn-secondary fs-lg-6 fw-medium m-0 nextPage" href="#" aria-label="Next">
+                                <i class="fa-solid fa-arrow-right text-text"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+    
+    <div class="footer pt-19 pt-lg-21 d-flex flex-column align-items-center overflow-hidden">
+    <div class="container">
+        <div class="row flex-column align-items-center">
+            <div class="col col-lg-3 col-xl-2 mb-9 d-flex flex-column align-items-center">
+                <a href="index.html" class="mb-3 mb-lg-7"><img src="/project_SearchforMeow/assets/logo_bottom-8b6d1936.svg" alt="logo icon"></a>
+                <a type="button" href="take.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center position-lg-relative bg-secondary fw-medium border-text border-text dropdownBtn" title="Take me home">帶他回家
+                    <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="animateArrow ms-10 ms-lg-0 position-lg-absolute">
+                </a>
+            </div>
+            <div class="col col-xl-8 d-flex flex-column">
+                <ul class="list-group list-unstyled d-flex flex-column flex-lg-row align-items-center mb-4">
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="index.html">首頁</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="take.html">帶我回家</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="shelter.html">收容所列表</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="donate.html">響應捐款</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="happyRules.html">幸福守則</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8 font-SansTC" href="index.html#faq">FAQ</a></li>
+                </ul>
+                <div class="media d-flex align-self-center mb-9">
+                    <a target="_blank" href="https://www.instagram.com/" title="instagram" class="ig">
+                        <i class="fs-3 text-title fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://zh-tw.facebook.com/" title="粉絲團" class="fb ms-4">
+                        <i class="fs-3 text-title fa-brands fa-facebook-f ms-4"></i>
+                    </a>
+                </div>
+                <p class="font-SansTC fw-medium text-center text-text letterSpc-8 mb-0">Copyright @2023 Search for Meow All rights reserved.</p>
+                <a class="toTop rounded-5 d-lg-none z-2 d-lg-none" id="toTop" type="button" href="#">
+                    <i class="fa-solid fa-circle-arrow-up fa-beat-fade bg-white rounded-5"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottomBannerWeb">
+        <img src="/project_SearchforMeow/assets/modifier1-9fc1255b.png" alt="cat pic" class="d-sm-none">
+        <img src="/project_SearchforMeow/assets/bg-bottom-06383805.png" alt="cat pic" class="d-none d-sm-block">
+    </div>
+</div>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+    <!-- own js -->
+    
+</body>
+</html>
