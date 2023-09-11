@@ -9,10 +9,10 @@ const swiper = new Swiper('.swiper', {
       crossFade: true
     },
     //autoplay
-    autoplay: {
-     delay: 3000,
-     disableOnInteraction: false,
-   },
+  //   autoplay: {
+  //    delay: 3000,
+  //    disableOnInteraction: false,
+  //  },
   
     // If we need pagination
     pagination: {

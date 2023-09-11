@@ -2,7 +2,7 @@
     object-fit: cover;
 }
 .swiper{
-    width: 100%;
+    //width: 100%;
     height: 300px;
     .mainPic{
         width: 200px;
@@ -42,7 +42,7 @@
 }
 @include md{
     .swiper{
-        width: 65%;
+        //width: 65%;
         .mainPic{
             left: -100px;
             top: 48px;
@@ -61,7 +61,7 @@
 }
 @include lg{
     .swiper{
-        width: 65%;
+        //width: 65%;
         height: 400px;
         .fadeContent{
             width: 70%;
@@ -83,7 +83,7 @@
 }
 @include xl{
     .swiper{
-        width: 70%;
+        //width: 70%;
         .fakeFadeContent{
             left: -106px;
         }
@@ -91,7 +91,7 @@
 }
 @include xxl{
     .swiper{
-        width: 90%;
+        width: 100%;
         .fadeContent{
             width: 80%;
         }

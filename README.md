@@ -29,6 +29,48 @@
   - layout # ejs 模板放置處
   - pages # 頁面放置處
 
+├── assets  
+│&emsp;├── images  
+|&emsp;├── js  
+|&emsp;|&emsp;├── index.js   
+|&emsp;|&emsp;├── shelter.js   
+|&emsp;|&emsp;└── takeFilter.js    
+│&emsp;└── scss  
+|&emsp;&emsp;├── base  
+|&emsp;&emsp;&emsp;└── _fontStyle.scss  
+|&emsp;&emsp;├── components 
+|&emsp;&emsp;&emsp;└── _btnAnimate.scss  
+|&emsp;&emsp;├── layout  
+|&emsp;&emsp;&emsp;├── _footer.scss  
+|&emsp;&emsp;&emsp;└── _header.scss  
+|&emsp;&emsp;├── pages  
+|&emsp;&emsp;|&emsp;├── _donate.scss  
+|&emsp;&emsp;|&emsp;├── _happyRules.scss  
+|&emsp;&emsp;|&emsp;├── _index.scss  
+|&emsp;&emsp;|&emsp;├── _shelter.scss  
+|&emsp;&emsp;|&emsp;├── _teke.scss  
+|&emsp;&emsp;|&emsp;└── _takeFilter.scss  
+|&emsp;&emsp;├── utils  
+|&emsp;&emsp;|&emsp;├── _mixin.scss  
+|&emsp;&emsp;|&emsp;├── _utilities.scss  
+|&emsp;&emsp;|&emsp;└── _variables.scss  
+│&nbsp;&nbsp;└── all.scss  
+├── layout  
+│&emsp;├── fotter.ejs  
+│&emsp;└── header.ejs  
+├── pages  
+│&emsp;├── donate__plan.html  
+│&emsp;├── donate.html  
+│&emsp;├── happyRules.html  
+│&emsp;├── index.html  
+│&emsp;├── shelter.html  
+│&emsp;├── take.html  
+|&emsp;└──  takeFilter.html  
+├── main.js  
+├── package.json  
+├── package-lock.json  
+├── vite.config.js  
+└── README.md  
 
 
 ## 🧑‍💻👩‍💻前端
