@@ -30,12 +30,10 @@
   - pages # 頁面放置處
 my-react-app/
 
-├── .next/
-
-├── node_modules/
-
-├── public/
-│   ├── logo.png
+├── .next/  
+├── node_modules/  
+├── public/  
+│   ├── logo.png  
 │   ├── signIn.png
 │   └── signUp.png
 ├── src/
