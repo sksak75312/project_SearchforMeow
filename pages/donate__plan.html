@@ -1976,11 +1976,9 @@
               inputBox.addEventListener('input',(e)=>{
                 console.log(e.target.value);
                 let digitsOnly=e.target.value.replace(/-/g,'');
-                console.log(`只有數字的部分為:${digitsOnly}`);
                 if (digitsOnly.length>16){
                   digitsOnly=digitsOnly.slice(0,16);
                 }
-                console.log(`去除超過16位的數字為:${digitsOnly}`);
                 let formattedValue = '';
                 for (let i = 0; i < digitsOnly.length; i++) {
                   if (i > 0 && i % 4 === 0) {

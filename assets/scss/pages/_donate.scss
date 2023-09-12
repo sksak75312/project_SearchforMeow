@@ -24,11 +24,11 @@
       $BASE
   \*------------------------------------*/
   .font-SpaceMono {
-    font-family: Space Mono;
+    font-family: "Space Mono";
   }
 
   .font-SerifTC {
-    font-family: Noto Serif TC;
+    font-family: "Noto Serif TC";
   }
 
   // hover用變數
@@ -73,6 +73,28 @@
     cursor: pointer;
   }
 
+  .l-arrow--animation {
+    svg.arrow {
+      position: relative;
+      left: 0px;
+    }
+
+    &:hover {
+      svg.arrow {
+        animation: arrow 1s linear infinite ;
+      }
+    }
+  }
+
+  @keyframes arrow {
+    0% {
+      left: -15px;
+    }
+
+    100% {
+      left: 0px;
+    }
+  }
 
 
 
@@ -136,50 +158,28 @@
   }
 
 
-  .l-modifier {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      display: inline-block;
-      z-index: 1;
+  .l-pos--custom__1{
+    display: none;
+    @include xl{
+      display: block;
+      right: 100%;
+      top:-70%;
+    }
+  }
+  .l-pos--custom__2{
+    // display: none;
+    @include xl{
+      // display: block;
+      left: calc(100% + 20px);
+      bottom: 0px;
     }
   }
 
-  .l-modifier-1 {
-    &::before {
-      content: url(../images/donate/modifier1.png);
-    }
-  }
-
-  .l-modifier-2 {
-    &::before {
-      content: url(../images/donate/modifier2.png);
-    }
-  }
-
-  .l-modifier-3 {
-    &::before {
-      content: url(../images/donate/modifier3.png);
-    }
-  }
-
-  .l-modifier-4 {
-    &::before {
-      content: url(../images/donate/modifier4.png);
-    }
-  }
-
-  .l-modifier-5 {
-    &::before {
-      content: url(../images/donate/modifier5.png);
-    }
-  }
-
-  .l-modifier-6 {
-    &::before {
-      content: url(../images/donate/modifier6.png);
-    }
+  .l-modifier-carousel-bg {
+    background-image: url(../images/donate/carousel-bgwithoutcloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px bottom;
   }
 
   .l-requiredIcon::after {
@@ -190,6 +190,10 @@
   }
 
 
+  .l-relativePos__1{
+    left: -20px;
+    top:0px
+  }
 
 
 
@@ -207,6 +211,14 @@
       border: 2px solid $inputBdr-dark;
     }
   }
+  
+  .btn-outline-primary{
+    transition: color .2s ease-in-out ,  background-color .2s ease-in-out;
+    &:hover{
+      background-color:$primary;
+      color:white;
+    }
+  }
 
   .btn-secondary {
     color: #4f4E4A;
@@ -222,6 +234,15 @@
       border-style: solid;
       border-color: $text;
     }
+  }
+  
+  svg.carousel-btn--previous,svg.carousel-btn--next{
+    fill:transparent;
+    transition: fill .2s ease-in-out;
+    &:hover{
+      fill: $secondary;
+    }
+    
   }
 
 
@@ -353,22 +374,27 @@
       color: white;
     }
 
-    .was-validated{
-      .form-check-input:valid,.for-check-input.isvalid{
-      background-color:rgb(255, 253, 248);
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-      border-color:rgba($color: #000000, $alpha: 0.25);
-      ~ label{
-        color:$text;
+    .was-validated {
+
+      .form-check-input:valid,
+      .for-check-input.isvalid {
+        background-color: rgb(255, 253, 248);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+        border-color: rgba($color: #000000, $alpha: 0.25);
+
+        ~label {
+          color: $text;
+        }
       }
-      }
-      .form-check-input:valid:checked,.form-check-input.is-valid:checked{
+
+      .form-check-input:valid:checked,
+      .form-check-input.is-valid:checked {
         background-color: $primary;
         border-color: $primary;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
       }
     }
-    
+
 
     .was-validated {
 
