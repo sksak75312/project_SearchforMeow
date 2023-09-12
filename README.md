@@ -28,51 +28,49 @@
 
   - layout # ejs 模板放置處
   - pages # 頁面放置處
-my-react-app/
 
-├── assets  
-│&emsp;├── images  
-|&emsp;├── js  
-|&emsp;|&emsp;├── index.js   
-|&emsp;|&emsp;├── shelter.js   
-|&emsp;|&emsp;└── takeFilter.js    
-│&emsp;└── scss  
-|&emsp;&emsp;├── base  
-|&emsp;&emsp;&emsp;└── _fontStyle.scss  
-|&emsp;&emsp;├── components 
-|&emsp;&emsp;&emsp;└── _btnAnimate.scss  
-|&emsp;&emsp;├── layout  
-|&emsp;&emsp;&emsp;├── _footer.scss  
-|&emsp;&emsp;&emsp;└── _header.scss  
-|&emsp;&emsp;├── pages  
-|&emsp;&emsp;|&emsp;├── _donate.scss  
-|&emsp;&emsp;|&emsp;├── _happyRules.scss  
-|&emsp;&emsp;|&emsp;├── _index.scss  
-|&emsp;&emsp;|&emsp;├── _shelter.scss  
-|&emsp;&emsp;|&emsp;├── _teke.scss  
-|&emsp;&emsp;|&emsp;└── _takeFilter.scss  
-|&emsp;&emsp;├── utils  
-|&emsp;&emsp;|&emsp;├── _mixin.scss  
-|&emsp;&emsp;|&emsp;├── _utilities.scss  
-|&emsp;&emsp;|&emsp;└── _variables.scss  
-│&nbsp;&nbsp;└── all.scss  
-├── layout  
-│&emsp;├── fotter.ejs  
-│&emsp;└── header.ejs  
-├── pages  
-│&emsp;├── donate__plan.html  
-│&emsp;├── donate.html  
-│&emsp;├── happyRules.html  
-│&emsp;├── index.html  
-│&emsp;├── shelter.html  
-│&emsp;├── take.html  
-|&emsp;└──  takeFilter.html  
-├── main.js  
-├── package.json  
-├── package-lock.json  
-├── vite.config.js  
-└── README.md  
-
+|-- assets  
+|&emsp;&emsp;&emsp;|-- images  
+|&emsp;&emsp;&emsp;|-- js  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- index.js   
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- shelter.js   
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- takeFilter.js    
+|&emsp;&emsp;&emsp;|-- scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- base  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _fontStyle.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- components  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _btnAnimate.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- layout  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _footer.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _header.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- pages  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _donate.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _happyRules.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _index.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _shelter.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _teke.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _takeFilter.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- utils  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _mixin.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _utilities.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _variables.scss  
+|&emsp;&emsp;&emsp;|-- all.scss  
+|-- layout  
+|&emsp;&emsp;&emsp;|-- fotter.ejs  
+|&emsp;&emsp;&emsp;|-- header.ejs  
+|-- pages  
+|&emsp;&emsp;&emsp;|-- donate__plan.html  
+|&emsp;&emsp;&emsp;|-- donate.html  
+|&emsp;&emsp;&emsp;|-- happyRules.html  
+|&emsp;&emsp;&emsp;|-- index.html  
+|&emsp;&emsp;&emsp;|-- shelter.html  
+|&emsp;&emsp;&emsp;|-- take.html  
+|&emsp;&emsp;&emsp;|--  takeFilter.html  
+|-- main.js  
+|-- package.json  
+|-- package-lock.json  
+|-- vite.config.js  
+|-- README.md  
 
 ## 🧑‍💻👩‍💻前端
 ![html5](https://camo.githubusercontent.com/49fbb99f92674cc6825349b154b65aaf4064aec465d61e8e1f9fb99da3d922a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d2532334533344632362e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465)

@@ -125,7 +125,6 @@
         to{right: 10px;}
     }
     .favor{
-        //transition: ease 0.2s;
         &:hover{
             cursor: pointer;
         }
@@ -133,9 +132,6 @@
     .addFavor{
         color: $primary;
         font-variation-settings: 'FILL' 1,;
-    }
-    .zoom{
-        font-size: 32px;
     }
     .modal-body{
         img{
