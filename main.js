@@ -33,7 +33,7 @@ $(document).ready(function () {
     });
 });
 function showBtnCondition() {
-    if(($(this).scrollTop()>2000) && (jQuery(document).width()<992)){
+    if(($(this).scrollTop())>2000){
         $('#toTop').fadeIn(800);
     }
     else{
