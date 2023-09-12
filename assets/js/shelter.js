@@ -131,10 +131,10 @@ $(document).ready(function () {
     //add favorite
     $('.favor').click(function (e) { 
         e.preventDefault();
-        $(this).stop().toggleClass('addFavor zoom');
+        $(this).stop().toggleClass('addFavor zoom').css("zoom","1.5");
         setTimeout(() => {
-            $(this).removeClass('zoom');
-        },0.01*1000);
+            $(this).css("zoom","1");
+        },0.03*1000);
     });
     //look pic
     //one

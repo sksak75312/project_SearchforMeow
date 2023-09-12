@@ -30,11 +30,20 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({scrollTop:0},700);
         
-    }); 
+    });
+});
+function showBtnCondition() {
+    if(($(this).scrollTop()>2000) && (jQuery(document).width()<992)){
+        $('#toTop').fadeIn(800);
+    }
+    else{
+        $('#toTop').fadeOut(800);
+    };
+}
+ $(window).scroll(showBtnCondition);
 
-    
-    
-    // $(window).scroll(function(){
+ //another function wait for research
+ // $(window).scroll(function(){
     //     var h=$(document.body).height();//網頁文件的高度
     //     var c = $(document).scrollTop();//滾動條距離網頁頂部的高度
     //     var wh = $(window).height(); //頁面視覺化區域高度
@@ -46,27 +55,3 @@ $(document).ready(function () {
     //         $('#toTop').fadeOut(800);
     //     };
     // });
-
-    // function showBtnCondition() {
-    //     if ($(this).scrollTop() > 800) {
-    //       $('#toTop').fadeIn();
-    //         } else {
-    //          $('#toTop').fadeOut();
-    //        }
-    //      }
-    //  $(window).scroll(showBtnCondition);
-});
-function showBtnCondition() {
-    if(($(this).scrollTop()>2000) && (jQuery(document).width()<992)){
-        $('#toTop').fadeIn(800);
-    }
-    else{
-        $('#toTop').fadeOut(800);
-    };
-    // if ($(this).scrollTop() > 800) {
-    //   $('#toTop').fadeIn();
-    //     } else {
-    //      $('#toTop').fadeOut();
-    //    }
-}
- $(window).scroll(showBtnCondition);
