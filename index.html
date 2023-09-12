@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>搜趣找貓-提供各地收容所、貓咪資料以及認養服務的貓咪專屬平台</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"/>
-    <script type="module" crossorigin src="/project_SearchforMeow/assets/main-b324df6c.js"></script>
+    <!-- customer -->
+    <title>搜趣找貓-提供各地收容所、貓咪資料以及認養服務的貓咪專屬平台</title>
+    <link rel="short icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAADWUlEQVRYhc2XO3bbOhCGv+uTBp2yA2YFl2rRmF5BqBU4XoGtGoXsArWsFUhagZQVmG7Qml6BeVcQpUKbAgMZpqHokce500gi5/HP4J8ZCP6geKsH+3TO/mDwB+DFW138dQDe6googQUwPwmAt3rqrb49EcMEmAF3QOGt/nIUAAlcAdfe6ptjIkvJK+BeGbcBxsB0Fx92VeBaDK+AySFk6tkuJDjKuDXQAtlE3gGQcnXKuGaf8Q6pgK+9Z3cCbD8A4DOwTH7PgMsjAJRAkz5QxjXAJnLBWz2I3ZEDUBPYG43XBCIVBwLYxPL3ZAacy/cbicOHjOIw46AhZNYJkFKcLYGCUN5H0W291QNl3Ea4UyjjWvEx8VbfESo6hF4FvNUlMM2AeuS1nV6AgQTvCByZid65gKtFdyrgEBAAK2Ack+xXIMt2Zdytt7oW4ytl3CJ5vREga0niJb73Vk+Ai0S3E3/r+OBMBk6dC9yTDeF4Fnv0LiR4BTTKuC75XdLrkA+EUs691ee8nuM7ESbvlRiQcM5LCV4SRnIH/JvqnynjWmXcEPhOOLMivvRWP4nxKTJTxjVivwJGhOpUacW3JFTG3YpS4a2eC4OvgFUE4a3OETQrCekGwEgS7cTndq780zf0Vj8RSncpykgGY+BaGXfRt/kVedMFyRi+91a3EnhG6NnBMcGlgje8LqX0XQE8AZ/6k3BLHCHdkNDbk4Rch0pNmAEDGb1zb/VcfHcEQtZvjsBbXZwQaK8Id56T+VAQCP/8jgM/cVID58q48RE2A8J2jKM7DrqNfP/a50ANXCrjRhl/G+A5E6QiZFMCa2XcSDJciUpDmC+LtLqxo/oc6Ai7O5cJyLjtSTq+H2F7xiNC53wXcF96diWwfgNAeje3D0oCQVfe6tpbXUVQMtcvCBVK2V4Qyg+hCk3P51gZ1+bW8YO3+qOs00IcFcB/8jkRZ21iM5HgU+QuIV3UDwpsR3MJtLkLSQt8k3v9XDIv5PlIxvadOIiyJCyqj7mAGblENmNuEk4JQ+cq864gZFsSZv3iwICpjxVQRbC5Csx4vVCkhnPgAXhUxh2ylnfJjOT43gFIGDztLZ+lMu7TLwSOUpIQfecgStZokzuO3yU7/5pJSw4J6/nUO8H/X34AHxl7/wctffQAAAAOZVhJZk1NACoAAAAIAAAAAAAAANJTkwAAAABJRU5ErkJggg==">
+    <meta name="description" content="搜趣找貓 search for meow">
+    <meta name="keywords" content="搜趣找貓,search,meow,cat,adopt,shelter">
+    <meta property="og:title" content="搜趣找貓 search for meow">
+    <meta property="og:description" content="搜趣找貓 search for meow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinyiw0.github.io/project_SearchforMeow/">
+    <meta property="og:image" content="https://i.imgur.com/9lYfi0l.png">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAADWUlEQVRYhc2XO3bbOhCGv+uTBp2yA2YFl2rRmF5BqBU4XoGtGoXsArWsFUhagZQVmG7Qml6BeVcQpUKbAgMZpqHokce500gi5/HP4J8ZCP6geKsH+3TO/mDwB+DFW138dQDe6googQUwPwmAt3rqrb49EcMEmAF3QOGt/nIUAAlcAdfe6ptjIkvJK+BeGbcBxsB0Fx92VeBaDK+AySFk6tkuJDjKuDXQAtlE3gGQcnXKuGaf8Q6pgK+9Z3cCbD8A4DOwTH7PgMsjAJRAkz5QxjXAJnLBWz2I3ZEDUBPYG43XBCIVBwLYxPL3ZAacy/cbicOHjOIw46AhZNYJkFKcLYGCUN5H0W291QNl3Ea4UyjjWvEx8VbfESo6hF4FvNUlMM2AeuS1nV6AgQTvCByZid65gKtFdyrgEBAAK2Ack+xXIMt2Zdytt7oW4ytl3CJ5vREga0niJb73Vk+Ai0S3E3/r+OBMBk6dC9yTDeF4Fnv0LiR4BTTKuC75XdLrkA+EUs691ee8nuM7ESbvlRiQcM5LCV4SRnIH/JvqnynjWmXcEPhOOLMivvRWP4nxKTJTxjVivwJGhOpUacW3JFTG3YpS4a2eC4OvgFUE4a3OETQrCekGwEgS7cTndq780zf0Vj8RSncpykgGY+BaGXfRt/kVedMFyRi+91a3EnhG6NnBMcGlgje8LqX0XQE8AZ/6k3BLHCHdkNDbk4Rch0pNmAEDGb1zb/VcfHcEQtZvjsBbXZwQaK8Id56T+VAQCP/8jgM/cVID58q48RE2A8J2jKM7DrqNfP/a50ANXCrjRhl/G+A5E6QiZFMCa2XcSDJciUpDmC+LtLqxo/oc6Ai7O5cJyLjtSTq+H2F7xiNC53wXcF96diWwfgNAeje3D0oCQVfe6tpbXUVQMtcvCBVK2V4Qyg+hCk3P51gZ1+bW8YO3+qOs00IcFcB/8jkRZ21iM5HgU+QuIV3UDwpsR3MJtLkLSQt8k3v9XDIv5PlIxvadOIiyJCyqj7mAGblENmNuEk4JQ+cq864gZFsSZv3iwICpjxVQRbC5Csx4vVCkhnPgAXhUxh2ylnfJjOT43gFIGDztLZ+lMu7TLwSOUpIQfecgStZokzuO3yU7/5pJSw4J6/nUO8H/X34AHxl7/wctffQAAAAOZVhJZk1NACoAAAAIAAAAAAAAANJTkwAAAABJRU5ErkJggg==">
+    <script type="module" crossorigin src="/project_SearchforMeow/assets/main-eadfa6e3.js"></script>
     <script type="module" crossorigin src="/project_SearchforMeow/assets/index-9b07e431.js"></script>
-    <link rel="stylesheet" href="/project_SearchforMeow/assets/main-7184c3aa.css">
+    <link rel="stylesheet" href="/project_SearchforMeow/assets/main-84cd8174.css">
   </head>
   <body>
     <div class="header py-2 py-lg-4">
@@ -789,7 +799,7 @@
                     </a>
                 </div>
                 <p class="font-SansTC fw-medium text-center text-text letterSpc-8 mb-0">Copyright @2023 Search for Meow All rights reserved.</p>
-                <a class="toTop rounded-5 d-lg-none z-2 d-lg-none" id="toTop" type="button" href="#">
+                <a class="toTop rounded-5 z-2 d-lg-none" id="toTop" type="button" href="#">
                     <i class="fa-solid fa-circle-arrow-up fa-beat-fade bg-white rounded-5"></i>
                 </a>
             </div>
