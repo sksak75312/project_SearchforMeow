@@ -17,7 +17,7 @@
   // 最後要移除
   // background-color: wheat;
   * {
-    // outline: 1px solid red;
+    outline: 1px solid red;
   }
 
   /*------------------------------------*\
@@ -135,6 +135,10 @@
 
   .l-pic-fixed-ratio--9to16 {
     padding-top: percentage(9/16);
+  }
+
+  .l-pic-fixed-ratio--4to3 {
+    padding-top: percentage(4/3);
   }
 
   .l-pic-fixed-ratio__content {
