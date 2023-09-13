@@ -35,6 +35,8 @@ npm dun dev
 ---
 
 ## 📂&ensp;資料夾結構
+
+```
 |-- assets  
 |&emsp;&emsp;&emsp;|-- images  
 |&emsp;&emsp;&emsp;|-- &emsp;&ensp;js  
@@ -77,6 +79,7 @@ npm dun dev
 |-- package-lock.json  
 |-- vite.config.js  
 |-- README.md  
+```
 
 ---
 
