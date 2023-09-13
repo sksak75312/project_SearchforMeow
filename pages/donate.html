@@ -14,6 +14,7 @@
   <%- include('./layout/header'); -%>
     <main class="donate mt-7 mt-lg-13">
       <!-- 我想幫助 & donate頁面上方輪播區 -->
+      <!-- l-modifier-carousel-bg 裝飾河流 在md以下消失 -->
       <section class="banner pb-23 l-modifier-carousel-bg">
         <div class="container">
           <div class="d-flex justify-content-center mb-4">
@@ -21,12 +22,11 @@
             <h1 class="d-inline-block mb-0 text-title fs-2 font-SerifTC fw-bold letterSpc-8">響應捐款</h1>
           </div>
           <p class="mb-0 text-center text-primary fs-4 font-SpaceMono lh-sm mb-21">Respond to Donations</p>
-          <i class="fa-solid fa-comments-dollar"></i>
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-0">
               <div class="d-flex flex-column align-items-center position-relative">
                 <!-- decoration 裝飾貓咪，只會在xl以上出現並且使用position abolute所以不會佔空間 -->
-                <img src="../assets/images/donate/thankyoucat.png" alt="" class="position-absolute l-pos--custom__1">
+                <img src="../assets/images/donate/thankyoucat.png" alt="Q版貓咪裝飾圖案" class="position-absolute l-pos--custom__1">
                 <!-- 裝飾貓咪結尾  -->
                 <h2 class="mb-0 fs-3 letterSpc-8 fw-bold text-title font-SerifTC mb-4">我想幫助</h2>
                 <p class="mb-0 fs-6 letterSpc-8 fw-mdeium text-primary mb-8">錢錢沒有變不見，而是成為貓咪的家！</p>
@@ -63,7 +63,7 @@
                   <div class="carousel-item">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="https://images.unsplash.com/photo-1601758066440-cbfc06a82914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80" class="d-block w-100" alt="貓咪">
+                        <img src="../assets/images/donate/carousel-pic-2.jpeg" class="d-block w-100" alt="貓咪">
                       </div>
                     </div>
                   </div>
@@ -99,72 +99,56 @@
       </section>
 
       <!-- 善款會用於~ -->
-      <section class="purpose pb-10">
+      <section class="purpose pb-10 mb-20">
         <div class="container">
-          <div class="d-flex justify-content-center mb-4">
+          <div class="d-flex justify-content-center mb-15">
             <i class="fa-solid fa-comments-dollar fs-5 text-primary lh-sm align-top me-2"></i>
             <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">善款會用於</h2>
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="purpose__card l-bg-background-yellow p-3">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/carousel-pic-1.png" class="d-block w-100" alt="貓咪">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate1">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-1.jpeg" class="d-block w-100 l-object-fit-70-25" alt="貓咪">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="purpose mb-11 mb-md-16">
-        <div class="container">
-          <h2 class="fs-4 fs-lg-2 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13 font-SerifTC">善款會用於
-          </h2>
-          <div class="row">
-            <div class="col-12 col-md-4 mb-7 mb-md-0">
-              <div class="card border-inputBdr-dark border-2 p-4 h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic1.jpg" class="card-img-top"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
-                  </div>
-                </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">幫浪貓找家</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">建立完善系統，幫助浪貓找到愛心家庭，並積極辦理貓咪送養會。</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 mb-7 mb-md-0">
-              <div class="card border-inputBdr-dark border-2 p-4 h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic2.jpg" class="l-object-fit-center-25"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
-                  </div>
-                </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">為浪貓結紮</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">幫助浪貓結紮，減少浪貓數量。</p>
-                </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">幫浪貓找家</p>
+                <p class="mb-0 text-text letterSpc-8">建立完善系統，幫助浪貓找到愛心家庭，並積極辦理貓咪送養會。</p>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card border-inputBdr-dark border-2 p-4  h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic3.jpg" class="card-img-top"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate2">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1  l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-2.jpeg" class="d-block w-100" alt="貓咪">
+                    </div>
                   </div>
                 </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">提供醫療救助</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">提供生病或受傷的浪貓們營養品及救助醫療所衍生的相關費用。</p>
+              </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">為浪貓結紮</p>
+                <p class="mb-0 text-text letterSpc-8">幫助浪貓結紮，減少浪貓數量。</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate3">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">提供醫療救助</p>
+                <p class="mb-0 text-text letterSpc-8">提供生病或受傷的浪貓們營養品及救助醫療所衍生的相關費用。</p>
               </div>
             </div>
           </div>
@@ -173,49 +157,59 @@
 
 
 
-      <section class="choosePlan mb-11 mb-md-16">
+      <!-- 我決定+1了 -->
+      <section class="choosePlan mb-20">
         <div class="container">
-          <h2 class="fs-4 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13 font-SerifTC">我決定＋1了！</h2>
-          <div class="row">
-            <div class="col-12 col-md-9">
-              <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
-                <div class="l-pic-fixed-ratio__content">
-                  <img src="../assets/images/donate/choosePlan.jpg" alt="超～可愛的貓咪照片，趕快來贊助讓更多貓貓可以有溫暖的家！"
-                    class="l-object-fit-center-25">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="d-flex justify-content-center justify-content-md-start mb-4">
+                <i class="fa-solid fa-thumbs-up fs-5 text-primary lh-sm align-top me-2"></i>
+                <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">我決定＋1了!</h2>
+              </div>
+              <p class="mb-9">感謝您的善款，每一分錢我們都會妥善運用，<br class="d-none d-md-block"> 讓浪貓們能吃飽穿暖、恢復健康並擁有找到家的機會，愛您！</p>
+              <div class="row g-0 justify-content-start">
+                <!-- 小尺寸才會出現 -->
+                <div class="col-12 d-block d-md-none">
+                  <img src="../assets/images/donate/choosePlan-sm.png" alt="貓咪吃魚" class="d-block m-auto">
+                </div>
+                <div class="col-12 col-md-5 mb-6 mb-md-0">
+                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                    <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
+                      <div class="l-pic-fixed-ratio__content">
+                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                      </div>
+                    </div>
+                    <p class="mb-0 border-top border-2 border-text bg-primary text-title py-2 text-center fs-6 lh-sm">單次支持</p>
+                  </a>
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">
+                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                    <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
+                      <div class="l-pic-fixed-ratio__content">
+                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                      </div>
+                    </div>
+                    <p class="mb-0 border-top border-2 border-text bg-secondary text-title py-2 text-center fs-6 lh-sm">定期支持</p>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3">
-              <div class="row h-100 g-0">
-                <div class="col-6 col-md-12 mb-md-13">
-                  <div class="w-100 h-100 d-flex flex-column border border-2 border-text">
-                    <div class="d-none d-md-flex flex-grow-1 flex-md-column justify-content-md-between">
-                      <h2 class="mb-0 d-flex justify-content-center align-items-center flex-grow-1">單次支持</h2>
-                      <a class="btn btn-primary border-bottom-0 border-start-0 border-end-0 w-100">我決定＋1了</a>
-                    </div>
-                    <div class="d-block d-md-none flex-grow-1">
-                      <a
-                        class="btn btn-secondary border-0 w-100 d-flex align-items-center justify-content-center">單次支持</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-12">
-                  <div class="w-100 h-100 d-flex flex-column border border-2 border-text">
-                    <div class="d-none d-md-flex flex-grow-1 flex-md-column justify-content-md-between">
-                      <h2 class="mb-0 d-flex justify-content-center align-items-center flex-grow-1">定期支持</h2>
-                      <a class="btn btn-primary border-bottom-0 border-start-0 border-end-0 w-100">我決定＋1了</a>
-                    </div>
-                    <div class="d-block d-md-none flex-grow-1">
-                      <a
-                        class="btn btn-primary border-0 w-100 d-flex align-items-center justify-content-center">定期支持</a>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
+              <div class="position-relative">
+                <!-- 主要貓咪 -->
+                <img src="../assets/images/donate/choosePlan.png" alt="貓咪吃魚" class="w-100">
+                <!-- position absolute裝飾魚魚 -->
+                <img src="../assets/images/donate/choosePlanFish1.png" alt="被吃的魚" class="position-absolute  l-pos--custom__3">
+                <img src="../assets/images/donate/choosePlanFish2.png" alt="被吃的魚" class="position-absolute l-pos--custom__4">
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
 
       <section class="faq py-9 py-lg-17 mb-11 mb-md-16">
         <div class="container ">
@@ -306,20 +300,39 @@
 
       <section class="donors">
         <div class="container">
-          <div class="d-flex flex-column align-items-center">
-            <h2 class="fs-4 fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13">
-              捐款芳名錄
-            </h2>
+          <div class="d-flex justify-content-center mb-7">
+            <i class="fa-solid fa-hands-holding-child fs-5 text-primary lh-sm align-top me-2"></i>
+            <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">捐款芳名錄</h2>
+          </div>
+          <div class="d-flex justify-content-center mb-8">
             <a href="#"
-              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center fw-medium mb-6 mb-lg-13 "
-              title="Take me home">
-              由此前往
-              <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="ms-10">
+              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 fw-medium l-arrow--animation d-flex align-items-center">
+              <span class="fw-medium letterSpc-8 me-11">由此前往</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                <path d="M2.5 14H21.5L18.0623 9" stroke="#624E40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-11">
             <div class="text-center">
               <p class="mb-0">若認同我們的理念，請分享宣傳給更多的人</p>
               <p class="mb-0">只要你還有選擇，只要你願意行動，牠就有機會獲得一個溫暖的家。</p>
             </div>
+          </div>
+          <div class="d-flex  flex-column align-items-center">
+            <ul class="list-unstyled d-flex l-gap-16 align-items-center mb-4">
+              <li>
+                <a href="http://instagram.com" class="d-inline-block"> <i class="fa-brands fa-instagram fs-3 text-tertiary"></i></a>
+              </li>
+              <li>
+                <a href="http://facebook.com" class="d-inline-block"> <i class="fa-brands fa-facebook fs-3 text-tertiary"></i></a>
+              </li>
+              <li>
+                <a href="http://twitter.com" class="d-inline-block"> <i class="fa-brands fa-twitter fs-3 text-tertiary"></i></a>
+              </li>
+            </ul>
+            <p class="mb-0">點我分享</p>
+
           </div>
         </div>
       </section>

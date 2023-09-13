@@ -17,7 +17,10 @@
   // 最後要移除
   // background-color: wheat;
   * {
-    outline: 1px solid red;
+    // outline: 1px solid red;
+  }
+  img[alt='']{
+    outline: 10px solid red;
   }
 
   /*------------------------------------*\
@@ -57,6 +60,9 @@
     @include lg {
       letter-spacing: 0.16em;
     }
+  }
+  .l-gap-16{
+    gap:16px;
   }
 
   .l-fs-16 {
@@ -102,13 +108,15 @@
   /*------------------------------------*\
       $LAYOUT
   \*------------------------------------*/
+  .text-tertiary:hover{
+    color:$primary !important;
+  }
   .l-pic-fixed-ratio {
     position: relative;
   }
 
   .l-pic-fixed-ratio--hoverScale {
     overflow: hidden;
-
     img {
       transition: transform .3s ease-in-out;
     }
@@ -160,14 +168,23 @@
   img.l-object-fit-center-25 {
     object-position: center 25%;
   }
+  img.l-object-fit-70-25{
+    object-position: 75% 25%;
+  }
 
 
   .l-pos--custom__1{
     display: none;
     @include xl{
       display: block;
-      right: 100%;
-      top:-70%;
+      right: 95%;
+      top:-30%;
+      width: 150px;
+    }
+    @include xxl{
+      width: 200px;
+      right: 90%;
+      top:-50%;
     }
   }
   .l-pos--custom__2{
@@ -178,12 +195,22 @@
       bottom: 0px;
     }
   }
+  .l-pos--custom__3{
+    left:-80px;
+    top:40px;
+  }
+  .l-pos--custom__4{
+    left:-150px;
+    top:-20px;
+  }
 
   .l-modifier-carousel-bg {
-    background-image: url(../images/donate/carousel-bgwithoutcloud.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0px bottom;
+    @include lg{
+      background-image: url(../images/donate/carousel-bgwithoutcloud.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0px 80%;
+    }
   }
 
   .l-requiredIcon::after {
@@ -249,11 +276,56 @@
     
   }
 
+  .purpose__card {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0px;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: #F0CB9C;
+      border: 3px solid #AF7F5A;
+      border-radius: 50px;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .purpose__card--rotate1{
+    transform: translate(0px , -50px) rotate(-3deg);
+  }
+  .purpose__card--rotate2{
+    transform: rotate(2.34deg);
+  }
+  .purpose__card--rotate3{
+    transform: rotate(-0.865deg);
+  }
 
 
+
+  .choosePlan{
+    a.planLinkBtn{
+      .l-pic-fixed-ratio{
+        overflow: hidden;
+      }
+      img{
+        transition: transform .2s ease-in-out;
+      }
+      &:hover{
+        img{
+          @include md{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
 
   .faq {
-    background: url("../images/donate/faq_bg.jpg") no-repeat center/cover;
+    @include lg{
+      background: url("../images/donate/QA-bg.jpeg") no-repeat center/cover;
+    }
 
     [aria-expanded="true"] {
       background-color: $hover;
