@@ -140,15 +140,18 @@ $(document).ready(function () {
     //one
     $('.one .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').attr("src","../assets/images/shelter/1/1.png");
+        $('.one .mainPic').css("background","url(../assets/images/shelter/1/1.png) center center no-repeat").css("background-size","cover");
+        // $('.one .mainPic').attr("src","../assets/images/shelter/1/1.png");
     });
     $('.one .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').attr("src","../assets/images/shelter/1/2.png");
+        $('.one .mainPic').css("background","url(../assets/images/shelter/1/2.png) center center no-repeat").css("background-size","cover");
+        // $('.one .mainPic').attr("src","../assets/images/shelter/1/2.png");
     });
     $('.one .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').attr("src","../assets/images/shelter/1/3.png");
+        $('.one .mainPic').attr("src","../images/shelter/1/3.png");
+        // $('.one .mainPic').attr("src","../assets/images/shelter/1/3.png");
     });
     $('.one .picItem4').click(function (e) { 
         e.preventDefault();
