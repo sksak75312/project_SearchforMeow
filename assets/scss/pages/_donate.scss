@@ -20,7 +20,7 @@
     // outline: 1px solid red;
   }
   img[alt='']{
-    outline: 10px solid red;
+    // outline: 10px solid red;
   }
 
   /*------------------------------------*\
@@ -108,9 +108,6 @@
   /*------------------------------------*\
       $LAYOUT
   \*------------------------------------*/
-  .text-tertiary:hover{
-    color:$primary !important;
-  }
   .l-pic-fixed-ratio {
     position: relative;
   }
@@ -222,8 +219,18 @@
 
 
   .l-relativePos__1{
-    left: -20px;
-    top:0px
+    left: -25px;
+    bottom: 0px;
+  }
+  .l-relativePos__2{
+    bottom: 16%;
+    left: 15%;
+    width: 200px;
+  }
+  .l-relativePos__3{
+    width: 400px;
+    top: 10%;
+    left: 70%;
   }
 
 
@@ -321,105 +328,75 @@
       }
     }
   }
-
+  
   .faq {
-    @include lg{
-      background: url("../images/donate/QA-bg.jpeg") no-repeat center/cover;
+    background: url("../images/donate/QA-bg.jpeg") no-repeat center/cover;
+    &__button.accordion-button:not(.collapsed) {
+      background: $hover;
+      box-shadow: none;
     }
 
-    [aria-expanded="true"] {
-      background-color: $hover;
+    &__button:focus {
+      box-shadow: none !important;
     }
 
-    [data-bs-toggle="collapse"] {
-      h3 {
-        color: $primary;
-      }
-
-      .l-icon-expandmore {
-        display: none;
-      }
-
-      .l-icon-expandless {
-        display: block;
-      }
-
-      // 有collapsed代表收合狀態
-      &.collapsed {
-        h3 {
-          color: #000;
-        }
-
-        .l-icon-expandmore {
-          display: block;
-
-          &::before,
-          &::after {
-            background-color: #000;
-          }
-        }
-
-        .l-icon-expandless {
-          display: none;
-        }
-      }
+    &__button::after {
+      display: none;
     }
 
-    .faq-list-item {
-      cursor: pointer;
+    &__bg__left {
+      left: 0;
+      z-index: -1;
+    }
+
+    &__bg__right {
+      right: 0;
+      z-index: -1;
+    }
+  }
+  @include md{
+
+    .faq {
+      &__bg__left {
+        width: 198px;
+      }
+
+      &__bg__right {
+        width: 199px;
+      }
+    }
+  }
+  @include xl{
+    .faq {
+      &__bg__left {
+        width: 396px;
+      }
+
+      &__bg__right {
+        width: 398px;
+      }
+    }
+  }
+  .fa-instagram{
+    color:#E43B60;
+    &:hover{
+      color:darken(#E43B60,20%);
+    }
+  }
+  .fa-facebook{
+    color: #007AFC;
+    &:hover{
+      color:darken(#007AFC,10%);
+    }
+  }
+  .fa-twitter{
+    color: #009EFC;
+    &:hover{
+      color:darken(#009EFC,10%);
     }
   }
 
-  .l-icon-expandless {
-    position: relative;
-    width: 40px;
-    height: 40px;
 
-    &::before {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 2px;
-      width: 20px;
-      transform: translate(-50%, -50%);
-      border-radius: 10px;
-      background-color: $primary;
-    }
-  }
-
-  .l-icon-expandmore {
-    position: relative;
-    width: 40px;
-    height: 40px;
-
-    &::before {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 2px;
-      width: 20px;
-      transform: translate(-50%, -50%);
-      border-radius: 10px;
-      background-color: $primary;
-    }
-
-    &::after {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 2px;
-      width: 20px;
-      transform: translate(-50%, -50%) rotate(90deg);
-      border-radius: 10px;
-      background-color: $primary;
-    }
-  }
 
 
   // table設定
