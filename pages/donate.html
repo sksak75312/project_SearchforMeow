@@ -26,13 +26,19 @@
     <main class="donate mt-7 mt-lg-13">
       <!-- 我想幫助 & donate頁面上方輪播區 -->
       <!-- l-modifier-carousel-bg 裝飾河流 在md以下消失 -->
-      <section class="banner pb-23 l-modifier-carousel-bg">
+      <section class="banner pb-23 position-relative l-modifier-carousel-bg">
+        <!-- 雲朵裝飾 （不佔空間） -->
+        <img src="../assets/images/donate/modifier-cloud.png" alt="雲朵裝飾" class="position-absolute l-relativePos__2">
+        <img src="../assets/images/donate/modifier-cloudgroup.png" alt="雲朵裝飾" class="position-absolute l-relativePos__3">
+        <!-- 雲朵裝飾結束 -->
         <div class="container">
           <div class="d-flex justify-content-center mb-4">
-            <i class="fa-solid fa-heart-pulse fa-bounce fs-2 text-primary lh-sm align-top me-2"></i>
+            <span class="material-symbols-outlined fa-bounce fs-2 text-primary lh-sm align-top me-2 fw-bolder">
+              volunteer_activism
+            </span>
             <h1 class="d-inline-block mb-0 text-title fs-2 font-SerifTC fw-bold letterSpc-8">響應捐款</h1>
           </div>
-          <p class="mb-0 text-center text-primary fs-4 font-SpaceMono lh-sm mb-21">Respond to Donations</p>
+          <p class="mb-0 text-center text-primary fs-4 font-SpaceMono lh-sm mb-10 mb-md-21">Respond to Donations</p>
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-0">
               <div class="d-flex flex-column align-items-center position-relative">
@@ -40,9 +46,9 @@
                 <img src="../assets/images/donate/thankyoucat.png" alt="Q版貓咪裝飾圖案" class="position-absolute l-pos--custom__1">
                 <!-- 裝飾貓咪結尾  -->
                 <h2 class="mb-0 fs-3 letterSpc-8 fw-bold text-title font-SerifTC mb-4">我想幫助</h2>
-                <p class="mb-0 fs-6 letterSpc-8 fw-mdeium text-primary mb-8">錢錢沒有變不見，而是成為貓咪的家！</p>
-                <a href="" class="btn btn-primary p-4 d-flex align-items-center l-arrow--animation">
-                  <p class="mb-0 letterSpc-8 me-8 d-flex align-items-center">我決定+<span style="transform:scale(3);" class="px-2">1</span>了</p>
+                <p class="mb-0 fs-6 letterSpc-8 fw-mdeium text-primary mb-8 text-center w-75 w-md-100">錢錢沒有變不見，而是成為貓咪的家！</p>
+                <a href="./donate__plan.html" class="btn btn-primary p-4 d-flex align-items-center l-arrow--animation">
+                  <p class="mb-0 letterSpc-8 me-8 d-flex align-items-center">我決定+1了</p>
                   <!-- 箭頭 -->
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                     <path d="M2.5 14H21.5L18.0623 9" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -50,7 +56,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-5">
+            <div class="col-12 col-lg-6 col-xl-5 mb-8 mb-lg-0">
               <div id="carouselExampleControls" class="carousel slide mb-6 position-relative" data-bs-ride="carousel">
                 <!-- 愛心裝飾 -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="103" height="128" viewBox="0 0 103 128" fill="none" class="position-absolute l-pos--custom__2">
@@ -66,7 +72,7 @@
                   <div class="carousel-item active">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/carousel-pic-1.png" class="d-block w-100"
+                        <img src="../assets/images/donate/carousel-pic-1.jpeg" class="d-block w-100"
                           alt="貓咪">
                       </div>
                     </div>
@@ -117,7 +123,7 @@
             <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">善款會用於</h2>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 mb-18 mb-md-0">
               <div class="cardwrap p-5 mb-6">
                 <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate1">
                   <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
@@ -132,7 +138,7 @@
                 <p class="mb-0 text-text letterSpc-8">建立完善系統，幫助浪貓找到愛心家庭，並積極辦理貓咪送養會。</p>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 mb-18 mb-md-0">
               <div class="cardwrap p-5 mb-6">
                 <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate2">
                   <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1  l-pic-fixed-ratio--hoverScale">
@@ -147,7 +153,7 @@
                 <p class="mb-0 text-text letterSpc-8">幫助浪貓結紮，減少浪貓數量。</p>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 mb-18 mb-md-0">
               <div class="cardwrap p-5 mb-6">
                 <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate3">
                   <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
@@ -184,20 +190,20 @@
                   <img src="../assets/images/donate/choosePlan-sm.png" alt="貓咪吃魚" class="d-block m-auto">
                 </div>
                 <div class="col-12 col-md-5 mb-6 mb-md-0">
-                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                  <a href="./donate__plan.html" class="planLinkBtn d-block border border-2 border-text">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                        <img src="../assets/images/donate/donate-once.jpeg" class="d-block w-100" alt="貓咪">
                       </div>
                     </div>
                     <p class="mb-0 border-top border-2 border-text bg-primary text-title py-2 text-center fs-6 lh-sm">單次支持</p>
                   </a>
                 </div>
                 <div class="col-12 col-md-5 offset-md-1">
-                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                  <a href="./donate__plan.html" class="planLinkBtn d-block border border-2 border-text">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                        <img src="../assets/images/donate/donate-regular.jpeg" class="d-block w-100" alt="貓咪">
                       </div>
                     </div>
                     <p class="mb-0 border-top border-2 border-text bg-secondary text-title py-2 text-center fs-6 lh-sm">定期支持</p>
@@ -220,8 +226,6 @@
 
 
 
-
-
       <section class="faq py-9 py-lg-17 mb-11 mb-md-16">
         <div class="container ">
           <div class="col-12 col-lg-8">
@@ -236,74 +240,95 @@
                   Donate</p>
               </div>
               <!-- 下方問題答案區塊 -->
-              <ul class="faq-list list-unstyled border border-2 border-inputBdr-dark">
-                <!-- q1 -->
-                <li
-                  class="faq-list-item border-bottom border-2 border-inputBdr-dark py-4 px-6 py-lg-7 px-lg-11 collapsed"
-                  data-bs-toggle="collapse" href="#donate__faq1">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="mb-0 l-fs-16 me-3">資助搜趣找貓能怎麼幫助到牠們呢？</h3>
-                    <span class="l-icon-expandmore flex-shrink-0"></span>
-                    <span class="l-icon-expandless flex-shrink-0"></span>
-                  </div>
-                  <div class="collapse" id="donate__faq1">
-                    <p class="mb-0 mt-2 mt-lg-4">
-                      您的贊助將支持我們持續穩定地維護平台，讓浪貓不僅能獲得救助，也能擁有更多的曝光 度，讓他們更有機會找到溫暖的家。
-                    </p>
-                  </div>
-                </li>
-                <!-- q2 -->
-                <li
-                  class="faq-list-item border-bottom border-2 border-inputBdr-dark py-4 px-6 py-lg-7 px-lg-11 collapsed"
-                  data-bs-toggle="collapse" href="#donate__faq2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="mb-0 l-fs-16 me-3">我沒有信用卡，可以用匯款的嗎？</h3>
-                    <span class="l-icon-expandmore flex-shrink-0"></span>
-                    <span class="l-icon-expandless flex-shrink-0"></span>
-                  </div>
-                  <div class="collapse" id="donate__faq2">
-                    <p class="mb-0 mt-2 mt-lg-4">很抱歉，我們暫時尚末開通此功能</p>
+              <ul class="accordion accordion-flush border border-2 border-inputBdr-dark list-unstyled" id="accordionFlushExample">
+                <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-one">
+                      <span class="fw-medium lh-sm letterSpc-8">我可以先看看貓咪再決定是否認養嗎？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-one" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">當然可以，我們鼓勵您在認養前先實地參觀我們的收容所，與貓咪進行互動。</div>
                   </div>
                 </li>
-                <!-- q3 -->
-                <li
-                  class="faq-list-item border-bottom border-2 border-inputBdr-dark py-4 px-6 py-lg-7 px-lg-11 collapsed"
-                  data-bs-toggle="collapse" href="#donate__faq3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="mb-0 l-fs-16 me-3">我不想定期定額，可以一次性付款嗎？</h3>
-                    <span class="l-icon-expandmore flex-shrink-0"></span>
-                    <span class="l-icon-expandless flex-shrink-0"></span>
-                  </div>
-                  <div class="collapse" id="donate__faq3">
-                    <p class="mb-0 mt-2 mt-lg-4">可以，請前往</p>
-                  </div>
-                </li>
-                <!-- q4 -->
-                <li
-                  class="faq-list-item border-bottom border-2 border-inputBdr-dark py-4 px-6 py-lg-7 px-lg-11 collapsed"
-                  data-bs-toggle="collapse" href="#donate__faq4">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="mb-0 l-fs-16 me-3">我不想贊助了，要如何取消？</h3>
-                    <span class="l-icon-expandmore flex-shrink-0"></span>
-                    <span class="l-icon-expandless flex-shrink-0"></span>
-                  </div>
-                  <div class="collapse" id="donate__faq4">
-                    <p class="mb-0 mt-2 mt-lg-4">您可以私訊粉絲專頁，我們將核對您的資料後為您取消。</p>
+                <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-two">
+                      <span class="fw-medium lh-sm letterSpc-8">我住在公寓裡，可以認養貓咪嗎？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-two" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">請先確認您的公寓規定是否允許飼養貓咪並且於對外窗戶裝設防護網措施。大部分的貓咪都能適應公寓生活。
+                    </div>
                   </div>
                 </li>
-                <!-- q5 -->
-                <li class="faq-list-item py-4 px-6 py-lg-7 px-lg-11 collapsed" data-bs-toggle="collapse"
-                  href="#donate__faq5">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="mb-0 l-fs-16 me-3">我可以索取匯款收據嗎？</h3>
-                    <span class="l-icon-expandmore flex-shrink-0"></span>
-                    <span class="l-icon-expandless flex-shrink-0"></span>
+                <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-three">
+                      <span class="fw-medium lh-sm letterSpc-8">認養貓咪需要支付費用嗎？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-three" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">依據所在收容所規定需要支付基本醫療費用，來為浪貓作結紮、打疫苗費用。</div>
                   </div>
-                  <div class="collapse" id="donate__faq5">
-                    <p class="mb-0 mt-2 mt-lg-4">可以，請在捐款人資訊填寫收據相關資料</p>
+                </li>
+                <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-four">
+                      <span class="fw-medium lh-sm letterSpc-8">收容所的貓咪都有做健康檢查嗎？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-four" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">有的，皆已接受過結紮以及施打過疫苗，詳情請再詢問收容所負責人員。</div>
+                  </div>
+                </li>
+                <li class="accordion-item border-bottom border-2 border-inputBdr-dark">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-five">
+                      <span class="fw-medium lh-sm letterSpc-8">如果認養後我不能再照顧貓咪怎麼辦？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-five" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">我們希望所有的貓咪都能找到永遠的家。但若有不可抗拒的因素以致無法照顧貓咪，請聯繫我們。
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="faq__button accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-six">
+                      <span class="fw-medium lh-sm letterSpc-8">貓咪需要定期去看獸醫嗎？</span>
+                      <img src="../assets/images/icon/icon_plus.svg" class="faq__button-plus img-fluid" alt="">
+                      <img src="../assets/images/icon/icon_minus.svg" class="faq__button-minus img-fluid d-none" alt="">
+                    </button>
+                  </h3>
+                  <div id="faq-six" class="accordion-collapse collapse bg-hover" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fw-medium lh-sm letterSpc-8 text-text">是的，貓咪需要定期接受獸醫檢查，以確保健康並接種必要的疫苗。</div>
                   </div>
                 </li>
               </ul>
+
             </div>
           </div>
         </div>
@@ -316,8 +341,8 @@
             <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">捐款芳名錄</h2>
           </div>
           <div class="d-flex justify-content-center mb-8">
-            <a href="#"
-              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 fw-medium l-arrow--animation d-flex align-items-center">
+            <a href="https://docs.google.com/spreadsheets/d/15AlSnVueBRHJ76EMmPofkcteJB6nekyJz3jXFOsbxP0/edit?usp=sharing"
+              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 fw-medium l-arrow--animation d-flex align-items-center" target="_blank">
               <span class="fw-medium letterSpc-8 me-11">由此前往</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M2.5 14H21.5L18.0623 9" stroke="#624E40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -333,13 +358,13 @@
           <div class="d-flex  flex-column align-items-center">
             <ul class="list-unstyled d-flex l-gap-16 align-items-center mb-4">
               <li>
-                <a href="http://instagram.com" class="d-inline-block"> <i class="fa-brands fa-instagram fs-3 text-tertiary"></i></a>
+                <a href="http://instagram.com" class="d-inline-block"> <i class="fa-brands fa-instagram fs-3 "></i></a>
               </li>
               <li>
-                <a href="http://facebook.com" class="d-inline-block"> <i class="fa-brands fa-facebook fs-3 text-tertiary"></i></a>
+                <a href="http://facebook.com" class="d-inline-block"> <i class="fa-brands fa-facebook fs-3"></i></a>
               </li>
               <li>
-                <a href="http://twitter.com" class="d-inline-block"> <i class="fa-brands fa-twitter fs-3 text-tertiary"></i></a>
+                <a href="http://twitter.com" class="d-inline-block"> <i class="fa-brands fa-twitter fs-3"></i></a>
               </li>
             </ul>
             <p class="mb-0">點我分享</p>
@@ -355,6 +380,38 @@
     <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
     <!-- jQuery  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      const faqButton = document.querySelectorAll('.faq__button');
+      const btnDropdown = document.querySelectorAll('.btn__dropdown');
+      let openedButton = null;
+      let arrowUp = null;
+      // faq 加減切換
+      faqButton.forEach((button) => {
+        button.addEventListener('click', () => {
+
+          if (button === openedButton) {
+            button.querySelector('.faq__button-minus').classList.toggle('d-none');
+            button.querySelector('.faq__button-plus').classList.toggle('d-none');
+            openedButton = null;
+          } else {
+            if (openedButton) {
+              openedButton.querySelector('.faq__button-minus').classList.toggle('d-none');
+              openedButton.querySelector('.faq__button-plus').classList.toggle('d-none');
+            }
+            button.querySelector('.faq__button-plus').classList.toggle('d-none');
+            button.querySelector('.faq__button-minus').classList.toggle('d-none');
+            openedButton = button;
+          }
+
+          button.disabled = true;
+
+          setTimeout(() => {
+            button.disabled = false;
+          }, 500);
+        });
+
+      })
+    </script>
 
 </body>
 
