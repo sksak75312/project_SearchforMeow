@@ -1,5 +1,5 @@
 .footer{
-  a{
+  a:not(.toTop){
     display: block;
   }
   col:nth-child(1){
@@ -38,9 +38,9 @@
   }
 }
 .toTop{
+  display: none;
   right: 32px;
   bottom: 200px;
-  display: none;
   position: fixed;
   i{
     font-size: 48px;
