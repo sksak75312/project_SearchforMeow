@@ -15,9 +15,9 @@
     <meta property="og:url" content="https://pinyiw0.github.io/project_SearchforMeow/">
     <meta property="og:image" content="https://i.imgur.com/9lYfi0l.png">
     <link rel="apple-touch-icon" href="../assets/images/logo-32px.png">
-  <script type="module" crossorigin src="/project_SearchforMeow/assets/shelter-5638953c.js"></script>
-  <link rel="modulepreload" crossorigin href="/project_SearchforMeow/assets/main-eadfa6e3.js">
-  <link rel="stylesheet" href="/project_SearchforMeow/assets/main-84cd8174.css">
+  <script type="module" crossorigin src="/project_SearchforMeow/assets/shelter-5799fa76.js"></script>
+  <link rel="modulepreload" crossorigin href="/project_SearchforMeow/assets/main-268971c2.js">
+  <link rel="stylesheet" href="/project_SearchforMeow/assets/main-b6bfb847.css">
 </head>
 <body>
 
@@ -161,31 +161,31 @@
                     </h1>
                 </div>
             </div>
-            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-center mb-4">
-                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
-                    <label for="dropdown" class="form-label text-text fw-medium fs-xl-6 mb-0 me-3">縣市<br>查詢</label>
-                    <div class="dropdown d-flex flex-fill">
-                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-2 border border-2 border-inputBdr-light letterSpc-8 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <form action="" class="row flex-column flex-lg-row justify-content-lg-end align-items-end mb-4">
+                <div class="mb-4 mb-md-9 col-md-8 col-lg-4 d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between">
+                    <label for="dropdown" class="form-label text-text fw-medium fs-xl-6 mb-2 mb-lg-0 me-3">縣市查詢</label>
+                    <div class="d-flex flex-column flex-fill accordion position-relative" id="accordionDropdown">
+                        <button class="dropBtn text-text fs-xl-6 fw-medium btn btn-white px-2 py-2 border border-2 border-inputBdr-light letterSpc-8 d-flex align-items-center justify-content-between w-100" id="dropdown" type="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">
                             全部
                             <span class="material-symbols-outlined expand_more">
                                 expand_more
                             </span>
                           </button>
-                        <ul class="dropdown-menu w-100 border-inputBdr-light">
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item0" href="#">全部</a></li>
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item1" href="#">北部</a></li>
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item2" href="#">中部</a></li>
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item3" href="#">南部</a></li>
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item4" href="#">東部</a></li>
-                            <li><a class="dropdown-item fs-xl-6 text-text fw-medium letterSpc-8 item5" href="#">離島</a></li>
+                        <ul id="collapseDropdown" class="w-100 border-inputBdr-light accordion-collapse collapse list-unstyled position-absolute z-1 top-100" data-bs-parent="#accordionDropdown">
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item0" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">全部</a></li>
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item1" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">北部</a></li>
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item2" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">中部</a></li>
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item3" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">南部</a></li>
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item4" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">東部</a></li>
+                            <li><a class="bg-white p-2 fs-xl-6 text-text fw-medium letterSpc-8 item5" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDropdown">離島</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="mb-4 mb-md-9 col-lg-4 d-flex align-items-lg-center justify-content-lg-between">
-                    <label for="keyWord" class="form-label text-text fw-medium text-center fs-xl-6 mb-0 me-3">關鍵字<br>查詢</label>
+                <div class="mb-4 mb-md-9 col-md-8 col-lg-4 d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between">
+                    <label for="keyWord" class="form-label text-text fw-medium fs-xl-6 mb-2 mb-lg-0 me-3">關鍵字查詢</label>
                     <input type="text" class="keyWord text-text fw-medium fs-xl-6 border border-2 border-inputBdr-light letterSpc-8 px-4 py-2 flex-fill" id="keyWord" placeholder="請輸入關鍵字">
                 </div>
-                <div class="mb-4 mb-md-9 col-md-4 col-lg-2 align-self-md-center">
+                <div class="mb-4 mb-md-9 col-md-8 col-lg-2">
                     <button type="submit" class="btn btn-primary text-white fs-xl-6 fw-medium border w-100 px-4 py-2 border-inputBdr-dark border-2 d-flex align-items-center justify-content-center">查詢 <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="arrowBtn ms-9"></button>
                 </div>
             </form>
@@ -277,16 +277,16 @@
                                     <p class="text-text mb-lg-7">
                                         台北市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8">臺北市內湖區安美街191號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:02-87913254">02-87913254</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/LS29m1Xw4Zi6zcTb8">臺北市內湖區安美街191號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:02-87913254">02-87913254</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -350,16 +350,16 @@
                                     <p class="text-text mb-lg-7">
                                         新北市板橋動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/7yikxLHfcaLjzf388">新北市板橋區板城路28-1號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:02-89662158">02-89662158</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/7yikxLHfcaLjzf388">新北市板橋區板城路28-1號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:02-89662158">02-89662158</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -423,16 +423,16 @@
                                     <p class="text-text mb-lg-7">
                                         臺中市南屯動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7">臺中市南屯區中台路601號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:04-23850976">04-23850976</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/rRWG3EpPhSzgNTzs7">臺中市南屯區中台路601號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:04-23850976">04-23850976</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -496,16 +496,16 @@
                                     <p class="text-text mb-lg-7">
                                         高雄市壽山動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6">高雄市鼓山區萬壽路350號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:07-5519059">07-5519059</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/3PgTL6p7WGzdqVoe6">高雄市鼓山區萬壽路350號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:07-5519059">07-5519059</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -569,16 +569,16 @@
                                     <p class="text-text mb-lg-7">
                                         臺東市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/WYSri1a3moSYiidg7">臺東縣臺東市中華路4段999巷600號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:089-362011">089-362011</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/WYSri1a3moSYiidg7">臺東縣臺東市中華路4段999巷600號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:089-362011">089-362011</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -642,16 +642,16 @@
                                     <p class="text-text mb-lg-7">
                                         澎湖縣市動物之家致力於保護流浪動物，提供安全的庇護所和優質的照顧。<br>積極推動領養並呼籲社會關注動物福祉，致力於創造一個更友善的環境，期待您的關愛領養。
                                     </p>
-                                    <p class="font-SansTC d-flex align-items-center">地址：<a href="https://goo.gl/maps/qUXBdFp2SNfFtUB69">澎湖縣馬公市烏崁里260、261號</a></p>
-                                    <p class="font-SansTC d-flex align-items-center">電話：<a href="tel:06-9213559">06-9213559</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">地址：<a class="text-wrap" href="https://goo.gl/maps/qUXBdFp2SNfFtUB69">澎湖縣馬公市烏崁里260、261號</a></p>
+                                    <p class="font-SansTC text-nowrap d-flex align-items-center">電話：<a class="text-wrap" href="tel:06-9213559">06-9213559</a></p>
                                     <p class="font-SansTC text-text">
                                         領養開放時間：<br>週二至週六：上午10:00~12:00，下午14:00~16:00
                                     </p>
                                     <div class="btn-group mt-auto d-flex">
                                         <button class="btn btn-secondary p-3 flex-fill me-1 fw-medium" data-bs-dismiss="modal">看看其他收容所</button>
-                                        <button class="btn btn-primary py-3 px-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
-                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-9">
-                                        </button>
+                                        <a href="adoption-appointedShelter.html" class="btn btn-primary py-3 px-3 px-sm-0 flex-fill ms-1 fw-medium border-2 border-inputBdr-dark text-white d-flex align-items-center justify-content-center">尋找心願貓咪
+                                            <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="blackArrowRight ms-3 ms-sm-9 ms-lg-3 ms-xl-9">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-lg-5 ms-lg-4">
@@ -724,7 +724,7 @@
         </div>
     </div>
     <div class="bottomBannerWeb">
-        <img src="/project_SearchforMeow/assets/modifier1-9fc1255b.png" alt="cat pic" class="d-sm-none">
+        <img src="/project_SearchforMeow/assets/bg_bottom_mobile-9fc1255b.png" alt="cat pic" class="d-sm-none">
         <img src="/project_SearchforMeow/assets/bg-bottom-06383805.png" alt="cat pic" class="d-none d-sm-block">
     </div>
 </div>
