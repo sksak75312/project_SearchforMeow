@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- customer -->
   <title>響應捐款</title>
   <link rel="short icon" href="../assets/images/logo-32.png">
@@ -16,129 +17,149 @@
   <meta property="og:url" content="https://pinyiw0.github.io/project_SearchforMeow/">
   <meta property="og:image" content="https://i.imgur.com/9lYfi0l.png">
   <link rel="apple-touch-icon" href="../assets/images/logo-32px.png">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
     <main class="donate mt-7 mt-lg-13">
       <!-- 我想幫助 & donate頁面上方輪播區 -->
-      <section class="banner mb-11 mb-md-16">
+      <!-- l-modifier-carousel-bg 裝飾河流 在md以下消失 -->
+      <section class="banner pb-23 l-modifier-carousel-bg">
         <div class="container">
-          <div class="col-12 d-flex justify-content-center align-items-center mb-6 mb-lg-13">
-            <span class="material-symbols-outlined heartIcon fs-4 fs-lg-2 text-primary fw-medium me-1 me-lg-2">
-              volunteer_activism
-            </span>
-            <h1 class="mb-0 fs-4 fs-lg-2 fw-bold lh-sm letterSpc-8 font-SerifTC text-tertiary">
-              響應捐款
-              <!-- <br> -->
-              <!-- <span class="fs-5 text-primary letterSpc-8 fw-normal">Give Them Love</span> -->
-            </h1>
+          <div class="d-flex justify-content-center mb-4">
+            <i class="fa-solid fa-heart-pulse fa-bounce fs-2 text-primary lh-sm align-top me-2"></i>
+            <h1 class="d-inline-block mb-0 text-title fs-2 font-SerifTC fw-bold letterSpc-8">響應捐款</h1>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-6 order-1 order-md-0">
-              <div class="h-100 d-flex flex-column align-items-stretch justify-content-between">
-                <div>
-                  <h2 class="mb-1 fs-3 fs-lg-2">我想幫助...</h2>
-                  <p class="mb-4 fs-7">錢錢沒有變不見！而是變成貓咪的家！</p>
-                </div>
-                <a href="./donate__plan.html" class="btn btn-primary w-100">我決定+1了！</a>
+          <p class="mb-0 text-center text-primary fs-4 font-SpaceMono lh-sm mb-21">Respond to Donations</p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-0">
+              <div class="d-flex flex-column align-items-center position-relative">
+                <!-- decoration 裝飾貓咪，只會在xl以上出現並且使用position abolute所以不會佔空間 -->
+                <img src="../assets/images/donate/thankyoucat.png" alt="Q版貓咪裝飾圖案" class="position-absolute l-pos--custom__1">
+                <!-- 裝飾貓咪結尾  -->
+                <h2 class="mb-0 fs-3 letterSpc-8 fw-bold text-title font-SerifTC mb-4">我想幫助</h2>
+                <p class="mb-0 fs-6 letterSpc-8 fw-mdeium text-primary mb-8">錢錢沒有變不見，而是成為貓咪的家！</p>
+                <a href="" class="btn btn-primary p-4 d-flex align-items-center l-arrow--animation">
+                  <p class="mb-0 letterSpc-8 me-8 d-flex align-items-center">我決定+<span style="transform:scale(3);" class="px-2">1</span>了</p>
+                  <!-- 箭頭 -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M2.5 14H21.5L18.0623 9" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <!-- wireframe設計的部分 -->
-              <!-- <div class="fs-5 d-block d-md-none text-center mb-1"><i
-                  class="fa-solid fa-hand-holding-dollar align-top lh-base">響應捐獻</i></div> -->
-              <!-- carousel -->
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-12 col-lg-6 col-xl-5">
+              <div id="carouselExampleControls" class="carousel slide mb-6 position-relative" data-bs-ride="carousel">
+                <!-- 愛心裝飾 -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="103" height="128" viewBox="0 0 103 128" fill="none" class="position-absolute l-pos--custom__2">
+                  <path
+                    d="M20.2781 101.901C20.2781 101.901 13.9281 88.0756 4.85812 92.5838C-4.21188 97.092 0.0781212 110.895 12.2581 119.121C24.4381 127.347 27.1981 127.481 27.1981 127.481C27.1981 127.481 28.7481 128.727 29.4781 124.865C30.2081 121.002 34.7581 113.11 36.2881 107.188C37.8181 101.266 39.9281 89.2889 32.7681 86.9179C32.7681 86.9179 22.7181 83.0887 20.2781 101.912V101.901Z"
+                    fill="#FA0032" />
+                  <path
+                    d="M82.8076 18.0368C82.8076 18.0368 84.4576 5.58083 79.9776 2.18577C75.4976 -1.20929 71.7976 0.215523 69.7676 1.61807C67.7376 3.02062 62.6376 8.93137 65.2676 22.9457C67.8976 36.9601 68.4276 40.6223 68.3176 42.292C68.2076 43.9617 67.4376 52.2101 63.2676 56.4734C63.2676 56.4734 73.0376 55.4159 85.4676 46.2214C97.8976 37.0269 102.378 27.5207 102.458 18.8271C102.458 18.8271 103.688 3.41022 91.9376 8.41933C91.9376 8.41933 89.8476 8.98703 82.8176 18.0368H82.8076Z"
+                    fill="#FA0032" />
+                </svg>
+                <!-- 愛心裝飾結束 -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/banner__carousel__pic1.jpg" class="d-block w-100"
-                          alt="可愛米克斯照片1">
+                        <img src="../assets/images/donate/carousel-pic-1.png" class="d-block w-100"
+                          alt="貓咪">
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
                       <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/banner__carousel__pic2.jpg" class="d-block w-100"
-                          alt="可愛米克斯照片2">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
-                      <div class="l-pic-fixed-ratio__content">
-                        <img src="../assets/images/donate/banner__carousel__pic3.jpg" class="d-block w-100"
-                          alt="可愛米克斯照片3">
+                        <img src="../assets/images/donate/carousel-pic-2.jpeg" class="d-block w-100" alt="貓咪">
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+              </div>
+              <div class="ps-4 d-flex justify-content-between align-items-center">
+                <a href="" class="btn btn-outline-primary rounded-pill position-relative py-2 px-4">
+                  請幫幫我好嗎？
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="42" viewBox="0 0 38 42" fill="none" class="position-absolute l-relativePos__1">
+                    <path
+                      d="M20.2781 15.3142C20.2781 15.3142 13.9281 1.47791 4.85812 5.99724C-4.21188 10.5166 0.0781212 24.3083 12.2581 32.5233C24.4381 40.7382 27.1981 40.8829 27.1981 40.8829C27.1981 40.8829 28.7481 42.1296 29.4781 38.267C30.2081 34.4045 34.7581 26.5123 36.2881 20.5904C37.8181 14.6686 39.9281 2.69123 32.7681 0.320254C32.7681 0.320254 22.7181 -3.50893 20.2781 15.3142Z"
+                      fill="#FA0032" />
+                  </svg>
+                </a>
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" class="carousel-btn--previous me-3" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <circle cx="24" cy="24" r="23" stroke="#402716" stroke-width="2" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6569 31.2071L15.2929 24.8431C14.9024 24.4526 14.9024 23.8195 15.2929 23.4289L21.6569 17.065C22.0474 16.6744 22.6805 16.6744 23.0711 17.065C23.4616 17.4555 23.4616 18.0887 23.0711 18.4792L18.4142 23.136H31V25.136H18.4142L23.0711 29.7929C23.4616 30.1834 23.4616 30.8166 23.0711 31.2071C22.6805 31.5976 22.0474 31.5976 21.6569 31.2071Z"
+                      fill="#402716" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" class="carousel-btn--next" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <circle cx="24" cy="24" r="23" stroke="#402716" stroke-width="2" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.3431 17.2929L31.7071 23.6569C32.0976 24.0474 32.0976 24.6805 31.7071 25.0711L25.3431 31.435C24.9526 31.8256 24.3195 31.8256 23.9289 31.435C23.5384 31.0445 23.5384 30.4113 23.9289 30.0208L28.5858 25.364L16 25.364L16 23.364L28.5858 23.364L23.9289 18.7071C23.5384 18.3166 23.5384 17.6834 23.9289 17.2929C24.3195 16.9024 24.9526 16.9024 25.3431 17.2929Z"
+                      fill="#402716" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
-      <section class="purpose mb-11 mb-md-16">
+      <!-- 善款會用於~ -->
+      <section class="purpose pb-10 mb-20">
         <div class="container">
-          <h2 class="fs-4 fs-lg-2 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13 font-SerifTC">善款會用於
-          </h2>
+          <div class="d-flex justify-content-center mb-15">
+            <i class="fa-solid fa-comments-dollar fs-5 text-primary lh-sm align-top me-2"></i>
+            <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">善款會用於</h2>
+          </div>
           <div class="row">
-            <div class="col-12 col-md-4 mb-7 mb-md-0">
-              <div class="card border-inputBdr-dark border-2 p-4 h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic1.jpg" class="card-img-top"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
+            <div class="col-12 col-md-4">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate1">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-1.jpeg" class="d-block w-100 l-object-fit-70-25" alt="貓咪">
+                    </div>
                   </div>
-                </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">幫浪貓找家</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">建立完善系統，幫助浪貓找到愛心家庭，並積極辦理貓咪送養會。</p>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-4 mb-7 mb-md-0">
-              <div class="card border-inputBdr-dark border-2 p-4 h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic2.jpg" class="l-object-fit-center-25"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
-                  </div>
-                </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">為浪貓結紮</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">幫助浪貓結紮，減少浪貓數量。</p>
-                </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">幫浪貓找家</p>
+                <p class="mb-0 text-text letterSpc-8">建立完善系統，幫助浪貓找到愛心家庭，並積極辦理貓咪送養會。</p>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="card border-inputBdr-dark border-2 p-4  h-100 l-bg-background-yellow">
-                <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
-                  <div class="l-pic-fixed-ratio__content">
-                    <img src="../assets/images/donate/purpose__card__pic3.jpg" class="card-img-top"
-                      alt="貓咪在溫暖的家凝視著窗外的圖片">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate2">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1  l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-2.jpeg" class="d-block w-100" alt="貓咪">
+                    </div>
                   </div>
                 </div>
-                <div class="card-body p-0 mt-8">
-                  <h3 class="mb-4 text-center fs-5 fs-md-4 fs-xl-3 text-title">提供醫療救助</h3>
-                  <p class="mb-0 fs-6 fs-xl-5">提供生病或受傷的浪貓們營養品及救助醫療所衍生的相關費用。</p>
+              </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">為浪貓結紮</p>
+                <p class="mb-0 text-text letterSpc-8">幫助浪貓結紮，減少浪貓數量。</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cardwrap p-5 mb-6">
+                <div class="purpose__card l-bg-background-yellow p-5 border border-inputBdr-dark border-2 purpose__card--rotate3">
+                  <div class="l-pic-fixed-ratio l-pic-fixed-ratio--1to1 l-pic-fixed-ratio--hoverScale">
+                    <div class="l-pic-fixed-ratio__content">
+                      <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="text-center">
+                <p class="mb-0 text-title fs-6 fw-medium">提供醫療救助</p>
+                <p class="mb-0 text-text letterSpc-8">提供生病或受傷的浪貓們營養品及救助醫療所衍生的相關費用。</p>
               </div>
             </div>
           </div>
@@ -147,47 +168,59 @@
 
 
 
-      <section class="choosePlan mb-11 mb-md-16">
+      <!-- 我決定+1了 -->
+      <section class="choosePlan mb-20">
         <div class="container">
-          <h2 class="fs-4 text-title fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13 font-SerifTC">我決定＋1了！</h2>
-          <div class="row">
-            <div class="col-12 col-md-9">
-              <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
-                <div class="l-pic-fixed-ratio__content">
-                  <img src="../assets/images/donate/choosePlan.jpg" alt="超～可愛的貓咪照片，趕快來贊助讓更多貓貓可以有溫暖的家！"
-                    class="l-object-fit-center-25">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="d-flex justify-content-center justify-content-md-start mb-4">
+                <i class="fa-solid fa-thumbs-up fs-5 text-primary lh-sm align-top me-2"></i>
+                <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">我決定＋1了!</h2>
+              </div>
+              <p class="mb-9">感謝您的善款，每一分錢我們都會妥善運用，<br class="d-none d-md-block"> 讓浪貓們能吃飽穿暖、恢復健康並擁有找到家的機會，愛您！</p>
+              <div class="row g-0 justify-content-start">
+                <!-- 小尺寸才會出現 -->
+                <div class="col-12 d-block d-md-none">
+                  <img src="../assets/images/donate/choosePlan-sm.png" alt="貓咪吃魚" class="d-block m-auto">
+                </div>
+                <div class="col-12 col-md-5 mb-6 mb-md-0">
+                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                    <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
+                      <div class="l-pic-fixed-ratio__content">
+                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                      </div>
+                    </div>
+                    <p class="mb-0 border-top border-2 border-text bg-primary text-title py-2 text-center fs-6 lh-sm">單次支持</p>
+                  </a>
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">
+                  <a href="" class="planLinkBtn d-block border border-2 border-text">
+                    <div class="l-pic-fixed-ratio l-pic-fixed-ratio--9to16">
+                      <div class="l-pic-fixed-ratio__content">
+                        <img src="../assets/images/donate/purpose-card-pic-3.jpeg" class="d-block w-100" alt="貓咪">
+                      </div>
+                    </div>
+                    <p class="mb-0 border-top border-2 border-text bg-secondary text-title py-2 text-center fs-6 lh-sm">定期支持</p>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3">
-              <div class="row h-100 g-0">
-                <div class="col-6 col-md-12 mb-md-13">
-                  <div class="w-100 h-100 d-flex flex-column border border-2 border-text">
-                    <div class="d-none d-md-flex flex-grow-1 flex-md-column justify-content-md-between">
-                      <h2 class="mb-0 d-flex justify-content-center align-items-center flex-grow-1">單次支持</h2>
-                      <a class="btn btn-primary border-bottom-0 border-start-0 border-end-0 w-100">我決定＋1了</a>
-                    </div>
-                    <div class="d-block d-md-none flex-grow-1">
-                      <a class="btn btn-secondary border-0 w-100 d-flex align-items-center justify-content-center">單次支持</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-12">
-                  <div class="w-100 h-100 d-flex flex-column border border-2 border-text">
-                    <div class="d-none d-md-flex flex-grow-1 flex-md-column justify-content-md-between">
-                      <h2 class="mb-0 d-flex justify-content-center align-items-center flex-grow-1">定期支持</h2>
-                      <a class="btn btn-primary border-bottom-0 border-start-0 border-end-0 w-100">我決定＋1了</a>
-                    </div>
-                    <div class="d-block d-md-none flex-grow-1">
-                      <a class="btn btn-primary border-0 w-100 d-flex align-items-center justify-content-center">定期支持</a>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
+              <div class="position-relative">
+                <!-- 主要貓咪 -->
+                <img src="../assets/images/donate/choosePlan.png" alt="貓咪吃魚" class="w-100">
+                <!-- position absolute裝飾魚魚 -->
+                <img src="../assets/images/donate/choosePlanFish1.png" alt="被吃的魚" class="position-absolute  l-pos--custom__3">
+                <img src="../assets/images/donate/choosePlanFish2.png" alt="被吃的魚" class="position-absolute l-pos--custom__4">
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
 
       <section class="faq py-9 py-lg-17 mb-11 mb-md-16">
         <div class="container ">
@@ -278,50 +311,51 @@
 
       <section class="donors">
         <div class="container">
-          <div class="d-flex flex-column align-items-center">
-            <h2 class="fs-4 fw-bold letterSpc-8 text-center fs-md-2 mb-6 mb-lg-13">
-              捐款芳名錄
-            </h2>
+          <div class="d-flex justify-content-center mb-7">
+            <i class="fa-solid fa-hands-holding-child fs-5 text-primary lh-sm align-top me-2"></i>
+            <h2 class="d-inline-block mb-0 text-title fs-5 font-SerifTC fw-bold letterSpc-8">捐款芳名錄</h2>
+          </div>
+          <div class="d-flex justify-content-center mb-8">
             <a href="#"
-              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center fw-medium mb-6 mb-lg-13 "
-              title="Take me home">
-              由此前往
-              <img src="../assets/images/icon/icon_arrow.svg" alt="arrow icon" class="ms-10">
+              class="btn btn-secondary px-7 py-3 lh-sm letterSpc-8 fw-medium l-arrow--animation d-flex align-items-center">
+              <span class="fw-medium letterSpc-8 me-11">由此前往</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                <path d="M2.5 14H21.5L18.0623 9" stroke="#624E40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-11">
             <div class="text-center">
               <p class="mb-0">若認同我們的理念，請分享宣傳給更多的人</p>
               <p class="mb-0">只要你還有選擇，只要你願意行動，牠就有機會獲得一個溫暖的家。</p>
             </div>
           </div>
+          <div class="d-flex  flex-column align-items-center">
+            <ul class="list-unstyled d-flex l-gap-16 align-items-center mb-4">
+              <li>
+                <a href="http://instagram.com" class="d-inline-block"> <i class="fa-brands fa-instagram fs-3 text-tertiary"></i></a>
+              </li>
+              <li>
+                <a href="http://facebook.com" class="d-inline-block"> <i class="fa-brands fa-facebook fs-3 text-tertiary"></i></a>
+              </li>
+              <li>
+                <a href="http://twitter.com" class="d-inline-block"> <i class="fa-brands fa-twitter fs-3 text-tertiary"></i></a>
+              </li>
+            </ul>
+            <p class="mb-0">點我分享</p>
+
+          </div>
         </div>
       </section>
     </main>
     <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
-      <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
-      <!-- jQuery  -->
-      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-      <!-- GSAP -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-      <script src="https://cdn.rawgit.com/JohnBlazek/gsap/master/utils/SplitText.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-      <!-- <script>
-        gsap.registerPlugin(SplitText, ScrollTrigger);
-        let GSAP_showOneByOneElements= document.querySelectorAll(".l-GSAP-showOneByOne");
-        GSAP_showOneByOneElements.forEach(function(element) {
-            let text = new SplitText(element, { type: "chars,words" });
-            gsap.from(text.chars, {
-              opacity: 0,
-              y: 20,
-              stagger: 0.05,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: element,
-                start: "top 80%", // 調整滾動觸發的位置
-              },
-            });
-          });
-      </script> -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
 </body>
 
 </html>
