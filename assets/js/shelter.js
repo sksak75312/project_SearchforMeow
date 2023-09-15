@@ -136,26 +136,51 @@ $(document).ready(function () {
             $(this).css("zoom","1");
         },0.03*1000);
     });
-    //look pic
+    //look pic 
     //one
     $('.one .picItem1').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').css("background","url(../assets/images/shelter/1/1.png) center center no-repeat").css("background-size","cover");
-        // $('.one .mainPic').attr("src","../assets/images/shelter/1/1.png");
+        $('.one .mainPicItem1').siblings().not('.group1').addClass('opacity-0');
+        setTimeout(() => {
+            $('.one .mainPicItem1').siblings().not('.group1').addClass('d-none');
+            $('.one .mainPicItem1').removeClass('d-none');
+            setTimeout(() => {
+                $('.one .mainPicItem1').removeClass('opacity-0');
+            }, 0.01*1000);
+        }, 0.3*1000);
     });
     $('.one .picItem2').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').css("background","url(../assets/images/shelter/1/2.png) center center no-repeat").css("background-size","cover");
-        // $('.one .mainPic').attr("src","../assets/images/shelter/1/2.png");
+        $('.one .mainPicItem2').siblings().not('.group1').addClass('opacity-0');
+        setTimeout(() => {
+            $('.one .mainPicItem2').siblings().not('.group1').addClass('d-none');
+            $('.one .mainPicItem2').removeClass('d-none');
+            setTimeout(() => {
+                $('.one .mainPicItem2').removeClass('opacity-0');
+            }, 0.01*1000);
+        }, 0.3*1000);
     });
     $('.one .picItem3').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').attr("src","../images/shelter/1/3.png");
-        // $('.one .mainPic').attr("src","../assets/images/shelter/1/3.png");
+        $('.one .mainPicItem3').siblings().not('.group1').addClass('opacity-0');
+        setTimeout(() => {
+            $('.one .mainPicItem3').siblings().not('.group1').addClass('d-none');
+            $('.one .mainPicItem3').removeClass('d-none');
+            setTimeout(() => {
+                $('.one .mainPicItem3').removeClass('opacity-0');
+            }, 0.01*1000);
+        }, 0.3*1000);
     });
     $('.one .picItem4').click(function (e) { 
         e.preventDefault();
-        $('.one .mainPic').attr("src","../assets/images/shelter/1/4.jpg");
+        $('.one .mainPicItem4').siblings().not('.group1').addClass('opacity-0');
+        setTimeout(() => {
+            $('.one .mainPicItem4').siblings().not('.group1').addClass('d-none');
+            $('.one .mainPicItem4').removeClass('d-none');
+            setTimeout(() => {
+                $('.one .mainPicItem4').removeClass('opacity-0');
+            }, 0.01*1000);
+        }, 0.3*1000);
     });
     //two
     $('.two .picItem1').click(function (e) { 
