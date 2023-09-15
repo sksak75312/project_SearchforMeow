@@ -2,7 +2,7 @@ $(document).ready(function () {
     //h1 animate
     $('.shelter').data("aos","fade-up");
     if(jQuery(window).width()<992){
-        $('h1,.shelterIcon').addClass('animate__animated animate__bounceInDown');
+        $('h1,.shelterIcon').addClass('animate__animated animate__zoomIn');
         $('.shelter .row').eq(3).find('.col-10').addClass('aos-init').attr("data-aos","fade-up");
     }else{
         $('h1,.shelterIcon').removeClass('animate__animated animate__bounceInDown');
@@ -21,7 +21,7 @@ $(document).ready(function () {
         
       
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 90, // offset (in px) from the original trigger point
+        offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 400, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
