@@ -2,6 +2,9 @@
     .opacity-0{
         opacity: 0;
     }
+    .opacity-50{
+        opacity: 0.5;
+    }
     img{
         object-fit: cover;
     }
@@ -273,6 +276,9 @@
             img{
                 width: 75px;
                 height: 55px;
+                &:hover{
+                    opacity: 1 !important;
+                }
             }
             .mainPic{
                 height: 170px;
