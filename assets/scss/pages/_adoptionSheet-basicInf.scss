@@ -5,7 +5,7 @@
   }
 
   .banner {
-    background: url('../assets/images/adoptionSheet/banner_mob.png') no-repeat center / cover;
+    background: url('../images/adoptionSheet/banner_mob.png') no-repeat center / cover;
     height: 450px;
   }
 
@@ -37,17 +37,29 @@
     color: $placeholder;
   }
 
+  .accordion-button::after {
+    background-image: url('../images/icon/accordion-button-gray.svg');
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: $primary;
+    color: $white;
+
+    &::after {
+      background-image: url('../images/icon/accordion-button-white.svg');
+    }
+  }
+
 
   @include md {
     .banner {
-      background-image: url('../assets/images/adoptionSheet/banner_pad.png');
+      background-image: url('../images/adoptionSheet/banner_pad.png');
       height: 650px;
     }
   }
 
   @include lg {
     .banner {
-      background-image: url('../assets/images/adoptionSheet/banner_web.png');
+      background-image: url('../images/adoptionSheet/banner_web.png');
       height: 450px;
     }
   }
