@@ -692,6 +692,18 @@ $utilities: map-merge(
         none: none,
       )
     ),
+    "row-gap": (
+      responsive: true,
+      property: row-gap,
+      class: row-gap,
+      values: $spacers
+    ),
+    "column-gap": (
+      responsive: true,
+      property: column-gap,
+      class: column-gap,
+      values: $spacers
+    ),
   ),
   $utilities
 );

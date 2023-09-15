@@ -230,14 +230,13 @@
   }
 }
 
-.rotate__up {
-  transition: transform .3s linear;
-  transform: rotate(180deg);
-}
-
-.rotate__down {
+.rotate {
   transition: transform .3s linear;
   transform: rotate(0);
+}
+
+.show .rotate__up {
+  transform: rotate(180deg);
 }
 
 @keyframes heartScale {
