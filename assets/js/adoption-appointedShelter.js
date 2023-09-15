@@ -9,6 +9,7 @@ var swiper = new Swiper('.shelter_sm', {
     },
   },
 });
+
 var swiper2 = new Swiper('.shelter_big', {
   spaceBetween: 10,
   navigation: {
