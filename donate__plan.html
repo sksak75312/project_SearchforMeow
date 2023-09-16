@@ -491,7 +491,7 @@
                         </div>
                         <input type="text" class="form-control" id="$donor_addr" data-dataname="donorAddr" onchange="app.method.bindInputAndData(this);">
                         <div id="donor_help" class="form-text text-primary mb-17">
-                          若需要紙本收據請填寫、未填則奇送電子收據，謝謝！
+                          若需要紙本收據請填寫、未填則寄送電子收據，謝謝！
                         </div>
                         <div class="d-flex flex-wrap flex-md-nowrap btns-gap">
                           <a href="#" class="btn border-0 bg-secondary previous w-100 order-1 order-md-0">上一步</a>
@@ -670,7 +670,7 @@
                             </div>
                             <input type="text" class="form-control" id="$donor_addr" data-dataname="donorAddr" onchange="app.method.bindInputAndData(this);">
                             <div id="donor_help" class="form-text text-primary mb-4">
-                              若需要紙本收據請填寫、未填則奇送電子收據，謝謝！
+                              若需要紙本收據請填寫、未填則寄送電子收據，謝謝！
                             </div>
                           </div>
 
@@ -693,7 +693,7 @@
                                   <label class="form-check-label" for="paperReceipt">紙本收據，需提供完整地址</label>
                                 </div>
                                 <div class="form-check form-switch mt-4 mt-md-8">
-                                  <input class="form-check-input rounded-pill" type="checkbox" role="switch" id="sameAsDonor">
+                                  <input class="form-check-input rounded-pill" type="checkbox" role="switch" id="sameAsDonor" ${this.data.donorName===this.data.donorTitle&&this.data.donorPersonalID===this.data.donorCertification&&this.data.donorName===this.data.donorDonationName?"checked":""}>
                                   <label class="form-check-label" for="sameAsDonor">同捐款人資料</label>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between position-relative mb-4 mb-md-8">
@@ -737,6 +737,7 @@
               // 綁定這頁的select,根據選擇的縣市動態改變鄉鎮區的選項
               this.method.dynamicChangeCity();
               this.method.writeAddrData();
+              this.method.switchSameAsDonorClickEvent();
               AOS.init();
           },
           // 輸入信用卡資料 （信用卡卡號、有效期限、安全碼），填寫持卡人資料（持卡人姓名、手機號碼、電子信箱）
