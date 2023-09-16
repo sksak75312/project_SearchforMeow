@@ -25,6 +25,17 @@ $(document).ready(function () {
             $('.headerDropMenu').removeClass('h-dropUp');
         },300);
     });
+    $('.headerMenu .list-group-item:last-child a').click(function (e) { 
+        e.preventDefault();
+        $('.headerDropMenu').removeClass('h-dropDown');
+        setTimeout(() => {
+            $('.headerDropMenu').addClass('d-none');
+            $('.headerDropMenu').removeClass('h-dropUp');
+            setTimeout(() => {
+                $(location).attr("href","index.html#faq");
+            }, 0.3*1000);
+        },300);
+    });
     //footer
     $('.toTop').click(function (e) { 
         e.preventDefault();
@@ -41,17 +52,3 @@ function showBtnCondition() {
     };
 }
  $(window).scroll(showBtnCondition);
-
- //another function wait for research
- // $(window).scroll(function(){
-    //     var h=$(document.body).height();//網頁文件的高度
-    //     var c = $(document).scrollTop();//滾動條距離網頁頂部的高度
-    //     var wh = $(window).height(); //頁面視覺化區域高度
-       
-    //     if ((h-(wh+c)<850) && (jQuery(document).width()<992)){
-    //         $('#toTop').fadeIn(800);
-    //     }
-    //     else{
-    //         $('#toTop').fadeOut(800);
-    //     };
-    // });
