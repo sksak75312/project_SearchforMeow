@@ -39,24 +39,30 @@ npm dun dev
 |-- assets  
 |&emsp;&emsp;&emsp;|-- images  
 |&emsp;&emsp;&emsp;|-- &emsp;&ensp;js  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- adoption-appoitedShelter.js  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- appoitedShelter.js  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- btnDropdown.js  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- index.js   
-|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- shelter.js   
-|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- takeFilter.js    
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- searchShelter.js   
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- shelter.js     
 |&emsp;&emsp;&emsp;|-- scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- base  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _fontStyle.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- components  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _btnAnimate.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _btnAnimate 2.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- layout  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _footer.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _header.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- pages  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _adoption-appointedCat.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _adoption-appointedShelter.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _adoption.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _adoptionSheet-basicInf.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _donate.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _happyRules.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _index.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _shelter.scss  
-|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _teke.scss  
-|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _takeFilter.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- utils  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _mixin.scss  
 |&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _utilities.scss  
@@ -66,18 +72,21 @@ npm dun dev
 |&emsp;&emsp;&emsp;|-- fotter.ejs  
 |&emsp;&emsp;&emsp;|-- header.ejs  
 |-- pages  
-|&emsp;&emsp;&emsp;|-- donate__plan.html  
+|&emsp;&emsp;&emsp;|-- adoption-appointedCat.html  
+|&emsp;&emsp;&emsp;|-- adoption-appointedShelter.html  
+|&emsp;&emsp;&emsp;|-- adoption.html  
+|&emsp;&emsp;&emsp;|-- adoptionSheet-basicInf.html  
 |&emsp;&emsp;&emsp;|-- donate.html  
+|&emsp;&emsp;&emsp;|-- donate__paln.html  
 |&emsp;&emsp;&emsp;|-- happyRules.html  
 |&emsp;&emsp;&emsp;|-- index.html  
 |&emsp;&emsp;&emsp;|-- shelter.html  
-|&emsp;&emsp;&emsp;|-- take.html  
-|&emsp;&emsp;&emsp;|--  takeFilter.html  
-|-- main.js  
-|-- package.json  
-|-- package-lock.json  
-|-- vite.config.js  
+|-- .gitignore  
 |-- README.md  
+|-- main.js  
+|-- package-lock.json  
+|-- package.json  
+|-- vite.config.js  
 
 ---
 
