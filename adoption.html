@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"/>
     <!-- customer -->
     <title>搜趣找貓-提供各地收容所、貓咪資料以及認養服務的貓咪專屬平台</title>
@@ -17,9 +16,10 @@
     <meta property="og:url" content="https://pinyiw0.github.io/project_SearchforMeow/">
     <meta property="og:image" content="https://i.imgur.com/9lYfi0l.png">
     <link rel="apple-touch-icon" href="../assets/images/logo-32px.png">
-    <script type="module" crossorigin src="/project_SearchforMeow/assets/main-5a20e1ee.js"></script>
-    <script type="module" crossorigin src="/project_SearchforMeow/assets/index-9b07e431.js"></script>
-    <link rel="stylesheet" href="/project_SearchforMeow/assets/main-d524c730.css">
+    <script type="module" crossorigin src="/project_SearchforMeow/assets/main-bac5165b.js"></script>
+    <script type="module" crossorigin src="/project_SearchforMeow/assets/axios-54ed5feb.js"></script>
+    <script type="module" crossorigin src="/project_SearchforMeow/assets/searchShelter-aeca1f33.js"></script>
+    <link rel="stylesheet" href="/project_SearchforMeow/assets/main-9f892aaa.css">
   </head>
   <body>
     <div class="header py-2 py-lg-4">
@@ -29,7 +29,7 @@
                 <a href="index.html" title="Search For Meow">
                     <img src="/project_SearchforMeow/assets/logo_web-b8ebb15b.svg" alt="logo pic" class="d-none d-lg-block w-100">
                 </a>
-                <a href="../pages/index.html" title="Search For Meow" class="logo-mobile d-lg-none d-flex align-items-center">
+                <a href="index.html" title="Search For Meow" class="logo-mobile d-lg-none d-flex align-items-center">
                     <img src="/project_SearchforMeow/assets/logo_mobile-2c5e2d1c.svg" alt="logo pic" class="me-3">
                     <img src="/project_SearchforMeow/assets/logo_mobile_name-49c74483.svg" alt="logo pic">
                 </a>
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                     <li class="list-group-item ms-auto">
-                        <a href="take.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text lh-xl-base position-xl-relative start-xl-25" title="Take me home">帶他回家
+                        <a href="adoption.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center bg-lg-secondary fw-medium border-text lh-xl-base position-xl-relative start-xl-25" title="Take me home">帶他回家
                             <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="position-xl-absolute animateArrow">
                         </a>
                     </li>
@@ -93,7 +93,7 @@
     </div>
 </div>
 <!-- 375px -->
-<div class="headerDropMenu d-lg-none bg-primary py-6 w-100 position-absolute z-3">
+<div class="headerDropMenu d-none d-lg-none bg-primary py-6 w-100 position-absolute z-3">
     <div class="container d-flex flex-column-reverse">
         <ul class="list-group list-unstyled d-flex mobile mb-0 justify-content-start px-6">
             <li class="list-group-item">
@@ -107,7 +107,7 @@
                 </a>
             </li>
             <li class="list-group-item ms-auto">
-                <a href="take.html" type="button" class="bringHome btn px-4 py-3 lh-sm letterSpc-8 d-flex align-items-center fw-medium text-white border-white" title="Take me home">帶他回家
+                <a href="adoption.html" type="button" class="bringHome btn px-4 py-3 lh-sm letterSpc-8 d-flex align-items-center fw-medium text-white border-white" title="Take me home">帶他回家
                     <img src="/project_SearchforMeow/assets/arrow_white-175dffda.svg" alt="arrow icon" class="ms-6">
                 </a>
             </li>
@@ -166,7 +166,7 @@
                         <img src="/project_SearchforMeow/assets/icon_map-c191d0a8.svg" class="img-fluid" alt="">
                         <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇地區</span>
                       </div>
-                      <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                      <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate img-fluid" alt="">
                     </button>
                     <ul class="dropdown-menu w-100">
                       <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -180,7 +180,7 @@
                         <img src="/project_SearchforMeow/assets/icon_house-c82d16f0.svg" class="img-fluid" alt="">
                         <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇收容所</span>
                       </div>
-                      <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                      <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate img-fluid" alt="">
                     </button>
                     <ul class="dropdown-menu w-100">
                       <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -224,7 +224,7 @@
                                 <img src="/project_SearchforMeow/assets/icon_map-c191d0a8.svg" class="img-fluid" alt="">
                                 <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">所在地區</span>
                               </div>
-                              <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                              <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate img-fluid" alt="">
                             </button>
                             <ul class="dropdown-menu w-100">
                               <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -239,7 +239,7 @@
                                 <img src="/project_SearchforMeow/assets/icon_house-c82d16f0.svg" class="img-fluid" alt="">
                                 <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇收容所</span>
                               </div>
-                              <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                              <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate img-fluid" alt="">
                             </button>
                             <ul class="dropdown-menu w-100">
                               <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -261,7 +261,7 @@
                             <img src="/project_SearchforMeow/assets/icon_meow-d30efb8b.svg" class="img-fluid" alt="">
                             <span class="fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇花色</span>
                           </div>
-                          <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate__down img-fluid" alt="">
+                          <img src="/project_SearchforMeow/assets/icon_down-804de591.svg" class="js-iconDown rotate img-fluid" alt="">
                         </button>
                         <ul class="dropdown-menu w-100">
                           <li><a class="dropdown-item" href="#">待新增內容</a></li>
@@ -383,21 +383,21 @@
                 </div>
                 <div>
                   <div class="swiper searchSwiper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper js-recommendCat">
                       <div class="swiper-slide">
                         <div>
                           <div class="position-relative mb-4">
-                            <a href="#" class="search__img__link">
-                              <img src="/project_SearchforMeow/assets/replace_1-4b83f331.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                            <a href="./adoption-appointedCat.html" class="search__img__link">
+                              <img src="/project_SearchforMeow/assets/picture_1-8d6cba20.png" class="search__img img-fluid w-100 object-fit-cover" alt="">
                               <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
                               <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
                             </a>
                           </div>
                           <div class="d-flex align-items-center gap-2 mb-4">
-                            <h6 class="mb-0 fs-6 fs-md-5 fw-medium lh-sm letterSpc-8 text-title">喵喵</h6>
+                            <h6 class="mb-0 fs-6 fs-md-5 fw-medium lh-sm letterSpc-8 text-title">柑橘</h6>
                             <span class="badge py-2 px-4 rounded-pill border border-1 border-text fs-7 fs-md-9 fw-medium lh-sm letterSpc-8 text-text">冬天小棉襖</span>
                           </div>
-                          <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">新北市新店區公立動物之家</p>
+                          <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">台北市動物之家</p>
                           <div class="d-md-flex justify-content-between align-items-center flex-wrap mb-11">
                             <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
                               <img src="/project_SearchforMeow/assets/heart-solid 1-b7b40f94.svg" class="img-fluid" alt="">
@@ -406,11 +406,11 @@
                             <ul class="d-flex gap-2 mb-0 list-unstyled">
                               <li class="d-flex align-items-center gap-2">
                                 <img src="/project_SearchforMeow/assets/icon_gender-23995dba.svg" class="img-fluid" alt="">
-                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">男孩</p>
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">女孩</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
                                 <img src="/project_SearchforMeow/assets/icon_cat-923b0a7d.svg" class="img-fluid" alt="">
-                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">幼貓</p>
+                                <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">成貓</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
                                 <img src="/project_SearchforMeow/assets/icon_paw-a70165cd.svg" class="img-fluid" alt="">
@@ -420,11 +420,11 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide">
+                      <!-- <div class="swiper-slide">
                         <div>
                           <div class="position-relative mb-4">
                             <a href="#" class="search__img__link">
-                              <img src="/project_SearchforMeow/assets/replace_2-6cd36e85.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                              <img src="../assets/images/replace_2.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
                               <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
                               <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
                             </a>
@@ -436,20 +436,20 @@
                           <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">苗栗縣生態保育教育中心(動物收容所)</p>
                           <div class="d-md-flex justify-content-between align-items-center mb-11">
                             <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
-                              <img src="/project_SearchforMeow/assets/heart-solid 1-b7b40f94.svg" class="img-fluid" alt="">
+                              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
                               <span class="fw-medium lg-sm letterSpc-8 font-SansTC">43</span>
                             </a>
                             <ul class="d-flex gap-2 mb-0 list-unstyled">
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_gender-23995dba.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">女孩</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_cat-923b0a7d.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">青少年貓</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_paw-a70165cd.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">橘貓</p>
                               </li>
                             </ul>
@@ -460,7 +460,7 @@
                         <div>
                           <div class="position-relative mb-4">
                             <a href="#" class="search__img__link">
-                              <img src="/project_SearchforMeow/assets/replace_3-7b7360f4.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
+                              <img src="../assets/images/replace_3.jpg" class="search__img img-fluid w-100 object-fit-cover" alt="">
                               <i class="search__heartBorder fa-regular fa-heart position-absolute fs-2 text-white"></i>
                               <i class="search__heart fa-solid fa-heart d-none position-absolute fs-2"></i>
                             </a>
@@ -472,32 +472,32 @@
                           <p class="mb-4 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">彰化縣動物防疫所</p>
                           <div class="d-md-flex justify-content-between align-items-center mb-11">
                             <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
-                              <img src="/project_SearchforMeow/assets/heart-solid 1-b7b40f94.svg" class="img-fluid" alt="">
+                              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
                               <span class="fw-medium lg-sm letterSpc-8 font-SansTC">62</span>
                             </a>
                             <ul class="d-flex gap-2 mb-0 list-unstyled">
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_gender-23995dba.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">女孩</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_cat-923b0a7d.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">熟齡貓</p>
                               </li>
                               <li class="d-flex align-items-center gap-2">
-                                <img src="/project_SearchforMeow/assets/icon_paw-a70165cd.svg" class="img-fluid" alt="">
+                                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
                                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">黑貓</p>
                               </li>
                             </ul>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
                 <div class="mt-auto ms-auto">
                   <a href="#" class="btn__hover btn btn-secondary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
-                    <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">立即創造快樂</span>
+                    <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">點我看更多貓咪資訊</span>
                     <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" class="img-fluid" alt="">
                   </a>
                 </div>
@@ -628,14 +628,14 @@
         <div class="row flex-column align-items-center">
             <div class="col col-lg-3 col-xl-2 mb-9 d-flex flex-column align-items-center">
                 <a href="index.html" class="mb-3 mb-lg-7"><img src="/project_SearchforMeow/assets/logo_bottom-8b6d1936.svg" alt="logo icon"></a>
-                <a type="button" href="take.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center position-lg-relative bg-secondary fw-medium border-text border-text dropdownBtn" title="Take me home">帶他回家
+                <a type="button" href="adoption.html" class="bringHome btn px-7 py-3 lh-sm letterSpc-8 d-flex align-items-center position-lg-relative bg-secondary fw-medium border-text border-text dropdownBtn" title="Take me home">帶他回家
                     <img src="/project_SearchforMeow/assets/icon_arrow-4719cb8e.svg" alt="arrow icon" class="animateArrow ms-10 ms-lg-0 position-lg-absolute">
                 </a>
             </div>
             <div class="col col-xl-8 d-flex flex-column">
                 <ul class="list-group list-unstyled d-flex flex-column flex-lg-row align-items-center mb-4">
                     <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="index.html">首頁</a></li>
-                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="take.html">帶我回家</a></li>
+                    <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="adoption.html">帶我回家</a></li>
                     <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="shelter.html">收容所列表</a></li>
                     <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="donate.html">響應捐款</a></li>
                     <li class="list-group-item px-2 px-lg-4"><a class="fs-7 text-title fw-medium text-center letterSpc-8" href="happyRules.html">幸福守則</a></li>
@@ -662,8 +662,8 @@
     </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
+    
     
     
     <!-- jQuery -->

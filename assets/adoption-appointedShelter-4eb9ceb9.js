@@ -1,1 +1,0 @@
-import"./main-5a20e1ee.js";var e=new Swiper(".shelter_sm",{spaceBetween:10,slidesPerView:3,freeMode:!0,watchSlidesProgress:!0,breakpoints:{768:{slidesPerView:4}}});new Swiper(".shelter_big",{spaceBetween:10,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},thumbs:{swiper:e},autoplay:{delay:1500}});
