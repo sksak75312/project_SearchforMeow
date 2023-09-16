@@ -455,11 +455,6 @@
 
 
 
-  // donate__plan頁面
-  // .tab-content table{
-  //   border-collapse: separate;
-  //     border-spacing: 0px 24px;
-  // }
 
   .donate__plan__form {
     .donate-list__item a:hover {
@@ -495,6 +490,12 @@
     }
     .btns-gap{
       gap: 0px 20px;
+    }
+
+    table{
+      tr th{
+        width: 120px;
+      }
     }
 
     .was-validated {

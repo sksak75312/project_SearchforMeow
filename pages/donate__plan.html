@@ -99,7 +99,7 @@
               <div class="donate__plan__form">
                 <div class="row">
                   <div class="col-12 col-md-8 col-xl-5">
-                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow">
+                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow" data-aos="flip-left">
                         <div class="list-group d-flex" role="tablist">
                           <a 
                             class="list-group-item list-group-item-action active w-50 text-center py-1 py-md-2 border border-inputBdr-dark d-flex align-items-center justify-content-center"
@@ -250,6 +250,7 @@
             this.method.forceNumberInput();
             // 觸發BS validation樣式並且防止submit事件觸發,如果表單驗證通過則會渲染下一頁面
             this.method.checkValidation();
+            AOS.init();
           },
           // 填寫捐款基本資料（姓名、性別、身分證字號、電子郵件、聯絡電話、通訊地址）
           render1() {
@@ -261,7 +262,7 @@
               <div class="donate__plan__form">
                 <div class="row">
                   <div class="col-12 col-md-8 col-xl-5">
-                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow">
+                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow" data-aos="flip-left">
                       <div class="border border-2 border-inputBdr-dark bg-primary text-center py-2 font-SansTC d-flex justify-content-center align-items-center mb-7">
                         <span class="text-white fs-6 me-3">${this.data.donatePlan=== "once" ? '單次捐贈' : this.data.donatePlan==="regular"?'定期捐贈':"test"}</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -339,6 +340,8 @@
                 </div>
               </div>
             `
+            // 強制輸入數字
+            this.method.forceNumberInput();
             // 觸發BS validation樣式並且防止submit事件觸發,如果表單驗證通過則會渲染下一頁面
             // 內涵newxtPageRender函數
             this.method.nextPageValidation();
@@ -348,6 +351,7 @@
             this.method.dynamicChangeCity();
             // 綁定事件，每次select只要有選擇(change),就會寫回data中
             this.method.writeAddrData();
+            AOS.init();
           },
           // 是某需要收據？ 收據抬頭、報稅憑證、捐款徵信名稱
           render2() {
@@ -359,7 +363,7 @@
               <div class="donate__plan__form">
                 <div class="row">
                   <div class="col-12 col-md-8 col-xl-6">
-                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow">
+                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow" data-aos="flip-left">
                       <div class="border border-2 border-inputBdr-dark bg-primary text-center py-2 font-SansTC d-flex justify-content-center align-items-center mb-7">
                         <span class="text-white fs-6 me-3">${this.data.donatePlan=== "once" ? '單次捐贈' : this.data.donatePlan==="regular"?'定期捐贈':"test"}</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -424,6 +428,7 @@
             this.method.previousPageWithoutValidation();
             // 上一頁（不需要驗證）
             this.method.nextPageValidation();
+            AOS.init();
           },
           // 確認捐款資訊，顯示贊助方案及金額、捐款基本資料（帶入render1,render2頁面填寫的內容）
           render3() {
@@ -433,7 +438,7 @@
               <div class="donate__plan__form">
                 <div class="row">
                   <div class="col-12">
-                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow">
+                    <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow" data-aos="flip-left">
                       <form>
                         <div class="row">
                           <div class="col-12 col-md-6">
@@ -569,6 +574,7 @@
               // 綁定這頁的select,根據選擇的縣市動態改變鄉鎮區的選項
               this.method.dynamicChangeCity();
               this.method.writeAddrData();
+              AOS.init();
           },
           // 輸入信用卡資料 （信用卡卡號、有效期限、安全碼），填寫持卡人資料（持卡人姓名、手機號碼、電子信箱）
           render4() {
@@ -579,7 +585,7 @@
                 <div class="row">
                   <div class="col-12">
                     <form class="needs-validation" novalidate>
-                      <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow">
+                      <div class="py-10 px-11 border border-2 border-inputBdr-dark l-bg-background-yellow" data-aos="flip-left">
                         <div class="py-4 px-6 py-md-8 px-md-9 bg-secondary d-flex flex-column d-md-inline-block border border-2 border-primary mb-4 mb-md-8">
                           <p class="mb-0 font-SansTC fs-5 fw-bold mb-3">您的贊助方案</p>
                           <div class="d-flex align-items-end justify-content-between justify-content-md-start font-SansTC">
@@ -609,10 +615,10 @@
                               <td>
                                 <div class="d-flex align-items-center">
                                   <input type="tel" class="form-control" id="donor_credit_duedate_MM" placeholder="MM"
-                                    maxlength="2" required>
+                                    maxlength="2" pattern="^(0[1-9]|1[0-2])$" required>
                                   <span class="px-3">-</span>
                                   <input type="tel" class="form-control" id="donor_credit_duedate_YY" placeholder="YY"
-                                    maxlength="2" required>
+                                    maxlength="2" pattern="^(2[3-9]|[3-9][0-9])" required>
                                 </div>
                               </td>
                             </tr>
@@ -689,6 +695,7 @@
             this.method.forceNumberInput();
             this.method.setCreditNumberPattern();
             this.method.nextPageValidation();
+            AOS.init();
           },
           // final page ，感謝讚註！！
           render5() {
