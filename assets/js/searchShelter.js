@@ -1,7 +1,11 @@
 import axios from "axios";
+import heartIcon from "../images/icon/heart-solid1.svg";
+import genderIcon from "../images/icon/icon-gender1.svg";
+import pawIcon from "../images/icon/icon-paw1.svg";
+import catIcon from "../images/icon/icon-cat1.svg"
 
-const searchArea = document.querySelector('.js-search-area');
 const recommendCat = document.querySelector('.js-recommendCat');
+const searchArea = document.querySelector('.js-search-area');
 
 axios
   .get(
@@ -9,7 +13,6 @@ axios
   )
   .then((res) => {
     const data = res.data.Data.slice(0, 10);
-    console.log(data);
     data.forEach((cat) => {
       recommendCat.innerHTML += `
       <div class="swiper-slide">
@@ -34,24 +37,24 @@ axios
           }</p>
           <div class="d-md-flex justify-content-between align-items-center flex-wrap mb-11">
             <a href="#" class="d-flex align-items-center gap-1 mb-3 mb-md-0 text-text">
-              <img src="../assets/images/icon/heart-solid 1.svg" class="img-fluid" alt="">
+              <img src=${heartIcon} class="img-fluid" alt="">
               <span class="fw-medium lg-sm letterSpc-8 font-SansTC">${Math.floor(
                 Math.random() * 150
               )}</span>
             </a>
             <ul class="d-flex gap-2 mb-0 list-unstyled">
               <li class="d-flex align-items-center gap-2">
-                <img src="../assets/images/icon/icon_gender.svg" class="img-fluid" alt="">
+                <img src=${genderIcon} class="img-fluid" alt="">
                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">${
                   cat.animal_sex === 'F' ? '女孩' : '男孩'
                 }</p>
               </li>
               <li class="d-flex align-items-center gap-2">
-                <img src="../assets/images/icon/icon_cat.svg" class="img-fluid" alt="">
+                <img src=${catIcon} class="img-fluid" alt="">
                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">成貓</p>
               </li>
               <li class="d-flex align-items-center gap-2">
-                <img src="../assets/images/icon/icon_paw.svg" class="img-fluid" alt="">
+                <img src=${pawIcon} class="img-fluid" alt="">
                 <p class="mb-0 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">橘貓</p>
               </li>
             </ul>
@@ -82,22 +85,21 @@ axios
   });
 
 
+  
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
-// // search swiper 動畫
-// const searchSwiper = new Swiper('.searchSwiper', {
-//   autoplay: {
-//     delay: 1500,
-//   },
-//   loop: true,
-//   navigation: {
-//     nextEl: '.js-search-next',
-//     prevEl: '.js-search-prev',
-//   },
-// });
+const dropdownHandler = (e) => {
+  e.preventDefault();
+  const currentDropdown = e.target.closest('.dropdown');
+  const currentText = currentDropdown.querySelector('.js-search-text');
 
-// searchSwiper.el.onmouseenter = function () {
-//   searchSwiper.autoplay.stop();
-// };
-// searchSwiper.el.onmouseleave = function () {
-//   searchSwiper.autoplay.start();
-// };
+  console.log(currentText);
+  console.log(e.target.text);
+  if (typeof e.target.text === 'string') {
+    currentText.innerText = e.target.text;
+  } 
+};
+
+dropdownMenus.forEach((menu) => {
+  menu.addEventListener('click', dropdownHandler);
+});
