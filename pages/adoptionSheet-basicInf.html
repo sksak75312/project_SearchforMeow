@@ -52,244 +52,245 @@
 
       <!-- step1 個人資料區塊 -->
       <section class="js-profile container">
-        <form class="col-lg-8 mx-auto row gx-3 gy-7 needs-validation" novalidate>
-          <div class="col-md-12 col-lg-4">
-            <label for="name" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              您的姓名
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </label>
-            <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="name" placeholder="請填寫真實姓名" minlength="2" required>
-            <div class="invalid-feedback">
-              請輸入正確資料
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-7 ms-lg-auto">
-            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              稱謂
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </p>
-            <div class="d-flex flex-wrap align-items-center column-gap-3">
-              <input type="radio" class="form-check-input m-0 border border-2 border-inputBdr-light" id="male" name="radio-stacked" required>
-              <label class="form-check-label py-3 text-text" for="male" style="margin-left: -4px;">先生</label>
-              <input type="radio" class="form-check-input m-0 border border-2 border-inputBdr-light" id="female" name="radio-stacked" required>
-              <label class="form-check-label text-text" for="female" style="margin-left: -4px;">小姐</label>
-              <div class="invalid-feedback w-100">請選擇稱謂</div>
-              <!-- <input type="radio" class="form-check-input m-0" id="validationFormCheck3" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck3" style="margin-left: -4px;">其他</label>
-                <input type="text" class="placeholder__color form-control flex-shrink-1 py-3 px-2 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" placeholder="選擇其它請填寫內容" required> -->
+        <form class="col-lg-8 mx-auto needs-validation" novalidate>
+          <div class="row gx-3 gy-7">
+            <div class="col-md-12 col-lg-4">
+              <label for="name" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                您的姓名
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </label>
+              <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="name" placeholder="請填寫真實姓名" minlength="2" required>
+              <div class="invalid-feedback">
+                請輸入正確資料
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              未來您和貓咪居住地址
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </p>
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="dropdown dropdown-validation">
-                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false" required>
-                    <div class="d-flex align-items-center gap-2">
-                      <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
-                      <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇縣市</span>
-                    </div>
-                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
-                  </button>
-                  <ul class="dropdown-menu js-city w-100" style="max-height: 300px; overflow-y: auto;">
-                  </ul>
-                </div>
-                <div class="invalid-feedback">
-                  請選擇縣市
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="dropdown dropdown-validation">
-                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-map-pin fs-5 text-primary" style="padding-left: 5px; padding-right: 4px;"></i>
-                      <span class="dropdown-text js-area-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇區域</span>
-                    </div>
-                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
-                  </button>
-                  <ul class="dropdown-menu js-town w-100 overflow-y-auto" style="max-height: 300px; overflow-y: auto;">
-                  </ul>
-                </div>
-                <div class="invalid-feedback">
-                  請選擇地區
-                </div>
-              </div>
-              <div class="col-12 col-xl-5">
-                <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" required>
-                <div class="invalid-feedback">
-                  請輸入剩餘地址
-                </div>
+            <div class="col-md-12 col-lg-7 ms-lg-auto">
+              <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                稱謂
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </p>
+              <div class="d-flex flex-wrap align-items-center column-gap-3">
+                <input type="radio" class="form-check-input m-0 border border-2 border-inputBdr-light" id="male" name="radio-stacked" required>
+                <label class="form-check-label py-3 text-text" for="male" style="margin-left: -4px;">先生</label>
+                <input type="radio" class="form-check-input m-0 border border-2 border-inputBdr-light" id="female" name="radio-stacked" required>
+                <label class="form-check-label text-text" for="female" style="margin-left: -4px;">小姐</label>
+                <div class="invalid-feedback w-100">請選擇稱謂</div>
+                <!-- <input type="radio" class="form-check-input m-0" id="validationFormCheck3" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck3" style="margin-left: -4px;">其他</label>
+                  <input type="text" class="placeholder__color form-control flex-shrink-1 py-3 px-2 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" placeholder="選擇其它請填寫內容" required> -->
               </div>
             </div>
-          </div>          
-          <div class="col-md-6">
-            <label for="tel" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              聯絡電話
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </label>
-            <input type="tel" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="tel" placeholder="請填寫聯絡電話" maxlength="10" minlength="10" required>
-            <div class="invalid-feedback">
-              請輸入聯絡電話
+            <div class="col-12">
+              <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                未來您和貓咪居住地址
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </p>
+              <div class="row g-3">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="dropdown dropdown-validation">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false" required>
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/images/icon/icon_map.svg" class="img-fluid" alt="">
+                        <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇縣市</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu js-city w-100" style="max-height: 300px; overflow-y: auto;">
+                    </ul>
+                  </div>
+                  <div class="invalid-feedback">
+                    請選擇縣市
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <div class="dropdown dropdown-validation">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-map-pin fs-5 text-primary" style="padding-left: 5px; padding-right: 4px;"></i>
+                        <span class="dropdown-text js-area-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">選擇區域</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu js-town w-100 overflow-y-auto" style="max-height: 300px; overflow-y: auto;">
+                    </ul>
+                  </div>
+                  <div class="invalid-feedback">
+                    請選擇地區
+                  </div>
+                </div>
+                <div class="col-12 col-xl-5">
+                  <input type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" required>
+                  <div class="invalid-feedback">
+                    請輸入剩餘地址
+                  </div>
+                </div>
+              </div>
+            </div>          
+            <div class="col-md-6">
+              <label for="tel" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                聯絡電話
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </label>
+              <input type="tel" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="tel" placeholder="請填寫聯絡電話" maxlength="10" minlength="10" required>
+              <div class="invalid-feedback">
+                請輸入聯絡電話
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              電子郵件
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </label>
-            <input type="email" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="email" placeholder="請填寫電子郵件" required>
-            <div class="invalid-feedback">
-              請輸入電子郵件
+            <div class="col-md-6">
+              <label for="email" class="form-label d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                電子郵件
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </label>
+              <input type="email" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light font-SansTC" id="email" placeholder="請填寫電子郵件" required>
+              <div class="invalid-feedback">
+                請輸入電子郵件
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
-              出生年月日
-              <span class="position-relative" style="color: red; top: -5px;">*</span>
-            </p>
-            <div class="row g-3">
-              <div class="col-md-12 col-lg-4">
-                <div class="dropdown dropdown-validation font-SansTC">
-                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">西元年月份</span>
-                    </div>
-                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
-                  </button>
-                  <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
-                    <li><a class="dropdown-item" href="#">1973年</a></li> 
-                    <li><a class="dropdown-item" href="#">1974年</a></li> 
-                    <li><a class="dropdown-item" href="#">1975年</a></li> 
-                    <li><a class="dropdown-item" href="#">1976年</a></li> 
-                    <li><a class="dropdown-item" href="#">1977年</a></li> 
-                    <li><a class="dropdown-item" href="#">1978年</a></li> 
-                    <li><a class="dropdown-item" href="#">1979年</a></li> 
-                    <li><a class="dropdown-item" href="#">1980年</a></li> 
-                    <li><a class="dropdown-item" href="#">1981年</a></li> 
-                    <li><a class="dropdown-item" href="#">1982年</a></li> 
-                    <li><a class="dropdown-item" href="#">1983年</a></li> 
-                    <li><a class="dropdown-item" href="#">1984年</a></li> 
-                    <li><a class="dropdown-item" href="#">1985年</a></li> 
-                    <li><a class="dropdown-item" href="#">1986年</a></li> 
-                    <li><a class="dropdown-item" href="#">1987年</a></li> 
-                    <li><a class="dropdown-item" href="#">1988年</a></li> 
-                    <li><a class="dropdown-item" href="#">1989年</a></li> 
-                    <li><a class="dropdown-item" href="#">1990年</a></li> 
-                    <li><a class="dropdown-item" href="#">1991年</a></li> 
-                    <li><a class="dropdown-item" href="#">1992年</a></li> 
-                    <li><a class="dropdown-item" href="#">1993年</a></li> 
-                    <li><a class="dropdown-item" href="#">1994年</a></li> 
-                    <li><a class="dropdown-item" href="#">1995年</a></li> 
-                    <li><a class="dropdown-item" href="#">1996年</a></li> 
-                    <li><a class="dropdown-item" href="#">1997年</a></li> 
-                    <li><a class="dropdown-item" href="#">1998年</a></li> 
-                    <li><a class="dropdown-item" href="#">1999年</a></li> 
-                    <li><a class="dropdown-item" href="#">2000年</a></li> 
-                    <li><a class="dropdown-item" href="#">2001年</a></li> 
-                    <li><a class="dropdown-item" href="#">2002年</a></li> 
-                    <li><a class="dropdown-item" href="#">2003年</a></li>
-                  </ul>
+            <div class="col-12">
+              <p class="d-flex mb-2 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
+                出生年月日
+                <span class="position-relative" style="color: red; top: -5px;">*</span>
+              </p>
+              <div class="row g-3">
+                <div class="col-md-12 col-lg-4">
+                  <div class="dropdown dropdown-validation font-SansTC">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">西元年月份</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
+                      <li><a class="dropdown-item" href="#">1973年</a></li> 
+                      <li><a class="dropdown-item" href="#">1974年</a></li> 
+                      <li><a class="dropdown-item" href="#">1975年</a></li> 
+                      <li><a class="dropdown-item" href="#">1976年</a></li> 
+                      <li><a class="dropdown-item" href="#">1977年</a></li> 
+                      <li><a class="dropdown-item" href="#">1978年</a></li> 
+                      <li><a class="dropdown-item" href="#">1979年</a></li> 
+                      <li><a class="dropdown-item" href="#">1980年</a></li> 
+                      <li><a class="dropdown-item" href="#">1981年</a></li> 
+                      <li><a class="dropdown-item" href="#">1982年</a></li> 
+                      <li><a class="dropdown-item" href="#">1983年</a></li> 
+                      <li><a class="dropdown-item" href="#">1984年</a></li> 
+                      <li><a class="dropdown-item" href="#">1985年</a></li> 
+                      <li><a class="dropdown-item" href="#">1986年</a></li> 
+                      <li><a class="dropdown-item" href="#">1987年</a></li> 
+                      <li><a class="dropdown-item" href="#">1988年</a></li> 
+                      <li><a class="dropdown-item" href="#">1989年</a></li> 
+                      <li><a class="dropdown-item" href="#">1990年</a></li> 
+                      <li><a class="dropdown-item" href="#">1991年</a></li> 
+                      <li><a class="dropdown-item" href="#">1992年</a></li> 
+                      <li><a class="dropdown-item" href="#">1993年</a></li> 
+                      <li><a class="dropdown-item" href="#">1994年</a></li> 
+                      <li><a class="dropdown-item" href="#">1995年</a></li> 
+                      <li><a class="dropdown-item" href="#">1996年</a></li> 
+                      <li><a class="dropdown-item" href="#">1997年</a></li> 
+                      <li><a class="dropdown-item" href="#">1998年</a></li> 
+                      <li><a class="dropdown-item" href="#">1999年</a></li> 
+                      <li><a class="dropdown-item" href="#">2000年</a></li> 
+                      <li><a class="dropdown-item" href="#">2001年</a></li> 
+                      <li><a class="dropdown-item" href="#">2002年</a></li> 
+                      <li><a class="dropdown-item" href="#">2003年</a></li>
+                    </ul>
+                  </div>
+                  <div class="invalid-feedback">
+                    請選擇西元年
+                  </div>
                 </div>
-                <div class="invalid-feedback">
-                  請選擇西元年
+                <div class="col-md-6 col-lg-4">
+                  <div class="dropdown dropdown-validation font-SansTC">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">月份</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
+                      <li><a class="dropdown-item" href="#">1月</a></li>
+                      <li><a class="dropdown-item" href="#">2月</a></li>
+                      <li><a class="dropdown-item" href="#">3月</a></li>
+                      <li><a class="dropdown-item" href="#">4月</a></li>
+                      <li><a class="dropdown-item" href="#">5月</a></li>
+                      <li><a class="dropdown-item" href="#">6月</a></li>
+                      <li><a class="dropdown-item" href="#">7月</a></li>
+                      <li><a class="dropdown-item" href="#">8月</a></li>
+                      <li><a class="dropdown-item" href="#">9月</a></li>
+                      <li><a class="dropdown-item" href="#">10月</a></li>
+                      <li><a class="dropdown-item" href="#">11月</a></li>
+                      <li><a class="dropdown-item" href="#">12月</a></li>
+                    </ul>
+                  </div>
+                  <div class="invalid-feedback">
+                    請選擇月份
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dropdown dropdown-validation font-SansTC">
-                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">月份</span>
-                    </div>
-                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
-                  </button>
-                  <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
-                    <li><a class="dropdown-item" href="#">1月</a></li>
-                    <li><a class="dropdown-item" href="#">2月</a></li>
-                    <li><a class="dropdown-item" href="#">3月</a></li>
-                    <li><a class="dropdown-item" href="#">4月</a></li>
-                    <li><a class="dropdown-item" href="#">5月</a></li>
-                    <li><a class="dropdown-item" href="#">6月</a></li>
-                    <li><a class="dropdown-item" href="#">7月</a></li>
-                    <li><a class="dropdown-item" href="#">8月</a></li>
-                    <li><a class="dropdown-item" href="#">9月</a></li>
-                    <li><a class="dropdown-item" href="#">10月</a></li>
-                    <li><a class="dropdown-item" href="#">11月</a></li>
-                    <li><a class="dropdown-item" href="#">12月</a></li>
-                  </ul>
+                <div class="col-md-6 col-lg-4">
+                  <div class="dropdown dropdown-validation font-SansTC">
+                    <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">日期</span>
+                      </div>
+                      <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
+                    </button>
+                    <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
+                      <li><a href="#" class="dropdown-item">1號</a></li>
+                      <li><a href="#" class="dropdown-item">2號</a></li>
+                      <li><a href="#" class="dropdown-item">3號</a></li>
+                      <li><a href="#" class="dropdown-item">4號</a></li>
+                      <li><a href="#" class="dropdown-item">5號</a></li>
+                      <li><a href="#" class="dropdown-item">6號</a></li>
+                      <li><a href="#" class="dropdown-item">7號</a></li>
+                      <li><a href="#" class="dropdown-item">8號</a></li>
+                      <li><a href="#" class="dropdown-item">9號</a></li>
+                      <li><a href="#" class="dropdown-item">10號</a></li>
+                      <li><a href="#" class="dropdown-item">11號</a></li>
+                      <li><a href="#" class="dropdown-item">12號</a></li>
+                      <li><a href="#" class="dropdown-item">13號</a></li>
+                      <li><a href="#" class="dropdown-item">14號</a></li>
+                      <li><a href="#" class="dropdown-item">15號</a></li>
+                      <li><a href="#" class="dropdown-item">16號</a></li>
+                      <li><a href="#" class="dropdown-item">17號</a></li>
+                      <li><a href="#" class="dropdown-item">18號</a></li>
+                      <li><a href="#" class="dropdown-item">19號</a></li>
+                      <li><a href="#" class="dropdown-item">20號</a></li>
+                      <li><a href="#" class="dropdown-item">21號</a></li>
+                      <li><a href="#" class="dropdown-item">22號</a></li>
+                      <li><a href="#" class="dropdown-item">23號</a></li>
+                      <li><a href="#" class="dropdown-item">24號</a></li>
+                      <li><a href="#" class="dropdown-item">25號</a></li>
+                      <li><a href="#" class="dropdown-item">26號</a></li>
+                      <li><a href="#" class="dropdown-item">27號</a></li>
+                      <li><a href="#" class="dropdown-item">28號</a></li>
+                      <li><a href="#" class="dropdown-item">29號</a></li>
+                      <li><a href="#" class="dropdown-item">30號</a></li>
+                    </ul>
+                  </div>
+                  <div class="invalid-feedback">
+                    請選擇日期
+                  </div>
                 </div>
-                <div class="invalid-feedback">
-                  請選擇月份
+                <div class="col-12">
+                  <p class="fs-7 text-inputBdr-light font-SansTC">動保法規定，領養者須年滿 20 歲才能領養動物</p>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dropdown dropdown-validation font-SansTC">
-                  <button class="btn__dropdown btn btn-outline-inputBdr-light d-flex justify-content-between py-3 px-2 bg-white w-100 border border-2 border-inputBdr-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="dropdown-text fs-7 fs-lg-9 fw-medium letterSpc-8 text-text">日期</span>
-                    </div>
-                    <img src="../assets/images/icon/icon_down.svg" class="js-iconDown rotate img-fluid" alt="">
-                  </button>
-                  <ul class="dropdown-menu w-100" style="max-height: 300px; overflow-y: auto;">
-                    <li><a href="#" class="dropdown-item">1號</a></li>
-                    <li><a href="#" class="dropdown-item">2號</a></li>
-                    <li><a href="#" class="dropdown-item">3號</a></li>
-                    <li><a href="#" class="dropdown-item">4號</a></li>
-                    <li><a href="#" class="dropdown-item">5號</a></li>
-                    <li><a href="#" class="dropdown-item">6號</a></li>
-                    <li><a href="#" class="dropdown-item">7號</a></li>
-                    <li><a href="#" class="dropdown-item">8號</a></li>
-                    <li><a href="#" class="dropdown-item">9號</a></li>
-                    <li><a href="#" class="dropdown-item">10號</a></li>
-                    <li><a href="#" class="dropdown-item">11號</a></li>
-                    <li><a href="#" class="dropdown-item">12號</a></li>
-                    <li><a href="#" class="dropdown-item">13號</a></li>
-                    <li><a href="#" class="dropdown-item">14號</a></li>
-                    <li><a href="#" class="dropdown-item">15號</a></li>
-                    <li><a href="#" class="dropdown-item">16號</a></li>
-                    <li><a href="#" class="dropdown-item">17號</a></li>
-                    <li><a href="#" class="dropdown-item">18號</a></li>
-                    <li><a href="#" class="dropdown-item">19號</a></li>
-                    <li><a href="#" class="dropdown-item">20號</a></li>
-                    <li><a href="#" class="dropdown-item">21號</a></li>
-                    <li><a href="#" class="dropdown-item">22號</a></li>
-                    <li><a href="#" class="dropdown-item">23號</a></li>
-                    <li><a href="#" class="dropdown-item">24號</a></li>
-                    <li><a href="#" class="dropdown-item">25號</a></li>
-                    <li><a href="#" class="dropdown-item">26號</a></li>
-                    <li><a href="#" class="dropdown-item">27號</a></li>
-                    <li><a href="#" class="dropdown-item">28號</a></li>
-                    <li><a href="#" class="dropdown-item">29號</a></li>
-                    <li><a href="#" class="dropdown-item">30號</a></li>
-                  </ul>
-                </div>
-                <div class="invalid-feedback">
-                  請選擇日期
-                </div>
-              </div>
-              <div class="col-12">
-                <p class="fs-7 text-inputBdr-light font-SansTC">動保法規定，領養者須年滿 20 歲才能領養動物</p>
-              </div>
-              <div class="col-12 d-flex justify-content-center gap-7 mt-11">
-                <a href="./adoption-appointedCat.html" class="btn btn-secondary py-3 px-7">          
-                  <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">再考慮一下</span>
-                </a>
-                <button type="submit" class="btn btn-primary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
-                  <span class="fs-7 fw-medium lh-sm letterSpc-8 text-white">下一頁</span>
-                  <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
-                </button>
               </div>
             </div>
           </div> 
+          <div class="col-12 d-flex justify-content-center gap-7 mt-11">
+            <a href="./adoption-appointedCat.html" class="btn btn-secondary py-3 px-7">          
+              <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">再考慮一下</span>
+            </a>
+            <button type="submit" class="nextButton btn btn-primary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
+              <span class="fs-7 fw-medium lh-sm letterSpc-8 text-white">下一頁</span>
+              <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
+            </button>
+          </div>
         </form>
       </section>
       
       <!-- step2 詳細資料區塊 -->
-      <!-- <section class="js-detail container d-none">
-        <form class="col-lg-8 mx-auto row gx-3 gy-7">
+      <section class="js-detail container d-none">
+        <form class="col-lg-8 mx-auto row gx-3 gy-7 needs-validation" novalidate>
           <div class="col-12">
             <p class="d-flex mb-7 fs-7 fs-md-9 fw-medium lh-sm letterSpc-8">
               您的住宅類型是什麼?
@@ -991,11 +992,20 @@
             </label>
             <textarea type="text" class="placeholder__color form-control py-3 px-2 w-100 fw-medium lh-sm letterSpc-8 bg-white text-text border border-2 border-inputBdr-light" id="commit" rows="10" placeholder="例如:搬家、換工作、生孩子、長期旅行等" style="resize: none;"></textarea>
           </div>
+          <div class="col-12 d-flex justify-content-center gap-7 mt-11">
+            <a href="./adoption-appointedCat.html" class="btn btn-secondary py-3 px-7">          
+              <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">再考慮一下</span>
+            </a>
+            <button type="submit" class="btn btn-primary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
+              <span class="fs-7 fw-medium lh-sm letterSpc-8 text-white">下一頁</span>
+              <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
+            </button>
+          </div>
         </form>
-      </section> -->
+      </section>
       
       <!-- step3 感謝區塊 -->
-      <!-- <section class="js-thanks container d-none">
+      <section class="js-thanks container d-none">
         <div class="col-lg-8 mx-auto">
           <div class="row">
             <div class="col-md-6">
@@ -1012,18 +1022,7 @@
             </div>
           </div>
         </div>
-      </section> -->
-
-      <!-- <div class="js-btnGroup col-12 d-flex justify-content-center gap-7 mt-11">
-        <a href="./adoption-appointedCat.html" class="btn btn-secondary py-3 px-7">          
-          <span class="fs-7 fw-medium lh-sm letterSpc-8 text-tertiary">再考慮一下</span>
-        </a>
-        <button type="submit" class="js-next btn btn-primary d-flex align-items-center gap-11 py-3 px-4 border border-2 border-start-0 border-top-0 border-text">
-          <span class="fs-7 fw-medium lh-sm letterSpc-8 text-white">下一頁</span>
-          <img src="../assets/images/icon/icon_arrow_white.svg" class="img-fluid" alt="">
-        </button>
-      </div> -->
-
+      </section>
     </main>
     
     <%- include('./layout/footer'); -%>

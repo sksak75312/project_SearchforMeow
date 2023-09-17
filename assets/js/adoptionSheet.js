@@ -5,6 +5,15 @@ const townDom = document.querySelector('.js-town');
 const areaText = document.querySelector('.js-area-text');
 const dropdownValidation = document.querySelectorAll('.dropdown-validation');
 const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+const formProfile = document.querySelector('.js-profile');
+const formDetail = document.querySelector('.js-detail');
+const formThanks = document.querySelector('.js-thanks');
+const timeLine = document.querySelector('.js-timeLine');
+const timeLineSpan = timeLine.querySelectorAll('span');
+const timeLineLeft = timeLine.querySelector('.timeLine__left');
+const timeLineRight = timeLine.querySelector('.timeLine__right');
+let currentStep = 1;
+
 
 const getAccessToken = async () => {
   const res = await axios.post(
@@ -84,11 +93,14 @@ dropdownMenus.forEach((menu) => {
   menu.addEventListener('click', dropdownHandler);
 });
 
+
 // Bootstrap 表單驗證
 (function () {
   'use strict';
 
   var forms = document.querySelectorAll('.needs-validation');
+
+  
 
   Array.prototype.slice.call(forms).forEach(function (form) {
     form.addEventListener(
@@ -97,6 +109,23 @@ dropdownMenus.forEach((menu) => {
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else if (currentStep === 1) {
+          event.preventDefault();
+          event.stopPropagation();
+          formProfile.classList.toggle('d-none');
+          formDetail.classList.toggle('d-none');
+          timeLineLeft.classList.toggle('active');
+          timeLineSpan[1].classList.toggle('active');
+          window.scrollTo(0, 0);
+          currentStep++
+        } else if (currentStep === 2) {
+          event.preventDefault();
+          event.stopPropagation();
+          formDetail.classList.toggle('d-none');
+          formThanks.classList.toggle('d-none');
+          timeLineRight.classList.toggle('active');
+          timeLineSpan[2].classList.toggle('active');
+          window.scrollTo(0, 0);
         }
 
         dropdownValidation.forEach((validate) => {
@@ -107,9 +136,11 @@ dropdownMenus.forEach((menu) => {
           }
         });
 
+
         form.classList.add('was-validated');
       },
       false
     );
   });
 })();
+
