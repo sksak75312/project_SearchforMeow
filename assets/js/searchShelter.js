@@ -12,7 +12,6 @@ axios
     'https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$filter=animal_kind+like+%E8%B2%93'
   )
   .then((res) => {
-    console.log(res.data);
     const data = res.data.slice(0, 10);
     data.forEach((cat) => {
       recommendCat.innerHTML += `
